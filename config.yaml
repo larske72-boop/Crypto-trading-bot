@@ -1,0 +1,39 @@
+# Crypto Trading Bot - Configuratie
+# Lees de README (of het commentaar hieronder) voordat je live trading inschakelt.
+
+# ── Modus ────────────────────────────────────────────────────────────────────
+# "paper" : gesimuleerde trades, geen echt geld, veilig om mee te testen.
+# "live"  : echte orders. Vereist ook:
+#             • EXCHANGE_API_KEY + EXCHANGE_API_SECRET als environment variables
+#             • CONFIRM_LIVE_TRADING=YES_I_UNDERSTAND_THE_RISK als env var
+mode: paper
+
+# ── Exchange & markt ──────────────────────────────────────────────────────────
+exchange: binance       # Elke CCXT-exchange-id (binance, kraken, coinbase, ...)
+symbol: BTC/USDT        # Handelspaar
+timeframe: 1h           # Candle-interval (1m, 5m, 15m, 1h, 4h, 1d, ...)
+
+# ── Strategie-parameters ─────────────────────────────────────────────────────
+strategy:
+  ema_fast: 12            # Periode snelle EMA
+  ema_slow: 26            # Periode langzame EMA
+  rsi_period: 14          # RSI-berekeningsperiode
+  rsi_buy_threshold: 50   # RSI moet > deze waarde zijn bij een buy-signaal
+  rsi_sell_threshold: 50  # (bewaard voor toekomstig gebruik / short-logica)
+  atr_period: 14          # ATR-berekeningsperiode
+  atr_sl_multiplier: 2.0  # Stop-loss = entry - ATR * deze factor
+  atr_tp_multiplier: 3.0  # Take-profit = entry + ATR * deze factor
+
+# ── Risicobeheer ─────────────────────────────────────────────────────────────
+risk:
+  risk_per_trade_pct: 1.0   # Max verlies per trade als % van het saldo
+  max_position_pct: 20.0    # Max positiegrootte als % van het saldo
+
+# ── Paper-trading staat ───────────────────────────────────────────────────────
+paper:
+  state_file: data/paper_state.json
+  starting_balance: 1000.0  # Startkapitaal in quote-valuta (bijv. USDT)
+
+# ── Continue modus (wordt genegeerd bij --once) ───────────────────────────────
+loop:
+  poll_seconds: 60   # Wachttijd tussen cycli in continue modus

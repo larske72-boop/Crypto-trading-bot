@@ -1,0 +1,62 @@
+name: Crypto Trading Bot
+
+on:
+  # Draait elk uur op het hele uur (pas aan naar jouw timeframe).
+  # Verander naar bijv. "*/15 * * * *" voor 15-minuten candles.
+  schedule:
+    - cron: "0 * * * *"
+
+  # Handmatig starten via GitHub UI / API
+  workflow_dispatch:
+
+permissions:
+  contents: write   # Nodig om de state terug te committen
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # ── Checkout ────────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Haal de volledige history op zodat push later werkt
+          fetch-depth: 0
+
+      # ── Python ──────────────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      # ── Bot uitvoeren (één cyclus) ─────────────────────────────────────────
+      - name: Run trading cycle
+        env:
+          # Voor live trading: zet deze als Secrets in je repo-instellingen:
+          # Settings > Secrets and variables > Actions > New repository secret
+          EXCHANGE_API_KEY: ${{ secrets.EXCHANGE_API_KEY }}
+          EXCHANGE_API_SECRET: ${{ secrets.EXCHANGE_API_SECRET }}
+          # Zet dit secret op "YES_I_UNDERSTAND_THE_RISK" om live orders toe te staan
+          CONFIRM_LIVE_TRADING: ${{ secrets.CONFIRM_LIVE_TRADING }}
+        run: python bot.py --once --config config.yaml
+
+      # ── State opslaan in de repo ───────────────────────────────────────────
+      # De paper-trading staat (data/paper_state.json) wordt gecommit zodat
+      # de volgende run de vorige stand kent.
+      - name: Commit updated state
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # data/ bestaat altijd na de eerste run (bot initialiseert het),
+          # maar veiligheidshalve controleren we het.
+          [ -d data ] && git add data/ || true
+          # Alleen committen als er iets is veranderd
+          git diff --cached --quiet && echo "Geen wijzigingen in state." || \
+            git commit -m "chore: bot state update [skip ci]"
+          git push origin HEAD
