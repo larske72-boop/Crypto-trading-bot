@@ -173,6 +173,8 @@ class PaperPortfolio:
             self.balance_quote = data["balance_quote"]
             self.position = Position(**data["position"]) if data.get("position") else None
             self.trade_log = [Trade(**t) for t in data.get("trade_log", [])]
+        else:
+            self.save()  # Maak state-bestand aan met beginwaarden zodat git het kan volgen
 
     def save(self):
         data = {
