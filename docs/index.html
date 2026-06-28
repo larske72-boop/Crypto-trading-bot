@@ -334,13 +334,26 @@ function sparkline(prices,color){
   </svg>`;
 }
 
-/* ── Live data state ─────────────────────────────────────────── */
-let priceData=null, sparkData=null;
+/* ── Coin → CoinGecko ID ─────────────────────────────────────── */
+const COIN_IDS={
+  'BTC/USD':'bitcoin','ETH/USD':'ethereum','SOL/USD':'solana',
+  'XRP/USD':'ripple','ADA/USD':'cardano','DOT/USD':'polkadot',
+  'LTC/USD':'litecoin','AVAX/USD':'avalanche-2',
+};
 
-async function fetchPrice(){
+/* ── Live data state ─────────────────────────────────────────── */
+let priceData=null, sparkData=null, posLivePrice=null;
+
+async function fetchPrices(posSymbol){
   try{
-    const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true',{cache:'no-store'});
-    if(r.ok)priceData=await r.json();
+    const ids=['bitcoin'];
+    const posId=posSymbol&&COIN_IDS[posSymbol];
+    if(posId&&posId!=='bitcoin')ids.push(posId);
+    const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids='+ids.join(',')+'&vs_currencies=usd&include_24hr_change=true',{cache:'no-store'});
+    if(r.ok){
+      priceData=await r.json();
+      posLivePrice=posId?(priceData[posId]?.usd||null):null;
+    }
   }catch(e){}
 }
 
@@ -423,7 +436,8 @@ function render(s){
   const bal   = s.balance_quote||0;
   const pos   = s.position;
   const liveP = priceData?.bitcoin?.usd||0;
-  const price = s.last_price||0;   // prijs van het gekochte coin, ingesteld door de bot
+  const price = (pos&&posLivePrice) ? posLivePrice : (s.last_price||0);
+  const isLivePosPrice = pos&&!!posLivePrice;
   const trades= (s.trade_log||[]).slice().reverse();
   const closed= trades.filter(t=>t.pnl_quote!=null);
   const equity= pos&&price ? bal+pos.amount*price : bal;
@@ -505,7 +519,7 @@ function render(s){
         <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:700">▲ LONG</span></div>
         <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price)}</span></div>
         <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)} ${(pos.symbol||'BTC/USD').split('/')[0]}</span></div>
-        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}</span></div>
+        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}${isLivePosPrice?'<span style="font-size:.6rem;color:var(--green);margin-left:4px">● live</span>':''}</span></div>
         <div class="row"><span class="rl">Ongerealiseerde P&amp;L</span><span class="${cc(unreal)}" style="font-weight:700">${sg(unreal)}${usd(unreal)}</span></div>
         <div class="row"><span class="rl">Stop-loss</span><span class="red">${usd(pos.stop_loss)}</span></div>
         <div class="row"><span class="rl">Take-profit</span><span class="green">${usd(pos.take_profit)}</span></div>
@@ -542,10 +556,8 @@ function render(s){
 /* ── Refresh all data ─────────────────────────────────────────── */
 let botState=null;
 async function refresh(){
-  const [st]=await Promise.all([
-    fetch('./state.json?_='+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
-    fetchPrice(),
-  ]);
+  const st=await fetch('./state.json?_='+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);
+  await fetchPrices(st?.position?.symbol);
   botState=st;
   render(botState);
   renderPrice();
@@ -555,7 +567,7 @@ async function refresh(){
 
 /* ── Boot ────────────────────────────────────────────────────── */
 fetchSparkline().then(renderPrice);
-refresh();
+refresh();  // laadt state + live prijzen
 setInterval(refresh,60000);
 setInterval(()=>{const el=document.getElementById('countdown');if(el)el.textContent='in '+nextRunIn();},1000);
 
