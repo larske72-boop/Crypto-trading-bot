@@ -33,6 +33,7 @@ strategy:
 risk:
   risk_per_trade_pct: 1.0
   max_position_pct: 20.0
+  max_positions: 3        # maximaal 3 open posities tegelijk
 
 # ── Paper-trading staat ───────────────────────────────────────────────────────
 paper:
