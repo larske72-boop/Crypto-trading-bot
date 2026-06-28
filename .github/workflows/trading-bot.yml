@@ -1,29 +1,47 @@
 name: Crypto Trading Bot
 
 on:
-  # Draait elk uur op het hele uur (pas aan naar jouw timeframe).
-  # Verander naar bijv. "*/15 * * * *" voor 15-minuten candles.
+  # Fallback cron in geval de keten breekt
   schedule:
     - cron: "*/15 * * * *"
 
-  # Handmatig starten via GitHub UI / API
+  # Handmatig starten of interne keten-trigger
   workflow_dispatch:
+    inputs:
+      chain:
+        description: 'Automatisch gepland (interne keten — niet handmatig invullen)'
+        required: false
+        default: 'false'
+        type: string
+
+# Voorkom dubbele runs: annuleer de oudere als er al een loopt
+concurrency:
+  group: trading-bot
+  cancel-in-progress: true
 
 permissions:
-  contents: write   # Nodig om de state terug te committen
+  contents: write   # State committen
+  actions: write    # Volgende run triggeren
 
 jobs:
   trade:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       # ── Checkout ────────────────────────────────────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Haal de volledige history op zodat push later werkt
           fetch-depth: 0
+
+      # ── Wacht 14 minuten als dit een keten-run is ───────────────────────────
+      # (De eerste stap zodat Python-setup intussen niet telt)
+      - name: Wacht op volgende cyclus (keten-modus)
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.chain == 'true' }}
+        run: |
+          echo "⏳ Keten-run gedetecteerd — wachten 14 minuten voor volgende handelscyclus..."
+          sleep 840
 
       # ── Python ──────────────────────────────────────────────────────────────
       - name: Set up Python 3.11
@@ -38,26 +56,36 @@ jobs:
       # ── Bot uitvoeren (één cyclus) ─────────────────────────────────────────
       - name: Run trading cycle
         env:
-          # Voor live trading: zet deze als Secrets in je repo-instellingen:
-          # Settings > Secrets and variables > Actions > New repository secret
           EXCHANGE_API_KEY: ${{ secrets.EXCHANGE_API_KEY }}
           EXCHANGE_API_SECRET: ${{ secrets.EXCHANGE_API_SECRET }}
-          # Zet dit secret op "YES_I_UNDERSTAND_THE_RISK" om live orders toe te staan
           CONFIRM_LIVE_TRADING: ${{ secrets.CONFIRM_LIVE_TRADING }}
         run: python bot.py --once --config config.yaml
 
       # ── State opslaan in de repo ───────────────────────────────────────────
-      # De paper-trading staat (data/paper_state.json) wordt gecommit zodat
-      # de volgende run de vorige stand kent.
       - name: Commit updated state
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # data/ bestaat altijd na de eerste run (bot initialiseert het)
           [ -d data ] && git add data/ || true
-          # Kopieer state naar docs/ zodat de web-app hem kan lezen
           [ -f data/paper_state.json ] && cp data/paper_state.json docs/state.json && git add docs/state.json || true
-          # Alleen committen als er iets is veranderd
           git diff --cached --quiet && echo "Geen wijzigingen in state." || \
             git commit -m "chore: bot state update [skip ci]"
           git push origin HEAD
+
+      # ── Plan de volgende run in de keten ───────────────────────────────────
+      # Triggert zichzelf opnieuw met chain=true zodat die 14 min wacht.
+      # Als dit mislukt vangt de cron (*/15) het op als fallback.
+      - name: Plan volgende run in keten
+        run: |
+          HTTP=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/trading-bot.yml/dispatches" \
+            -d '{"ref":"main","inputs":{"chain":"true"}}')
+          echo "Trigger HTTP status: $HTTP"
+          if [ "$HTTP" = "204" ]; then
+            echo "✅ Volgende run gepland (start over ~14 min)"
+          else
+            echo "⚠️  Trigger mislukt (HTTP $HTTP) — cron pakt het op als fallback"
+          fi
