@@ -87,12 +87,13 @@ class EmaRsiAtrStrategy:
     def generate_entry_signal(self, df: pd.DataFrame) -> Optional[Signal]:
         if len(df) < max(self.ema_slow, self.rsi_period, self.atr_period) + 2:
             return None
-        prev, curr = df.iloc[-2], df.iloc[-1]
-        crossed_up = prev["ema_fast"] <= prev["ema_slow"] and curr["ema_fast"] > curr["ema_slow"]
-        if crossed_up and curr["rsi"] > self.rsi_buy_threshold:
+        curr = df.iloc[-1]
+        # Enter whenever EMA fast is above EMA slow (uptrend) and RSI confirms momentum.
+        # State-based check so the bot never misses a crossover that happened between runs.
+        if curr["ema_fast"] > curr["ema_slow"] and curr["rsi"] > self.rsi_buy_threshold:
             return Signal(
                 "buy",
-                f"EMA{self.ema_fast} kruist boven EMA{self.ema_slow}, RSI={curr['rsi']:.1f} > {self.rsi_buy_threshold}",
+                f"EMA{self.ema_fast} > EMA{self.ema_slow}, RSI={curr['rsi']:.1f} > {self.rsi_buy_threshold}",
                 curr["close"], curr["atr"],
             )
         return None
