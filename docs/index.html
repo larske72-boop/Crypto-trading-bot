@@ -1,231 +1,250 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#06060f" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Crypto Bot" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+  <meta name="theme-color" content="#06060f"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Crypto Bot"/>
   <title>Crypto Bot</title>
-  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="manifest.json"/>
   <style>
-    :root {
-      --bg:    #06060f;
-      --card:  rgba(255,255,255,0.04);
-      --bdr:   rgba(255,255,255,0.07);
-      --text:  #ffffff;
-      --muted: #8892a4;
-      --green: #00e87a;
-      --red:   #ff4f6d;
-      --blue:  #4c9eff;
+    :root{
+      --bg:#06060f; --card:rgba(255,255,255,.04); --bdr:rgba(255,255,255,.07);
+      --text:#fff; --muted:#8892a4; --green:#00e87a; --red:#ff4f6d; --blue:#4c9eff;
+      --yellow:#fbbf24;
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100dvh;
-      overflow-x: hidden;
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',sans-serif;
+      background:var(--bg);color:var(--text);min-height:100dvh;overflow-x:hidden;
     }
-
-    /* Ambient glow background */
-    body::before {
-      content: '';
-      position: fixed; inset: 0;
+    body::before{
+      content:'';position:fixed;inset:0;
       background:
-        radial-gradient(ellipse 70% 50% at 80% -10%, rgba(0,232,122,.09) 0%, transparent 55%),
-        radial-gradient(ellipse 60% 40% at -10% 80%, rgba(76,158,255,.07) 0%, transparent 55%);
-      pointer-events: none; z-index: 0;
+        radial-gradient(ellipse 80% 55% at 85% -10%,rgba(0,232,122,.08) 0%,transparent 55%),
+        radial-gradient(ellipse 65% 45% at -10% 85%,rgba(76,158,255,.07) 0%,transparent 55%),
+        radial-gradient(ellipse 50% 40% at 50% 110%,rgba(168,85,247,.04) 0%,transparent 55%);
+      pointer-events:none;z-index:0;
     }
-
-    .wrap {
-      position: relative; z-index: 1;
-      padding: max(env(safe-area-inset-top),22px) 16px max(env(safe-area-inset-bottom),28px);
-      max-width: 480px; margin: 0 auto;
+    .wrap{
+      position:relative;z-index:1;
+      padding:max(env(safe-area-inset-top),22px) 16px max(env(safe-area-inset-bottom),32px);
+      max-width:480px;margin:0 auto;
     }
 
     /* ── Header ── */
-    header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding-bottom: 26px;
+    header{display:flex;justify-content:space-between;align-items:center;padding-bottom:20px;}
+    .logo{display:flex;align-items:center;gap:10px;}
+    .logo-box{
+      width:38px;height:38px;border-radius:11px;
+      background:linear-gradient(135deg,rgba(0,232,122,.18),rgba(76,158,255,.18));
+      border:1px solid rgba(0,232,122,.25);
+      display:flex;align-items:center;justify-content:center;font-size:19px;
     }
-    .logo { display: flex; align-items: center; gap: 10px; }
-    .logo-box {
-      width: 38px; height: 38px; border-radius: 11px;
-      background: linear-gradient(135deg,rgba(0,232,122,.18),rgba(76,158,255,.18));
-      border: 1px solid rgba(0,232,122,.25);
-      display: flex; align-items: center; justify-content: center; font-size: 19px;
-    }
-    .logo-name { font-size: 1.05rem; font-weight: 700; letter-spacing: -.01em; }
+    .logo-name{font-size:1.05rem;font-weight:700;letter-spacing:-.01em;}
+    .logo-sub{font-size:.6rem;color:var(--muted);margin-top:1px;}
+    .hdr-right{display:flex;align-items:center;gap:8px;}
 
-    .badge {
-      font-size: .6rem; font-weight: 700;
-      padding: 5px 13px; border-radius: 999px;
-      text-transform: uppercase; letter-spacing: .1em;
-    }
-    .badge-paper   { background:rgba(76,158,255,.13);  color:var(--blue);  border:1px solid rgba(76,158,255,.3); }
-    .badge-live    { background:rgba(255,79,109,.13);   color:var(--red);   border:1px solid rgba(255,79,109,.3); }
-    .badge-unknown { background:rgba(136,146,164,.08);  color:var(--muted); border:1px solid rgba(136,146,164,.2); }
+    /* ── Badge ── */
+    .badge{font-size:.6rem;font-weight:700;padding:5px 13px;border-radius:999px;text-transform:uppercase;letter-spacing:.1em;}
+    .badge-paper  {background:rgba(76,158,255,.13);color:var(--blue);border:1px solid rgba(76,158,255,.3);}
+    .badge-live   {background:rgba(255,79,109,.13);color:var(--red);border:1px solid rgba(255,79,109,.3);}
+    .badge-unknown{background:rgba(136,146,164,.08);color:var(--muted);border:1px solid rgba(136,146,164,.2);}
 
-    /* ── Refresh button ── */
-    .refresh-btn {
-      width:36px; height:36px; border-radius:10px; border:none; cursor:pointer;
-      background:rgba(255,255,255,0.06); color:var(--text);
-      display:flex; align-items:center; justify-content:center;
-      font-size:16px; transition:background .15s;
-      -webkit-tap-highlight-color: transparent;
+    /* ── Refresh btn ── */
+    .refresh-btn{
+      width:36px;height:36px;border-radius:10px;border:none;cursor:pointer;
+      background:rgba(255,255,255,.06);color:var(--text);
+      display:flex;align-items:center;justify-content:center;
+      transition:background .15s;-webkit-tap-highlight-color:transparent;
     }
-    .refresh-btn:active { background:rgba(255,255,255,.12); }
-    .refresh-btn.spinning svg { animation: spin .7s linear infinite; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    .refresh-btn:active{background:rgba(255,255,255,.14);}
+    .refresh-btn.spinning svg{animation:spin .7s linear infinite;}
+    @keyframes spin{to{transform:rotate(360deg);}}
 
-    /* ── Pull-to-refresh indicator ── */
-    .ptr {
-      position:fixed; top:0; left:50%; transform:translateX(-50%);
-      background:rgba(0,232,122,.15); border:1px solid rgba(0,232,122,.3);
-      color:var(--green); border-radius:0 0 16px 16px;
-      padding:6px 18px; font-size:.72rem; font-weight:600;
-      transition:opacity .2s; opacity:0; pointer-events:none; z-index:99;
+    /* ── PTR ── */
+    .ptr{
+      position:fixed;top:0;left:50%;transform:translateX(-50%);
+      background:rgba(0,232,122,.15);border:1px solid rgba(0,232,122,.3);
+      color:var(--green);border-radius:0 0 16px 16px;
+      padding:6px 20px;font-size:.72rem;font-weight:600;
+      transition:opacity .2s;opacity:0;pointer-events:none;z-index:99;
     }
-    .ptr.visible { opacity:1; }
+    .ptr.visible{opacity:1;}
 
-    /* ── Cards ── */
-    .card {
-      background: var(--card);
-      border: 1px solid var(--bdr);
-      border-radius: 22px;
-      padding: 18px;
-      margin-bottom: 10px;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+    /* ── Generic card ── */
+    .card{
+      background:var(--card);border:1px solid var(--bdr);border-radius:22px;
+      padding:18px;margin-bottom:10px;
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
     }
 
-    /* ── Hero equity card ── */
-    .hero {
-      background: linear-gradient(145deg,rgba(0,232,122,.1),rgba(76,158,255,.08));
-      border: 1px solid rgba(0,232,122,.2);
-      border-radius: 26px;
-      padding: 28px 22px 22px;
-      margin-bottom: 10px;
-      text-align: center;
+    /* ── BTC live price card ── */
+    .price-card{
+      background:linear-gradient(145deg,rgba(76,158,255,.07),rgba(0,232,122,.05));
+      border:1px solid rgba(76,158,255,.14);border-radius:22px;
+      padding:18px 18px 14px;margin-bottom:10px;
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+      overflow:hidden;
     }
-    .hero-lbl {
-      font-size: .65rem; color: var(--muted);
-      text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px;
+    .price-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;}
+    .price-coin{display:flex;align-items:center;gap:9px;}
+    .price-icon{
+      width:34px;height:34px;border-radius:50%;
+      background:linear-gradient(135deg,#f7931a,#fbbf24);
+      display:flex;align-items:center;justify-content:center;
+      font-size:17px;flex-shrink:0;
     }
-    .hero-val {
-      font-size: 2.8rem; font-weight: 800; letter-spacing: -.05em;
-      background: linear-gradient(135deg, #fff 40%, var(--green));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-      background-clip: text;
+    .price-name{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
+    .price-val{font-size:1.55rem;font-weight:800;letter-spacing:-.04em;line-height:1.1;}
+    .price-pill{
+      display:inline-flex;align-items:center;gap:4px;
+      padding:5px 11px;border-radius:999px;font-size:.76rem;font-weight:700;flex-shrink:0;
     }
-    .hero-ret {
-      display: inline-flex; align-items: center; gap: 5px;
-      margin-top: 10px; padding: 5px 14px; border-radius: 999px;
-      font-size: .8rem; font-weight: 600;
-    }
-    .hero-ret.pos { background:rgba(0,232,122,.12); color:var(--green); border:1px solid rgba(0,232,122,.2); }
-    .hero-ret.neg { background:rgba(255,79,109,.12); color:var(--red);   border:1px solid rgba(255,79,109,.2); }
-    .hero-ret.neu { background:rgba(136,146,164,.1); color:var(--muted); border:1px solid var(--bdr); }
+    .price-pill.pos{background:rgba(0,232,122,.12);color:var(--green);border:1px solid rgba(0,232,122,.22);}
+    .price-pill.neg{background:rgba(255,79,109,.12);color:var(--red);border:1px solid rgba(255,79,109,.22);}
+    .chart-wrap{margin:0 -2px;border-radius:8px;overflow:hidden;}
+    .chart-labels{display:flex;justify-content:space-between;font-size:.59rem;color:var(--muted);margin-top:5px;opacity:.7;}
 
-    /* ── 2-column grid ── */
-    .g2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
-    .mini {
-      background:var(--card); border:1px solid var(--bdr); border-radius:18px;
-      padding:15px; backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    /* ── Hero portfolio ── */
+    .hero{
+      background:linear-gradient(145deg,rgba(0,232,122,.1),rgba(76,158,255,.07));
+      border:1px solid rgba(0,232,122,.18);border-radius:26px;
+      padding:24px 22px 20px;margin-bottom:10px;text-align:center;
     }
-    .lbl {
-      font-size:.62rem; color:var(--muted);
-      text-transform:uppercase; letter-spacing:.1em; margin-bottom:5px;
+    .hero-lbl{font-size:.63rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-bottom:8px;}
+    .hero-val{
+      font-size:2.7rem;font-weight:800;letter-spacing:-.05em;
+      background:linear-gradient(135deg,#fff 35%,var(--green));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
     }
-    .val { font-size:1.15rem; font-weight:700; letter-spacing:-.02em; }
-    .sub { font-size:.7rem; margin-top:3px; font-weight:500; }
+    .hero-ret{
+      display:inline-flex;align-items:center;gap:5px;
+      margin-top:10px;padding:5px 14px;border-radius:999px;font-size:.8rem;font-weight:600;
+    }
+    .hero-ret.pos{background:rgba(0,232,122,.12);color:var(--green);border:1px solid rgba(0,232,122,.2);}
+    .hero-ret.neg{background:rgba(255,79,109,.12);color:var(--red);border:1px solid rgba(255,79,109,.2);}
+    .hero-ret.neu{background:rgba(136,146,164,.1);color:var(--muted);border:1px solid var(--bdr);}
+    .hero-sub{font-size:.68rem;color:var(--muted);margin-top:8px;}
+
+    /* ── Grids ── */
+    .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
+    .g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:10px;}
+    .mini{
+      background:var(--card);border:1px solid var(--bdr);border-radius:18px;
+      padding:14px 15px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    }
+    .lbl{font-size:.59rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;}
+    .val{font-size:1.12rem;font-weight:700;letter-spacing:-.02em;}
+    .sub{font-size:.68rem;margin-top:3px;font-weight:500;color:var(--muted);}
+
+    /* ── Bot status card ── */
+    .bot-card{
+      background:var(--card);border:1px solid var(--bdr);border-radius:22px;
+      padding:16px 18px;margin-bottom:10px;
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    }
+    .bot-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px;}
+    .bot-title{font-size:.78rem;font-weight:700;display:flex;align-items:center;gap:8px;}
+    .bot-next{
+      font-size:.72rem;font-weight:700;color:var(--blue);
+      background:rgba(76,158,255,.1);border:1px solid rgba(76,158,255,.2);
+      padding:4px 11px;border-radius:999px;
+    }
+    .stags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px;}
+    .stag{
+      font-size:.6rem;font-weight:700;letter-spacing:.04em;
+      padding:4px 9px;border-radius:8px;
+      background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);
+      color:var(--muted);
+    }
+    .bot-meta{display:flex;justify-content:space-between;font-size:.67rem;color:var(--muted);}
+    .bot-upd{font-size:.67rem;color:var(--muted);}
 
     /* ── Section title ── */
-    .sec {
-      display:flex; align-items:center; gap:8px;
-      font-size:.62rem; color:var(--muted);
-      text-transform:uppercase; letter-spacing:.1em;
+    .sec{
+      display:flex;align-items:center;gap:8px;
+      font-size:.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;
       margin:18px 0 10px;
     }
-    .sec-line { flex:1; height:1px; background:var(--bdr); }
+    .sec-line{flex:1;height:1px;background:var(--bdr);}
 
     /* ── Rows ── */
-    .row {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:11px 0; border-bottom:1px solid var(--bdr); font-size:.875rem;
+    .row{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:10px 0;border-bottom:1px solid var(--bdr);font-size:.875rem;
     }
-    .row:last-child { border-bottom:none; }
-    .rl { color:var(--muted); font-size:.8rem; }
+    .row:last-child{border-bottom:none;}
+    .rl{color:var(--muted);font-size:.77rem;}
 
     /* ── Trades ── */
-    .trade {
-      display:flex; justify-content:space-between; align-items:center;
-      padding:13px 0; border-bottom:1px solid var(--bdr);
+    .trade{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:12px 0;border-bottom:1px solid var(--bdr);
     }
-    .trade:last-child { border-bottom:none; }
-    .tl { display:flex; align-items:center; gap:11px; }
-    .t-icon {
-      width:38px; height:38px; border-radius:11px;
-      display:flex; align-items:center; justify-content:center;
-      font-size:16px; flex-shrink:0; font-weight:700;
+    .trade:last-child{border-bottom:none;}
+    .tl{display:flex;align-items:center;gap:11px;}
+    .t-icon{
+      width:36px;height:36px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      font-size:14px;flex-shrink:0;font-weight:800;
     }
-    .t-icon-buy  { background:rgba(0,232,122,.12); border:1px solid rgba(0,232,122,.2); color:var(--green); }
-    .t-icon-sell { background:rgba(255,79,109,.12); border:1px solid rgba(255,79,109,.2); color:var(--red); }
-    .ttype { font-size:.78rem; font-weight:700; }
-    .ttype-buy { color:var(--green); }
-    .ttype-sell { color:var(--red); }
-    .tdate { font-size:.68rem; color:var(--muted); margin-top:2px; }
-    .tprice { font-size:.875rem; font-weight:600; text-align:right; }
-    .tpnl { font-size:.7rem; text-align:right; margin-top:2px; font-weight:600; }
+    .t-icon-buy {background:rgba(0,232,122,.12);border:1px solid rgba(0,232,122,.2);color:var(--green);}
+    .t-icon-sell{background:rgba(255,79,109,.12);border:1px solid rgba(255,79,109,.2);color:var(--red);}
+    .ttype{font-size:.76rem;font-weight:700;}
+    .ttype-buy{color:var(--green);}
+    .ttype-sell{color:var(--red);}
+    .tdate{font-size:.66rem;color:var(--muted);margin-top:2px;}
+    .tamt{font-size:.63rem;color:var(--muted);margin-top:1px;}
+    .tright{text-align:right;}
+    .tprice{font-size:.875rem;font-weight:600;}
+    .tpnl{font-size:.7rem;margin-top:2px;font-weight:700;}
+
+    /* ── Progress bar (for win rate) ── */
+    .prog-wrap{margin-top:6px;height:3px;border-radius:999px;background:rgba(255,255,255,.07);}
+    .prog-bar{height:100%;border-radius:999px;background:var(--green);transition:width .6s ease;}
 
     /* ── Colors ── */
-    .green { color:var(--green); }
-    .red   { color:var(--red); }
-    .muted { color:var(--muted); }
+    .green{color:var(--green);}
+    .red  {color:var(--red);}
+    .blue {color:var(--blue);}
+    .muted{color:var(--muted);}
 
-    /* ── Live dot ── */
-    .dot {
-      display:inline-block; width:7px; height:7px; border-radius:50%;
-      background:var(--green); flex-shrink:0;
+    /* ── Dot ── */
+    .dot{
+      display:inline-block;width:7px;height:7px;border-radius:50%;
+      background:var(--green);flex-shrink:0;
       animation:pulse 2s ease-in-out infinite;
     }
-    @keyframes pulse {
-      0%,100%{ opacity:1; box-shadow:0 0 0 0 rgba(0,232,122,.5); }
-      50%    { opacity:.5; box-shadow:0 0 0 5px rgba(0,232,122,0); }
+    @keyframes pulse{
+      0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(0,232,122,.5);}
+      50%{opacity:.5;box-shadow:0 0 0 5px rgba(0,232,122,0);}
     }
 
     /* ── Empty state ── */
-    .empty {
-      text-align:center; padding:56px 16px;
-    }
-    .empty-icon {
-      width:76px; height:76px; border-radius:24px; margin:0 auto 20px;
+    .empty{text-align:center;padding:44px 16px 30px;}
+    .empty-icon{
+      width:72px;height:72px;border-radius:24px;margin:0 auto 18px;
       background:linear-gradient(135deg,rgba(0,232,122,.1),rgba(76,158,255,.1));
       border:1px solid rgba(255,255,255,.08);
-      display:flex; align-items:center; justify-content:center; font-size:34px;
+      display:flex;align-items:center;justify-content:center;font-size:32px;
       animation:float 3.5s ease-in-out infinite;
     }
-    @keyframes float {
-      0%,100%{ transform:translateY(0); }
-      50%    { transform:translateY(-10px); }
-    }
-    .empty-title { font-size:1.05rem; font-weight:700; margin-bottom:8px; }
-    .empty-sub   { font-size:.85rem; color:var(--muted); line-height:1.6; }
-    .empty-tag {
-      display:inline-flex; align-items:center; gap:7px;
-      margin-top:20px; padding:7px 16px; border-radius:999px;
-      background:rgba(0,232,122,.08); border:1px solid rgba(0,232,122,.2);
-      font-size:.72rem; color:var(--green);
+    @keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+    .empty-title{font-size:1rem;font-weight:700;margin-bottom:8px;}
+    .empty-sub{font-size:.83rem;color:var(--muted);line-height:1.65;}
+    .empty-tag{
+      display:inline-flex;align-items:center;gap:7px;
+      margin-top:18px;padding:7px 16px;border-radius:999px;
+      background:rgba(0,232,122,.08);border:1px solid rgba(0,232,122,.2);
+      font-size:.72rem;color:var(--green);
     }
 
-    /* ── No position text ── */
-    .no-pos { color:var(--muted); font-size:.875rem; padding:4px 0; }
+    .no-pos{color:var(--muted);font-size:.875rem;padding:4px 0;}
 
-    footer { text-align:center; font-size:.65rem; color:#3d4759; margin-top:22px; }
+    footer{text-align:center;font-size:.62rem;color:#3a4558;margin-top:22px;}
   </style>
 </head>
 <body>
@@ -235,24 +254,32 @@
   <header>
     <div class="logo">
       <div class="logo-box">📈</div>
-      <div class="logo-name">Crypto Bot</div>
+      <div>
+        <div class="logo-name">Crypto Bot</div>
+        <div class="logo-sub">BTC/USD · Kraken</div>
+      </div>
     </div>
-    <div style="display:flex;align-items:center;gap:8px;">
+    <div class="hdr-right">
       <span class="badge badge-unknown" id="badge">Laden</span>
       <button class="refresh-btn" id="refresh-btn" aria-label="Vernieuwen">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="23 4 23 10 17 10"></polyline>
-          <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+          <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
         </svg>
       </button>
     </div>
   </header>
+
+  <!-- Live BTC price + sparkline (filled by JS) -->
+  <div class="price-card" id="price-card">
+    <div style="color:var(--muted);font-size:.8rem;padding:10px 0 4px">Prijs laden...</div>
+  </div>
 
   <div id="app"></div>
   <footer id="foot"></footer>
 
 </div>
 <script>
+/* ── Utilities ─────────────────────────────────────────────── */
 function usd(n,d=2){
   if(n==null||isNaN(n))return'—';
   return'$ '+Number(n).toLocaleString('nl-NL',{minimumFractionDigits:d,maximumFractionDigits:d});
@@ -263,22 +290,129 @@ function dt(iso){
   return d.toLocaleDateString('nl-NL',{day:'2-digit',month:'2-digit'})+' '+
          d.toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
 }
+function ago(iso){
+  if(!iso)return'—';
+  const s=Math.round((Date.now()-new Date(iso))/1000);
+  if(s<5)return'net bijgewerkt';
+  if(s<60)return s+'s geleden';
+  if(s<3600)return Math.floor(s/60)+'m geleden';
+  return Math.floor(s/3600)+'u geleden';
+}
 function cc(n){return n>0?'green':n<0?'red':'muted';}
 function sg(n){return n>0?'+':'';}
 
+/* ── Countdown to next 15-min cron slot ─────────────────────── */
+function nextRunIn(){
+  const now=new Date(), m=now.getMinutes(), s=now.getSeconds();
+  const nextM=(Math.floor(m/15)+1)*15;
+  const diff=(nextM-m)*60-s;
+  return Math.floor(diff/60)+'m '+String(diff%60).padStart(2,'0')+'s';
+}
+
+/* ── Sparkline SVG ─────────────────────────────────────────── */
+function sparkline(prices,color){
+  if(!prices||prices.length<2)return'';
+  const W=300,H=56,PAD=2;
+  const mn=Math.min(...prices),mx=Math.max(...prices),rng=mx-mn||1;
+  const pts=prices.map((p,i)=>{
+    const x=(i/(prices.length-1))*W;
+    const y=H-PAD-((p-mn)/rng)*(H-PAD*2);
+    return x.toFixed(1)+','+y.toFixed(1);
+  });
+  const line='M'+pts.join('L');
+  const fill=line+'L'+W+','+H+'L0,'+H+'Z';
+  const id='g'+Math.random().toString(36).slice(2,7);
+  return`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" style="width:100%;height:56px;display:block">
+    <defs>
+      <linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${color}" stop-opacity=".28"/>
+        <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="${fill}" fill="url(#${id})"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+  </svg>`;
+}
+
+/* ── Live data state ─────────────────────────────────────────── */
+let priceData=null, sparkData=null;
+
+async function fetchPrice(){
+  try{
+    const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true',{cache:'no-store'});
+    if(r.ok)priceData=await r.json();
+  }catch(e){}
+}
+
+async function fetchSparkline(){
+  try{
+    const r=await fetch('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7',{cache:'no-store'});
+    if(r.ok){const d=await r.json();sparkData=d.prices.map(p=>p[1]);}
+  }catch(e){}
+}
+
+/* ── Render price card ────────────────────────────────────────── */
+function renderPrice(){
+  const el=document.getElementById('price-card');
+  if(!priceData){
+    el.innerHTML='<div style="color:var(--muted);font-size:.78rem;padding:8px 0">Prijs tijdelijk niet beschikbaar</div>';
+    return;
+  }
+  const p=priceData.bitcoin.usd, chg=priceData.bitcoin.usd_24h_change, pos=chg>=0;
+  const color=pos?'var(--green)':'var(--red)';
+  el.innerHTML=`
+    <div class="price-top">
+      <div class="price-coin">
+        <div class="price-icon">₿</div>
+        <div>
+          <div class="price-name">Bitcoin live prijs</div>
+          <div class="price-val">${usd(p,0)}</div>
+        </div>
+      </div>
+      <span class="price-pill ${pos?'pos':'neg'}">${pos?'▲':'▼'} ${Math.abs(chg).toFixed(2)}%<span style="font-size:.65rem;opacity:.6;margin-left:2px">24u</span></span>
+    </div>
+    ${sparkData?`<div class="chart-wrap">${sparkline(sparkData,pos?'#00e87a':'#ff4f6d')}</div>
+    <div class="chart-labels"><span>7d geleden</span><span>Nu</span></div>`:''}
+  `;
+}
+
+/* ── Bot status card HTML ─────────────────────────────────────── */
+function botCard(s){
+  return`<div class="bot-card">
+    <div class="bot-header">
+      <div class="bot-title"><span class="dot"></span>Bot status</div>
+      <span class="bot-next" id="countdown">in ${nextRunIn()}</span>
+    </div>
+    <div class="stags">
+      <span class="stag">EMA 5 / 13</span>
+      <span class="stag">RSI(10) &gt; 40</span>
+      <span class="stag">ATR ×2.0 SL</span>
+      <span class="stag">ATR ×3.0 TP</span>
+      <span class="stag">15m candles</span>
+      <span class="stag">Paper mode</span>
+    </div>
+    <div class="bot-meta">
+      <span>Kraken · BTC/USD</span>
+      <span class="bot-upd">${s?.last_updated?ago(s.last_updated):'—'}</span>
+    </div>
+  </div>`;
+}
+
+/* ── Main render ─────────────────────────────────────────────── */
 function render(s){
   const app=document.getElementById('app');
   const badge=document.getElementById('badge');
 
   if(!s){
-    badge.textContent='—'; badge.className='badge badge-unknown';
+    badge.textContent='—';badge.className='badge badge-unknown';
     app.innerHTML=`
       <div class="empty">
         <div class="empty-icon">⚡</div>
         <div class="empty-title">Bot is klaar om te starten</div>
-        <div class="empty-sub">De eerste cyclus wordt elk uur automatisch gestart.<br>Zodra er data is, verschijnt je dashboard hier.</div>
+        <div class="empty-sub">De eerste cyclus start automatisch.<br>Zodra er data is, verschijnt het dashboard hier.</div>
         <div class="empty-tag"><span class="dot"></span>Wacht op eerste run...</div>
-      </div>`;
+      </div>
+      ${botCard(null)}`;
     return;
   }
 
@@ -288,124 +422,162 @@ function render(s){
 
   const bal   = s.balance_quote||0;
   const pos   = s.position;
-  const price = s.last_price||0;
+  const liveP = priceData?.bitcoin?.usd||0;
+  const price = liveP || s.last_price||0;
   const trades= (s.trade_log||[]).slice().reverse();
   const closed= trades.filter(t=>t.pnl_quote!=null);
   const equity= pos&&price ? bal+pos.amount*price : bal;
   const unreal= pos&&price ? (price-pos.entry_price)*pos.amount : null;
-  const totPnl= closed.reduce((a,t)=>a+t.pnl_quote,0);
-  const startBal=1000;
-  const ret   = (equity-startBal)/startBal*100;
-  const winRate=closed.length?Math.round(closed.filter(t=>t.pnl_quote>0).length/closed.length*100):null;
-
-  const retCls = ret>0?'pos':ret<0?'neg':'neu';
-  const retIcon= ret>0?'▲':ret<0?'▼':'—';
+  const totPnl= closed.reduce((a,t)=>a+(t.pnl_quote||0),0);
+  const start = s.starting_balance||1000;
+  const ret   = (equity-start)/start*100;
+  const wins  = closed.filter(t=>t.pnl_quote>0);
+  const losses= closed.filter(t=>t.pnl_quote<=0);
+  const winPct= closed.length ? Math.round(wins.length/closed.length*100) : null;
+  const bestT = closed.length ? Math.max(...closed.map(t=>t.pnl_quote)) : null;
+  const worstT= closed.length ? Math.min(...closed.map(t=>t.pnl_quote)) : null;
+  const avgPnl= closed.length ? totPnl/closed.length : null;
+  const retCls= ret>0?'pos':ret<0?'neg':'neu';
+  const retIcon=ret>0?'▲':ret<0?'▼':'●';
 
   app.innerHTML=`
+    <!-- Portfolio hero -->
     <div class="hero">
       <div class="hero-lbl">Totale portefeuillewaarde</div>
       <div class="hero-val">${usd(equity)}</div>
       <div class="hero-ret ${retCls}">${retIcon} ${sg(ret)}${ret.toFixed(2)}% rendement</div>
+      <div class="hero-sub">Startkapitaal ${usd(start,0)}</div>
     </div>
 
+    <!-- Stats row 1 -->
     <div class="g2">
       <div class="mini">
-        <div class="lbl">Saldo</div>
+        <div class="lbl">Vrij saldo</div>
         <div class="val">${usd(bal)}</div>
+        ${pos?`<div class="sub">${usd(pos.amount*price)} in positie</div>`:
+              `<div class="sub">Volledig beschikbaar</div>`}
       </div>
       <div class="mini">
-        <div class="lbl">Gerealiseerde P&L</div>
+        <div class="lbl">Gerealiseerde P&amp;L</div>
         <div class="val ${cc(totPnl)}">${sg(totPnl)}${usd(totPnl)}</div>
+        ${unreal!=null?`<div class="sub ${cc(unreal)}">${sg(unreal)}${usd(unreal)} ongerealiseerd</div>`:`<div class="sub">Geen open positie</div>`}
       </div>
     </div>
 
+    <!-- Stats row 2 -->
     <div class="g2">
       <div class="mini">
         <div class="lbl">Winstpercentage</div>
-        <div class="val">${winRate!=null?winRate+'%':'—'}</div>
+        <div class="val">${winPct!=null?winPct+'%':'—'}</div>
+        ${closed.length?`<div class="sub">${wins.length}× winst · ${losses.length}× verlies</div>
+          <div class="prog-wrap"><div class="prog-bar" style="width:${winPct||0}%"></div></div>`:
+          `<div class="sub">Nog geen trades</div>`}
       </div>
       <div class="mini">
-        <div class="lbl">Gesloten trades</div>
+        <div class="lbl">Trades</div>
         <div class="val">${closed.length}</div>
+        ${closed.length?`<div class="sub">Gem. ${sg(avgPnl)}${usd(avgPnl)} per trade</div>`:`<div class="sub">Nog geen gesloten trades</div>`}
       </div>
     </div>
 
-    <div class="sec">
-      ${pos?'<span class="dot"></span>':''}<span>Huidige positie</span>
-      <div class="sec-line"></div>
-    </div>
+    <!-- Stats row 3 (only when trades exist) -->
+    ${closed.length>=1?`<div class="g2">
+      <div class="mini">
+        <div class="lbl">Beste trade</div>
+        <div class="val green">${sg(bestT)}${usd(bestT)}</div>
+        <div class="sub">Hoogste winst</div>
+      </div>
+      <div class="mini">
+        <div class="lbl">Slechtste trade</div>
+        <div class="val ${cc(worstT)}">${sg(worstT)}${usd(worstT)}</div>
+        <div class="sub">Grootste verlies</div>
+      </div>
+    </div>`:''}
+
+    <!-- Bot status -->
+    ${botCard(s)}
+
+    <!-- Position -->
+    <div class="sec">${pos?'<span class="dot"></span>':''}<span>Huidige positie</span><div class="sec-line"></div></div>
     <div class="card">
       ${pos?`
         <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:700">▲ LONG</span></div>
         <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price)}</span></div>
-        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)}</span></div>
-        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}</span></div>
-        <div class="row"><span class="rl">Ongerealiseerde P&L</span>
-          <span class="${cc(unreal)}" style="font-weight:700">${sg(unreal)}${usd(unreal)}</span></div>
+        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)} BTC</span></div>
+        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}${liveP?'<span style="font-size:.6rem;color:var(--green);margin-left:4px">● live</span>':''}</span></div>
+        <div class="row"><span class="rl">Ongerealiseerde P&amp;L</span><span class="${cc(unreal)}" style="font-weight:700">${sg(unreal)}${usd(unreal)}</span></div>
         <div class="row"><span class="rl">Stop-loss</span><span class="red">${usd(pos.stop_loss)}</span></div>
         <div class="row"><span class="rl">Take-profit</span><span class="green">${usd(pos.take_profit)}</span></div>
         <div class="row"><span class="rl">Geopend op</span><span>${dt(pos.opened_at)}</span></div>
-      `:`<div class="no-pos">Geen open positie — wacht op koop-signaal</div>`}
+      `:`<div class="no-pos">Geen open positie — wacht op koop-signaal (EMA 5 kruist boven EMA 13)</div>`}
     </div>
 
+    <!-- Trades -->
     <div class="sec"><span>Recente trades</span><div class="sec-line"></div></div>
     <div class="card">
       ${trades.length===0
         ?`<div class="no-pos">Nog geen trades uitgevoerd</div>`
-        :trades.slice(0,20).map(t=>`
+        :trades.slice(0,30).map(t=>`
           <div class="trade">
             <div class="tl">
               <div class="t-icon t-icon-${t.side}">${t.side==='buy'?'↑':'↓'}</div>
               <div>
                 <div class="ttype ttype-${t.side}">${t.side==='buy'?'Koop':'Verkoop'}</div>
                 <div class="tdate">${dt(t.timestamp)}</div>
+                <div class="tamt">${Number(t.amount).toFixed(5)} BTC</div>
               </div>
             </div>
-            <div>
-              <div class="tprice">${usd(t.price)}</div>
+            <div class="tright">
+              <div class="tprice">${usd(t.price,0)}</div>
               ${t.pnl_quote!=null
                 ?`<div class="tpnl ${cc(t.pnl_quote)}">${sg(t.pnl_quote)}${usd(t.pnl_quote)}</div>`
-                :`<div class="tpnl muted">${Number(t.amount).toFixed(5)}</div>`}
+                :`<div class="tpnl muted">open</div>`}
             </div>
           </div>`).join('')}
     </div>
   `;
 }
 
+/* ── Refresh all data ─────────────────────────────────────────── */
+let botState=null;
 async function refresh(){
-  let s=null;
-  try{ const r=await fetch('./state.json?_='+Date.now()); if(r.ok)s=await r.json(); }catch{}
-  render(s);
+  const [st]=await Promise.all([
+    fetch('./state.json?_='+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null),
+    fetchPrice(),
+  ]);
+  botState=st;
+  render(botState);
+  renderPrice();
   document.getElementById('foot').textContent=
-    'Bijgewerkt: '+new Date().toLocaleTimeString('nl-NL')+' · Automatisch elke minuut';
+    'Bijgewerkt: '+new Date().toLocaleTimeString('nl-NL')+' · Auto-refresh elke 60s';
 }
 
+/* ── Boot ────────────────────────────────────────────────────── */
+fetchSparkline().then(renderPrice);
 refresh();
 setInterval(refresh,60000);
+setInterval(()=>{const el=document.getElementById('countdown');if(el)el.textContent='in '+nextRunIn();},1000);
+
 if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
 
-// Refresh button
-document.getElementById('refresh-btn').addEventListener('click', async () => {
-  const btn = document.getElementById('refresh-btn');
+/* ── Refresh button ──────────────────────────────────────────── */
+document.getElementById('refresh-btn').addEventListener('click',async()=>{
+  const btn=document.getElementById('refresh-btn');
   btn.classList.add('spinning');
   await refresh();
   btn.classList.remove('spinning');
 });
 
-// Pull-to-refresh
-let startY = 0;
-document.addEventListener('touchstart', e => { startY = e.touches[0].clientY; }, {passive:true});
-document.addEventListener('touchmove', e => {
-  if(window.scrollY === 0 && e.touches[0].clientY - startY > 60){
+/* ── Pull-to-refresh ─────────────────────────────────────────── */
+let startY=0;
+document.addEventListener('touchstart',e=>{startY=e.touches[0].clientY;},{passive:true});
+document.addEventListener('touchmove',e=>{
+  if(window.scrollY===0&&e.touches[0].clientY-startY>60)
     document.getElementById('ptr').classList.add('visible');
-  }
-}, {passive:true});
-document.addEventListener('touchend', async () => {
-  const ptr = document.getElementById('ptr');
-  if(ptr.classList.contains('visible')){
-    await refresh();
-    ptr.classList.remove('visible');
-  }
+},{passive:true});
+document.addEventListener('touchend',async()=>{
+  const ptr=document.getElementById('ptr');
+  if(ptr.classList.contains('visible')){await refresh();ptr.classList.remove('visible');}
 });
 </script>
 </body>
