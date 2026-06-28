@@ -1,39 +1,44 @@
 # Crypto Trading Bot - Configuratie
-# Lees de README (of het commentaar hieronder) voordat je live trading inschakelt.
 
 # ── Modus ────────────────────────────────────────────────────────────────────
-# "paper" : gesimuleerde trades, geen echt geld, veilig om mee te testen.
-# "live"  : echte orders. Vereist ook:
-#             • EXCHANGE_API_KEY + EXCHANGE_API_SECRET als environment variables
-#             • CONFIRM_LIVE_TRADING=YES_I_UNDERSTAND_THE_RISK als env var
 mode: paper
 
-# ── Exchange & markt ──────────────────────────────────────────────────────────
-exchange: kraken        # Elke CCXT-exchange-id (kraken, bybit, kucoin, ...)
-symbol: BTC/USD         # Handelspaar (Kraken gebruikt USD, niet USDT)
-timeframe: 15m          # Candle-interval (1m, 5m, 15m, 1h, 4h, 1d, ...)
+# ── Exchange ──────────────────────────────────────────────────────────────────
+exchange: kraken
+timeframe: 15m
+
+# ── Symbolen — bot scant alles en kiest de sterkste trend ────────────────────
+symbols:
+  - BTC/USD
+  - ETH/USD
+  - SOL/USD
+  - XRP/USD
+  - ADA/USD
+  - DOT/USD
+  - LTC/USD
+  - AVAX/USD
 
 # ── Strategie-parameters ─────────────────────────────────────────────────────
 strategy:
-  ema_fast: 5             # Periode snelle EMA (was 12, nu korter voor meer signalen)
-  ema_slow: 13            # Periode langzame EMA (was 26, nu korter voor meer signalen)
-  rsi_period: 10          # RSI-berekeningsperiode (was 14, nu responsiever)
-  rsi_buy_threshold: 40   # RSI moet > deze waarde zijn bij een buy-signaal (was 50)
-  rsi_sell_threshold: 50  # (bewaard voor toekomstig gebruik / short-logica)
-  atr_period: 10          # ATR-berekeningsperiode (was 14)
-  atr_sl_multiplier: 2.0  # Stop-loss = entry - ATR * deze factor
-  atr_tp_multiplier: 3.0  # Take-profit = entry + ATR * deze factor
+  ema_fast: 5
+  ema_slow: 13
+  rsi_period: 10
+  rsi_buy_threshold: 40
+  rsi_sell_threshold: 50
+  atr_period: 10
+  atr_sl_multiplier: 2.0
+  atr_tp_multiplier: 3.0
 
 # ── Risicobeheer ─────────────────────────────────────────────────────────────
 risk:
-  risk_per_trade_pct: 1.0   # Max verlies per trade als % van het saldo
-  max_position_pct: 20.0    # Max positiegrootte als % van het saldo
+  risk_per_trade_pct: 1.0
+  max_position_pct: 20.0
 
 # ── Paper-trading staat ───────────────────────────────────────────────────────
 paper:
   state_file: data/paper_state.json
-  starting_balance: 1000.0  # Startkapitaal in quote-valuta (bijv. USDT)
+  starting_balance: 1000.0
 
-# ── Continue modus (wordt genegeerd bij --once) ───────────────────────────────
+# ── Continue modus ───────────────────────────────────────────────────────────
 loop:
-  poll_seconds: 60   # Wachttijd tussen cycli in continue modus
+  poll_seconds: 60
