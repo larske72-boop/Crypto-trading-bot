@@ -1,15 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 800.0,
-  "position": {
-    "side": "long",
-    "amount": 2.8129395218002817,
-    "entry_price": 71.1,
-    "stop_loss": 70.63951592196545,
-    "take_profit": 71.79072611705179,
-    "opened_at": "2026-06-28T08:23:54.253766+00:00",
-    "symbol": "SOL/USD"
-  },
+  "balance_quote": 1001.9429707933947,
+  "position": null,
   "trade_log": [
     {
       "side": "buy",
@@ -19,8 +11,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=67.5",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.8129395218002817,
+      "price": 71.79072611705179,
+      "timestamp": "2026-06-28T08:50:53.040118+00:00",
+      "reason": "Take-profit geraakt (high=72.06 >= 71.79)",
+      "pnl_quote": 1.942970793394636,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 71.1,
-  "last_updated": "2026-06-28T08:23:55.547510+00:00"
+  "last_price": 71.87,
+  "last_updated": "2026-06-28T08:50:53.040446+00:00"
 }
