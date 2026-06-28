@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 512.9948010462181,
+  "balance_quote": 640.9931711540725,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 3.7229650563618937,
-      "entry_price": 43.06,
-      "stop_loss": 42.74615839248512,
-      "take_profit": 43.53076241127233,
-      "opened_at": "2026-06-28T12:20:17.378929+00:00",
-      "symbol": "LTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.08134768974124165,
-      "entry_price": 1576.55,
-      "stop_loss": 1569.0055794672357,
-      "take_profit": 1587.8666307991464,
-      "opened_at": "2026-06-28T12:20:17.379866+00:00",
-      "symbol": "ETH/USD"
+      "amount": 200.0602906223697,
+      "entry_price": 0.801,
+      "stop_loss": 0.7944436228200606,
+      "take_profit": 0.8108345657699091,
+      "opened_at": "2026-06-28T14:02:06.922079+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -75,8 +66,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=50.4",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.7229650563618937,
+      "price": 42.96,
+      "timestamp": "2026-06-28T14:01:57.326497+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.3722965056362,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08134768974124165,
+      "price": 1577.28,
+      "timestamp": "2026-06-28T14:01:58.538120+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.05938381351111843,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 200.0602906223697,
+      "price": 0.801,
+      "timestamp": "2026-06-28T14:02:06.922092+00:00",
+      "reason": "RSI-herstel: laag=30.3 nu=33.1 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 1579.65,
-  "last_updated": "2026-06-28T13:47:30.943779+00:00"
+  "last_price": 0.801,
+  "last_updated": "2026-06-28T14:02:06.922551+00:00"
 }
