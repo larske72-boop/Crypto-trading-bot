@@ -1,4 +1,4 @@
-const CACHE = 'crypto-bot-v1';
+const CACHE = 'crypto-bot-v3';
 
 self.addEventListener('install', () => self.skipWaiting());
 
