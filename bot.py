@@ -159,11 +159,14 @@ class Trade:
 
 
 class PaperPortfolio:
-    def __init__(self, state_path: str, starting_balance: float):
+    def __init__(self, state_path: str, starting_balance: float, mode: str = "paper"):
         self.state_path = state_path
         self.balance_quote = starting_balance
+        self.mode = mode
         self.position: Optional[Position] = None
         self.trade_log = []
+        self.last_price: float = 0.0
+        self.last_updated: Optional[str] = None
         self._load()
 
     def _load(self):
@@ -173,18 +176,28 @@ class PaperPortfolio:
             self.balance_quote = data["balance_quote"]
             self.position = Position(**data["position"]) if data.get("position") else None
             self.trade_log = [Trade(**t) for t in data.get("trade_log", [])]
+            self.last_price = data.get("last_price", 0.0)
+            self.last_updated = data.get("last_updated")
         else:
             self.save()  # Maak state-bestand aan met beginwaarden zodat git het kan volgen
 
     def save(self):
         data = {
+            "mode": self.mode,
             "balance_quote": self.balance_quote,
             "position": asdict(self.position) if self.position else None,
             "trade_log": [asdict(t) for t in self.trade_log],
+            "last_price": self.last_price,
+            "last_updated": self.last_updated,
         }
         os.makedirs(os.path.dirname(self.state_path) or ".", exist_ok=True)
         with open(self.state_path, "w") as f:
             json.dump(data, f, indent=2)
+
+    def update_price(self, price: float):
+        self.last_price = price
+        self.last_updated = datetime.now(timezone.utc).isoformat()
+        self.save()
 
     def open_long(self, amount, price, stop_loss, take_profit, reason):
         cost = amount * price
@@ -308,6 +321,8 @@ def run_cycle(config, exchange, strategy, portfolio, risk_params):
             log(f"Positie open: entry={pos.entry_price:.2f} prijs={current_price:.2f} "
                 f"SL={pos.stop_loss:.2f} TP={pos.take_profit:.2f} | equity={portfolio.equity(current_price):.2f}")
 
+    portfolio.update_price(current_price)
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -325,7 +340,7 @@ def main():
     exchange = ExchangeClient(config["exchange"], config["mode"], log)
     strategy = EmaRsiAtrStrategy(config["strategy"])
     risk_params = RiskParams(**config["risk"])
-    portfolio = PaperPortfolio(config["paper"]["state_file"], config["paper"]["starting_balance"])
+    portfolio = PaperPortfolio(config["paper"]["state_file"], config["paper"]["starting_balance"], config["mode"])
 
     try:
         run_cycle(config, exchange, strategy, portfolio, risk_params)

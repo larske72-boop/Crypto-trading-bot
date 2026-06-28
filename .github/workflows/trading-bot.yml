@@ -53,9 +53,10 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # data/ bestaat altijd na de eerste run (bot initialiseert het),
-          # maar veiligheidshalve controleren we het.
+          # data/ bestaat altijd na de eerste run (bot initialiseert het)
           [ -d data ] && git add data/ || true
+          # Kopieer state naar docs/ zodat de web-app hem kan lezen
+          [ -f data/paper_state.json ] && cp data/paper_state.json docs/state.json && git add docs/state.json || true
           # Alleen committen als er iets is veranderd
           git diff --cached --quiet && echo "Geen wijzigingen in state." || \
             git commit -m "chore: bot state update [skip ci]"
