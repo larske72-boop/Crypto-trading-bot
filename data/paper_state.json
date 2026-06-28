@@ -1,15 +1,35 @@
 {
   "mode": "paper",
-  "balance_quote": 801.5543766347157,
-  "position": {
-    "side": "long",
-    "amount": 2.790150294607059,
-    "entry_price": 71.82,
-    "stop_loss": 71.2184078964562,
-    "take_profit": 72.72238815531568,
-    "opened_at": "2026-06-28T09:00:02.315080+00:00",
-    "symbol": "SOL/USD"
-  },
+  "balance_quote": 512.9948010462181,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 2.790150294607059,
+      "entry_price": 71.82,
+      "stop_loss": 71.2184078964562,
+      "take_profit": 72.72238815531568,
+      "opened_at": "2026-06-28T09:00:02.315080+00:00",
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.7229650563618937,
+      "entry_price": 43.06,
+      "stop_loss": 42.74615839248512,
+      "take_profit": 43.53076241127233,
+      "opened_at": "2026-06-28T12:20:17.378929+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08134768974124165,
+      "entry_price": 1576.55,
+      "stop_loss": 1569.0055794672357,
+      "take_profit": 1587.8666307991464,
+      "opened_at": "2026-06-28T12:20:17.379866+00:00",
+      "symbol": "ETH/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -37,8 +57,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.0",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.7229650563618937,
+      "price": 43.06,
+      "timestamp": "2026-06-28T12:20:17.378950+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=60.9",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08134768974124165,
+      "price": 1576.55,
+      "timestamp": "2026-06-28T12:20:17.379875+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=50.4",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 71.68,
-  "last_updated": "2026-06-28T09:29:06.658641+00:00"
+  "last_price": 1576.55,
+  "last_updated": "2026-06-28T12:20:17.380210+00:00"
 }
