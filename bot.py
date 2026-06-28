@@ -1,16 +1,8 @@
 #!/usr/bin/env python3
 """
-Crypto trading bot -- EMA-crossover + RSI-momentumfilter + ATR risk management.
-Alles in 1 bestand, bedoeld om te draaien via een GitHub Actions schedule
-(elke run = 1 cyclus, state wordt opgeslagen in data/paper_state.json en
-door de workflow terug naar de repo gecommit).
-
-Standaard: paper trading (simulatie, geen echte orders).
-Live trading vereist EXPLICIET: mode: live in config.yaml +
-EXCHANGE_API_KEY/EXCHANGE_API_SECRET + CONFIRM_LIVE_TRADING=YES_I_UNDERSTAND_THE_RISK
-als environment variables (in GitHub: Settings > Secrets and variables > Actions).
-
-Dit is geen financieel advies. Crypto-trading is risicovol.
+Crypto trading bot -- multi-asset scanner met EMA-momentum + RSI + ATR risicobeheer.
+Scant elke run alle geconfigureerde symbolen en koopt de sterkste trend.
+Paper-trading standaard; live trading vereist expliciete configuratie.
 """
 
 import argparse
@@ -63,6 +55,7 @@ class Signal:
     reason: str
     price: float
     atr: float
+    strength: float = 0.0   # EMA-spread % — hoger = sterkere trend
 
 
 class EmaRsiAtrStrategy:
@@ -88,13 +81,13 @@ class EmaRsiAtrStrategy:
         if len(df) < max(self.ema_slow, self.rsi_period, self.atr_period) + 2:
             return None
         curr = df.iloc[-1]
-        # Enter whenever EMA fast is above EMA slow (uptrend) and RSI confirms momentum.
-        # State-based check so the bot never misses a crossover that happened between runs.
+        # State-based: enter whenever EMA fast is above EMA slow AND RSI confirms momentum.
         if curr["ema_fast"] > curr["ema_slow"] and curr["rsi"] > self.rsi_buy_threshold:
+            strength = (curr["ema_fast"] - curr["ema_slow"]) / curr["ema_slow"] * 100
             return Signal(
                 "buy",
                 f"EMA{self.ema_fast} > EMA{self.ema_slow}, RSI={curr['rsi']:.1f} > {self.rsi_buy_threshold}",
-                curr["close"], curr["atr"],
+                curr["close"], curr["atr"], strength,
             )
         return None
 
@@ -102,9 +95,9 @@ class EmaRsiAtrStrategy:
         curr, prev = df.iloc[-1], df.iloc[-2]
         price = curr["close"]
         if price <= stop_loss:
-            return Signal("sell", f"Stop-loss geraakt ({price:.2f} <= {stop_loss:.2f})", price, curr["atr"])
+            return Signal("sell", f"Stop-loss geraakt ({price:.4g} <= {stop_loss:.4g})", price, curr["atr"])
         if price >= take_profit:
-            return Signal("sell", f"Take-profit geraakt ({price:.2f} >= {take_profit:.2f})", price, curr["atr"])
+            return Signal("sell", f"Take-profit geraakt ({price:.4g} >= {take_profit:.4g})", price, curr["atr"])
         crossed_down = prev["ema_fast"] >= prev["ema_slow"] and curr["ema_fast"] < curr["ema_slow"]
         if crossed_down:
             return Signal("sell", f"EMA{self.ema_fast} kruist onder EMA{self.ema_slow} (trendomkeer)", price, curr["atr"])
@@ -136,7 +129,7 @@ def position_size(balance_quote: float, entry_price: float, stop_loss: float, ri
 
 
 # ============================================================
-# Paper trading portfolio (persistente state in JSON)
+# Paper trading portfolio
 # ============================================================
 
 @dataclass
@@ -147,6 +140,7 @@ class Position:
     stop_loss: float
     take_profit: float
     opened_at: str
+    symbol: str = "BTC/USD"
 
 
 @dataclass
@@ -157,6 +151,7 @@ class Trade:
     timestamp: str
     reason: str
     pnl_quote: Optional[float] = None
+    symbol: str = "BTC/USD"
 
 
 class PaperPortfolio:
@@ -175,12 +170,20 @@ class PaperPortfolio:
             with open(self.state_path) as f:
                 data = json.load(f)
             self.balance_quote = data["balance_quote"]
-            self.position = Position(**data["position"]) if data.get("position") else None
-            self.trade_log = [Trade(**t) for t in data.get("trade_log", [])]
+            if data.get("position"):
+                pos = data["position"]
+                pos.setdefault("symbol", "BTC/USD")
+                self.position = Position(**pos)
+            else:
+                self.position = None
+            self.trade_log = []
+            for t in data.get("trade_log", []):
+                t.setdefault("symbol", "BTC/USD")
+                self.trade_log.append(Trade(**t))
             self.last_price = data.get("last_price", 0.0)
             self.last_updated = data.get("last_updated")
         else:
-            self.save()  # Maak state-bestand aan met beginwaarden zodat git het kan volgen
+            self.save()
 
     def save(self):
         data = {
@@ -200,25 +203,32 @@ class PaperPortfolio:
         self.last_updated = datetime.now(timezone.utc).isoformat()
         self.save()
 
-    def open_long(self, amount, price, stop_loss, take_profit, reason):
+    def open_long(self, symbol: str, amount: float, price: float, stop_loss: float, take_profit: float, reason: str):
         cost = amount * price
         if cost > self.balance_quote:
             amount = self.balance_quote / price
             cost = amount * price
         self.balance_quote -= cost
-        self.position = Position("long", amount, price, stop_loss, take_profit,
-                                  datetime.now(timezone.utc).isoformat())
-        self.trade_log.append(Trade("buy", amount, price, datetime.now(timezone.utc).isoformat(), reason))
+        self.position = Position(
+            "long", amount, price, stop_loss, take_profit,
+            datetime.now(timezone.utc).isoformat(), symbol=symbol,
+        )
+        self.trade_log.append(Trade(
+            "buy", amount, price, datetime.now(timezone.utc).isoformat(), reason, symbol=symbol,
+        ))
         self.save()
 
-    def close_long(self, price, reason):
+    def close_long(self, price: float, reason: str):
         if not self.position:
             return
+        symbol = self.position.symbol
         proceeds = self.position.amount * price
         pnl = proceeds - self.position.amount * self.position.entry_price
         self.balance_quote += proceeds
-        self.trade_log.append(Trade("sell", self.position.amount, price,
-                                     datetime.now(timezone.utc).isoformat(), reason, pnl_quote=pnl))
+        self.trade_log.append(Trade(
+            "sell", self.position.amount, price,
+            datetime.now(timezone.utc).isoformat(), reason, pnl_quote=pnl, symbol=symbol,
+        ))
         self.position = None
         self.save()
 
@@ -229,7 +239,7 @@ class PaperPortfolio:
 
 
 # ============================================================
-# Exchange-wrapper (ccxt) met veiligheidschecks voor live trading
+# Exchange-wrapper (ccxt)
 # ============================================================
 
 class ExchangeClient:
@@ -246,7 +256,8 @@ class ExchangeClient:
         exchange_class = getattr(ccxt, self.exchange_id)
         config = {"enableRateLimit": True}
         if self.mode == "live":
-            api_key, api_secret = os.environ.get("EXCHANGE_API_KEY"), os.environ.get("EXCHANGE_API_SECRET")
+            api_key = os.environ.get("EXCHANGE_API_KEY")
+            api_secret = os.environ.get("EXCHANGE_API_SECRET")
             if not api_key or not api_secret:
                 raise RuntimeError("Live mode vereist EXCHANGE_API_KEY en EXCHANGE_API_SECRET als env vars.")
             config["apiKey"], config["secret"] = api_key, api_secret
@@ -263,7 +274,7 @@ class ExchangeClient:
         if os.environ.get("CONFIRM_LIVE_TRADING") != "YES_I_UNDERSTAND_THE_RISK":
             raise RuntimeError(
                 "Live trading geblokkeerd: zet CONFIRM_LIVE_TRADING exact op "
-                "'YES_I_UNDERSTAND_THE_RISK' (bewuste extra stap)."
+                "'YES_I_UNDERSTAND_THE_RISK'."
             )
 
     def create_market_buy_order(self, symbol: str, amount: float):
@@ -282,6 +293,31 @@ class ExchangeClient:
 
 
 # ============================================================
+# Multi-asset scanner
+# ============================================================
+
+def scan_symbols(symbols: list, exchange: ExchangeClient, strategy: EmaRsiAtrStrategy, timeframe: str):
+    """Fetch OHLCV voor elk symbool, bereken indicatoren en retourneer kansen gesorteerd op sterkte."""
+    candidates = []
+    for sym in symbols:
+        try:
+            df = exchange.fetch_ohlcv_df(sym, timeframe, limit=200)
+            df = strategy.compute_indicators(df)
+            sig = strategy.generate_entry_signal(df)
+            curr = df.iloc[-1]
+            if sig:
+                log(f"  + {sym}: RSI={curr['rsi']:.1f}  EMA-spread={sig.strength:.3f}%  prijs={curr['close']:.4g}")
+                candidates.append((sym, sig))
+            else:
+                trend = "omhoog" if curr["ema_fast"] > curr["ema_slow"] else "omlaag"
+                log(f"  - {sym}: RSI={curr['rsi']:.1f}  trend={trend}  geen signaal")
+        except Exception as e:
+            log(f"  ! {sym}: overgeslagen — {e}")
+    candidates.sort(key=lambda x: x[1].strength, reverse=True)
+    return candidates
+
+
+# ============================================================
 # Hoofdlogica
 # ============================================================
 
@@ -291,38 +327,49 @@ def log(msg: str):
 
 
 def run_cycle(config, exchange, strategy, portfolio, risk_params):
-    symbol, timeframe = config["symbol"], config["timeframe"]
-    df = exchange.fetch_ohlcv_df(symbol, timeframe, limit=200)
-    df = strategy.compute_indicators(df)
-    current_price = df.iloc[-1]["close"]
+    symbols = config.get("symbols") or [config.get("symbol", "BTC/USD")]
+    timeframe = config["timeframe"]
 
     if portfolio.position is None:
-        signal = strategy.generate_entry_signal(df)
-        if signal and signal.action == "buy":
+        log(f"Scannen {len(symbols)} symbolen ({timeframe})...")
+        candidates = scan_symbols(symbols, exchange, strategy, timeframe)
+
+        if candidates:
+            sym, signal = candidates[0]
+            log(f"Beste kans: {sym}  sterkte={signal.strength:.3f}%")
             stop_loss, take_profit = strategy.compute_stop_and_target(signal.price, signal.atr)
             amount = position_size(portfolio.balance_quote, signal.price, stop_loss, risk_params)
             if amount <= 0:
-                log("Entry-signaal genegeerd: positiegrootte 0 (te weinig saldo / ongeldige stop).")
-                return
-            log(f"BUY: {signal.reason} | amount={amount:.6f} @ {signal.price:.2f} | SL={stop_loss:.2f} TP={take_profit:.2f}")
-            if config["mode"] == "live":
-                exchange.create_market_buy_order(symbol, amount)
-            portfolio.open_long(amount, signal.price, stop_loss, take_profit, signal.reason)
+                log("Signaal genegeerd: positiegrootte 0 (te weinig saldo of ongeldige stop).")
+            else:
+                log(f"BUY {sym}: {signal.reason} | {amount:.6f} @ {signal.price:.4g} | SL={stop_loss:.4g} TP={take_profit:.4g}")
+                if config["mode"] == "live":
+                    exchange.create_market_buy_order(sym, amount)
+                portfolio.open_long(sym, amount, signal.price, stop_loss, take_profit, signal.reason)
         else:
-            log(f"Geen positie, geen entry-signaal. Prijs={current_price:.2f}")
+            log(f"Geen entry-signalen voor alle {len(symbols)} symbolen.")
+
+        try:
+            df0 = exchange.fetch_ohlcv_df(symbols[0], timeframe, limit=5)
+            portfolio.update_price(df0.iloc[-1]["close"])
+        except Exception:
+            portfolio.update_price(portfolio.last_price)
+
     else:
         pos = portfolio.position
+        df = exchange.fetch_ohlcv_df(pos.symbol, timeframe, limit=200)
+        df = strategy.compute_indicators(df)
+        current_price = df.iloc[-1]["close"]
         signal = strategy.check_exit_signal(df, pos.stop_loss, pos.take_profit)
         if signal and signal.action == "sell":
-            log(f"SELL: {signal.reason} | amount={pos.amount:.6f} @ {signal.price:.2f}")
+            log(f"SELL {pos.symbol}: {signal.reason} | {pos.amount:.6f} @ {signal.price:.4g}")
             if config["mode"] == "live":
-                exchange.create_market_sell_order(symbol, pos.amount)
+                exchange.create_market_sell_order(pos.symbol, pos.amount)
             portfolio.close_long(signal.price, signal.reason)
         else:
-            log(f"Positie open: entry={pos.entry_price:.2f} prijs={current_price:.2f} "
-                f"SL={pos.stop_loss:.2f} TP={pos.take_profit:.2f} | equity={portfolio.equity(current_price):.2f}")
-
-    portfolio.update_price(current_price)
+            log(f"Positie {pos.symbol}: entry={pos.entry_price:.4g}  prijs={current_price:.4g}  "
+                f"SL={pos.stop_loss:.4g}  TP={pos.take_profit:.4g}  equity={portfolio.equity(current_price):.2f}")
+        portfolio.update_price(current_price)
 
 
 def main():
@@ -334,9 +381,10 @@ def main():
     with open(args.config) as f:
         config = yaml.safe_load(f)
 
-    log(f"Bot gestart in '{config['mode'].upper()}' mode | {config['symbol']} | {config['timeframe']}")
+    symbols = config.get("symbols") or [config.get("symbol", "BTC/USD")]
+    log(f"Bot gestart | mode={config['mode'].upper()} | {len(symbols)} symbolen | {config['timeframe']}")
     if config["mode"] == "live":
-        log("LIVE MODE ACTIEF -- er kunnen echte orders met echt geld geplaatst worden.")
+        log("LIVE MODE ACTIEF — echte orders met echt geld zijn mogelijk.")
 
     exchange = ExchangeClient(config["exchange"], config["mode"], log)
     strategy = EmaRsiAtrStrategy(config["strategy"])

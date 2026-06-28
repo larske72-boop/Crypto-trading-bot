@@ -389,10 +389,10 @@ function botCard(s){
       <span class="stag">ATR ×2.0 SL</span>
       <span class="stag">ATR ×3.0 TP</span>
       <span class="stag">15m candles</span>
-      <span class="stag">Paper mode</span>
+      <span class="stag">8 munten</span>
     </div>
     <div class="bot-meta">
-      <span>Kraken · BTC/USD</span>
+      <span>Kraken · BTC ETH SOL XRP ADA DOT LTC AVAX</span>
       <span class="bot-upd">${s?.last_updated?ago(s.last_updated):'—'}</span>
     </div>
   </div>`;
@@ -501,9 +501,10 @@ function render(s){
     <div class="sec">${pos?'<span class="dot"></span>':''}<span>Huidige positie</span><div class="sec-line"></div></div>
     <div class="card">
       ${pos?`
+        <div class="row"><span class="rl">Munt</span><span style="font-weight:700">${pos.symbol||'—'}</span></div>
         <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:700">▲ LONG</span></div>
         <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price)}</span></div>
-        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)} BTC</span></div>
+        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)} ${(pos.symbol||'BTC/USD').split('/')[0]}</span></div>
         <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}${liveP?'<span style="font-size:.6rem;color:var(--green);margin-left:4px">● live</span>':''}</span></div>
         <div class="row"><span class="rl">Ongerealiseerde P&amp;L</span><span class="${cc(unreal)}" style="font-weight:700">${sg(unreal)}${usd(unreal)}</span></div>
         <div class="row"><span class="rl">Stop-loss</span><span class="red">${usd(pos.stop_loss)}</span></div>
@@ -522,9 +523,9 @@ function render(s){
             <div class="tl">
               <div class="t-icon t-icon-${t.side}">${t.side==='buy'?'↑':'↓'}</div>
               <div>
-                <div class="ttype ttype-${t.side}">${t.side==='buy'?'Koop':'Verkoop'}</div>
+                <div class="ttype ttype-${t.side}">${t.side==='buy'?'Koop':'Verkoop'} <span style="font-weight:500;opacity:.7">${t.symbol||'BTC/USD'}</span></div>
                 <div class="tdate">${dt(t.timestamp)}</div>
-                <div class="tamt">${Number(t.amount).toFixed(5)} BTC</div>
+                <div class="tamt">${Number(t.amount).toFixed(5)} ${(t.symbol||'BTC/USD').split('/')[0]}</div>
               </div>
             </div>
             <div class="tright">
