@@ -3,267 +3,355 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="theme-color" content="#0f1117" />
+  <meta name="theme-color" content="#06060f" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Crypto Bot" />
   <title>Crypto Bot</title>
   <link rel="manifest" href="manifest.json" />
-  <link rel="apple-touch-icon" href="icon.svg" />
   <style>
     :root {
-      --bg:     #0f1117;
-      --card:   #1a1d27;
-      --border: #2a2d3e;
-      --text:   #e2e8f0;
-      --muted:  #94a3b8;
-      --green:  #34d399;
-      --red:    #f87171;
-      --blue:   #60a5fa;
+      --bg:    #06060f;
+      --card:  rgba(255,255,255,0.04);
+      --bdr:   rgba(255,255,255,0.07);
+      --text:  #ffffff;
+      --muted: #8892a4;
+      --green: #00e87a;
+      --red:   #ff4f6d;
+      --blue:  #4c9eff;
     }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
       background: var(--bg);
       color: var(--text);
       min-height: 100dvh;
-      padding: max(env(safe-area-inset-top), 16px) 16px
-               max(env(safe-area-inset-bottom), 16px);
+      overflow-x: hidden;
     }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 0 20px;
+    /* Ambient glow background */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 80% -10%, rgba(0,232,122,.09) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 40% at -10% 80%, rgba(76,158,255,.07) 0%, transparent 55%);
+      pointer-events: none; z-index: 0;
     }
-    .logo { font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+
+    .wrap {
+      position: relative; z-index: 1;
+      padding: max(env(safe-area-inset-top),22px) 16px max(env(safe-area-inset-bottom),28px);
+      max-width: 480px; margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-bottom: 26px;
+    }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo-box {
+      width: 38px; height: 38px; border-radius: 11px;
+      background: linear-gradient(135deg,rgba(0,232,122,.18),rgba(76,158,255,.18));
+      border: 1px solid rgba(0,232,122,.25);
+      display: flex; align-items: center; justify-content: center; font-size: 19px;
+    }
+    .logo-name { font-size: 1.05rem; font-weight: 700; letter-spacing: -.01em; }
 
     .badge {
-      font-size: 0.65rem; font-weight: 700;
-      padding: 4px 10px; border-radius: 999px;
-      text-transform: uppercase; letter-spacing: .08em;
+      font-size: .6rem; font-weight: 700;
+      padding: 5px 13px; border-radius: 999px;
+      text-transform: uppercase; letter-spacing: .1em;
     }
-    .badge-paper   { background:#1e3a5f; color:var(--blue); }
-    .badge-live    { background:#3f1515; color:var(--red); }
-    .badge-unknown { background:#2a2d3e; color:var(--muted); }
+    .badge-paper   { background:rgba(76,158,255,.13);  color:var(--blue);  border:1px solid rgba(76,158,255,.3); }
+    .badge-live    { background:rgba(255,79,109,.13);   color:var(--red);   border:1px solid rgba(255,79,109,.3); }
+    .badge-unknown { background:rgba(136,146,164,.08);  color:var(--muted); border:1px solid rgba(136,146,164,.2); }
 
-    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
-
+    /* ── Cards ── */
     .card {
       background: var(--card);
-      border-radius: 16px;
-      padding: 16px;
+      border: 1px solid var(--bdr);
+      border-radius: 22px;
+      padding: 18px;
       margin-bottom: 10px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
-    .card-sm { background:var(--card); border-radius:16px; padding:14px; }
 
+    /* ── Hero equity card ── */
+    .hero {
+      background: linear-gradient(145deg,rgba(0,232,122,.1),rgba(76,158,255,.08));
+      border: 1px solid rgba(0,232,122,.2);
+      border-radius: 26px;
+      padding: 28px 22px 22px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .hero-lbl {
+      font-size: .65rem; color: var(--muted);
+      text-transform: uppercase; letter-spacing: .12em; margin-bottom: 10px;
+    }
+    .hero-val {
+      font-size: 2.8rem; font-weight: 800; letter-spacing: -.05em;
+      background: linear-gradient(135deg, #fff 40%, var(--green));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-ret {
+      display: inline-flex; align-items: center; gap: 5px;
+      margin-top: 10px; padding: 5px 14px; border-radius: 999px;
+      font-size: .8rem; font-weight: 600;
+    }
+    .hero-ret.pos { background:rgba(0,232,122,.12); color:var(--green); border:1px solid rgba(0,232,122,.2); }
+    .hero-ret.neg { background:rgba(255,79,109,.12); color:var(--red);   border:1px solid rgba(255,79,109,.2); }
+    .hero-ret.neu { background:rgba(136,146,164,.1); color:var(--muted); border:1px solid var(--bdr); }
+
+    /* ── 2-column grid ── */
+    .g2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
+    .mini {
+      background:var(--card); border:1px solid var(--bdr); border-radius:18px;
+      padding:15px; backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
+    }
     .lbl {
-      font-size: .68rem; color: var(--muted);
-      text-transform: uppercase; letter-spacing: .06em;
-      margin-bottom: 5px;
+      font-size:.62rem; color:var(--muted);
+      text-transform:uppercase; letter-spacing:.1em; margin-bottom:5px;
     }
-    .val { font-size: 1.45rem; font-weight: 700; letter-spacing: -.02em; }
-    .sub { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+    .val { font-size:1.15rem; font-weight:700; letter-spacing:-.02em; }
+    .sub { font-size:.7rem; margin-top:3px; font-weight:500; }
 
-    .sec { font-size:.68rem; color:var(--muted); text-transform:uppercase;
-           letter-spacing:.06em; margin:18px 0 8px; }
+    /* ── Section title ── */
+    .sec {
+      display:flex; align-items:center; gap:8px;
+      font-size:.62rem; color:var(--muted);
+      text-transform:uppercase; letter-spacing:.1em;
+      margin:18px 0 10px;
+    }
+    .sec-line { flex:1; height:1px; background:var(--bdr); }
 
+    /* ── Rows ── */
     .row {
       display:flex; justify-content:space-between; align-items:center;
-      padding:10px 0; border-bottom:1px solid var(--border); font-size:.875rem;
+      padding:11px 0; border-bottom:1px solid var(--bdr); font-size:.875rem;
     }
     .row:last-child { border-bottom:none; }
-    .rl { color: var(--muted); }
+    .rl { color:var(--muted); font-size:.8rem; }
 
+    /* ── Trades ── */
     .trade {
       display:flex; justify-content:space-between; align-items:center;
-      padding:11px 0; border-bottom:1px solid var(--border);
+      padding:13px 0; border-bottom:1px solid var(--bdr);
     }
     .trade:last-child { border-bottom:none; }
-    .tl { display:flex; align-items:center; gap:10px; }
-
-    .pill {
-      font-size:.62rem; font-weight:700; padding:3px 8px;
-      border-radius:6px; text-transform:uppercase;
+    .tl { display:flex; align-items:center; gap:11px; }
+    .t-icon {
+      width:38px; height:38px; border-radius:11px;
+      display:flex; align-items:center; justify-content:center;
+      font-size:16px; flex-shrink:0; font-weight:700;
     }
-    .pill-buy  { background:#0d2d1a; color:var(--green); }
-    .pill-sell { background:#2d0d0d; color:var(--red); }
+    .t-icon-buy  { background:rgba(0,232,122,.12); border:1px solid rgba(0,232,122,.2); color:var(--green); }
+    .t-icon-sell { background:rgba(255,79,109,.12); border:1px solid rgba(255,79,109,.2); color:var(--red); }
+    .ttype { font-size:.78rem; font-weight:700; }
+    .ttype-buy { color:var(--green); }
+    .ttype-sell { color:var(--red); }
+    .tdate { font-size:.68rem; color:var(--muted); margin-top:2px; }
+    .tprice { font-size:.875rem; font-weight:600; text-align:right; }
+    .tpnl { font-size:.7rem; text-align:right; margin-top:2px; font-weight:600; }
 
-    .tp { font-size:.875rem; font-weight:600; }
-    .td { font-size:.72rem; color:var(--muted); }
-
-    .dot {
-      display:inline-block; width:7px; height:7px; border-radius:50%;
-      background:var(--green); margin-right:5px;
-      animation: pulse 2s ease-in-out infinite;
-    }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.25} }
-
-    .empty { color:var(--muted); font-size:.875rem; padding:4px 0; }
-
+    /* ── Colors ── */
     .green { color:var(--green); }
     .red   { color:var(--red); }
     .muted { color:var(--muted); }
 
-    footer { text-align:center; font-size:.68rem; color:#475569; margin-top:20px; padding-bottom:8px; }
+    /* ── Live dot ── */
+    .dot {
+      display:inline-block; width:7px; height:7px; border-radius:50%;
+      background:var(--green); flex-shrink:0;
+      animation:pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100%{ opacity:1; box-shadow:0 0 0 0 rgba(0,232,122,.5); }
+      50%    { opacity:.5; box-shadow:0 0 0 5px rgba(0,232,122,0); }
+    }
+
+    /* ── Empty state ── */
+    .empty {
+      text-align:center; padding:56px 16px;
+    }
+    .empty-icon {
+      width:76px; height:76px; border-radius:24px; margin:0 auto 20px;
+      background:linear-gradient(135deg,rgba(0,232,122,.1),rgba(76,158,255,.1));
+      border:1px solid rgba(255,255,255,.08);
+      display:flex; align-items:center; justify-content:center; font-size:34px;
+      animation:float 3.5s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100%{ transform:translateY(0); }
+      50%    { transform:translateY(-10px); }
+    }
+    .empty-title { font-size:1.05rem; font-weight:700; margin-bottom:8px; }
+    .empty-sub   { font-size:.85rem; color:var(--muted); line-height:1.6; }
+    .empty-tag {
+      display:inline-flex; align-items:center; gap:7px;
+      margin-top:20px; padding:7px 16px; border-radius:999px;
+      background:rgba(0,232,122,.08); border:1px solid rgba(0,232,122,.2);
+      font-size:.72rem; color:var(--green);
+    }
+
+    /* ── No position text ── */
+    .no-pos { color:var(--muted); font-size:.875rem; padding:4px 0; }
+
+    footer { text-align:center; font-size:.65rem; color:#3d4759; margin-top:22px; }
   </style>
 </head>
 <body>
+<div class="wrap">
 
-<header>
-  <div class="logo">📈 Crypto Bot</div>
-  <span class="badge badge-unknown" id="badge">Laden</span>
-</header>
+  <header>
+    <div class="logo">
+      <div class="logo-box">📈</div>
+      <div class="logo-name">Crypto Bot</div>
+    </div>
+    <span class="badge badge-unknown" id="badge">Laden</span>
+  </header>
 
-<div id="app"></div>
-<footer id="foot"></footer>
+  <div id="app"></div>
+  <footer id="foot"></footer>
 
+</div>
 <script>
-// ── helpers ──────────────────────────────────────────────────────────────────
-
-function usd(n, d=2) {
-  if (n == null || isNaN(n)) return '—';
-  return '$ ' + Number(n).toLocaleString('nl-NL', {minimumFractionDigits:d, maximumFractionDigits:d});
+function usd(n,d=2){
+  if(n==null||isNaN(n))return'—';
+  return'$ '+Number(n).toLocaleString('nl-NL',{minimumFractionDigits:d,maximumFractionDigits:d});
 }
-
-function dt(iso) {
-  if (!iso) return '—';
-  const d = new Date(iso);
-  return d.toLocaleDateString('nl-NL', {day:'2-digit',month:'2-digit'}) + ' ' +
-         d.toLocaleTimeString('nl-NL', {hour:'2-digit',minute:'2-digit'});
+function dt(iso){
+  if(!iso)return'—';
+  const d=new Date(iso);
+  return d.toLocaleDateString('nl-NL',{day:'2-digit',month:'2-digit'})+' '+
+         d.toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
 }
+function cc(n){return n>0?'green':n<0?'red':'muted';}
+function sg(n){return n>0?'+':'';}
 
-function cls(n) { return n > 0 ? 'green' : n < 0 ? 'red' : 'muted'; }
-function sgn(n) { return n >= 0 ? '+' : ''; }
+function render(s){
+  const app=document.getElementById('app');
+  const badge=document.getElementById('badge');
 
-// ── render ────────────────────────────────────────────────────────────────────
-
-function render(s) {
-  const app  = document.getElementById('app');
-  const badge = document.getElementById('badge');
-
-  if (!s) {
-    badge.textContent = '—';
-    badge.className = 'badge badge-unknown';
-    app.innerHTML = `
-      <div style="text-align:center;padding:70px 20px">
-        <div style="font-size:3rem;margin-bottom:14px">📭</div>
-        <div style="color:var(--muted)">Nog geen data.<br>Wacht tot de bot zijn eerste cyclus heeft gedraaid.</div>
+  if(!s){
+    badge.textContent='—'; badge.className='badge badge-unknown';
+    app.innerHTML=`
+      <div class="empty">
+        <div class="empty-icon">⚡</div>
+        <div class="empty-title">Bot is klaar om te starten</div>
+        <div class="empty-sub">De eerste cyclus wordt elk uur automatisch gestart.<br>Zodra er data is, verschijnt je dashboard hier.</div>
+        <div class="empty-tag"><span class="dot"></span>Wacht op eerste run...</div>
       </div>`;
     return;
   }
 
-  const mode  = s.mode || 'paper';
-  badge.textContent = mode.toUpperCase();
-  badge.className = `badge badge-${mode === 'live' ? 'live' : 'paper'}`;
+  const mode=s.mode||'paper';
+  badge.textContent=mode==='live'?'Live ⚡':'Paper';
+  badge.className=`badge badge-${mode==='live'?'live':'paper'}`;
 
-  const bal    = s.balance_quote || 0;
-  const pos    = s.position;
-  const price  = s.last_price || 0;
-  const upd    = s.last_updated;
-  const trades = (s.trade_log || []).slice().reverse();
+  const bal   = s.balance_quote||0;
+  const pos   = s.position;
+  const price = s.last_price||0;
+  const trades= (s.trade_log||[]).slice().reverse();
+  const closed= trades.filter(t=>t.pnl_quote!=null);
+  const equity= pos&&price ? bal+pos.amount*price : bal;
+  const unreal= pos&&price ? (price-pos.entry_price)*pos.amount : null;
+  const totPnl= closed.reduce((a,t)=>a+t.pnl_quote,0);
+  const startBal=1000;
+  const ret   = (equity-startBal)/startBal*100;
+  const winRate=closed.length?Math.round(closed.filter(t=>t.pnl_quote>0).length/closed.length*100):null;
 
-  const equity  = pos && price ? bal + pos.amount * price : bal;
-  const unreal  = pos && price ? (price - pos.entry_price) * pos.amount : null;
-  const closed  = trades.filter(t => t.pnl_quote != null);
-  const totPnl  = closed.reduce((a, t) => a + t.pnl_quote, 0);
-  const winRate = closed.length ? Math.round(closed.filter(t=>t.pnl_quote>0).length/closed.length*100) : null;
+  const retCls = ret>0?'pos':ret<0?'neg':'neu';
+  const retIcon= ret>0?'▲':ret<0?'▼':'—';
 
-  app.innerHTML = `
-    <!-- Saldo & equity -->
-    <div class="grid2">
-      <div class="card-sm">
-        <div class="lbl">Saldo (cash)</div>
+  app.innerHTML=`
+    <div class="hero">
+      <div class="hero-lbl">Totale portefeuillewaarde</div>
+      <div class="hero-val">${usd(equity)}</div>
+      <div class="hero-ret ${retCls}">${retIcon} ${sg(ret)}${ret.toFixed(2)}% rendement</div>
+    </div>
+
+    <div class="g2">
+      <div class="mini">
+        <div class="lbl">Saldo</div>
         <div class="val">${usd(bal)}</div>
       </div>
-      <div class="card-sm">
-        <div class="lbl">Totale waarde</div>
-        <div class="val">${usd(equity)}</div>
-        ${unreal != null ? `<div class="sub ${cls(unreal)}">${sgn(unreal)}${usd(unreal)} open</div>` : ''}
+      <div class="mini">
+        <div class="lbl">Gerealiseerde P&L</div>
+        <div class="val ${cc(totPnl)}">${sg(totPnl)}${usd(totPnl)}</div>
       </div>
     </div>
 
-    <!-- Open positie -->
-    <div class="sec">${pos ? '<span class="dot"></span>' : ''}Huidige positie</div>
+    <div class="g2">
+      <div class="mini">
+        <div class="lbl">Winstpercentage</div>
+        <div class="val">${winRate!=null?winRate+'%':'—'}</div>
+      </div>
+      <div class="mini">
+        <div class="lbl">Gesloten trades</div>
+        <div class="val">${closed.length}</div>
+      </div>
+    </div>
+
+    <div class="sec">
+      ${pos?'<span class="dot"></span>':''}<span>Huidige positie</span>
+      <div class="sec-line"></div>
+    </div>
     <div class="card">
-      ${pos ? `
-        <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:600">LONG</span></div>
+      ${pos?`
+        <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:700">▲ LONG</span></div>
         <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price)}</span></div>
         <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)}</span></div>
-        <div class="row"><span class="rl">Huidige prijs</span><span>${price ? usd(price) : '—'}</span></div>
-        <div class="row"><span class="rl">Ongerealiseerde P&L</span><span class="${cls(unreal)}">${sgn(unreal)}${usd(unreal)}</span></div>
+        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}</span></div>
+        <div class="row"><span class="rl">Ongerealiseerde P&L</span>
+          <span class="${cc(unreal)}" style="font-weight:700">${sg(unreal)}${usd(unreal)}</span></div>
         <div class="row"><span class="rl">Stop-loss</span><span class="red">${usd(pos.stop_loss)}</span></div>
         <div class="row"><span class="rl">Take-profit</span><span class="green">${usd(pos.take_profit)}</span></div>
         <div class="row"><span class="rl">Geopend op</span><span>${dt(pos.opened_at)}</span></div>
-      ` : '<div class="empty">Geen open positie</div>'}
+      `:`<div class="no-pos">Geen open positie — wacht op koop-signaal</div>`}
     </div>
 
-    <!-- Statistieken -->
-    <div class="sec">Statistieken</div>
+    <div class="sec"><span>Recente trades</span><div class="sec-line"></div></div>
     <div class="card">
-      <div class="row">
-        <span class="rl">Gerealiseerde P&L</span>
-        <span class="${cls(totPnl)}">${sgn(totPnl)}${usd(totPnl)}</span>
-      </div>
-      <div class="row">
-        <span class="rl">Winstpercentage</span>
-        <span>${winRate != null ? winRate + '%' : '—'}</span>
-      </div>
-      <div class="row">
-        <span class="rl">Gesloten trades</span>
-        <span>${closed.length}</span>
-      </div>
-      <div class="row">
-        <span class="rl">Laatste update</span>
-        <span>${dt(upd)}</span>
-      </div>
-    </div>
-
-    <!-- Trades -->
-    <div class="sec">Recente trades</div>
-    <div class="card">
-      ${trades.length === 0
-        ? '<div class="empty">Nog geen trades</div>'
-        : trades.slice(0, 20).map(t => `
+      ${trades.length===0
+        ?`<div class="no-pos">Nog geen trades uitgevoerd</div>`
+        :trades.slice(0,20).map(t=>`
           <div class="trade">
             <div class="tl">
-              <span class="pill pill-${t.side}">${t.side === 'buy' ? 'Koop' : 'Verkoop'}</span>
+              <div class="t-icon t-icon-${t.side}">${t.side==='buy'?'↑':'↓'}</div>
               <div>
-                <div class="tp">${usd(t.price)}</div>
-                <div class="td">${dt(t.timestamp)}</div>
+                <div class="ttype ttype-${t.side}">${t.side==='buy'?'Koop':'Verkoop'}</div>
+                <div class="tdate">${dt(t.timestamp)}</div>
               </div>
             </div>
-            <div style="text-align:right">
-              <div style="font-size:.78rem;color:var(--muted)">${Number(t.amount).toFixed(5)}</div>
-              ${t.pnl_quote != null
-                ? `<div class="${cls(t.pnl_quote)}" style="font-size:.75rem">${sgn(t.pnl_quote)}${usd(t.pnl_quote)}</div>`
-                : ''}
+            <div>
+              <div class="tprice">${usd(t.price)}</div>
+              ${t.pnl_quote!=null
+                ?`<div class="tpnl ${cc(t.pnl_quote)}">${sg(t.pnl_quote)}${usd(t.pnl_quote)}</div>`
+                :`<div class="tpnl muted">${Number(t.amount).toFixed(5)}</div>`}
             </div>
           </div>`).join('')}
     </div>
   `;
 }
 
-// ── data ─────────────────────────────────────────────────────────────────────
-
-async function refresh() {
-  let state = null;
-  try {
-    const r = await fetch('./state.json?_=' + Date.now());
-    if (r.ok) state = await r.json();
-  } catch {}
-  render(state);
-  document.getElementById('foot').textContent =
-    'Bijgewerkt: ' + new Date().toLocaleTimeString('nl-NL') + ' · Bot draait elk uur';
+async function refresh(){
+  let s=null;
+  try{ const r=await fetch('./state.json?_='+Date.now()); if(r.ok)s=await r.json(); }catch{}
+  render(s);
+  document.getElementById('foot').textContent=
+    'Bijgewerkt: '+new Date().toLocaleTimeString('nl-NL')+' · Automatisch elke minuut';
 }
 
 refresh();
-setInterval(refresh, 60000);
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').catch(() => {});
-}
+setInterval(refresh,60000);
+if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
 </script>
 </body>
 </html>
