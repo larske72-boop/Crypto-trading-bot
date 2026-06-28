@@ -81,14 +81,29 @@ class EmaRsiAtrStrategy:
         if len(df) < max(self.ema_slow, self.rsi_period, self.atr_period) + 2:
             return None
         curr = df.iloc[-1]
-        # State-based: enter whenever EMA fast is above EMA slow AND RSI confirms momentum.
+
+        # Signaal A: EMA-uptrend + RSI-momentum (trend-following)
         if curr["ema_fast"] > curr["ema_slow"] and curr["rsi"] > self.rsi_buy_threshold:
             strength = (curr["ema_fast"] - curr["ema_slow"]) / curr["ema_slow"] * 100
             return Signal(
                 "buy",
-                f"EMA{self.ema_fast} > EMA{self.ema_slow}, RSI={curr['rsi']:.1f} > {self.rsi_buy_threshold}",
+                f"Trend omhoog: EMA{self.ema_fast}>{self.ema_slow}, RSI={curr['rsi']:.1f}",
                 curr["close"], curr["atr"], strength,
             )
+
+        # Signaal B: RSI-oververkoop herstel (koop de dip)
+        # RSI was recent oversold (< 32) en herstelt nu naar 32-55 zone.
+        recent_rsi = df["rsi"].iloc[-6:-1]
+        oversold_recently = recent_rsi.min() < 32
+        rsi_recovering = 32 <= curr["rsi"] <= 55
+        if oversold_recently and rsi_recovering:
+            strength = (32 - recent_rsi.min()) * 0.05  # lager dan trend-signaal
+            return Signal(
+                "buy",
+                f"RSI-herstel: laag={recent_rsi.min():.1f} nu={curr['rsi']:.1f} (oververkoop voorbij)",
+                curr["close"], curr["atr"], strength,
+            )
+
         return None
 
     def check_exit_signal(self, df: pd.DataFrame, stop_loss: float, take_profit: float) -> Optional[Signal]:
@@ -98,6 +113,8 @@ class EmaRsiAtrStrategy:
             return Signal("sell", f"Stop-loss geraakt ({price:.4g} <= {stop_loss:.4g})", price, curr["atr"])
         if price >= take_profit:
             return Signal("sell", f"Take-profit geraakt ({price:.4g} >= {take_profit:.4g})", price, curr["atr"])
+        if curr["rsi"] > 72:
+            return Signal("sell", f"RSI overbought exit ({curr['rsi']:.1f} > 72)", price, curr["atr"])
         crossed_down = prev["ema_fast"] >= prev["ema_slow"] and curr["ema_fast"] < curr["ema_slow"]
         if crossed_down:
             return Signal("sell", f"EMA{self.ema_fast} kruist onder EMA{self.ema_slow} (trendomkeer)", price, curr["atr"])
