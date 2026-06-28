@@ -11,7 +11,7 @@ mode: paper
 # ── Exchange & markt ──────────────────────────────────────────────────────────
 exchange: kraken        # Elke CCXT-exchange-id (kraken, bybit, kucoin, ...)
 symbol: BTC/USD         # Handelspaar (Kraken gebruikt USD, niet USDT)
-timeframe: 1h           # Candle-interval (1m, 5m, 15m, 1h, 4h, 1d, ...)
+timeframe: 15m          # Candle-interval (1m, 5m, 15m, 1h, 4h, 1d, ...)
 
 # ── Strategie-parameters ─────────────────────────────────────────────────────
 strategy:

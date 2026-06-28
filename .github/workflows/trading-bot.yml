@@ -4,7 +4,7 @@ on:
   # Draait elk uur op het hele uur (pas aan naar jouw timeframe).
   # Verander naar bijv. "*/15 * * * *" voor 15-minuten candles.
   schedule:
-    - cron: "0 * * * *"
+    - cron: "*/15 * * * *"
 
   # Handmatig starten via GitHub UI / API
   workflow_dispatch:
