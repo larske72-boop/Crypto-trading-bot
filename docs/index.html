@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1117" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Crypto Bot" />
+  <title>Crypto Bot</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <style>
+    :root {
+      --bg:     #0f1117;
+      --card:   #1a1d27;
+      --border: #2a2d3e;
+      --text:   #e2e8f0;
+      --muted:  #94a3b8;
+      --green:  #34d399;
+      --red:    #f87171;
+      --blue:   #60a5fa;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      padding: max(env(safe-area-inset-top), 16px) 16px
+               max(env(safe-area-inset-bottom), 16px);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0 20px;
+    }
+    .logo { font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+
+    .badge {
+      font-size: 0.65rem; font-weight: 700;
+      padding: 4px 10px; border-radius: 999px;
+      text-transform: uppercase; letter-spacing: .08em;
+    }
+    .badge-paper   { background:#1e3a5f; color:var(--blue); }
+    .badge-live    { background:#3f1515; color:var(--red); }
+    .badge-unknown { background:#2a2d3e; color:var(--muted); }
+
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 10px;
+    }
+    .card-sm { background:var(--card); border-radius:16px; padding:14px; }
+
+    .lbl {
+      font-size: .68rem; color: var(--muted);
+      text-transform: uppercase; letter-spacing: .06em;
+      margin-bottom: 5px;
+    }
+    .val { font-size: 1.45rem; font-weight: 700; letter-spacing: -.02em; }
+    .sub { font-size: .72rem; color: var(--muted); margin-top: 2px; }
+
+    .sec { font-size:.68rem; color:var(--muted); text-transform:uppercase;
+           letter-spacing:.06em; margin:18px 0 8px; }
+
+    .row {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 0; border-bottom:1px solid var(--border); font-size:.875rem;
+    }
+    .row:last-child { border-bottom:none; }
+    .rl { color: var(--muted); }
+
+    .trade {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:11px 0; border-bottom:1px solid var(--border);
+    }
+    .trade:last-child { border-bottom:none; }
+    .tl { display:flex; align-items:center; gap:10px; }
+
+    .pill {
+      font-size:.62rem; font-weight:700; padding:3px 8px;
+      border-radius:6px; text-transform:uppercase;
+    }
+    .pill-buy  { background:#0d2d1a; color:var(--green); }
+    .pill-sell { background:#2d0d0d; color:var(--red); }
+
+    .tp { font-size:.875rem; font-weight:600; }
+    .td { font-size:.72rem; color:var(--muted); }
+
+    .dot {
+      display:inline-block; width:7px; height:7px; border-radius:50%;
+      background:var(--green); margin-right:5px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.25} }
+
+    .empty { color:var(--muted); font-size:.875rem; padding:4px 0; }
+
+    .green { color:var(--green); }
+    .red   { color:var(--red); }
+    .muted { color:var(--muted); }
+
+    footer { text-align:center; font-size:.68rem; color:#475569; margin-top:20px; padding-bottom:8px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📈 Crypto Bot</div>
+  <span class="badge badge-unknown" id="badge">Laden</span>
+</header>
+
+<div id="app"></div>
+<footer id="foot"></footer>
+
+<script>
+// ── helpers ──────────────────────────────────────────────────────────────────
+
+function usd(n, d=2) {
+  if (n == null || isNaN(n)) return '—';
+  return '$ ' + Number(n).toLocaleString('nl-NL', {minimumFractionDigits:d, maximumFractionDigits:d});
+}
+
+function dt(iso) {
+  if (!iso) return '—';
+  const d = new Date(iso);
+  return d.toLocaleDateString('nl-NL', {day:'2-digit',month:'2-digit'}) + ' ' +
+         d.toLocaleTimeString('nl-NL', {hour:'2-digit',minute:'2-digit'});
+}
+
+function cls(n) { return n > 0 ? 'green' : n < 0 ? 'red' : 'muted'; }
+function sgn(n) { return n >= 0 ? '+' : ''; }
+
+// ── render ────────────────────────────────────────────────────────────────────
+
+function render(s) {
+  const app  = document.getElementById('app');
+  const badge = document.getElementById('badge');
+
+  if (!s) {
+    badge.textContent = '—';
+    badge.className = 'badge badge-unknown';
+    app.innerHTML = `
+      <div style="text-align:center;padding:70px 20px">
+        <div style="font-size:3rem;margin-bottom:14px">📭</div>
+        <div style="color:var(--muted)">Nog geen data.<br>Wacht tot de bot zijn eerste cyclus heeft gedraaid.</div>
+      </div>`;
+    return;
+  }
+
+  const mode  = s.mode || 'paper';
+  badge.textContent = mode.toUpperCase();
+  badge.className = `badge badge-${mode === 'live' ? 'live' : 'paper'}`;
+
+  const bal    = s.balance_quote || 0;
+  const pos    = s.position;
+  const price  = s.last_price || 0;
+  const upd    = s.last_updated;
+  const trades = (s.trade_log || []).slice().reverse();
+
+  const equity  = pos && price ? bal + pos.amount * price : bal;
+  const unreal  = pos && price ? (price - pos.entry_price) * pos.amount : null;
+  const closed  = trades.filter(t => t.pnl_quote != null);
+  const totPnl  = closed.reduce((a, t) => a + t.pnl_quote, 0);
+  const winRate = closed.length ? Math.round(closed.filter(t=>t.pnl_quote>0).length/closed.length*100) : null;
+
+  app.innerHTML = `
+    <!-- Saldo & equity -->
+    <div class="grid2">
+      <div class="card-sm">
+        <div class="lbl">Saldo (cash)</div>
+        <div class="val">${usd(bal)}</div>
+      </div>
+      <div class="card-sm">
+        <div class="lbl">Totale waarde</div>
+        <div class="val">${usd(equity)}</div>
+        ${unreal != null ? `<div class="sub ${cls(unreal)}">${sgn(unreal)}${usd(unreal)} open</div>` : ''}
+      </div>
+    </div>
+
+    <!-- Open positie -->
+    <div class="sec">${pos ? '<span class="dot"></span>' : ''}Huidige positie</div>
+    <div class="card">
+      ${pos ? `
+        <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:600">LONG</span></div>
+        <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price)}</span></div>
+        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)}</span></div>
+        <div class="row"><span class="rl">Huidige prijs</span><span>${price ? usd(price) : '—'}</span></div>
+        <div class="row"><span class="rl">Ongerealiseerde P&L</span><span class="${cls(unreal)}">${sgn(unreal)}${usd(unreal)}</span></div>
+        <div class="row"><span class="rl">Stop-loss</span><span class="red">${usd(pos.stop_loss)}</span></div>
+        <div class="row"><span class="rl">Take-profit</span><span class="green">${usd(pos.take_profit)}</span></div>
+        <div class="row"><span class="rl">Geopend op</span><span>${dt(pos.opened_at)}</span></div>
+      ` : '<div class="empty">Geen open positie</div>'}
+    </div>
+
+    <!-- Statistieken -->
+    <div class="sec">Statistieken</div>
+    <div class="card">
+      <div class="row">
+        <span class="rl">Gerealiseerde P&L</span>
+        <span class="${cls(totPnl)}">${sgn(totPnl)}${usd(totPnl)}</span>
+      </div>
+      <div class="row">
+        <span class="rl">Winstpercentage</span>
+        <span>${winRate != null ? winRate + '%' : '—'}</span>
+      </div>
+      <div class="row">
+        <span class="rl">Gesloten trades</span>
+        <span>${closed.length}</span>
+      </div>
+      <div class="row">
+        <span class="rl">Laatste update</span>
+        <span>${dt(upd)}</span>
+      </div>
+    </div>
+
+    <!-- Trades -->
+    <div class="sec">Recente trades</div>
+    <div class="card">
+      ${trades.length === 0
+        ? '<div class="empty">Nog geen trades</div>'
+        : trades.slice(0, 20).map(t => `
+          <div class="trade">
+            <div class="tl">
+              <span class="pill pill-${t.side}">${t.side === 'buy' ? 'Koop' : 'Verkoop'}</span>
+              <div>
+                <div class="tp">${usd(t.price)}</div>
+                <div class="td">${dt(t.timestamp)}</div>
+              </div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-size:.78rem;color:var(--muted)">${Number(t.amount).toFixed(5)}</div>
+              ${t.pnl_quote != null
+                ? `<div class="${cls(t.pnl_quote)}" style="font-size:.75rem">${sgn(t.pnl_quote)}${usd(t.pnl_quote)}</div>`
+                : ''}
+            </div>
+          </div>`).join('')}
+    </div>
+  `;
+}
+
+// ── data ─────────────────────────────────────────────────────────────────────
+
+async function refresh() {
+  let state = null;
+  try {
+    const r = await fetch('./state.json?_=' + Date.now());
+    if (r.ok) state = await r.json();
+  } catch {}
+  render(state);
+  document.getElementById('foot').textContent =
+    'Bijgewerkt: ' + new Date().toLocaleTimeString('nl-NL') + ' · Bot draait elk uur';
+}
+
+refresh();
+setInterval(refresh, 60000);
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}
+</script>
+</body>
+</html>
