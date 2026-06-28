@@ -363,14 +363,14 @@ def run_cycle(config, exchange, strategy, portfolio, risk_params):
                 if config["mode"] == "live":
                     exchange.create_market_buy_order(sym, amount)
                 portfolio.open_long(sym, amount, signal.price, stop_loss, take_profit, signal.reason)
+                portfolio.update_price(signal.price)
         else:
             log(f"Geen entry-signalen voor alle {len(symbols)} symbolen.")
-
-        try:
-            df0 = exchange.fetch_ohlcv_df(symbols[0], timeframe, limit=5)
-            portfolio.update_price(df0.iloc[-1]["close"])
-        except Exception:
-            portfolio.update_price(portfolio.last_price)
+            try:
+                df0 = exchange.fetch_ohlcv_df(symbols[0], timeframe, limit=5)
+                portfolio.update_price(df0.iloc[-1]["close"])
+            except Exception:
+                portfolio.update_price(portfolio.last_price)
 
     else:
         pos = portfolio.position
