@@ -15,12 +15,12 @@ timeframe: 15m          # Candle-interval (1m, 5m, 15m, 1h, 4h, 1d, ...)
 
 # ── Strategie-parameters ─────────────────────────────────────────────────────
 strategy:
-  ema_fast: 12            # Periode snelle EMA
-  ema_slow: 26            # Periode langzame EMA
-  rsi_period: 14          # RSI-berekeningsperiode
-  rsi_buy_threshold: 50   # RSI moet > deze waarde zijn bij een buy-signaal
+  ema_fast: 5             # Periode snelle EMA (was 12, nu korter voor meer signalen)
+  ema_slow: 13            # Periode langzame EMA (was 26, nu korter voor meer signalen)
+  rsi_period: 10          # RSI-berekeningsperiode (was 14, nu responsiever)
+  rsi_buy_threshold: 40   # RSI moet > deze waarde zijn bij een buy-signaal (was 50)
   rsi_sell_threshold: 50  # (bewaard voor toekomstig gebruik / short-logica)
-  atr_period: 14          # ATR-berekeningsperiode
+  atr_period: 10          # ATR-berekeningsperiode (was 14)
   atr_sl_multiplier: 2.0  # Stop-loss = entry - ATR * deze factor
   atr_tp_multiplier: 3.0  # Take-profit = entry + ATR * deze factor
 
