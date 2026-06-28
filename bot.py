@@ -108,16 +108,21 @@ class EmaRsiAtrStrategy:
 
     def check_exit_signal(self, df: pd.DataFrame, stop_loss: float, take_profit: float) -> Optional[Signal]:
         curr, prev = df.iloc[-1], df.iloc[-2]
-        price = curr["close"]
-        if price <= stop_loss:
-            return Signal("sell", f"Stop-loss geraakt ({price:.4g} <= {stop_loss:.4g})", price, curr["atr"])
-        if price >= take_profit:
-            return Signal("sell", f"Take-profit geraakt ({price:.4g} >= {take_profit:.4g})", price, curr["atr"])
+        close = curr["close"]
+        # Controleer candle high/low zodat intra-candle TP/SL hits niet gemist worden
+        if curr["low"] <= stop_loss:
+            return Signal("sell", f"Stop-loss geraakt (low={curr['low']:.4g} <= {stop_loss:.4g})", stop_loss, curr["atr"])
+        if curr["high"] >= take_profit:
+            return Signal("sell", f"Take-profit geraakt (high={curr['high']:.4g} >= {take_profit:.4g})", take_profit, curr["atr"])
+        if close <= stop_loss:
+            return Signal("sell", f"Stop-loss geraakt ({close:.4g} <= {stop_loss:.4g})", close, curr["atr"])
+        if close >= take_profit:
+            return Signal("sell", f"Take-profit geraakt ({close:.4g} >= {take_profit:.4g})", close, curr["atr"])
         if curr["rsi"] > 72:
-            return Signal("sell", f"RSI overbought exit ({curr['rsi']:.1f} > 72)", price, curr["atr"])
+            return Signal("sell", f"RSI overbought exit ({curr['rsi']:.1f} > 72)", close, curr["atr"])
         crossed_down = prev["ema_fast"] >= prev["ema_slow"] and curr["ema_fast"] < curr["ema_slow"]
         if crossed_down:
-            return Signal("sell", f"EMA{self.ema_fast} kruist onder EMA{self.ema_slow} (trendomkeer)", price, curr["atr"])
+            return Signal("sell", f"EMA{self.ema_fast} kruist onder EMA{self.ema_slow} (trendomkeer)", close, curr["atr"])
         return None
 
     def compute_stop_and_target(self, entry_price: float, atr_value: float):
