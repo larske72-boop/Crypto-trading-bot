@@ -13,7 +13,7 @@
     :root{
       --bg:#06060f; --card:rgba(255,255,255,.04); --bdr:rgba(255,255,255,.07);
       --text:#fff; --muted:#8892a4; --green:#00e87a; --red:#ff4f6d; --blue:#4c9eff;
-      --yellow:#fbbf24;
+      --yellow:#fbbf24; --purple:#a855f7;
     }
     *{box-sizing:border-box;margin:0;padding:0;}
     body{
@@ -47,7 +47,7 @@
     .logo-sub{font-size:.6rem;color:var(--muted);margin-top:1px;}
     .hdr-right{display:flex;align-items:center;gap:8px;}
 
-    /* ── Badge ── */
+    /* ── Badges ── */
     .badge{font-size:.6rem;font-weight:700;padding:5px 13px;border-radius:999px;text-transform:uppercase;letter-spacing:.1em;}
     .badge-paper  {background:rgba(76,158,255,.13);color:var(--blue);border:1px solid rgba(76,158,255,.3);}
     .badge-live   {background:rgba(255,79,109,.13);color:var(--red);border:1px solid rgba(255,79,109,.3);}
@@ -81,13 +81,12 @@
       backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
     }
 
-    /* ── BTC live price card ── */
+    /* ── Price card ── */
     .price-card{
       background:linear-gradient(145deg,rgba(76,158,255,.07),rgba(0,232,122,.05));
       border:1px solid rgba(76,158,255,.14);border-radius:22px;
       padding:18px 18px 14px;margin-bottom:10px;
-      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-      overflow:hidden;
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);overflow:hidden;
     }
     .price-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px;}
     .price-coin{display:flex;align-items:center;gap:9px;}
@@ -95,7 +94,7 @@
       width:34px;height:34px;border-radius:50%;
       background:linear-gradient(135deg,#f7931a,#fbbf24);
       display:flex;align-items:center;justify-content:center;
-      font-size:17px;flex-shrink:0;
+      font-size:17px;flex-shrink:0;font-weight:800;color:#fff;
     }
     .price-name{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;}
     .price-val{font-size:1.55rem;font-weight:800;letter-spacing:-.04em;line-height:1.1;}
@@ -128,6 +127,13 @@
     .hero-ret.neg{background:rgba(255,79,109,.12);color:var(--red);border:1px solid rgba(255,79,109,.2);}
     .hero-ret.neu{background:rgba(136,146,164,.1);color:var(--muted);border:1px solid var(--bdr);}
     .hero-sub{font-size:.68rem;color:var(--muted);margin-top:8px;}
+    .hero-breakdown{
+      display:flex;justify-content:center;gap:24px;margin-top:14px;
+      padding-top:14px;border-top:1px solid rgba(255,255,255,.07);
+    }
+    .hb-item{text-align:center;}
+    .hb-lbl{font-size:.58rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px;}
+    .hb-val{font-size:.88rem;font-weight:700;}
 
     /* ── Grids ── */
     .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;}
@@ -161,7 +167,55 @@
       color:var(--muted);
     }
     .bot-meta{display:flex;justify-content:space-between;font-size:.67rem;color:var(--muted);}
-    .bot-upd{font-size:.67rem;color:var(--muted);}
+
+    /* ── SL/TP progress bar ── */
+    .sltp-wrap{margin:14px 0 4px;}
+    .sltp-bar-outer{
+      position:relative;height:6px;border-radius:999px;
+      background:rgba(255,255,255,.07);margin:8px 0;
+    }
+    .sltp-bar-fill{
+      position:absolute;top:0;left:0;height:100%;border-radius:999px;
+      background:linear-gradient(90deg,var(--red),var(--green));
+      transition:width .4s ease;
+    }
+    .sltp-bar-dot{
+      position:absolute;top:50%;transform:translate(-50%,-50%);
+      width:12px;height:12px;border-radius:50%;
+      background:#fff;border:2px solid var(--blue);
+      box-shadow:0 0 8px rgba(76,158,255,.6);
+    }
+    .sltp-labels{display:flex;justify-content:space-between;font-size:.6rem;color:var(--muted);}
+    .sltp-labels span:first-child{color:var(--red);}
+    .sltp-labels span:last-child{color:var(--green);}
+    .sltp-pcts{display:flex;justify-content:space-between;font-size:.65rem;font-weight:600;margin-top:5px;}
+
+    /* ── Market overview ── */
+    .market-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;}
+    .market-item{
+      background:var(--card);border:1px solid var(--bdr);border-radius:14px;
+      padding:11px 13px;display:flex;justify-content:space-between;align-items:center;
+      backdrop-filter:blur(10px);
+    }
+    .market-item.active{
+      border-color:rgba(0,232,122,.3);
+      background:rgba(0,232,122,.04);
+    }
+    .market-left{display:flex;align-items:center;gap:8px;}
+    .market-icon{
+      width:28px;height:28px;border-radius:8px;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);
+      display:flex;align-items:center;justify-content:center;
+      font-size:12px;font-weight:800;flex-shrink:0;
+    }
+    .market-sym{font-size:.75rem;font-weight:700;}
+    .market-price{font-size:.68rem;color:var(--muted);margin-top:1px;}
+    .market-right{text-align:right;}
+    .market-chg{font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:6px;}
+    .market-chg.pos{background:rgba(0,232,122,.1);color:var(--green);}
+    .market-chg.neg{background:rgba(255,79,109,.1);color:var(--red);}
+    .market-chg.neu{background:rgba(136,146,164,.08);color:var(--muted);}
+    .market-in-pos{font-size:.55rem;color:var(--green);margin-top:2px;font-weight:600;}
 
     /* ── Section title ── */
     .sec{
@@ -202,7 +256,7 @@
     .tprice{font-size:.875rem;font-weight:600;}
     .tpnl{font-size:.7rem;margin-top:2px;font-weight:700;}
 
-    /* ── Progress bar (for win rate) ── */
+    /* ── Progress bar (win rate) ── */
     .prog-wrap{margin-top:6px;height:3px;border-radius:999px;background:rgba(255,255,255,.07);}
     .prog-bar{height:100%;border-radius:999px;background:var(--green);transition:width .6s ease;}
 
@@ -241,8 +295,18 @@
       background:rgba(0,232,122,.08);border:1px solid rgba(0,232,122,.2);
       font-size:.72rem;color:var(--green);
     }
-
     .no-pos{color:var(--muted);font-size:.875rem;padding:4px 0;}
+
+    /* ── Live banner ── */
+    .live-banner{
+      background:linear-gradient(135deg,rgba(255,79,109,.12),rgba(255,79,109,.06));
+      border:1px solid rgba(255,79,109,.3);border-radius:16px;
+      padding:12px 16px;margin-bottom:10px;
+      display:flex;align-items:center;gap:10px;
+    }
+    .live-banner-icon{font-size:20px;}
+    .live-banner-text{font-size:.75rem;line-height:1.5;}
+    .live-banner-title{font-weight:700;color:var(--red);}
 
     footer{text-align:center;font-size:.62rem;color:#3a4558;margin-top:22px;}
   </style>
@@ -256,7 +320,7 @@
       <div class="logo-box">📈</div>
       <div>
         <div class="logo-name">Crypto Bot</div>
-        <div class="logo-sub">Multi-asset · Kraken</div>
+        <div class="logo-sub" id="hdr-sub">Multi-asset · Kraken</div>
       </div>
     </div>
     <div class="hdr-right">
@@ -269,7 +333,7 @@
     </div>
   </header>
 
-  <!-- Live BTC price + sparkline (filled by JS) -->
+  <!-- BTC price card (filled by JS) -->
   <div class="price-card" id="price-card">
     <div style="color:var(--muted);font-size:.8rem;padding:10px 0 4px">Prijs laden...</div>
   </div>
@@ -279,10 +343,31 @@
 
 </div>
 <script>
+/* ── Coin config ─────────────────────────────────────────────── */
+const COIN_IDS={
+  'BTC/USD':'bitcoin','ETH/USD':'ethereum','SOL/USD':'solana',
+  'XRP/USD':'ripple','ADA/USD':'cardano','DOT/USD':'polkadot',
+  'LTC/USD':'litecoin','AVAX/USD':'avalanche-2',
+};
+const ALL_IDS='bitcoin,ethereum,solana,ripple,cardano,polkadot,litecoin,avalanche-2';
+const COIN_ICON={
+  'BTC/USD':'₿','ETH/USD':'Ξ','SOL/USD':'◎','XRP/USD':'✕',
+  'ADA/USD':'₳','DOT/USD':'●','LTC/USD':'Ł','AVAX/USD':'▲',
+};
+const COIN_COLOR={
+  'BTC/USD':'#f7931a','ETH/USD':'#627eea','SOL/USD':'#9945ff',
+  'XRP/USD':'#00aae4','ADA/USD':'#0033ad','DOT/USD':'#e6007a',
+  'LTC/USD':'#bfbbbb','AVAX/USD':'#e84142',
+};
+
 /* ── Utilities ─────────────────────────────────────────────── */
 function usd(n,d=2){
   if(n==null||isNaN(n))return'—';
   return'$ '+Number(n).toLocaleString('nl-NL',{minimumFractionDigits:d,maximumFractionDigits:d});
+}
+function pct(n,d=2){
+  if(n==null||isNaN(n))return'—';
+  return(n>=0?'+':'')+Number(n).toFixed(d)+'%';
 }
 function dt(iso){
   if(!iso)return'—';
@@ -298,12 +383,21 @@ function ago(iso){
   if(s<3600)return Math.floor(s/60)+'m geleden';
   return Math.floor(s/3600)+'u geleden';
 }
+function dur(iso){
+  if(!iso)return'';
+  const s=Math.round((Date.now()-new Date(iso))/1000);
+  if(s<60)return s+'s';
+  if(s<3600)return Math.floor(s/60)+'m';
+  const h=Math.floor(s/3600),m=Math.floor((s%3600)/60);
+  return h+'u'+(m?` ${m}m`:'');
+}
 function cc(n){return n>0?'green':n<0?'red':'muted';}
 function sg(n){return n>0?'+':'';}
+function clamp(v,lo,hi){return Math.max(lo,Math.min(hi,v));}
 
-/* ── Countdown to next 15-min cron slot ─────────────────────── */
+/* ── Countdown ─────────────────────────────────────────────── */
 function nextRunIn(){
-  const now=new Date(), m=now.getMinutes(), s=now.getSeconds();
+  const now=new Date(),m=now.getMinutes(),s=now.getSeconds();
   const nextM=(Math.floor(m/15)+1)*15;
   const diff=(nextM-m)*60-s;
   return Math.floor(diff/60)+'m '+String(diff%60).padStart(2,'0')+'s';
@@ -334,26 +428,13 @@ function sparkline(prices,color){
   </svg>`;
 }
 
-/* ── Coin → CoinGecko ID ─────────────────────────────────────── */
-const COIN_IDS={
-  'BTC/USD':'bitcoin','ETH/USD':'ethereum','SOL/USD':'solana',
-  'XRP/USD':'ripple','ADA/USD':'cardano','DOT/USD':'polkadot',
-  'LTC/USD':'litecoin','AVAX/USD':'avalanche-2',
-};
-
 /* ── Live data state ─────────────────────────────────────────── */
-let priceData=null, sparkData=null, posLivePrice=null;
+let coinsData=null, sparkData=null;
 
-async function fetchPrices(posSymbol){
+async function fetchAllCoins(){
   try{
-    const ids=['bitcoin'];
-    const posId=posSymbol&&COIN_IDS[posSymbol];
-    if(posId&&posId!=='bitcoin')ids.push(posId);
-    const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids='+ids.join(',')+'&vs_currencies=usd&include_24hr_change=true',{cache:'no-store'});
-    if(r.ok){
-      priceData=await r.json();
-      posLivePrice=posId?(priceData[posId]?.usd||null):null;
-    }
+    const r=await fetch('https://api.coingecko.com/api/v3/simple/price?ids='+ALL_IDS+'&vs_currencies=usd&include_24hr_change=true',{cache:'no-store'});
+    if(r.ok)coinsData=await r.json();
   }catch(e){}
 }
 
@@ -364,19 +445,25 @@ async function fetchSparkline(){
   }catch(e){}
 }
 
-/* ── Render price card ────────────────────────────────────────── */
-function renderPrice(){
+function coinPrice(sym){
+  if(!coinsData||!sym)return null;
+  const id=COIN_IDS[sym];
+  return id?coinsData[id]?.usd||null:null;
+}
+
+/* ── Render BTC price card ────────────────────────────────────── */
+function renderPrice(posSymbol){
   const el=document.getElementById('price-card');
-  if(!priceData){
-    el.innerHTML='<div style="color:var(--muted);font-size:.78rem;padding:8px 0">Prijs tijdelijk niet beschikbaar</div>';
+  if(!coinsData){
+    el.innerHTML='<div style="color:var(--muted);font-size:.78rem;padding:8px 0">Live prijs tijdelijk niet beschikbaar</div>';
     return;
   }
-  const p=priceData.bitcoin.usd, chg=priceData.bitcoin.usd_24h_change, pos=chg>=0;
+  const btc=coinsData.bitcoin, p=btc?.usd, chg=btc?.usd_24h_change||0, pos=chg>=0;
   const color=pos?'var(--green)':'var(--red)';
   el.innerHTML=`
     <div class="price-top">
       <div class="price-coin">
-        <div class="price-icon">₿</div>
+        <div class="price-icon" style="background:linear-gradient(135deg,#f7931a,#fbbf24)">₿</div>
         <div>
           <div class="price-name">Bitcoin live prijs</div>
           <div class="price-val">${usd(p,0)}</div>
@@ -389,7 +476,67 @@ function renderPrice(){
   `;
 }
 
-/* ── Bot status card HTML ─────────────────────────────────────── */
+/* ── SL / TP progress bar ─────────────────────────────────────── */
+function sltpBar(pos,price){
+  if(!pos||!price)return'';
+  const sl=pos.stop_loss, tp=pos.take_profit, entry=pos.entry_price;
+  const range=tp-sl;
+  const filledPct=clamp((price-sl)/range*100,0,100);
+  const entryPct=clamp((entry-sl)/range*100,0,100);
+  const distSL=((price-sl)/price*100).toFixed(2);
+  const distTP=((tp-price)/price*100).toFixed(2);
+  const pnlPct=((price-entry)/entry*100);
+  return`
+    <div class="sltp-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <span style="font-size:.65rem;color:var(--muted)">Positie voortgang</span>
+        <span style="font-size:.7rem;font-weight:700;color:${pnlPct>=0?'var(--green)':'var(--red)'}">${sg(pnlPct)}${pnlPct.toFixed(2)}%</span>
+      </div>
+      <div class="sltp-bar-outer">
+        <div class="sltp-bar-fill" style="width:${filledPct}%"></div>
+        <div class="sltp-bar-dot" style="left:${filledPct}%"></div>
+      </div>
+      <div class="sltp-labels">
+        <span>SL ${usd(sl,sl<1?4:2)}</span>
+        <span style="color:var(--muted)">Entry ${usd(entry,entry<1?4:2)}</span>
+        <span>TP ${usd(tp,tp<1?4:2)}</span>
+      </div>
+      <div class="sltp-pcts">
+        <span class="red">−${distSL}% tot SL</span>
+        <span class="green">+${distTP}% tot TP</span>
+      </div>
+    </div>`;
+}
+
+/* ── Market overview ──────────────────────────────────────────── */
+function marketGrid(posSymbol){
+  if(!coinsData)return'';
+  const items=Object.entries(COIN_IDS).map(([sym,id])=>{
+    const data=coinsData[id];
+    if(!data)return'';
+    const p=data.usd, chg=data.usd_24h_change||0, isPos=chg>=0;
+    const active=sym===posSymbol;
+    const icon=COIN_ICON[sym]||'?', clr=COIN_COLOR[sym]||'#888';
+    const base=sym.split('/')[0];
+    const pStr=p>=1000?usd(p,0):p>=1?usd(p,2):'$ '+p.toFixed(4);
+    return`<div class="market-item${active?' active':''}">
+      <div class="market-left">
+        <div class="market-icon" style="color:${clr};border-color:${clr}22">${icon}</div>
+        <div>
+          <div class="market-sym">${base}</div>
+          <div class="market-price">${pStr}</div>
+        </div>
+      </div>
+      <div class="market-right">
+        <div class="market-chg ${isPos?'pos':'neg'}">${isPos?'▲':'▼'}${Math.abs(chg).toFixed(1)}%</div>
+        ${active?'<div class="market-in-pos">● IN POSITIE</div>':''}
+      </div>
+    </div>`;
+  }).join('');
+  return`<div class="market-grid">${items}</div>`;
+}
+
+/* ── Bot status card ─────────────────────────────────────────── */
 function botCard(s){
   return`<div class="bot-card">
     <div class="bot-header">
@@ -406,7 +553,7 @@ function botCard(s){
     </div>
     <div class="bot-meta">
       <span>Kraken · BTC ETH SOL XRP ADA DOT LTC AVAX</span>
-      <span class="bot-upd">${s?.last_updated?ago(s.last_updated):'—'}</span>
+      <span>${s?.last_updated?ago(s.last_updated):'—'}</span>
     </div>
   </div>`;
 }
@@ -415,9 +562,11 @@ function botCard(s){
 function render(s){
   const app=document.getElementById('app');
   const badge=document.getElementById('badge');
+  const sub=document.getElementById('hdr-sub');
 
   if(!s){
     badge.textContent='—';badge.className='badge badge-unknown';
+    sub.textContent='Multi-asset · Kraken';
     app.innerHTML=`
       <div class="empty">
         <div class="empty-icon">⚡</div>
@@ -433,53 +582,72 @@ function render(s){
   badge.textContent=mode==='live'?'Live ⚡':'Paper';
   badge.className=`badge badge-${mode==='live'?'live':'paper'}`;
 
-  const bal   = s.balance_quote||0;
-  const pos   = s.position;
-  const liveP = priceData?.bitcoin?.usd||0;
-  const price = (pos&&posLivePrice) ? posLivePrice : (s.last_price||0);
-  const isLivePosPrice = pos&&!!posLivePrice;
-  const trades= (s.trade_log||[]).slice().reverse();
-  const closed= trades.filter(t=>t.pnl_quote!=null);
-  const equity= pos&&price ? bal+pos.amount*price : bal;
-  const unreal= pos&&price ? (price-pos.entry_price)*pos.amount : null;
-  const totPnl= closed.reduce((a,t)=>a+(t.pnl_quote||0),0);
-  const start = s.starting_balance||1000;
-  const ret   = (equity-start)/start*100;
-  const wins  = closed.filter(t=>t.pnl_quote>0);
-  const losses= closed.filter(t=>t.pnl_quote<=0);
-  const winPct= closed.length ? Math.round(wins.length/closed.length*100) : null;
-  const bestT = closed.length ? Math.max(...closed.map(t=>t.pnl_quote)) : null;
-  const worstT= closed.length ? Math.min(...closed.map(t=>t.pnl_quote)) : null;
-  const avgPnl= closed.length ? totPnl/closed.length : null;
-  const retCls= ret>0?'pos':ret<0?'neg':'neu';
+  const pos=s.position;
+  const posSymbol=pos?.symbol||null;
+  sub.textContent=(posSymbol?posSymbol+' · ':'')+'Kraken';
+
+  const bal=s.balance_quote||0;
+  const livePrice=coinPrice(posSymbol);
+  const price=livePrice||(s.last_price||0);
+  const hasLive=!!livePrice;
+
+  const trades=(s.trade_log||[]).slice().reverse();
+  const closed=trades.filter(t=>t.pnl_quote!=null);
+  const equity=pos&&price ? bal+pos.amount*price : bal;
+  const posVal=pos&&price ? pos.amount*price : 0;
+  const unreal=pos&&price ? (price-pos.entry_price)*pos.amount : null;
+  const totPnl=closed.reduce((a,t)=>a+(t.pnl_quote||0),0);
+  const start=s.starting_balance||1000;
+  const ret=(equity-start)/start*100;
+  const wins=closed.filter(t=>t.pnl_quote>0);
+  const losses=closed.filter(t=>t.pnl_quote<=0);
+  const winPct=closed.length?Math.round(wins.length/closed.length*100):null;
+  const bestT=closed.length?Math.max(...closed.map(t=>t.pnl_quote)):null;
+  const worstT=closed.length?Math.min(...closed.map(t=>t.pnl_quote)):null;
+  const avgPnl=closed.length?totPnl/closed.length:null;
+  const retCls=ret>0?'pos':ret<0?'neg':'neu';
   const retIcon=ret>0?'▲':ret<0?'▼':'●';
 
+  const liveDot=hasLive?'<span style="font-size:.55rem;color:var(--green);margin-left:4px">● live</span>':'';
+
   app.innerHTML=`
+    ${mode==='live'?`<div class="live-banner">
+      <div class="live-banner-icon">⚠️</div>
+      <div class="live-banner-text">
+        <div class="live-banner-title">Live modus actief</div>
+        <div style="color:var(--muted);font-size:.72rem">Echte orders worden geplaatst op Kraken met echt geld.</div>
+      </div>
+    </div>`:''}
+
     <!-- Portfolio hero -->
     <div class="hero">
-      <div class="hero-lbl">Totale portefeuillewaarde</div>
+      <div class="hero-lbl">Totale portefeuillewaarde${hasLive?' · live':''}</div>
       <div class="hero-val">${usd(equity)}</div>
       <div class="hero-ret ${retCls}">${retIcon} ${sg(ret)}${ret.toFixed(2)}% rendement</div>
       <div class="hero-sub">Startkapitaal ${usd(start,0)}</div>
+      <div class="hero-breakdown">
+        <div class="hb-item">
+          <div class="hb-lbl">Cash</div>
+          <div class="hb-val">${usd(bal,0)}</div>
+        </div>
+        ${pos?`<div class="hb-item">
+          <div class="hb-lbl">${posSymbol?.split('/')[0]||'Positie'}</div>
+          <div class="hb-val ${cc(unreal)}">${usd(posVal,0)}</div>
+        </div>`:''}
+        <div class="hb-item">
+          <div class="hb-lbl">Ongerealiseerd</div>
+          <div class="hb-val ${cc(unreal)}">${unreal!=null?sg(unreal)+usd(Math.abs(unreal),0):'—'}</div>
+        </div>
+      </div>
     </div>
 
     <!-- Stats row 1 -->
     <div class="g2">
       <div class="mini">
-        <div class="lbl">Vrij saldo</div>
-        <div class="val">${usd(bal)}</div>
-        ${pos?`<div class="sub">${usd(pos.amount*price)} in positie</div>`:
-              `<div class="sub">Volledig beschikbaar</div>`}
-      </div>
-      <div class="mini">
         <div class="lbl">Gerealiseerde P&amp;L</div>
         <div class="val ${cc(totPnl)}">${sg(totPnl)}${usd(totPnl)}</div>
-        ${unreal!=null?`<div class="sub ${cc(unreal)}">${sg(unreal)}${usd(unreal)} ongerealiseerd</div>`:`<div class="sub">Geen open positie</div>`}
+        <div class="sub">${closed.length} gesloten trade${closed.length!==1?'s':''}</div>
       </div>
-    </div>
-
-    <!-- Stats row 2 -->
-    <div class="g2">
       <div class="mini">
         <div class="lbl">Winstpercentage</div>
         <div class="val">${winPct!=null?winPct+'%':'—'}</div>
@@ -487,24 +655,20 @@ function render(s){
           <div class="prog-wrap"><div class="prog-bar" style="width:${winPct||0}%"></div></div>`:
           `<div class="sub">Nog geen trades</div>`}
       </div>
-      <div class="mini">
-        <div class="lbl">Trades</div>
-        <div class="val">${closed.length}</div>
-        ${closed.length?`<div class="sub">Gem. ${sg(avgPnl)}${usd(avgPnl)} per trade</div>`:`<div class="sub">Nog geen gesloten trades</div>`}
-      </div>
     </div>
 
-    <!-- Stats row 3 (only when trades exist) -->
-    ${closed.length>=1?`<div class="g2">
+    ${closed.length>=1?`<div class="g3">
       <div class="mini">
-        <div class="lbl">Beste trade</div>
-        <div class="val green">${sg(bestT)}${usd(bestT)}</div>
-        <div class="sub">Hoogste winst</div>
+        <div class="lbl">Beste</div>
+        <div class="val green" style="font-size:.95rem">${sg(bestT)}${usd(bestT)}</div>
       </div>
       <div class="mini">
-        <div class="lbl">Slechtste trade</div>
-        <div class="val ${cc(worstT)}">${sg(worstT)}${usd(worstT)}</div>
-        <div class="sub">Grootste verlies</div>
+        <div class="lbl">Slechtste</div>
+        <div class="val ${cc(worstT)}" style="font-size:.95rem">${sg(worstT)}${usd(worstT)}</div>
+      </div>
+      <div class="mini">
+        <div class="lbl">Gemiddeld</div>
+        <div class="val ${cc(avgPnl)}" style="font-size:.95rem">${sg(avgPnl)}${usd(avgPnl)}</div>
       </div>
     </div>`:''}
 
@@ -515,17 +679,23 @@ function render(s){
     <div class="sec">${pos?'<span class="dot"></span>':''}<span>Huidige positie</span><div class="sec-line"></div></div>
     <div class="card">
       ${pos?`
-        <div class="row"><span class="rl">Munt</span><span style="font-weight:700">${pos.symbol||'—'}</span></div>
+        <div class="row"><span class="rl">Munt</span><span style="font-weight:700;display:flex;align-items:center;gap:6px">
+          <span style="color:${COIN_COLOR[posSymbol]||'#fff'}">${COIN_ICON[posSymbol]||'?'}</span> ${posSymbol}
+        </span></div>
         <div class="row"><span class="rl">Richting</span><span class="green" style="font-weight:700">▲ LONG</span></div>
-        <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price)}</span></div>
-        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(6)} ${(pos.symbol||'BTC/USD').split('/')[0]}</span></div>
-        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price):'—'}${isLivePosPrice?'<span style="font-size:.6rem;color:var(--green);margin-left:4px">● live</span>':''}</span></div>
+        <div class="row"><span class="rl">Instapprijs</span><span>${usd(pos.entry_price, pos.entry_price<1?4:2)}</span></div>
+        <div class="row"><span class="rl">Huidige prijs</span><span>${price?usd(price, price<1?4:2):'—'}${liveDot}</span></div>
+        <div class="row"><span class="rl">Hoeveelheid</span><span>${Number(pos.amount).toFixed(4)} ${posSymbol?.split('/')[0]||''}</span></div>
+        <div class="row"><span class="rl">Positiewaarde</span><span style="font-weight:600">${usd(posVal)}</span></div>
         <div class="row"><span class="rl">Ongerealiseerde P&amp;L</span><span class="${cc(unreal)}" style="font-weight:700">${sg(unreal)}${usd(unreal)}</span></div>
-        <div class="row"><span class="rl">Stop-loss</span><span class="red">${usd(pos.stop_loss)}</span></div>
-        <div class="row"><span class="rl">Take-profit</span><span class="green">${usd(pos.take_profit)}</span></div>
-        <div class="row"><span class="rl">Geopend op</span><span>${dt(pos.opened_at)}</span></div>
-      `:`<div class="no-pos">Geen open positie — wacht op koop-signaal (EMA 5 kruist boven EMA 13)</div>`}
+        <div class="row" style="border-bottom:none"><span class="rl">In positie</span><span>${dur(pos.opened_at)}</span></div>
+        ${sltpBar(pos,price)}
+      `:`<div class="no-pos">Geen open positie — wacht op koop-signaal</div>`}
     </div>
+
+    <!-- Market overview -->
+    <div class="sec"><span>Marktoverzicht</span><div class="sec-line"></div></div>
+    ${marketGrid(posSymbol)}
 
     <!-- Trades -->
     <div class="sec"><span>Recente trades</span><div class="sec-line"></div></div>
@@ -539,11 +709,11 @@ function render(s){
               <div>
                 <div class="ttype ttype-${t.side}">${t.side==='buy'?'Koop':'Verkoop'} <span style="font-weight:500;opacity:.7">${t.symbol||'BTC/USD'}</span></div>
                 <div class="tdate">${dt(t.timestamp)}</div>
-                <div class="tamt">${Number(t.amount).toFixed(5)} ${(t.symbol||'BTC/USD').split('/')[0]}</div>
+                <div class="tamt">${Number(t.amount).toFixed(4)} ${(t.symbol||'BTC/USD').split('/')[0]}</div>
               </div>
             </div>
             <div class="tright">
-              <div class="tprice">${usd(t.price,0)}</div>
+              <div class="tprice">${usd(t.price, t.price<1?4:(t.price<100?2:0))}</div>
               ${t.pnl_quote!=null
                 ?`<div class="tpnl ${cc(t.pnl_quote)}">${sg(t.pnl_quote)}${usd(t.pnl_quote)}</div>`
                 :`<div class="tpnl muted">open</div>`}
@@ -553,22 +723,22 @@ function render(s){
   `;
 }
 
-/* ── Refresh all data ─────────────────────────────────────────── */
+/* ── Refresh ─────────────────────────────────────────────────── */
 let botState=null;
 async function refresh(){
   const st=await fetch('./state.json?_='+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null);
-  await fetchPrices(st?.position?.symbol);
+  await fetchAllCoins();
   botState=st;
   render(botState);
-  renderPrice();
+  renderPrice(botState?.position?.symbol);
   document.getElementById('foot').textContent=
-    'Bijgewerkt: '+new Date().toLocaleTimeString('nl-NL')+' · Auto-refresh elke 60s';
+    'Bijgewerkt: '+new Date().toLocaleTimeString('nl-NL')+' · Auto-refresh elke 30s';
 }
 
 /* ── Boot ────────────────────────────────────────────────────── */
-fetchSparkline().then(renderPrice);
-refresh();  // laadt state + live prijzen
-setInterval(refresh,60000);
+fetchSparkline().then(()=>renderPrice(null));
+refresh();
+setInterval(refresh,30000);
 setInterval(()=>{const el=document.getElementById('countdown');if(el)el.textContent='in '+nextRunIn();},1000);
 
 if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(()=>{});
