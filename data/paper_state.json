@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 512.794536923258,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 2.790150294607059,
-      "entry_price": 71.82,
-      "stop_loss": 71.2184078964562,
-      "take_profit": 72.72238815531568,
-      "opened_at": "2026-06-28T09:00:02.315080+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 200.0602906223697,
-      "entry_price": 0.801,
-      "stop_loss": 0.7944436228200606,
-      "take_profit": 0.8108345657699091,
-      "opened_at": "2026-06-28T14:02:06.922079+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
-      "amount": 2.975827164132184,
-      "entry_price": 43.08,
-      "stop_loss": 42.76603576815286,
-      "take_profit": 43.550946347770704,
-      "opened_at": "2026-06-28T14:16:48.008638+00:00",
-      "symbol": "LTC/USD"
-    }
-  ],
+  "balance_quote": 999.9775118216244,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -111,8 +83,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=56.5",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.790150294607059,
+      "price": 71.2184078964562,
+      "timestamp": "2026-06-28T16:45:07.255874+00:00",
+      "reason": "Stop-loss geraakt (low=71.11 <= 71.22)",
+      "pnl_quote": -1.6785323849360054,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 200.0602906223697,
+      "price": 0.8058,
+      "timestamp": "2026-06-28T16:45:08.595764+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.9602893949873703,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.975827164132184,
+      "price": 42.76603576815286,
+      "timestamp": "2026-06-28T16:45:09.804429+00:00",
+      "reason": "Stop-loss geraakt (low=42.74 <= 42.77)",
+      "pnl_quote": -0.934303289696615,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 43.1,
-  "last_updated": "2026-06-28T14:31:22.386491+00:00"
+  "last_price": 59514.5,
+  "last_updated": "2026-06-28T16:45:20.594859+00:00"
 }
