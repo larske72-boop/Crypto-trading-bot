@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 576.1863197049523,
+  "balance_quote": 693.0929648953185,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1.937894404862141,
-      "entry_price": 75.82,
-      "stop_loss": 74.54302743762806,
-      "take_profit": 77.7354588435579,
-      "opened_at": "2026-06-29T19:25:30.496941+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 136.56025958358236,
-      "entry_price": 1.06959,
-      "stop_loss": 1.0586279000470986,
-      "take_profit": 1.086033149929352,
-      "opened_at": "2026-06-29T19:54:37.702748+00:00",
-      "symbol": "XRP/USD"
-    },
     {
       "side": "long",
       "amount": 3.3320976156890607,
@@ -28,6 +10,15 @@
       "take_profit": 43.632230792122144,
       "opened_at": "2026-06-29T20:53:06.420960+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.002874687745830887,
+      "entry_price": 60275.5,
+      "stop_loss": 59971.916669222155,
+      "take_profit": 60730.87499616676,
+      "opened_at": "2026-06-29T22:42:03.886921+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -273,8 +264,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=59.9",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.937894404862141,
+      "price": 75.14,
+      "timestamp": "2026-06-29T22:41:53.005211+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.317768195306229,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 136.56025958358236,
+      "price": 1.0586279000470986,
+      "timestamp": "2026-06-29T22:41:54.284247+00:00",
+      "reason": "Stop-loss geraakt (low=1.058 <= 1.059)",
+      "pnl_quote": -1.496987215149403,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002874687745830887,
+      "price": 60275.5,
+      "timestamp": "2026-06-29T22:42:03.886932+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=51.0",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 43.23,
-  "last_updated": "2026-06-29T20:53:06.421914+00:00"
+  "last_price": 60275.5,
+  "last_updated": "2026-06-29T22:42:03.888053+00:00"
 }
