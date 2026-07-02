@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 556.0200119671133,
+  "balance_quote": 583.8527577878513,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.10174750763574994,
-      "entry_price": 1707.72,
-      "stop_loss": 1684.261260666994,
-      "take_profit": 1742.9081089995088,
-      "opened_at": "2026-07-02T13:56:15.406297+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
       "amount": 126.00848758251747,
       "entry_price": 1.10314,
       "stop_loss": 1.0893452476957144,
       "take_profit": 1.1238321284564283,
       "opened_at": "2026-07-02T13:56:15.411030+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08545303841495151,
+      "entry_price": 1708.11,
+      "stop_loss": 1684.4671345925199,
+      "take_profit": 1743.5742981112198,
+      "opened_at": "2026-07-02T14:10:54.326715+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -1155,8 +1155,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.6",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.10174750763574994,
+      "price": 1708.11,
+      "timestamp": "2026-07-02T14:10:45.923986+00:00",
+      "reason": "RSI overbought exit (90.6 > 72)",
+      "pnl_quote": 0.03968152797793323,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08545303841495151,
+      "price": 1708.11,
+      "timestamp": "2026-07-02T14:10:54.326725+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=90.6",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 1.10314,
-  "last_updated": "2026-07-02T13:56:15.413332+00:00"
+  "last_price": 1708.11,
+  "last_updated": "2026-07-02T14:10:54.329295+00:00"
 }
