@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 592.534431665947,
+  "balance_quote": 581.2609753117347,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 152.11097255102348,
-      "entry_price": 0.8734,
-      "stop_loss": 0.8681929943175353,
-      "take_profit": 0.881210508523697,
-      "opened_at": "2026-07-05T12:54:57.375239+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
       "amount": 782.467450804405,
       "entry_price": 0.189316,
       "stop_loss": 0.18710903104763094,
       "take_profit": 0.1926264534285536,
       "opened_at": "2026-07-05T14:51:20.238231+00:00",
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.212806628961612,
+      "entry_price": 45.23,
+      "stop_loss": 44.9581498789405,
+      "take_profit": 45.63777518158924,
+      "opened_at": "2026-07-05T15:06:01.332546+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -1965,8 +1965,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=58.2",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 152.11097255102348,
+      "price": 0.881210508523697,
+      "timestamp": "2026-07-05T15:05:52.915355+00:00",
+      "reason": "Take-profit geraakt (high=0.8823 >= 0.8812)",
+      "pnl_quote": 1.1880640476576048,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.212806628961612,
+      "price": 45.23,
+      "timestamp": "2026-07-05T15:06:01.332559+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=77.8",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 0.189316,
-  "last_updated": "2026-07-05T14:51:20.242080+00:00"
+  "last_price": 45.23,
+  "last_updated": "2026-07-05T15:06:01.336648+00:00"
 }
