@@ -1,24 +1,15 @@
 {
   "mode": "paper",
-  "balance_quote": 715.6965394930805,
+  "balance_quote": 832.1796757747237,
   "positions": [
     {
       "side": "long",
-      "amount": 782.467450804405,
-      "entry_price": 0.189316,
-      "stop_loss": 0.18710903104763094,
-      "take_profit": 0.1926264534285536,
-      "opened_at": "2026-07-05T14:51:20.238231+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 157.5452451116229,
-      "entry_price": 1.1357,
-      "stop_loss": 1.1306042816639805,
-      "take_profit": 1.143343577504029,
-      "opened_at": "2026-07-05T21:07:15.256822+00:00",
-      "symbol": "XRP/USD"
+      "amount": 0.11896506667105883,
+      "entry_price": 1748.79,
+      "stop_loss": 1734.1385621212614,
+      "take_profit": 1770.7671568181079,
+      "opened_at": "2026-07-06T12:16:11.181998+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -2199,8 +2190,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=53.3",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 782.467450804405,
+      "price": 0.18710903104763094,
+      "timestamp": "2026-07-06T12:16:00.382854+00:00",
+      "reason": "Stop-loss geraakt (low=0.1814 <= 0.1871)",
+      "pnl_quote": -1.7268813701647048,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 157.5452451116229,
+      "price": 1.1306042816639805,
+      "timestamp": "2026-07-06T12:16:01.595504+00:00",
+      "reason": "Stop-loss geraakt (low=1.128 <= 1.131)",
+      "pnl_quote": -0.8028061942679869,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.11896506667105883,
+      "price": 1748.79,
+      "timestamp": "2026-07-06T12:16:11.182010+00:00",
+      "reason": "RSI-herstel: laag=27.9 nu=32.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 1.1357,
-  "last_updated": "2026-07-05T21:07:15.261263+00:00"
+  "last_price": 1748.79,
+  "last_updated": "2026-07-06T12:16:11.186264+00:00"
 }
