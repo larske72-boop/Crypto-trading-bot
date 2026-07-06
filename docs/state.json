@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 594.6751260944793,
+  "balance_quote": 908.670389487542,
   "positions": [
-    {
-      "side": "long",
-      "amount": 23.96037089263969,
-      "entry_price": 6.971,
-      "stop_loss": 6.910120477904455,
-      "take_profit": 7.062319283143318,
-      "opened_at": "2026-07-06T19:10:49.890941+00:00",
-      "symbol": "AVAX/USD"
-    },
     {
       "side": "long",
       "amount": 0.0020990834748838786,
@@ -19,15 +10,6 @@
       "take_profit": 64370.07514460648,
       "opened_at": "2026-07-06T19:10:49.899626+00:00",
       "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.08220057476383512,
-      "entry_price": 1808.61,
-      "stop_loss": 1793.757978317431,
-      "take_profit": 1830.8880325238533,
-      "opened_at": "2026-07-06T23:06:04.399781+00:00",
-      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -2379,8 +2361,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=61.1",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 23.96037089263969,
+      "price": 6.933,
+      "timestamp": "2026-07-06T23:49:36.632508+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.9104940939203061,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08220057476383512,
+      "price": 1798.99,
+      "timestamp": "2026-07-06T23:49:38.928687+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.7907695292281005,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 1801.92,
-  "last_updated": "2026-07-06T23:35:07.585327+00:00"
+  "last_price": 64035.8,
+  "last_updated": "2026-07-06T23:49:48.619159+00:00"
 }
