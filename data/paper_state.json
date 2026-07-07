@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 532.9396307050034,
+  "balance_quote": 582.9044464236038,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.11732986792848803,
-      "entry_price": 1775.39,
-      "stop_loss": 1765.2733707936234,
-      "take_profit": 1790.5649438095652,
-      "opened_at": "2026-07-07T10:39:36.662940+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 148.50608545584646,
-      "entry_price": 1.12146,
-      "stop_loss": 1.1159913852144274,
-      "take_profit": 1.1296629221783587,
-      "opened_at": "2026-07-07T11:23:34.140896+00:00",
-      "symbol": "XRP/USD"
-    },
     {
       "side": "long",
       "amount": 19.665669029704922,
@@ -28,6 +10,24 @@
       "take_profit": 6.829015242841205,
       "opened_at": "2026-07-07T11:38:12.618112+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.10110656929651661,
+      "entry_price": 1801.64,
+      "stop_loss": 1786.176139113955,
+      "take_profit": 1824.8357913290677,
+      "opened_at": "2026-07-07T18:25:28.479723+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.773686850120508,
+      "entry_price": 82.16,
+      "stop_loss": 81.38228537175301,
+      "take_profit": 83.32657194237046,
+      "opened_at": "2026-07-07T18:25:28.489155+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -2487,8 +2487,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=54.0",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.11732986792848803,
+      "price": 1790.5649438095652,
+      "timestamp": "2026-07-07T18:25:17.672230+00:00",
+      "reason": "Take-profit geraakt (high=1806 >= 1791)",
+      "pnl_quote": 1.7804741529984938,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 148.50608545584646,
+      "price": 1.1296629221783587,
+      "timestamp": "2026-07-07T18:25:18.874529+00:00",
+      "reason": "Take-profit geraakt (high=1.13 >= 1.13)",
+      "pnl_quote": 1.2181838620070096,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.10110656929651661,
+      "price": 1801.64,
+      "timestamp": "2026-07-07T18:25:28.479738+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=60.0",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.773686850120508,
+      "price": 82.16,
+      "timestamp": "2026-07-07T18:25:28.489163+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=54.6",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 6.789,
-  "last_updated": "2026-07-07T11:52:48.108577+00:00"
+  "last_price": 82.16,
+  "last_updated": "2026-07-07T18:25:28.493896+00:00"
 }
