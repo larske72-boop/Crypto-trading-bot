@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 575.7835953866233,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 157.52876720090748,
-      "entry_price": 1.10062,
-      "stop_loss": 1.0913246907178864,
-      "take_profit": 1.1145629639231702,
-      "opened_at": "2026-07-08T02:45:41.359104+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.07897300602692543,
-      "entry_price": 1756.34,
-      "stop_loss": 1740.3254341148277,
-      "take_profit": 1780.3618488277582,
-      "opened_at": "2026-07-08T02:45:41.368964+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 849.0229549238591,
-      "entry_price": 0.169543,
-      "stop_loss": 0.1681120155486769,
-      "take_profit": 0.17168947667698461,
-      "opened_at": "2026-07-08T07:42:53.292482+00:00",
-      "symbol": "ADA/USD"
-    }
-  ],
+  "balance_quote": 1027.868319727829,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -2721,8 +2693,35 @@
       "reason": "RSI-herstel: laag=20.6 nu=39.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 157.52876720090748,
+      "price": 1.0913246907178864,
+      "timestamp": "2026-07-08T08:26:29.626611+00:00",
+      "reason": "Stop-loss geraakt (low=1.081 <= 1.091)",
+      "pnl_quote": -1.4642786119624986,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.07897300602692543,
+      "price": 1740.3254341148277,
+      "timestamp": "2026-07-08T08:26:30.819230+00:00",
+      "reason": "Stop-loss geraakt (low=1732 <= 1740)",
+      "pnl_quote": -1.2647184081683065,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 849.0229549238591,
+      "price": 0.1681120155486769,
+      "timestamp": "2026-07-08T08:26:32.019145+00:00",
+      "reason": "Stop-loss geraakt (low=0.1668 <= 0.1681)",
+      "pnl_quote": -1.2149386473124366,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.169147,
-  "last_updated": "2026-07-08T08:12:00.989950+00:00"
+  "last_price": 62155.3,
+  "last_updated": "2026-07-08T08:26:42.822297+00:00"
 }
