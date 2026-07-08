@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 580.7275805030614,
+  "balance_quote": 694.8562733443813,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,11 @@
     },
     {
       "side": "long",
-      "amount": 21.686302265299425,
-      "entry_price": 6.667,
-      "stop_loss": 6.628579669458203,
-      "take_profit": 6.724630495812695,
-      "opened_at": "2026-07-08T00:48:40.582810+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 828.6495957590073,
-      "entry_price": 0.175203,
-      "stop_loss": 0.17388939741645898,
-      "take_profit": 0.17717340387531152,
-      "opened_at": "2026-07-08T01:32:28.480149+00:00",
+      "amount": 1001.4242958954461,
+      "entry_price": 0.173467,
+      "stop_loss": 0.17179559767430935,
+      "take_profit": 0.17597410348853598,
+      "opened_at": "2026-07-08T01:47:06.897795+00:00",
       "symbol": "ADA/USD"
     }
   ],
@@ -2649,8 +2640,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=48.5",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 21.686302265299425,
+      "price": 6.628579669458203,
+      "timestamp": "2026-07-08T01:46:57.300057+00:00",
+      "reason": "Stop-loss geraakt (low=6.567 <= 6.629)",
+      "pnl_quote": -0.833194901262118,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 828.6495957590073,
+      "price": 0.17388939741645898,
+      "timestamp": "2026-07-08T01:46:58.512109+00:00",
+      "reason": "Stop-loss geraakt (low=0.1733 <= 0.1739)",
+      "pnl_quote": -1.0885162498392447,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1001.4242958954461,
+      "price": 0.173467,
+      "timestamp": "2026-07-08T01:47:06.897806+00:00",
+      "reason": "RSI-herstel: laag=31.9 nu=33.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.175203,
-  "last_updated": "2026-07-08T01:32:28.485225+00:00"
+  "last_price": 0.173467,
+  "last_updated": "2026-07-08T01:47:06.902912+00:00"
 }
