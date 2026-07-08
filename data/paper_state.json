@@ -1,15 +1,24 @@
 {
   "mode": "paper",
-  "balance_quote": 871.6590647221117,
+  "balance_quote": 653.9564447094443,
   "positions": [
     {
       "side": "long",
-      "amount": 1.9655333697719335,
-      "entry_price": 76.94,
-      "stop_loss": 76.3903999013851,
-      "take_profit": 77.76440014792234,
-      "opened_at": "2026-07-08T13:32:02.421358+00:00",
-      "symbol": "SOL/USD"
+      "amount": 249.64743338834762,
+      "entry_price": 0.8186,
+      "stop_loss": 0.8090275376404227,
+      "take_profit": 0.8329586935393659,
+      "opened_at": "2026-07-08T15:29:21.958493+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 989.9371555568002,
+      "entry_price": 0.165151,
+      "stop_loss": 0.16301892086518724,
+      "take_profit": 0.16834911870221914,
+      "opened_at": "2026-07-08T15:29:21.971613+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -2883,8 +2892,35 @@
       "reason": "Stop-loss geraakt (low=6.35 <= 6.36)",
       "pnl_quote": -1.2543808925006772,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9655333697719335,
+      "price": 76.3903999013851,
+      "timestamp": "2026-07-08T15:29:12.360880+00:00",
+      "reason": "Stop-loss geraakt (low=76.22 <= 76.39)",
+      "pnl_quote": -1.0802573338575314,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 249.64743338834762,
+      "price": 0.8186,
+      "timestamp": "2026-07-08T15:29:21.958504+00:00",
+      "reason": "RSI-herstel: laag=26.4 nu=33.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 989.9371555568002,
+      "price": 0.165151,
+      "timestamp": "2026-07-08T15:29:21.971621+00:00",
+      "reason": "RSI-herstel: laag=31.9 nu=34.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 61550.0,
-  "last_updated": "2026-07-08T15:14:42.007481+00:00"
+  "last_price": 0.165151,
+  "last_updated": "2026-07-08T15:29:21.977965+00:00"
 }
