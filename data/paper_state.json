@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 595.0978565522521,
+  "balance_quote": 561.5765297638425,
   "positions": [
-    {
-      "side": "long",
-      "amount": 20.556782411760693,
-      "entry_price": 6.373,
-      "stop_loss": 6.307985991996113,
-      "take_profit": 6.470521012005831,
-      "opened_at": "2026-07-12T07:49:01.106998+00:00",
-      "symbol": "AVAX/USD"
-    },
     {
       "side": "long",
       "amount": 916.9395315004887,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 1.926381770530403,
-      "entry_price": 77.23,
-      "stop_loss": 76.8966823758945,
-      "take_profit": 77.72997643615825,
-      "opened_at": "2026-07-12T13:46:35.243824+00:00",
-      "symbol": "SOL/USD"
+      "amount": 207.63448361476665,
+      "entry_price": 0.8452,
+      "stop_loss": 0.8408281760707282,
+      "take_profit": 0.8517577358939076,
+      "opened_at": "2026-07-12T14:59:51.395113+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07720496048357435,
+      "entry_price": 1818.46,
+      "stop_loss": 1810.410073799114,
+      "take_profit": 1830.534889301329,
+      "opened_at": "2026-07-12T14:59:51.408882+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -3837,8 +3837,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.2",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 20.556782411760693,
+      "price": 6.470521012005831,
+      "timestamp": "2026-07-12T14:59:40.675397+00:00",
+      "reason": "Take-profit geraakt (high=6.475 >= 6.471)",
+      "pnl_quote": 2.0047182243785358,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.926381770530403,
+      "price": 77.53,
+      "timestamp": "2026-07-12T14:59:42.985685+00:00",
+      "reason": "RSI overbought exit (73.9 > 72)",
+      "pnl_quote": 0.5779145311591094,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 207.63448361476665,
+      "price": 0.8452,
+      "timestamp": "2026-07-12T14:59:51.395124+00:00",
+      "reason": "RSI-herstel: laag=25.7 nu=52.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07720496048357435,
+      "price": 1818.46,
+      "timestamp": "2026-07-12T14:59:51.408891+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=78.5",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 77.16,
-  "last_updated": "2026-07-12T14:45:08.986156+00:00"
+  "last_price": 1818.46,
+  "last_updated": "2026-07-12T14:59:51.415691+00:00"
 }
