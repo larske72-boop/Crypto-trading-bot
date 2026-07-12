@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 525.1187104250073,
+  "balance_quote": 524.0334972406037,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 153.52552637849593,
-      "entry_price": 0.8551,
-      "stop_loss": 0.8462642284348187,
-      "take_profit": 0.8683536573477717,
-      "opened_at": "2026-07-12T01:21:11.664353+00:00",
-      "symbol": "DOT/USD"
+      "amount": 20.556782411760693,
+      "entry_price": 6.373,
+      "stop_loss": 6.307985991996113,
+      "take_profit": 6.470521012005831,
+      "opened_at": "2026-07-12T07:49:01.106998+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -3711,8 +3711,26 @@
       "reason": "RSI-herstel: laag=8.1 nu=35.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 153.52552637849593,
+      "price": 0.8462642284348187,
+      "timestamp": "2026-07-12T07:48:53.909825+00:00",
+      "reason": "Stop-loss geraakt (low=0.8455 <= 0.8463)",
+      "pnl_quote": -1.356516480504581,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 20.556782411760693,
+      "price": 6.373,
+      "timestamp": "2026-07-12T07:49:01.107010+00:00",
+      "reason": "RSI-herstel: laag=17.8 nu=35.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 0.8566,
-  "last_updated": "2026-07-12T01:50:14.211225+00:00"
+  "last_price": 6.373,
+  "last_updated": "2026-07-12T07:49:01.114109+00:00"
 }
