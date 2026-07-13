@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 570.8253962850495,
+  "balance_quote": 593.657072965608,
   "positions": [
-    {
-      "side": "long",
-      "amount": 205.6514289923869,
-      "entry_price": 0.8347,
-      "stop_loss": 0.8279942684631137,
-      "take_profit": 0.8447585973053294,
-      "opened_at": "2026-07-13T20:17:17.476654+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 129.3781014517738,
@@ -28,6 +19,15 @@
       "take_profit": 62536.373620724706,
       "opened_at": "2026-07-13T21:01:06.202756+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.429957666776104,
+      "entry_price": 43.27,
+      "stop_loss": 43.06686343200274,
+      "take_profit": 43.5747048519959,
+      "opened_at": "2026-07-13T21:15:47.178761+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -4449,8 +4449,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=49.7",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 205.6514289923869,
+      "price": 0.8327,
+      "timestamp": "2026-07-13T21:15:37.582363+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.41130285798476507,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.429957666776104,
+      "price": 43.27,
+      "timestamp": "2026-07-13T21:15:47.178774+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=55.1",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 62153.5,
-  "last_updated": "2026-07-13T21:01:06.210926+00:00"
+  "last_price": 43.27,
+  "last_updated": "2026-07-13T21:15:47.187156+00:00"
 }
