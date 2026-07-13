@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 682.0957730104639,
+  "balance_quote": 545.676618408371,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 1.0784713960596959,
       "opened_at": "2026-07-13T13:28:24.572885+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.8054414320022867,
+      "entry_price": 75.56,
+      "stop_loss": 75.0328318146681,
+      "take_profit": 76.35075227799786,
+      "opened_at": "2026-07-13T14:00:47.435903+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -4215,8 +4224,17 @@
       "reason": "Stop-loss geraakt (low=6.578 <= 6.589)",
       "pnl_quote": -1.4173996376397326,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8054414320022867,
+      "price": 75.56,
+      "timestamp": "2026-07-13T14:00:47.435916+00:00",
+      "reason": "RSI-herstel: laag=19.1 nu=35.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 62310.6,
-  "last_updated": "2026-07-13T13:46:03.983191+00:00"
+  "last_price": 75.56,
+  "last_updated": "2026-07-13T14:00:47.443851+00:00"
 }
