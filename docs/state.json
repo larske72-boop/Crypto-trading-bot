@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 601.4975535331322,
+  "balance_quote": 600.7795059613496,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 175.52469342244572,
-      "entry_price": 0.8556,
-      "stop_loss": 0.8499396792492616,
-      "take_profit": 0.8640904811261076,
-      "opened_at": "2026-07-15T00:48:56.261577+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
       "amount": 136.67665410852652,
       "entry_price": 1.10022,
       "stop_loss": 1.0952906501546569,
       "take_profit": 1.1076140247680146,
       "opened_at": "2026-07-15T02:46:05.499567+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 923.3329429034795,
+      "entry_price": 0.162666,
+      "stop_loss": 0.1614007484380049,
+      "take_profit": 0.16456387734299266,
+      "opened_at": "2026-07-15T03:00:48.556579+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -5205,8 +5205,26 @@
       "reason": "RSI-herstel: laag=27.7 nu=33.2 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 175.52469342244572,
+      "price": 0.8516,
+      "timestamp": "2026-07-15T03:00:40.158011+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.7020987736897837,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 923.3329429034795,
+      "price": 0.162666,
+      "timestamp": "2026-07-15T03:00:48.556596+00:00",
+      "reason": "RSI-herstel: laag=31.4 nu=36.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 1.10022,
-  "last_updated": "2026-07-15T02:46:05.509212+00:00"
+  "last_price": 0.162666,
+  "last_updated": "2026-07-15T03:00:48.566378+00:00"
 }
