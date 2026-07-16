@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 572.869458467419,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.0027532888593368456,
-      "entry_price": 64545.5,
-      "stop_loss": 64309.751674623774,
-      "take_profit": 64899.12248806434,
-      "opened_at": "2026-07-16T00:57:49.162563+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.849725798285989,
-      "entry_price": 76.86,
-      "stop_loss": 76.35508021928614,
-      "take_profit": 77.6173796710708,
-      "opened_at": "2026-07-16T00:57:49.181958+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 169.95059287629613,
-      "entry_price": 0.8427,
-      "stop_loss": 0.8380315001294808,
-      "take_profit": 0.8497027498057788,
-      "opened_at": "2026-07-16T01:41:50.710293+00:00",
-      "symbol": "DOT/USD"
-    }
-  ],
+  "balance_quote": 1033.5926933077067,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -5565,8 +5537,35 @@
       "reason": "RSI-herstel: laag=28.7 nu=43.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0027532888593368456,
+      "price": 64309.751674623774,
+      "timestamp": "2026-07-16T07:37:01.772018+00:00",
+      "reason": "Stop-loss geraakt (low=6.423e+04 <= 6.431e+04)",
+      "pnl_quote": -0.6490832378656819,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.849725798285989,
+      "price": 76.35508021928614,
+      "timestamp": "2026-07-16T07:37:02.958531+00:00",
+      "reason": "Stop-loss geraakt (low=76.29 <= 76.36)",
+      "pnl_quote": -0.9339631444513259,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 169.95059287629613,
+      "price": 0.8380315001294808,
+      "timestamp": "2026-07-16T07:37:04.162384+00:00",
+      "reason": "Stop-loss geraakt (low=0.8349 <= 0.838)",
+      "pnl_quote": -0.7934143208376554,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.8463,
-  "last_updated": "2026-07-16T02:40:11.108961+00:00"
+  "last_price": 64226.3,
+  "last_updated": "2026-07-16T07:37:14.970826+00:00"
 }
