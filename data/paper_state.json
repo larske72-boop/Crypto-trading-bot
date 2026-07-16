@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 568.6796994250444,
+  "balance_quote": 716.0868230842738,
   "positions": [
-    {
-      "side": "long",
-      "amount": 22.123814164038798,
-      "entry_price": 6.692,
-      "stop_loss": 6.662825974141141,
-      "take_profit": 6.735761038788289,
-      "opened_at": "2026-07-15T23:44:44.783529+00:00",
-      "symbol": "AVAX/USD"
-    },
     {
       "side": "long",
       "amount": 0.0027532888593368456,
@@ -5547,8 +5538,17 @@
       "reason": "RSI-herstel: laag=28.2 nu=35.6 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 22.123814164038798,
+      "price": 6.662825974141141,
+      "timestamp": "2026-07-16T01:26:55.018913+00:00",
+      "reason": "Stop-loss geraakt (low=6.66 <= 6.663)",
+      "pnl_quote": -0.6454407265182738,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 76.85,
-  "last_updated": "2026-07-16T01:12:25.003864+00:00"
+  "last_price": 64527.7,
+  "last_updated": "2026-07-16T01:27:05.816978+00:00"
 }
