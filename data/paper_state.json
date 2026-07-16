@@ -1,7 +1,26 @@
 {
   "mode": "paper",
-  "balance_quote": 1029.755238712205,
-  "positions": [],
+  "balance_quote": 659.0433527758112,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 2.739074979950007,
+      "entry_price": 75.19,
+      "stop_loss": 74.7141636713398,
+      "take_profit": 75.90375449299029,
+      "opened_at": "2026-07-16T23:43:47.076121+00:00",
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.667056269618358,
+      "entry_price": 44.93,
+      "stop_loss": 44.67604864935489,
+      "take_profit": 45.310927025967665,
+      "opened_at": "2026-07-16T23:43:47.097259+00:00",
+      "symbol": "LTC/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -5762,8 +5781,26 @@
       "reason": "Stop-loss geraakt (low=6.375e+04 <= 6.385e+04)",
       "pnl_quote": -0.6425651059110464,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.739074979950007,
+      "price": 75.19,
+      "timestamp": "2026-07-16T23:43:47.076135+00:00",
+      "reason": "RSI-herstel: laag=25.7 nu=32.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.667056269618358,
+      "price": 44.93,
+      "timestamp": "2026-07-16T23:43:47.097270+00:00",
+      "reason": "RSI-herstel: laag=30.4 nu=38.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 63719.8,
-  "last_updated": "2026-07-16T23:37:00.639017+00:00"
+  "last_price": 44.93,
+  "last_updated": "2026-07-16T23:43:47.107668+00:00"
 }
