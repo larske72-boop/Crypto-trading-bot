@@ -1,33 +1,15 @@
 {
   "mode": "paper",
-  "balance_quote": 547.7830431575655,
+  "balance_quote": 820.5699540514457,
   "positions": [
     {
       "side": "long",
-      "amount": 2.739074979950007,
-      "entry_price": 75.19,
-      "stop_loss": 74.7141636713398,
-      "take_profit": 75.90375449299029,
-      "opened_at": "2026-07-16T23:43:47.076121+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 21.12508975590202,
-      "entry_price": 6.476,
-      "stop_loss": 6.426936841261054,
-      "take_profit": 6.54959473810842,
-      "opened_at": "2026-07-17T02:24:45.562292+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.00215324200373887,
-      "entry_price": 63599.8,
-      "stop_loss": 63302.97329920863,
-      "take_profit": 64045.04005118707,
-      "opened_at": "2026-07-17T03:08:53.205742+00:00",
-      "symbol": "BTC/USD"
+      "amount": 4.534537765536283,
+      "entry_price": 45.24,
+      "stop_loss": 44.80709710368402,
+      "take_profit": 45.889354344473965,
+      "opened_at": "2026-07-17T04:21:51.391835+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -5907,8 +5889,44 @@
       "reason": "RSI-herstel: laag=25.9 nu=42.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.739074979950007,
+      "price": 74.7141636713398,
+      "timestamp": "2026-07-17T04:21:39.391086+00:00",
+      "reason": "Stop-loss geraakt (low=74.68 <= 74.71)",
+      "pnl_quote": -1.3033513823843919,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 21.12508975590202,
+      "price": 6.484,
+      "timestamp": "2026-07-17T04:21:40.503644+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.16900071804721506,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.00215324200373887,
+      "price": 63302.97329920863,
+      "timestamp": "2026-07-17T04:21:41.698519+00:00",
+      "reason": "Stop-loss geraakt (low=6.325e+04 <= 6.33e+04)",
+      "pnl_quote": -0.6391397199752191,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.534537765536283,
+      "price": 45.24,
+      "timestamp": "2026-07-17T04:21:51.391853+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=49.1",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 63445.7,
-  "last_updated": "2026-07-17T04:07:08.108652+00:00"
+  "last_price": 45.24,
+  "last_updated": "2026-07-17T04:21:51.402797+00:00"
 }
