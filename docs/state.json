@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 600.6574279415108,
+  "balance_quote": 570.6520948786226,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1.879193305643384,
-      "entry_price": 75.09,
-      "stop_loss": 74.80868328733817,
-      "take_profit": 75.51197506899275,
-      "opened_at": "2026-07-18T16:50:05.682968+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 870.3519486528032,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 3.1540507663385364,
-      "entry_price": 47.61,
-      "stop_loss": 46.96358515463255,
-      "take_profit": 48.579622268051175,
-      "opened_at": "2026-07-18T17:43:47.372312+00:00",
+      "amount": 3.7622105411301603,
+      "entry_price": 47.4,
+      "stop_loss": 46.752226639156746,
+      "take_profit": 48.371660041264875,
+      "opened_at": "2026-07-18T17:58:30.165983+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0022137243613085254,
+      "entry_price": 64444.8,
+      "stop_loss": 64290.45959539417,
+      "take_profit": 64676.31060690876,
+      "opened_at": "2026-07-18T17:58:30.189588+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -6753,8 +6753,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=86.2",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.879193305643384,
+      "price": 75.29,
+      "timestamp": "2026-07-18T17:58:19.364322+00:00",
+      "reason": "RSI overbought exit (72.3 > 72)",
+      "pnl_quote": 0.37583866112868236,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.1540507663385364,
+      "price": 47.4,
+      "timestamp": "2026-07-18T17:58:21.757360+00:00",
+      "reason": "RSI overbought exit (77.0 > 72)",
+      "pnl_quote": -0.6623506609310823,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.7622105411301603,
+      "price": 47.4,
+      "timestamp": "2026-07-18T17:58:30.166002+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=77.0",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0022137243613085254,
+      "price": 64444.8,
+      "timestamp": "2026-07-18T17:58:30.189602+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=80.3",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 47.61,
-  "last_updated": "2026-07-18T17:43:47.384489+00:00"
+  "last_price": 64444.8,
+  "last_updated": "2026-07-18T17:58:30.201594+00:00"
 }
