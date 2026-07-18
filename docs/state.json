@@ -1,23 +1,14 @@
 {
   "mode": "paper",
-  "balance_quote": 738.9608115389782,
+  "balance_quote": 822.9064166608268,
   "positions": [
     {
       "side": "long",
-      "amount": 0.002225138481613401,
-      "entry_price": 63942.7,
-      "stop_loss": 63857.3550329626,
-      "take_profit": 64070.71745055609,
-      "opened_at": "2026-07-18T05:34:55.685219+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.08005255759039986,
-      "entry_price": 1846.07,
-      "stop_loss": 1841.8514311350295,
-      "take_profit": 1852.3978532974554,
-      "opened_at": "2026-07-18T08:58:11.592807+00:00",
+      "amount": 0.11164653499028941,
+      "entry_price": 1842.66,
+      "stop_loss": 1838.281159207032,
+      "take_profit": 1849.2282611894523,
+      "opened_at": "2026-07-18T09:27:33.982056+00:00",
       "symbol": "ETH/USD"
     }
   ],
@@ -6375,8 +6366,35 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.06795983541064743,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002225138481613401,
+      "price": 63918.4,
+      "timestamp": "2026-07-18T09:27:23.191289+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.05407086510317072,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08005255759039986,
+      "price": 1841.8514311350295,
+      "timestamp": "2026-07-18T09:27:24.384806+00:00",
+      "reason": "Stop-loss geraakt (low=1842 <= 1842)",
+      "pnl_quote": -0.33770722701211753,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.11164653499028941,
+      "price": 1842.66,
+      "timestamp": "2026-07-18T09:27:33.982068+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=44.4",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 63933.1,
-  "last_updated": "2026-07-18T09:12:51.882531+00:00"
+  "last_price": 1842.66,
+  "last_updated": "2026-07-18T09:27:33.993805+00:00"
 }
