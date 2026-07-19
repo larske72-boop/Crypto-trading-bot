@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 570.3768086988747,
+  "balance_quote": 571.2241470608026,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 1.882571935526543,
-      "entry_price": 75.75,
-      "stop_loss": 75.3786813830925,
-      "take_profit": 76.30697792536127,
-      "opened_at": "2026-07-19T04:17:14.368635+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
       "amount": 130.10657327206582,
       "entry_price": 1.09598,
       "stop_loss": 1.092878710304113,
       "take_profit": 1.1006319345438302,
       "opened_at": "2026-07-19T06:03:01.358316+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.8723749411983832,
+      "entry_price": 76.27,
+      "stop_loss": 75.97607535571726,
+      "take_profit": 76.7108869664241,
+      "opened_at": "2026-07-19T08:52:24.064872+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -7221,8 +7221,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=56.7",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.882571935526543,
+      "price": 76.30697792536127,
+      "timestamp": "2026-07-19T08:52:15.780702+00:00",
+      "reason": "Take-profit geraakt (high=76.32 >= 76.31)",
+      "pnl_quote": 1.0485510109929237,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8723749411983832,
+      "price": 76.27,
+      "timestamp": "2026-07-19T08:52:24.064883+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=65.7",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 1.09594,
-  "last_updated": "2026-07-19T08:37:40.655106+00:00"
+  "last_price": 76.27,
+  "last_updated": "2026-07-19T08:52:24.077835+00:00"
 }
