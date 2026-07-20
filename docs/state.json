@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 588.4610975659039,
+  "balance_quote": 707.8212652834385,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1.9529275578657237,
-      "entry_price": 76.72,
-      "stop_loss": 76.15158759339822,
-      "take_profit": 77.57261860990266,
-      "opened_at": "2026-07-20T00:10:37.184921+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 182.08934069909162,
-      "entry_price": 0.8164,
-      "stop_loss": 0.8105743558923091,
-      "take_profit": 0.8251384661615364,
-      "opened_at": "2026-07-20T13:39:44.847735+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 0.002287001733206833,
@@ -28,6 +10,15 @@
       "take_profit": 64898.06288912505,
       "opened_at": "2026-07-20T13:54:28.804437+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 217.60368460509056,
+      "entry_price": 0.8132,
+      "stop_loss": 0.8068932282669711,
+      "take_profit": 0.8226601575995435,
+      "opened_at": "2026-07-20T14:09:10.842457+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -7797,8 +7788,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=44.4",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9529275578657237,
+      "price": 76.15158759339822,
+      "timestamp": "2026-07-20T14:08:59.960902+00:00",
+      "reason": "Stop-loss geraakt (low=76.06 <= 76.15)",
+      "pnl_quote": -1.1100682530853874,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 182.08934069909162,
+      "price": 0.8105743558923091,
+      "timestamp": "2026-07-20T14:09:01.242757+00:00",
+      "reason": "Stop-loss geraakt (low=0.8104 <= 0.8106)",
+      "pnl_quote": -1.0607876947169927,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 217.60368460509056,
+      "price": 0.8132,
+      "timestamp": "2026-07-20T14:09:10.842470+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=57.2",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 64326.7,
-  "last_updated": "2026-07-20T13:54:28.818157+00:00"
+  "last_price": 0.8132,
+  "last_updated": "2026-07-20T14:09:10.856602+00:00"
 }
