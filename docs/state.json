@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 582.4799779626683,
+  "balance_quote": 610.8205897660723,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 217.21359560063703,
-      "entry_price": 0.838,
-      "stop_loss": 0.8334918389629161,
-      "take_profit": 0.8447622415556256,
-      "opened_at": "2026-07-21T04:08:52.811036+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
       "amount": 845.3647427429195,
       "entry_price": 0.172257,
       "stop_loss": 0.17046721161571154,
       "take_profit": 0.17494168257643267,
       "opened_at": "2026-07-21T04:08:52.840797+00:00",
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07939994355437599,
+      "entry_price": 1923.24,
+      "stop_loss": 1912.585077324774,
+      "take_profit": 1939.2223840128393,
+      "opened_at": "2026-07-21T04:23:30.948250+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -8445,8 +8445,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=67.2",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 217.21359560063703,
+      "price": 0.8334918389629161,
+      "timestamp": "2026-07-21T04:23:22.557846+00:00",
+      "reason": "Stop-loss geraakt (low=0.8332 <= 0.8335)",
+      "pnl_quote": -0.9792338684116828,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07939994355437599,
+      "price": 1923.24,
+      "timestamp": "2026-07-21T04:23:30.948261+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=69.1",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 0.172257,
-  "last_updated": "2026-07-21T04:08:52.855885+00:00"
+  "last_price": 1923.24,
+  "last_updated": "2026-07-21T04:23:30.963809+00:00"
 }
