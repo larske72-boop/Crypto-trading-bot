@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 533.6510728915024,
+  "balance_quote": 581.7233014443592,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.10841517724337447,
-      "entry_price": 1922.77,
-      "stop_loss": 1910.524883796385,
-      "take_profit": 1941.1376743054225,
-      "opened_at": "2026-07-21T03:10:09.817036+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 199.93521193932926,
-      "entry_price": 0.8341,
-      "stop_loss": 0.8295378950832762,
-      "take_profit": 0.8409431573750855,
-      "opened_at": "2026-07-21T03:10:09.839231+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 20.062070409454975,
@@ -28,6 +10,24 @@
       "take_profit": 6.711181341136726,
       "opened_at": "2026-07-21T03:10:09.861730+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 217.89348160297524,
+      "entry_price": 0.8343,
+      "stop_loss": 0.8296781055743843,
+      "take_profit": 0.8412328416384237,
+      "opened_at": "2026-07-21T03:24:50.047739+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07563334721614373,
+      "entry_price": 1922.84,
+      "stop_loss": 1910.7993954164062,
+      "take_profit": 1940.9009068753905,
+      "opened_at": "2026-07-21T03:24:50.077135+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -8319,8 +8319,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=71.5",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.10841517724337447,
+      "price": 1923.03,
+      "timestamp": "2026-07-21T03:24:39.336851+00:00",
+      "reason": "RSI overbought exit (74.7 > 72)",
+      "pnl_quote": 0.028187946083278348,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 199.93521193932926,
+      "price": 0.8343,
+      "timestamp": "2026-07-21T03:24:40.533311+00:00",
+      "reason": "RSI overbought exit (72.7 > 72)",
+      "pnl_quote": 0.03998704238790651,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 217.89348160297524,
+      "price": 0.8343,
+      "timestamp": "2026-07-21T03:24:50.047750+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=72.7",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07563334721614373,
+      "price": 1922.84,
+      "timestamp": "2026-07-21T03:24:50.077142+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.3",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 6.65,
-  "last_updated": "2026-07-21T03:10:09.872645+00:00"
+  "last_price": 1922.84,
+  "last_updated": "2026-07-21T03:24:50.091764+00:00"
 }
