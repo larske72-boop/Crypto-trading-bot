@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 536.5646511417641,
+  "balance_quote": 670.2432381342979,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 2.148871632472143,
-      "entry_price": 78.03,
-      "stop_loss": 77.64418245936983,
-      "take_profit": 78.60872631094524,
-      "opened_at": "2026-07-21T20:39:16.667772+00:00",
+      "amount": 2.151525546142456,
+      "entry_price": 77.88,
+      "stop_loss": 77.51468779218975,
+      "take_profit": 78.42796831171538,
+      "opened_at": "2026-07-21T21:08:29.173613+00:00",
       "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.002018951592923662,
-      "entry_price": 66441.0,
-      "stop_loss": 66195.28350122068,
-      "take_profit": 66809.57474816899,
-      "opened_at": "2026-07-21T20:39:16.701443+00:00",
-      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -9255,8 +9246,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=54.4",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.148871632472143,
+      "price": 77.87,
+      "timestamp": "2026-07-21T21:08:19.482992+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.34381946119552254,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002018951592923662,
+      "price": 66324.9,
+      "timestamp": "2026-07-21T21:08:20.785867+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.23440027993842705,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.151525546142456,
+      "price": 77.88,
+      "timestamp": "2026-07-21T21:08:29.173628+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=48.4",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 66390.8,
-  "last_updated": "2026-07-21T20:53:47.440948+00:00"
+  "last_price": 77.88,
+  "last_updated": "2026-07-21T21:08:29.190011+00:00"
 }
