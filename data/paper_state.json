@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 721.2531004505763,
+  "balance_quote": 577.0765024875118,
   "positions": [
     {
       "side": "long",
@@ -13,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 3.8553191172256587,
-      "entry_price": 46.77,
-      "stop_loss": 46.58907459277505,
-      "take_profit": 47.04138811083744,
-      "opened_at": "2026-07-22T13:07:43.361851+00:00",
+      "amount": 3.8533420304988772,
+      "entry_price": 46.8,
+      "stop_loss": 46.61707459277504,
+      "take_profit": 47.074388110837425,
+      "opened_at": "2026-07-22T13:11:27.619634+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0021981589050106493,
+      "entry_price": 65631.8,
+      "stop_loss": 65385.6939528687,
+      "take_profit": 66000.95907069696,
+      "opened_at": "2026-07-22T13:11:27.654165+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -9669,8 +9678,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.7",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.8553191172256587,
+      "price": 46.8,
+      "timestamp": "2026-07-22T13:11:19.206688+00:00",
+      "reason": "RSI overbought exit (76.2 > 72)",
+      "pnl_quote": 0.11565957351672296,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.8533420304988772,
+      "price": 46.8,
+      "timestamp": "2026-07-22T13:11:27.619647+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.2",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0021981589050106493,
+      "price": 65631.8,
+      "timestamp": "2026-07-22T13:11:27.654172+00:00",
+      "reason": "RSI-herstel: laag=28.8 nu=32.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 46.77,
-  "last_updated": "2026-07-22T13:07:43.378835+00:00"
+  "last_price": 65631.8,
+  "last_updated": "2026-07-22T13:11:27.671357+00:00"
 }
