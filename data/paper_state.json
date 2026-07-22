@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 570.7997421733322,
+  "balance_quote": 721.2531004505763,
   "positions": [
-    {
-      "side": "long",
-      "amount": 133.50527508934968,
-      "entry_price": 1.13629,
-      "stop_loss": 1.13201361833276,
-      "take_profit": 1.14270457250086,
-      "opened_at": "2026-07-22T12:09:08.766507+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 3.8318994506802646,
-      "entry_price": 46.55,
-      "stop_loss": 46.39029436594714,
-      "take_profit": 46.78955845107928,
-      "opened_at": "2026-07-22T12:23:50.438366+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 0.07420577710349452,
@@ -28,6 +10,15 @@
       "take_profit": 1935.9637831449288,
       "opened_at": "2026-07-22T12:23:50.471970+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.8553191172256587,
+      "entry_price": 46.77,
+      "stop_loss": 46.58907459277505,
+      "take_profit": 47.04138811083744,
+      "opened_at": "2026-07-22T13:07:43.361851+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -9651,8 +9642,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=48.0",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 133.50527508934968,
+      "price": 1.13459,
+      "timestamp": "2026-07-22T13:07:32.575955+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.22695896765188195,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.8318994506802646,
+      "price": 46.78955845107928,
+      "timestamp": "2026-07-22T13:07:33.682436+00:00",
+      "reason": "Take-profit geraakt (high=46.79 >= 46.79)",
+      "pnl_quote": 0.9179638970965129,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.8553191172256587,
+      "price": 46.77,
+      "timestamp": "2026-07-22T13:07:43.361865+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.7",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1919.0,
-  "last_updated": "2026-07-22T12:53:02.800000+00:00"
+  "last_price": 46.77,
+  "last_updated": "2026-07-22T13:07:43.378835+00:00"
 }
