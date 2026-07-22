@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 575.8730913349661,
+  "balance_quote": 553.1504799950429,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 127.07487737633316,
-      "entry_price": 1.14211,
-      "stop_loss": 1.135796632031262,
-      "take_profit": 1.151580051953107,
-      "opened_at": "2026-07-21T23:58:41.056272+00:00",
-      "symbol": "XRP/USD"
+      "amount": 0.08953714926444815,
+      "entry_price": 1930.59,
+      "stop_loss": 1919.6475356742828,
+      "take_profit": 1947.0036964885755,
+      "opened_at": "2026-07-22T01:26:55.075413+00:00",
+      "symbol": "ETH/USD"
     },
     {
       "side": "long",
-      "amount": 0.07427247125627665,
-      "entry_price": 1938.38,
-      "stop_loss": 1927.9273279943582,
-      "take_profit": 1954.059008008463,
-      "opened_at": "2026-07-22T00:57:34.032044+00:00",
-      "symbol": "ETH/USD"
+      "amount": 1.767028111407625,
+      "entry_price": 78.26,
+      "stop_loss": 77.88836680139195,
+      "take_profit": 78.81744979791209,
+      "opened_at": "2026-07-22T01:26:55.109628+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -9417,8 +9417,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.2",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 127.07487737633316,
+      "price": 1.14289,
+      "timestamp": "2026-07-22T01:26:45.319037+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.0991184043535327,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.07427247125627665,
+      "price": 1927.9273279943582,
+      "timestamp": "2026-07-22T01:26:46.668044+00:00",
+      "reason": "Stop-loss geraakt (low=1927 <= 1928)",
+      "pnl_quote": -0.7763457810903276,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08953714926444815,
+      "price": 1930.59,
+      "timestamp": "2026-07-22T01:26:55.075425+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=54.2",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.767028111407625,
+      "price": 78.26,
+      "timestamp": "2026-07-22T01:26:55.109642+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=56.7",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 1934.56,
-  "last_updated": "2026-07-22T01:12:07.982176+00:00"
+  "last_price": 78.26,
+  "last_updated": "2026-07-22T01:26:55.126788+00:00"
 }
