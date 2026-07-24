@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 528.5108954152147,
+  "balance_quote": 527.7206598052595,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 800.473300055759,
-      "entry_price": 0.165062,
-      "stop_loss": 0.16382798693251202,
-      "take_profit": 0.16691301960123195,
-      "opened_at": "2026-07-24T13:20:49.433242+00:00",
-      "symbol": "ADA/USD"
+      "amount": 121.31286316694394,
+      "entry_price": 1.08752,
+      "stop_loss": 1.0820665224046244,
+      "take_profit": 1.0957002163930636,
+      "opened_at": "2026-07-24T18:06:19.012138+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -10821,8 +10821,26 @@
       "reason": "RSI-herstel: laag=24.2 nu=33.3 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 800.473300055759,
+      "price": 0.16382798693251202,
+      "timestamp": "2026-07-24T18:06:11.844591+00:00",
+      "reason": "Stop-loss geraakt (low=0.1633 <= 0.1638)",
+      "pnl_quote": -0.9877945124440259,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 121.31286316694394,
+      "price": 1.08752,
+      "timestamp": "2026-07-24T18:06:19.012148+00:00",
+      "reason": "RSI-herstel: laag=26.1 nu=37.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 0.164899,
-  "last_updated": "2026-07-24T13:35:25.297669+00:00"
+  "last_price": 1.08752,
+  "last_updated": "2026-07-24T18:06:19.027138+00:00"
 }
