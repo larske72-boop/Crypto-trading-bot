@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 580.8838060954016,
+  "balance_quote": 597.2066437500506,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1005.1067075618337,
-      "entry_price": 0.165841,
-      "stop_loss": 0.16470240077877357,
-      "take_profit": 0.16754889883183963,
-      "opened_at": "2026-07-25T17:46:57.386663+00:00",
-      "symbol": "ADA/USD"
-    },
     {
       "side": "long",
       "amount": 22.270194158459585,
@@ -28,6 +19,15 @@
       "take_profit": 46.68458734135461,
       "opened_at": "2026-07-25T20:05:34.017926+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.002321560745340411,
+      "entry_price": 64310.9,
+      "stop_loss": 64210.527753874354,
+      "take_profit": 64461.458369188476,
+      "opened_at": "2026-07-25T20:20:14.344331+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -11667,8 +11667,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.5",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1005.1067075618337,
+      "price": 0.164783,
+      "timestamp": "2026-07-25T20:20:04.736868+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.0634028966003939,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002321560745340411,
+      "price": 64310.9,
+      "timestamp": "2026-07-25T20:20:14.344342+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=60.4",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 46.43,
-  "last_updated": "2026-07-25T20:05:34.038270+00:00"
+  "last_price": 64310.9,
+  "last_updated": "2026-07-25T20:20:14.365525+00:00"
 }
