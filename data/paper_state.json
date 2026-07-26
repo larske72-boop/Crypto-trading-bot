@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 557.0301265097281,
+  "balance_quote": 556.9224614658635,
   "positions": [
-    {
-      "side": "long",
-      "amount": 3.707375535498781,
-      "entry_price": 46.56,
-      "stop_loss": 46.36790842862743,
-      "take_profit": 46.84813735705885,
-      "opened_at": "2026-07-25T21:41:50.209413+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 2.3247892404034314,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 169.2689092347539,
-      "entry_price": 0.8227,
-      "stop_loss": 0.8192675629368633,
-      "take_profit": 0.827848655594705,
-      "opened_at": "2026-07-26T05:20:34.944755+00:00",
+      "amount": 211.21149175738157,
+      "entry_price": 0.824,
+      "stop_loss": 0.8203681259798611,
+      "take_profit": 0.8294478110302083,
+      "opened_at": "2026-07-26T05:51:44.807102+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07391219302472536,
+      "entry_price": 1883.73,
+      "stop_loss": 1878.7983659738006,
+      "take_profit": 1891.1274510392993,
+      "opened_at": "2026-07-26T05:51:44.849898+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -11883,8 +11883,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.8",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.707375535498781,
+      "price": 46.84813735705885,
+      "timestamp": "2026-07-26T05:51:34.012951+00:00",
+      "reason": "Take-profit geraakt (high=46.86 >= 46.85)",
+      "pnl_quote": 1.0682333884232662,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 169.2689092347539,
+      "price": 0.824,
+      "timestamp": "2026-07-26T05:51:36.275456+00:00",
+      "reason": "RSI overbought exit (74.5 > 72)",
+      "pnl_quote": 0.22004958200517422,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 211.21149175738157,
+      "price": 0.824,
+      "timestamp": "2026-07-26T05:51:44.807112+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.5",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07391219302472536,
+      "price": 1883.73,
+      "timestamp": "2026-07-26T05:51:44.849908+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=60.6",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 0.8228,
-  "last_updated": "2026-07-26T05:36:12.852800+00:00"
+  "last_price": 1883.73,
+  "last_updated": "2026-07-26T05:51:44.871781+00:00"
 }
