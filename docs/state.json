@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 761.6567819966881,
+  "balance_quote": 905.7123299222292,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 1924.5093037786505,
       "opened_at": "2026-07-29T04:41:50.109944+00:00",
       "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 133.66426286574642,
-      "entry_price": 1.08619,
-      "stop_loss": 1.077741685301716,
-      "take_profit": 1.0988624720474258,
-      "opened_at": "2026-07-29T06:38:57.974565+00:00",
-      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -13233,8 +13224,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.3696710466803381,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 133.66426286574642,
+      "price": 1.077741685301716,
+      "timestamp": "2026-07-29T13:30:51.764424+00:00",
+      "reason": "Stop-loss geraakt (low=1.074 <= 1.078)",
+      "pnl_quote": -1.1292377566039704,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 64382.4,
-  "last_updated": "2026-07-29T12:07:11.565174+00:00"
+  "last_price": 64152.1,
+  "last_updated": "2026-07-29T13:31:01.373932+00:00"
 }
