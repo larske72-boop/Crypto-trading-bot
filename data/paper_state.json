@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 579.6558911502267,
+  "balance_quote": 903.7953328092397,
   "positions": [
     {
       "side": "long",
@@ -10,24 +10,6 @@
       "take_profit": 1924.5093037786505,
       "opened_at": "2026-07-29T04:41:50.109944+00:00",
       "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1098.8120688397896,
-      "entry_price": 0.164853,
-      "stop_loss": 0.1636585576612337,
-      "take_profit": 0.16664466350814944,
-      "opened_at": "2026-07-29T13:45:46.996463+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 3.195456952316575,
-      "entry_price": 45.35,
-      "stop_loss": 45.16081596008306,
-      "take_profit": 45.6337760598754,
-      "opened_at": "2026-07-29T13:45:47.042590+00:00",
-      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -13269,8 +13251,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=57.8",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1098.8120688397896,
+      "price": 0.1636585576612337,
+      "timestamp": "2026-07-29T14:15:08.803915+00:00",
+      "reason": "Stop-loss geraakt (low=0.1633 <= 0.1637)",
+      "pnl_quote": -1.3124676573696377,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.195456952316575,
+      "price": 45.16081596008306,
+      "timestamp": "2026-07-29T14:15:10.085951+00:00",
+      "reason": "Stop-loss geraakt (low=45.06 <= 45.16)",
+      "pnl_quote": -0.604529455619911,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 45.38,
-  "last_updated": "2026-07-29T14:00:23.857344+00:00"
+  "last_price": 64231.0,
+  "last_updated": "2026-07-29T14:15:19.692299+00:00"
 }
