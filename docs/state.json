@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 902.8977698047646,
+  "balance_quote": 722.3182158438117,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,15 @@
       "take_profit": 0.7723755391766455,
       "opened_at": "2026-07-31T18:43:22.890438+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 4.038907491857591,
+      "entry_price": 44.71,
+      "stop_loss": 44.43157328476081,
+      "take_profit": 45.12764007285879,
+      "opened_at": "2026-07-31T21:23:24.427698+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -14421,8 +14430,17 @@
       "reason": "Stop-loss geraakt (low=44.54 <= 44.66)",
       "pnl_quote": -0.8025319858848263,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.038907491857591,
+      "price": 44.71,
+      "timestamp": "2026-07-31T21:23:24.427710+00:00",
+      "reason": "RSI-herstel: laag=29.0 nu=40.8 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 62899.7,
-  "last_updated": "2026-07-31T21:08:40.619707+00:00"
+  "last_price": 44.71,
+  "last_updated": "2026-07-31T21:23:24.452797+00:00"
 }
