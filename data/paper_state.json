@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 860.0012743303133,
+  "balance_quote": 688.0010194642507,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,15 @@
       "take_profit": 45.12764007285879,
       "opened_at": "2026-07-31T21:23:24.427698+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.3636148806659705,
+      "entry_price": 72.77,
+      "stop_loss": 72.3927108461814,
+      "take_profit": 73.33593373072787,
+      "opened_at": "2026-07-31T22:14:06.058723+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -14439,8 +14448,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.5424152008660599,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.3636148806659705,
+      "price": 72.77,
+      "timestamp": "2026-07-31T22:14:06.058736+00:00",
+      "reason": "RSI-herstel: laag=25.5 nu=36.8 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 62883.8,
-  "last_updated": "2026-07-31T21:59:18.885043+00:00"
+  "last_price": 72.77,
+  "last_updated": "2026-07-31T22:14:06.084329+00:00"
 }
