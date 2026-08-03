@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 565.597057313109,
+  "balance_quote": 565.5207820477384,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 0.0022173042258882944,
-      "entry_price": 63770.8,
-      "stop_loss": 63318.18063042017,
-      "take_profit": 64449.72905436975,
-      "opened_at": "2026-08-03T15:15:44.458319+00:00",
+      "amount": 0.002218501117439086,
+      "entry_price": 63727.8,
+      "stop_loss": 63297.4219105949,
+      "take_profit": 64373.36713410765,
+      "opened_at": "2026-08-03T15:45:15.279800+00:00",
       "symbol": "BTC/USD"
     }
   ],
@@ -16545,8 +16545,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=77.8",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0022173042258882944,
+      "price": 63727.8,
+      "timestamp": "2026-08-03T15:45:08.169626+00:00",
+      "reason": "RSI overbought exit (73.0 > 72)",
+      "pnl_quote": -0.09534408171319342,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002218501117439086,
+      "price": 63727.8,
+      "timestamp": "2026-08-03T15:45:15.279811+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=73.0",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 63645.4,
-  "last_updated": "2026-08-03T15:30:26.150071+00:00"
+  "last_price": 63727.8,
+  "last_updated": "2026-08-03T15:45:15.309504+00:00"
 }
