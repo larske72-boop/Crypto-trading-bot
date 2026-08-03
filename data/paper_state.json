@@ -1,33 +1,33 @@
 {
   "mode": "paper",
-  "balance_quote": 582.4024713750258,
+  "balance_quote": 544.6049917565498,
   "positions": [
     {
       "side": "long",
-      "amount": 23.473363610073328,
-      "entry_price": 6.399,
-      "stop_loss": 6.3662697259421535,
-      "take_profit": 6.448095411086769,
-      "opened_at": "2026-08-03T07:12:41.250875+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 259.434542566954,
+      "entry_price": 0.82,
+      "stop_loss": 0.8131146808900811,
+      "take_profit": 0.8303279786648783,
+      "opened_at": "2026-08-03T13:23:58.170991+00:00",
+      "symbol": "DOT/USD"
     },
     {
       "side": "long",
-      "amount": 962.0355544879593,
-      "entry_price": 0.189183,
-      "stop_loss": 0.18689113435505264,
-      "take_profit": 0.19262079846742103,
-      "opened_at": "2026-08-03T13:09:06.405472+00:00",
+      "amount": 895.8686321802898,
+      "entry_price": 0.189971,
+      "stop_loss": 0.18744230091999042,
+      "take_profit": 0.19376404862001434,
+      "opened_at": "2026-08-03T13:23:58.228081+00:00",
       "symbol": "ADA/USD"
     },
     {
       "side": "long",
-      "amount": 179.3331910872724,
-      "entry_price": 0.8119,
-      "stop_loss": 0.8060963120983655,
-      "take_profit": 0.8206055318524517,
-      "opened_at": "2026-08-03T13:09:06.461923+00:00",
-      "symbol": "DOT/USD"
+      "amount": 20.94956884738228,
+      "entry_price": 6.499,
+      "stop_loss": 6.4618720545620345,
+      "take_profit": 6.554691918156947,
+      "opened_at": "2026-08-03T13:23:58.284101+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -16221,8 +16221,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.5",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 23.473363610073328,
+      "price": 6.448095411086769,
+      "timestamp": "2026-08-03T13:23:46.183790+00:00",
+      "reason": "Take-profit geraakt (high=6.5 >= 6.448)",
+      "pnl_quote": 1.152434436025743,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 962.0355544879593,
+      "price": 0.189971,
+      "timestamp": "2026-08-03T13:23:47.375929+00:00",
+      "reason": "RSI overbought exit (76.0 > 72)",
+      "pnl_quote": 0.7580840169365217,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 179.3331910872724,
+      "price": 0.8206055318524517,
+      "timestamp": "2026-08-03T13:23:48.576375+00:00",
+      "reason": "Take-profit geraakt (high=0.8213 >= 0.8206)",
+      "pnl_quote": 1.561190807212057,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 259.434542566954,
+      "price": 0.82,
+      "timestamp": "2026-08-03T13:23:58.171006+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=84.3",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 895.8686321802898,
+      "price": 0.189971,
+      "timestamp": "2026-08-03T13:23:58.228106+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.0",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 20.94956884738228,
+      "price": 6.499,
+      "timestamp": "2026-08-03T13:23:58.284123+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=75.3",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 0.8119,
-  "last_updated": "2026-08-03T13:09:06.496018+00:00"
+  "last_price": 6.499,
+  "last_updated": "2026-08-03T13:23:58.312166+00:00"
 }
