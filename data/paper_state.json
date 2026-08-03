@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 587.2550296670445,
+  "balance_quote": 565.418698693417,
   "positions": [
-    {
-      "side": "long",
-      "amount": 180.67899140946687,
-      "entry_price": 0.8261,
-      "stop_loss": 0.81877120236906,
-      "take_profit": 0.8370931964464099,
-      "opened_at": "2026-08-03T14:01:22.850148+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 957.6842222399434,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 22.517447456558454,
-      "entry_price": 6.52,
-      "stop_loss": 6.473203355002178,
-      "take_profit": 6.590194967496733,
-      "opened_at": "2026-08-03T14:16:20.358297+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 214.17374950508224,
+      "entry_price": 0.825,
+      "stop_loss": 0.8174886739163565,
+      "take_profit": 0.8362669891254652,
+      "opened_at": "2026-08-03T14:31:07.893205+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0022202746652554488,
+      "entry_price": 63665.4,
+      "stop_loss": 63205.99965764008,
+      "take_profit": 64354.50051353988,
+      "opened_at": "2026-08-03T14:31:08.103480+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -16455,8 +16455,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=71.6",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 180.67899140946687,
+      "price": 0.825,
+      "timestamp": "2026-08-03T14:30:57.094774+00:00",
+      "reason": "RSI overbought exit (79.3 > 72)",
+      "pnl_quote": -0.19874689055041017,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 22.517447456558454,
+      "price": 6.535,
+      "timestamp": "2026-08-03T14:30:59.510322+00:00",
+      "reason": "RSI overbought exit (80.2 > 72)",
+      "pnl_quote": 0.33776171184837267,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 214.17374950508224,
+      "price": 0.825,
+      "timestamp": "2026-08-03T14:31:07.893215+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=79.3",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0022202746652554488,
+      "price": 63665.4,
+      "timestamp": "2026-08-03T14:31:08.103492+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=82.5",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 6.52,
-  "last_updated": "2026-08-03T14:16:20.379310+00:00"
+  "last_price": 63665.4,
+  "last_updated": "2026-08-03T14:31:08.126120+00:00"
 }
