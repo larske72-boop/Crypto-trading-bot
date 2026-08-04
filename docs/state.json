@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 584.2764854358811,
+  "balance_quote": 586.7662692470288,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.002327876855450482,
-      "entry_price": 63772.8,
-      "stop_loss": 63564.84913870128,
-      "take_profit": 64084.72629194809,
-      "opened_at": "2026-08-04T12:22:29.342770+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
       "amount": 0.07787528862011125,
       "entry_price": 1875.68,
       "stop_loss": 1866.1602364488808,
       "take_profit": 1889.9596453266788,
       "opened_at": "2026-08-04T12:37:14.798112+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 176.2272553000447,
+      "entry_price": 0.8324,
+      "stop_loss": 0.826968754494623,
+      "take_profit": 0.8405468682580655,
+      "opened_at": "2026-08-04T15:59:28.318557+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -17211,8 +17211,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.3",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002327876855450482,
+      "price": 64084.72629194809,
+      "timestamp": "2026-08-04T15:59:19.856565+00:00",
+      "reason": "Take-profit geraakt (high=6.416e+04 >= 6.408e+04)",
+      "pnl_quote": 0.7261259956324579,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 176.2272553000447,
+      "price": 0.8324,
+      "timestamp": "2026-08-04T15:59:28.318569+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=56.2",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 1870.0,
-  "last_updated": "2026-08-04T13:45:35.944721+00:00"
+  "last_price": 0.8324,
+  "last_updated": "2026-08-04T15:59:28.351288+00:00"
 }
