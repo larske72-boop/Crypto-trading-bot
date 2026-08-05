@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 597.1778452140342,
+  "balance_quote": 586.539547197989,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.002764247454929537,
-      "entry_price": 64446.9,
-      "stop_loss": 64206.94849527505,
-      "take_profit": 64806.82725708743,
-      "opened_at": "2026-08-05T12:42:04.470693+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.9233163757419527,
-      "entry_price": 74.1,
-      "stop_loss": 73.73009719280502,
-      "take_profit": 74.65485421079246,
-      "opened_at": "2026-08-05T12:42:04.535308+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 0.0796683269583012,
@@ -28,6 +10,24 @@
       "take_profit": 1887.3294842763344,
       "opened_at": "2026-08-05T12:56:48.370922+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 172.825564082872,
+      "entry_price": 1.06057,
+      "stop_loss": 1.0563271272182202,
+      "take_profit": 1.0669343091726697,
+      "opened_at": "2026-08-05T13:11:40.426311+00:00",
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.257105437572129,
+      "entry_price": 45.02,
+      "stop_loss": 44.83667272161246,
+      "take_profit": 45.294990917581316,
+      "opened_at": "2026-08-05T13:11:40.489872+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -17751,8 +17751,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=55.1",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002764247454929537,
+      "price": 64206.94849527505,
+      "timestamp": "2026-08-05T13:11:29.632752+00:00",
+      "reason": "Stop-loss geraakt (low=6.41e+04 <= 6.421e+04)",
+      "pnl_quote": -0.6632853362424669,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9233163757419527,
+      "price": 73.73009719280502,
+      "timestamp": "2026-08-05T13:11:30.836494+00:00",
+      "reason": "Stop-loss geraakt (low=73.69 <= 73.73)",
+      "pnl_quote": -0.7114401265110075,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 172.825564082872,
+      "price": 1.06057,
+      "timestamp": "2026-08-05T13:11:40.426323+00:00",
+      "reason": "RSI-herstel: laag=28.1 nu=40.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.257105437572129,
+      "price": 45.02,
+      "timestamp": "2026-08-05T13:11:40.489888+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=64.8",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1873.95,
-  "last_updated": "2026-08-05T12:56:48.401833+00:00"
+  "last_price": 45.02,
+  "last_updated": "2026-08-05T13:11:40.521098+00:00"
 }
