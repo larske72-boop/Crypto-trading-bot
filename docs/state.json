@@ -1,15 +1,24 @@
 {
   "mode": "paper",
-  "balance_quote": 912.3770047153237,
+  "balance_quote": 681.2930048905421,
   "positions": [
     {
       "side": "long",
-      "amount": 0.07948307112579321,
-      "entry_price": 1914.43,
-      "stop_loss": 1908.1128424010933,
-      "take_profit": 1923.9057363983602,
-      "opened_at": "2026-08-07T22:31:56.750131+00:00",
-      "symbol": "ETH/USD"
+      "amount": 261.4565443059,
+      "entry_price": 0.8143,
+      "stop_loss": 0.8111047501835587,
+      "take_profit": 0.8190928747246622,
+      "opened_at": "2026-08-07T23:22:31.525714+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 845.8769807984601,
+      "entry_price": 0.201357,
+      "stop_loss": 0.19946489911590304,
+      "take_profit": 0.20419515132614546,
+      "opened_at": "2026-08-07T23:22:31.592218+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -18975,8 +18984,35 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.946342895537498,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.07948307112579321,
+      "price": 1914.16,
+      "timestamp": "2026-08-07T23:22:21.919437+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.0214604292039553,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 261.4565443059,
+      "price": 0.8143,
+      "timestamp": "2026-08-07T23:22:31.525728+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=59.0",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 845.8769807984601,
+      "price": 0.201357,
+      "timestamp": "2026-08-07T23:22:31.592229+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=53.2",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 64870.7,
-  "last_updated": "2026-08-07T22:52:43.493530+00:00"
+  "last_price": 0.201357,
+  "last_updated": "2026-08-07T23:22:31.625021+00:00"
 }
