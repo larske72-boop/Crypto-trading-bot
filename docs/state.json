@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 850.1289392431729,
+  "balance_quote": 544.0825211156307,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 6.453347259192514,
       "opened_at": "2026-08-07T17:45:26.711683+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 166.80642386798252,
+      "entry_price": 1.0193,
+      "stop_loss": 1.0117912020031625,
+      "take_profit": 1.0305631969952567,
+      "opened_at": "2026-08-07T18:12:05.973813+00:00",
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 168.530083358825,
+      "entry_price": 0.8071,
+      "stop_loss": 0.8023353588680713,
+      "take_profit": 0.8142469616978931,
+      "opened_at": "2026-08-07T18:12:06.043968+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -18831,8 +18849,26 @@
       "reason": "RSI-herstel: laag=28.9 nu=39.5 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 166.80642386798252,
+      "price": 1.0193,
+      "timestamp": "2026-08-07T18:12:05.973826+00:00",
+      "reason": "RSI-herstel: laag=25.0 nu=40.1 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 168.530083358825,
+      "price": 0.8071,
+      "timestamp": "2026-08-07T18:12:06.043982+00:00",
+      "reason": "RSI-herstel: laag=25.8 nu=49.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 6.393,
-  "last_updated": "2026-08-07T17:45:26.779696+00:00"
+  "last_price": 0.8071,
+  "last_updated": "2026-08-07T18:12:06.078950+00:00"
 }
