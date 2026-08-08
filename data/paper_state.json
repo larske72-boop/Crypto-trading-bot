@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 621.2918895904082,
+  "balance_quote": 615.5438083330993,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 3.230924118341675,
-      "entry_price": 45.79,
-      "stop_loss": 45.680818938447636,
-      "take_profit": 45.95377159232855,
-      "opened_at": "2026-08-08T15:10:19.406798+00:00",
-      "symbol": "LTC/USD"
-    },
-    {
-      "side": "long",
       "amount": 2.033289336269172,
       "entry_price": 76.39,
       "stop_loss": 75.92780434751901,
       "take_profit": 77.08329347872149,
       "opened_at": "2026-08-08T15:32:03.307783+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.3562912122851647,
+      "entry_price": 45.85,
+      "stop_loss": 45.74514700614695,
+      "take_profit": 46.007279490779574,
+      "opened_at": "2026-08-08T15:46:47.182745+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -19821,8 +19821,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=75.3",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.230924118341675,
+      "price": 45.85,
+      "timestamp": "2026-08-08T15:46:38.877914+00:00",
+      "reason": "RSI overbought exit (78.8 > 72)",
+      "pnl_quote": 0.1938554471005034,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.3562912122851647,
+      "price": 45.85,
+      "timestamp": "2026-08-08T15:46:47.182757+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=78.8",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 76.39,
-  "last_updated": "2026-08-08T15:32:03.342551+00:00"
+  "last_price": 45.85,
+  "last_updated": "2026-08-08T15:46:47.217371+00:00"
 }
