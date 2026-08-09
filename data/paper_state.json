@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 616.4350126071226,
+  "balance_quote": 589.0709566078648,
   "positions": [
-    {
-      "side": "long",
-      "amount": 3.2386836065099285,
-      "entry_price": 45.9,
-      "stop_loss": 45.77484895027548,
-      "take_profit": 46.08772657458678,
-      "opened_at": "2026-08-09T03:19:47.802014+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 22.802845528253723,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 2.0304183550959243,
-      "entry_price": 75.9,
-      "stop_loss": 75.69772988789458,
-      "take_profit": 76.20340516815814,
-      "opened_at": "2026-08-09T05:30:42.604361+00:00",
+      "amount": 2.413908653815339,
+      "entry_price": 76.26,
+      "stop_loss": 76.01142317948263,
+      "take_profit": 76.63286523077605,
+      "opened_at": "2026-08-09T06:33:52.313480+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.195221070773838,
+      "entry_price": 46.09,
+      "stop_loss": 45.96171292957109,
+      "take_profit": 46.28243060564336,
+      "opened_at": "2026-08-09T06:33:52.383201+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -20235,8 +20235,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=47.9",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.2386836065099285,
+      "price": 46.08772657458678,
+      "timestamp": "2026-08-09T06:33:41.518895+00:00",
+      "reason": "Take-profit geraakt (high=46.09 >= 46.09)",
+      "pnl_quote": 0.6079869796204775,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.0304183550959243,
+      "price": 76.20340516815814,
+      "timestamp": "2026-08-09T06:33:43.917390+00:00",
+      "reason": "Take-profit geraakt (high=76.3 >= 76.2)",
+      "pnl_quote": 0.616039422459238,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.413908653815339,
+      "price": 76.26,
+      "timestamp": "2026-08-09T06:33:52.313492+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.7",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.195221070773838,
+      "price": 46.09,
+      "timestamp": "2026-08-09T06:33:52.383212+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=62.3",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 76.0,
-  "last_updated": "2026-08-09T06:19:04.452224+00:00"
+  "last_price": 46.09,
+  "last_updated": "2026-08-09T06:33:52.417694+00:00"
 }
