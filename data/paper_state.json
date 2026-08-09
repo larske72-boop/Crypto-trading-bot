@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 590.0665808508794,
+  "balance_quote": 619.0061555151653,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 227.20035302599783,
-      "entry_price": 0.8116,
-      "stop_loss": 0.8084983632136263,
-      "take_profit": 0.8162524551795605,
-      "opened_at": "2026-08-09T13:28:00.754485+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
       "amount": 1.9245485350648381,
       "entry_price": 76.65,
       "stop_loss": 76.35717758231402,
       "take_profit": 77.08923362652898,
       "opened_at": "2026-08-09T13:28:00.908588+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.002374170795593082,
+      "entry_price": 65181.3,
+      "stop_loss": 65091.288770237974,
+      "take_profit": 65316.31684464305,
+      "opened_at": "2026-08-09T13:42:40.040196+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -20469,8 +20469,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=66.1",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 227.20035302599783,
+      "price": 0.8084983632136263,
+      "timestamp": "2026-08-09T13:42:31.642286+00:00",
+      "reason": "Stop-loss geraakt (low=0.808 <= 0.8085)",
+      "pnl_quote": -0.704692972822528,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002374170795593082,
+      "price": 65181.3,
+      "timestamp": "2026-08-09T13:42:40.040210+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=86.6",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 76.65,
-  "last_updated": "2026-08-09T13:28:00.938589+00:00"
+  "last_price": 65181.3,
+  "last_updated": "2026-08-09T13:42:40.075861+00:00"
 }
