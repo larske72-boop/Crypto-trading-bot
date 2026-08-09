@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 613.9890708920774,
+  "balance_quote": 614.866136679055,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 2.007187742881608,
-      "entry_price": 77.23,
-      "stop_loss": 76.84214451399025,
-      "take_profit": 77.81178322901464,
-      "opened_at": "2026-08-09T17:01:59.993699+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
       "amount": 3.3282148248703245,
       "entry_price": 46.12,
       "stop_loss": 46.002489091061655,
       "take_profit": 46.29626636340751,
       "opened_at": "2026-08-09T19:55:14.017628+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0023628994618297323,
+      "entry_price": 65054.2,
+      "stop_loss": 64993.85885104511,
+      "take_profit": 65144.71172343233,
+      "opened_at": "2026-08-09T20:17:26.065639+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -20685,8 +20685,26 @@
       "reason": "RSI-herstel: laag=28.3 nu=33.3 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.007187742881608,
+      "price": 77.02,
+      "timestamp": "2026-08-09T20:17:17.574133+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.4215094260051444,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0023628994618297323,
+      "price": 65054.2,
+      "timestamp": "2026-08-09T20:17:26.065648+00:00",
+      "reason": "RSI-herstel: laag=26.3 nu=34.8 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 46.11,
-  "last_updated": "2026-08-09T20:09:51.361297+00:00"
+  "last_price": 65054.2,
+  "last_updated": "2026-08-09T20:17:26.101953+00:00"
 }
