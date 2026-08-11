@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 589.9441570294279,
+  "balance_quote": 621.1122995653038,
   "positions": [
-    {
-      "side": "long",
-      "amount": 4.108872591178205,
-      "entry_price": 45.05,
-      "stop_loss": 44.83233977571626,
-      "take_profit": 45.37649033642561,
-      "opened_at": "2026-08-11T14:36:29.946078+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 756.0016689900519,
@@ -28,6 +19,15 @@
       "take_profit": 1.0269921242895594,
       "opened_at": "2026-08-11T17:29:58.398582+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0024437846221486616,
+      "entry_price": 63540.0,
+      "stop_loss": 63334.42084845911,
+      "take_profit": 63848.36872731135,
+      "opened_at": "2026-08-11T18:21:00.719016+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -21945,8 +21945,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=65.9",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 4.108872591178205,
+      "price": 45.37649033642561,
+      "timestamp": "2026-08-11T18:20:51.118318+00:00",
+      "reason": "Take-profit geraakt (high=45.38 >= 45.38)",
+      "pnl_quote": 1.3415071946237447,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0024437846221486616,
+      "price": 63540.0,
+      "timestamp": "2026-08-11T18:21:00.719034+00:00",
+      "reason": "RSI-herstel: laag=23.0 nu=36.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 1.0144,
-  "last_updated": "2026-08-11T18:06:17.413471+00:00"
+  "last_price": 63540.0,
+  "last_updated": "2026-08-11T18:21:00.759123+00:00"
 }
