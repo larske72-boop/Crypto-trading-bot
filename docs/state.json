@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 585.238924437616,
+  "balance_quote": 731.6436898762156,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 984.3651173718728,
-      "entry_price": 0.185792,
-      "stop_loss": 0.184546608773802,
-      "take_profit": 0.18766008683929702,
-      "opened_at": "2026-08-13T08:41:43.311578+00:00",
+      "amount": 983.6829302699933,
+      "entry_price": 0.185945,
+      "stop_loss": 0.18472814789745465,
+      "take_profit": 0.18777027815381803,
+      "opened_at": "2026-08-13T08:56:24.224406+00:00",
       "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 144.61341574274164,
-      "entry_price": 1.01173,
-      "stop_loss": 1.0090114421439522,
-      "take_profit": 1.0158078367840717,
-      "opened_at": "2026-08-13T08:41:43.391278+00:00",
-      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -22971,8 +22962,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=52.7",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 984.3651173718728,
+      "price": 0.185945,
+      "timestamp": "2026-08-13T08:56:14.623064+00:00",
+      "reason": "RSI overbought exit (74.1 > 72)",
+      "pnl_quote": 0.15060786295788375,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 144.61341574274164,
+      "price": 1.01151,
+      "timestamp": "2026-08-13T08:56:15.822183+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.031814951463417174,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 983.6829302699933,
+      "price": 0.185945,
+      "timestamp": "2026-08-13T08:56:24.224418+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.1",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 1.01173,
-  "last_updated": "2026-08-13T08:41:43.430601+00:00"
+  "last_price": 0.185945,
+  "last_updated": "2026-08-13T08:56:24.264341+00:00"
 }
