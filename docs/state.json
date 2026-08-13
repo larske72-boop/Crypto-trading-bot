@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 920.5251006479423,
+  "balance_quote": 589.1360644146831,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 6.548928446878089,
       "opened_at": "2026-08-13T10:50:12.777776+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.09807374781169313,
+      "entry_price": 1877.21,
+      "stop_loss": 1870.963691327682,
+      "take_profit": 1886.5794630084772,
+      "opened_at": "2026-08-13T11:51:41.290344+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0023224433573540318,
+      "entry_price": 63417.7,
+      "stop_loss": 63256.71253569112,
+      "take_profit": 63659.18119646331,
+      "opened_at": "2026-08-13T11:51:41.370984+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -23061,8 +23079,26 @@
       "reason": "Stop-loss geraakt (low=0.1832 <= 0.1841)",
       "pnl_quote": -0.9714515461153042,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.09807374781169313,
+      "price": 1877.21,
+      "timestamp": "2026-08-13T11:51:41.290361+00:00",
+      "reason": "RSI-herstel: laag=26.9 nu=33.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0023224433573540318,
+      "price": 63417.7,
+      "timestamp": "2026-08-13T11:51:41.370992+00:00",
+      "reason": "RSI-herstel: laag=28.5 nu=33.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 63328.1,
-  "last_updated": "2026-08-13T11:36:51.765293+00:00"
+  "last_price": 63417.7,
+  "last_updated": "2026-08-13T11:51:41.411257+00:00"
 }
