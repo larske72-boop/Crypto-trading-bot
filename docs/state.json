@@ -1,7 +1,35 @@
 {
   "mode": "paper",
-  "balance_quote": 1061.0395240289622,
-  "positions": [],
+  "balance_quote": 543.2522363028287,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 0.003364496918727,
+      "entry_price": 63072.7,
+      "stop_loss": 62649.66474791596,
+      "take_profit": 63707.25287812606,
+      "opened_at": "2026-08-13T16:57:07.652958+00:00",
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.2497525025793,
+      "entry_price": 75.46,
+      "stop_loss": 74.92554721766962,
+      "take_profit": 76.26167917349557,
+      "opened_at": "2026-08-13T16:57:07.733081+00:00",
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07251600969405628,
+      "entry_price": 1872.87,
+      "stop_loss": 1858.720516184906,
+      "take_profit": 1894.0942257226407,
+      "opened_at": "2026-08-13T16:57:07.812714+00:00",
+      "symbol": "ETH/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -23222,8 +23250,35 @@
       "reason": "Stop-loss geraakt (low=0.7637 <= 0.7691)",
       "pnl_quote": -0.6674289464891388,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.003364496918727,
+      "price": 63072.7,
+      "timestamp": "2026-08-13T16:57:07.652970+00:00",
+      "reason": "RSI-herstel: laag=24.5 nu=33.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.2497525025793,
+      "price": 75.46,
+      "timestamp": "2026-08-13T16:57:07.733094+00:00",
+      "reason": "RSI-herstel: laag=28.1 nu=36.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07251600969405628,
+      "price": 1872.87,
+      "timestamp": "2026-08-13T16:57:07.812726+00:00",
+      "reason": "RSI-herstel: laag=30.5 nu=37.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 62800.5,
-  "last_updated": "2026-08-13T16:42:25.774755+00:00"
+  "last_price": 1872.87,
+  "last_updated": "2026-08-13T16:57:07.852591+00:00"
 }
