@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 568.071327605295,
+  "balance_quote": 920.5251006479423,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.09366387547674503,
-      "entry_price": 1884.83,
-      "stop_loss": 1878.0232380602408,
-      "take_profit": 1895.0401429096385,
-      "opened_at": "2026-08-13T09:25:55.796765+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 959.0200849053238,
-      "entry_price": 0.185108,
-      "stop_loss": 0.1840950373296601,
-      "take_profit": 0.18662744400550985,
-      "opened_at": "2026-08-13T10:30:04.446087+00:00",
-      "symbol": "ADA/USD"
-    },
     {
       "side": "long",
       "amount": 21.825392946261527,
@@ -23061,8 +23043,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=57.9",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.09366387547674503,
+      "price": 1878.0232380602408,
+      "timestamp": "2026-08-13T11:36:39.871735+00:00",
+      "reason": "Stop-loss geraakt (low=1874 <= 1878)",
+      "pnl_quote": -0.6375477027254419,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 959.0200849053238,
+      "price": 0.1840950373296601,
+      "timestamp": "2026-08-13T11:36:41.054125+00:00",
+      "reason": "Stop-loss geraakt (low=0.1832 <= 0.1841)",
+      "pnl_quote": -0.9714515461153042,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 6.498,
-  "last_updated": "2026-08-13T11:19:30.083707+00:00"
+  "last_price": 63328.1,
+  "last_updated": "2026-08-13T11:36:51.765293+00:00"
 }
