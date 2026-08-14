@@ -1,24 +1,15 @@
 {
   "mode": "paper",
-  "balance_quote": 732.2177884384542,
+  "balance_quote": 848.1384279253576,
   "positions": [
     {
       "side": "long",
-      "amount": 2.411167637759055,
-      "entry_price": 75.91,
-      "stop_loss": 75.60784235495734,
-      "take_profit": 76.36323646756396,
-      "opened_at": "2026-08-14T04:27:20.981703+00:00",
+      "amount": 2.8080334655189962,
+      "entry_price": 75.51,
+      "stop_loss": 75.2544149373668,
+      "take_profit": 75.89337759394981,
+      "opened_at": "2026-08-14T07:03:35.413318+00:00",
       "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 191.67290406127103,
-      "entry_price": 0.7634,
-      "stop_loss": 0.7598990818995546,
-      "take_profit": 0.768651377150668,
-      "opened_at": "2026-08-14T05:11:12.512927+00:00",
-      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -23457,8 +23448,35 @@
       "reason": "Stop-loss geraakt (low=6.324e+04 <= 6.328e+04)",
       "pnl_quote": -0.37730860369481434,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.411167637759055,
+      "price": 75.60784235495734,
+      "timestamp": "2026-08-14T07:03:24.623409+00:00",
+      "reason": "Stop-loss geraakt (low=75.42 <= 75.61)",
+      "pnl_quote": -0.7285527352283339,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 191.67290406127103,
+      "price": 0.7598990818995546,
+      "timestamp": "2026-08-14T07:03:25.837566+00:00",
+      "reason": "Stop-loss geraakt (low=0.7575 <= 0.7599)",
+      "pnl_quote": -0.6710311391930475,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.8080334655189962,
+      "price": 75.51,
+      "timestamp": "2026-08-14T07:03:35.413333+00:00",
+      "reason": "RSI-herstel: laag=28.6 nu=32.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 63301.9,
-  "last_updated": "2026-08-14T05:52:54.098634+00:00"
+  "last_price": 75.51,
+  "last_updated": "2026-08-14T07:03:35.454463+00:00"
 }
