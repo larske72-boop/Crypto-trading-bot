@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 605.0285913759151,
+  "balance_quote": 604.5620664343223,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 198.39604911329855,
-      "entry_price": 0.7624,
-      "stop_loss": 0.7594606462195328,
-      "take_profit": 0.7668090306707007,
-      "opened_at": "2026-08-14T14:50:53.229682+00:00",
-      "symbol": "DOT/USD"
+      "amount": 2.0095800639353887,
+      "entry_price": 75.21,
+      "stop_loss": 74.9140881458913,
+      "take_profit": 75.65386778116303,
+      "opened_at": "2026-08-14T15:20:20.574249+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -23673,8 +23673,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.5",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 198.39604911329855,
+      "price": 0.7594606462195328,
+      "timestamp": "2026-08-14T15:20:13.539905+00:00",
+      "reason": "Stop-loss geraakt (low=0.7594 <= 0.7595)",
+      "pnl_quote": -0.5831561769909115,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.0095800639353887,
+      "price": 75.21,
+      "timestamp": "2026-08-14T15:20:20.574264+00:00",
+      "reason": "RSI-herstel: laag=30.1 nu=38.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 0.7604,
-  "last_updated": "2026-08-14T15:05:32.945020+00:00"
+  "last_price": 75.21,
+  "last_updated": "2026-08-14T15:20:20.614903+00:00"
 }
