@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 612.0029296545684,
+  "balance_quote": 611.9547866955488,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 0.002430496588006464,
-      "entry_price": 62950.4,
-      "stop_loss": 62925.64016323599,
-      "take_profit": 62987.53975514601,
-      "opened_at": "2026-08-16T12:28:02.885460+00:00",
+      "amount": 0.0024307108316646074,
+      "entry_price": 62939.9,
+      "stop_loss": 62912.16253225692,
+      "take_profit": 62981.50620161462,
+      "opened_at": "2026-08-16T12:57:22.096844+00:00",
       "symbol": "BTC/USD"
     }
   ],
@@ -25077,8 +25077,26 @@
       "reason": "RSI-herstel: laag=22.6 nu=49.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002430496588006464,
+      "price": 62925.64016323599,
+      "timestamp": "2026-08-16T12:57:14.789036+00:00",
+      "reason": "Stop-loss geraakt (low=6.292e+04 <= 6.293e+04)",
+      "pnl_quote": -0.06017869877450721,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0024307108316646074,
+      "price": 62939.9,
+      "timestamp": "2026-08-16T12:57:22.096855+00:00",
+      "reason": "RSI-herstel: laag=24.3 nu=43.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 62936.9,
-  "last_updated": "2026-08-16T12:42:38.488128+00:00"
+  "last_price": 62939.9,
+  "last_updated": "2026-08-16T12:57:22.140890+00:00"
 }
