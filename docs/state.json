@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 871.2802084743852,
+  "balance_quote": 557.6193334236066,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 6.3566964497173535,
       "opened_at": "2026-08-16T21:23:42.092124+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.943336539825233,
+      "entry_price": 44.19,
+      "stop_loss": 43.990843003765065,
+      "take_profit": 44.4887354943524,
+      "opened_at": "2026-08-16T21:53:56.846705+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 139.99842668504624,
+      "entry_price": 0.99576,
+      "stop_loss": 0.9913295920026441,
+      "take_profit": 1.0024056119960336,
+      "opened_at": "2026-08-16T21:53:56.923848+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -25671,8 +25689,26 @@
       "reason": "Stop-loss geraakt (low=0.9926 <= 0.9961)",
       "pnl_quote": -0.3286785442562916,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.943336539825233,
+      "price": 44.19,
+      "timestamp": "2026-08-16T21:53:56.846717+00:00",
+      "reason": "RSI-herstel: laag=17.7 nu=33.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 139.99842668504624,
+      "price": 0.99576,
+      "timestamp": "2026-08-16T21:53:56.923861+00:00",
+      "reason": "RSI-herstel: laag=23.6 nu=32.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 62881.5,
-  "last_updated": "2026-08-16T21:47:17.380733+00:00"
+  "last_price": 0.99576,
+  "last_updated": "2026-08-16T21:53:56.962207+00:00"
 }
