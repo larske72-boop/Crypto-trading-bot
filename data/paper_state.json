@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 571.2843480057319,
+  "balance_quote": 714.1243701863744,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 2.354596956127097,
-      "entry_price": 75.85,
-      "stop_loss": 75.54979386625611,
-      "take_profit": 76.30030920061581,
-      "opened_at": "2026-08-18T08:05:42.261084+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 22.605426875820353,
-      "entry_price": 6.318,
-      "stop_loss": 6.28485615720758,
-      "take_profit": 6.367715764188629,
-      "opened_at": "2026-08-18T09:29:20.764298+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 242.10888601382374,
+      "entry_price": 0.7374,
+      "stop_loss": 0.7343749483534244,
+      "take_profit": 0.7419375774698634,
+      "opened_at": "2026-08-18T09:46:31.243724+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -26823,8 +26814,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=49.1",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.354596956127097,
+      "price": 75.84,
+      "timestamp": "2026-08-18T09:46:21.693664+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.023545969561268976,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 22.605426875820353,
+      "price": 6.317,
+      "timestamp": "2026-08-18T09:46:22.954175+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.02260542687579914,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 242.10888601382374,
+      "price": 0.7374,
+      "timestamp": "2026-08-18T09:46:31.243743+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=52.0",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 6.328,
-  "last_updated": "2026-08-18T09:31:46.819747+00:00"
+  "last_price": 0.7374,
+  "last_updated": "2026-08-18T09:46:31.290866+00:00"
 }
