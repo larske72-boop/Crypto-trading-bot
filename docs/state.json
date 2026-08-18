@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 618.8566194993839,
+  "balance_quote": 618.3257484776956,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 154.82872813366487,
-      "entry_price": 0.99926,
-      "stop_loss": 0.99497404619085,
-      "take_profit": 1.0056889307137251,
-      "opened_at": "2026-08-18T06:35:25.726675+00:00",
-      "symbol": "XRP/USD"
+      "amount": 3.4721796298163494,
+      "entry_price": 44.52,
+      "stop_loss": 44.37562000537332,
+      "take_profit": 44.73656999194002,
+      "opened_at": "2026-08-18T07:50:59.464096+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -26751,8 +26751,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=69.5",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 154.82872813366487,
+      "price": 0.99497404619085,
+      "timestamp": "2026-08-18T07:50:52.270976+00:00",
+      "reason": "Stop-loss geraakt (low=0.9944 <= 0.995)",
+      "pnl_quote": -0.6635887771103626,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.4721796298163494,
+      "price": 44.52,
+      "timestamp": "2026-08-18T07:50:59.464110+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=63.8",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 0.99667,
-  "last_updated": "2026-08-18T07:40:43.523966+00:00"
+  "last_price": 44.52,
+  "last_updated": "2026-08-18T07:50:59.510767+00:00"
 }
