@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 582.2601867075823,
+  "balance_quote": 582.5730696124149,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 1.8623982430513764,
-      "entry_price": 78.16,
-      "stop_loss": 77.68421990346714,
-      "take_profit": 78.87367014479928,
-      "opened_at": "2026-08-19T13:04:00.671549+00:00",
+      "amount": 1.8584058619765693,
+      "entry_price": 78.37,
+      "stop_loss": 77.91579791312043,
+      "take_profit": 79.05130313031937,
+      "opened_at": "2026-08-19T13:18:41.923914+00:00",
       "symbol": "SOL/USD"
     }
   ],
@@ -27957,8 +27957,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.0",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.8623982430513764,
+      "price": 78.37,
+      "timestamp": "2026-08-19T13:18:34.621614+00:00",
+      "reason": "RSI overbought exit (80.3 > 72)",
+      "pnl_quote": 0.3911036310408065,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8584058619765693,
+      "price": 78.37,
+      "timestamp": "2026-08-19T13:18:41.923925+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=80.3",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 78.16,
-  "last_updated": "2026-08-19T13:04:00.721108+00:00"
+  "last_price": 78.37,
+  "last_updated": "2026-08-19T13:18:41.972242+00:00"
 }
