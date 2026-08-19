@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 581.3048288685302,
+  "balance_quote": 581.4726962570116,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 234.0950502853295,
-      "entry_price": 0.776,
-      "stop_loss": 0.7713004883979472,
-      "take_profit": 0.7830492674030792,
-      "opened_at": "2026-08-19T11:14:10.650043+00:00",
+      "amount": 233.9214953402628,
+      "entry_price": 0.7768,
+      "stop_loss": 0.772250439558717,
+      "take_profit": 0.7836243406619247,
+      "opened_at": "2026-08-19T11:28:56.562157+00:00",
       "symbol": "DOT/USD"
     },
     {
       "side": "long",
-      "amount": 1.8754188568477557,
-      "entry_price": 77.49,
-      "stop_loss": 77.19129332455299,
-      "take_profit": 77.93806001317051,
-      "opened_at": "2026-08-19T11:14:10.721968+00:00",
+      "amount": 1.8749925714465743,
+      "entry_price": 77.53,
+      "stop_loss": 77.23516399215413,
+      "take_profit": 77.97225401176881,
+      "opened_at": "2026-08-19T11:28:56.658552+00:00",
       "symbol": "SOL/USD"
     }
   ],
@@ -27795,8 +27795,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=71.3",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 234.0950502853295,
+      "price": 0.7768,
+      "timestamp": "2026-08-19T11:28:46.961240+00:00",
+      "reason": "RSI overbought exit (88.1 > 72)",
+      "pnl_quote": 0.1872760402282836,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.8754188568477557,
+      "price": 77.53,
+      "timestamp": "2026-08-19T11:28:48.163764+00:00",
+      "reason": "RSI overbought exit (72.8 > 72)",
+      "pnl_quote": 0.07501675427391774,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 233.9214953402628,
+      "price": 0.7768,
+      "timestamp": "2026-08-19T11:28:56.562192+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=88.1",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8749925714465743,
+      "price": 77.53,
+      "timestamp": "2026-08-19T11:28:56.658563+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=72.8",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 77.49,
-  "last_updated": "2026-08-19T11:14:10.757777+00:00"
+  "last_price": 77.53,
+  "last_updated": "2026-08-19T11:28:56.706816+00:00"
 }
