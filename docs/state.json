@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 599.3437376697115,
+  "balance_quote": 629.130012027275,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.09009587944323989,
-      "entry_price": 2078.84,
-      "stop_loss": 2043.8025151630725,
-      "take_profit": 2131.3962272553918,
-      "opened_at": "2026-08-19T17:15:55.635850+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
       "amount": 0.002195288944102827,
       "entry_price": 68253.4,
       "stop_loss": 67377.71434914657,
       "take_profit": 69566.92847628013,
       "opened_at": "2026-08-19T17:15:55.710088+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07575024346169383,
+      "entry_price": 2076.33,
+      "stop_loss": 2042.3558636439006,
+      "take_profit": 2127.2912045341486,
+      "opened_at": "2026-08-19T17:30:38.470994+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -28875,8 +28875,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=75.1",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.09009587944323989,
+      "price": 2076.33,
+      "timestamp": "2026-08-19T17:30:29.981420+00:00",
+      "reason": "RSI overbought exit (77.3 > 72)",
+      "pnl_quote": -0.22614065740256706,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07575024346169383,
+      "price": 2076.33,
+      "timestamp": "2026-08-19T17:30:38.471006+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=77.3",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 68253.4,
-  "last_updated": "2026-08-19T17:15:55.746677+00:00"
+  "last_price": 2076.33,
+  "last_updated": "2026-08-19T17:30:38.520166+00:00"
 }
