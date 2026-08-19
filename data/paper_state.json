@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 560.487116332193,
+  "balance_quote": 623.3380805636222,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.09725016981991058,
-      "entry_price": 2251.31,
-      "stop_loss": 2195.5426416579994,
-      "take_profit": 2334.9610375130005,
-      "opened_at": "2026-08-19T22:47:53.893523+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 925.8691581057337,
@@ -28,6 +19,15 @@
       "take_profit": 87.83708621717142,
       "opened_at": "2026-08-19T22:47:54.102115+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0693041413797744,
+      "entry_price": 2248.56,
+      "stop_loss": 2195.8809774917763,
+      "take_profit": 2327.578533762335,
+      "opened_at": "2026-08-19T23:02:33.046848+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -29901,8 +29901,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=64.5",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.09725016981991058,
+      "price": 2248.69,
+      "timestamp": "2026-08-19T23:02:23.447410+00:00",
+      "reason": "RSI overbought exit (73.7 > 72)",
+      "pnl_quote": -0.2547954449281349,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0693041413797744,
+      "price": 2248.56,
+      "timestamp": "2026-08-19T23:02:33.046861+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=73.6",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 85.4,
-  "last_updated": "2026-08-19T22:47:54.154241+00:00"
+  "last_price": 2248.56,
+  "last_updated": "2026-08-19T23:02:33.084721+00:00"
 }
