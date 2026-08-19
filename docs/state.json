@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 610.2317055855754,
+  "balance_quote": 610.9923163845394,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 198.0757288969019,
-      "entry_price": 0.7702,
-      "stop_loss": 0.7667516537746433,
-      "take_profit": 0.775372519338035,
-      "opened_at": "2026-08-19T10:45:38.355199+00:00",
+      "amount": 197.09429560791597,
+      "entry_price": 0.775,
+      "stop_loss": 0.7705116537746434,
+      "take_profit": 0.7817325193380351,
+      "opened_at": "2026-08-19T10:52:31.220924+00:00",
       "symbol": "DOT/USD"
     }
   ],
@@ -27705,8 +27705,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=81.4",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 198.0757288969019,
+      "price": 0.775,
+      "timestamp": "2026-08-19T10:52:23.924463+00:00",
+      "reason": "RSI overbought exit (86.7 > 72)",
+      "pnl_quote": 0.950763498705129,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 197.09429560791597,
+      "price": 0.775,
+      "timestamp": "2026-08-19T10:52:31.220942+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=86.7",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.7702,
-  "last_updated": "2026-08-19T10:45:38.392018+00:00"
+  "last_price": 0.775,
+  "last_updated": "2026-08-19T10:52:31.269058+00:00"
 }
