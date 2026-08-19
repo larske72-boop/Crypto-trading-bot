@@ -1,32 +1,32 @@
 {
   "mode": "paper",
-  "balance_quote": 563.2856355287379,
+  "balance_quote": 564.8710570679375,
   "positions": [
     {
       "side": "long",
-      "amount": 0.09682994027311277,
-      "entry_price": 2272.37,
-      "stop_loss": 2205.7595138904835,
-      "take_profit": 2372.2857291642745,
-      "opened_at": "2026-08-19T21:37:46.064260+00:00",
+      "amount": 0.0963856411289027,
+      "entry_price": 2289.27,
+      "stop_loss": 2224.872562502763,
+      "take_profit": 2385.8661562458556,
+      "opened_at": "2026-08-19T21:52:29.122291+00:00",
       "symbol": "ETH/USD"
     },
     {
       "side": "long",
-      "amount": 2.0359329297100466,
-      "entry_price": 86.46,
-      "stop_loss": 84.76617625221832,
-      "take_profit": 89.00073562167252,
-      "opened_at": "2026-08-19T21:37:46.165604+00:00",
+      "amount": 2.0369513654942355,
+      "entry_price": 86.66,
+      "stop_loss": 84.96995862710936,
+      "take_profit": 89.19506205933594,
+      "opened_at": "2026-08-19T21:52:29.228955+00:00",
       "symbol": "SOL/USD"
     },
     {
       "side": "long",
-      "amount": 742.595783889938,
-      "entry_price": 0.189634,
-      "stop_loss": 0.18553186858381718,
-      "take_profit": 0.19578719712427423,
-      "opened_at": "2026-08-19T21:37:46.266902+00:00",
+      "amount": 741.6548811609975,
+      "entry_price": 0.190409,
+      "stop_loss": 0.186408121725847,
+      "take_profit": 0.19641031741122947,
+      "opened_at": "2026-08-19T21:52:29.329419+00:00",
       "symbol": "ADA/USD"
     }
   ],
@@ -29613,8 +29613,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=78.4",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.09682994027311277,
+      "price": 2290.67,
+      "timestamp": "2026-08-19T21:52:17.125103+00:00",
+      "reason": "RSI overbought exit (96.4 > 72)",
+      "pnl_quote": 1.7719879069979925,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.0359329297100466,
+      "price": 86.74,
+      "timestamp": "2026-08-19T21:52:18.320846+00:00",
+      "reason": "RSI overbought exit (86.7 > 72)",
+      "pnl_quote": 0.57006122031882,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 742.595783889938,
+      "price": 0.19065,
+      "timestamp": "2026-08-19T21:52:19.522237+00:00",
+      "reason": "RSI overbought exit (80.8 > 72)",
+      "pnl_quote": 0.7544773164321725,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0963856411289027,
+      "price": 2289.27,
+      "timestamp": "2026-08-19T21:52:29.122307+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=96.4",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.0369513654942355,
+      "price": 86.66,
+      "timestamp": "2026-08-19T21:52:29.228977+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=86.5",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 741.6548811609975,
+      "price": 0.190409,
+      "timestamp": "2026-08-19T21:52:29.329441+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=80.4",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.189634,
-  "last_updated": "2026-08-19T21:37:46.318080+00:00"
+  "last_price": 0.190409,
+  "last_updated": "2026-08-19T21:52:29.378241+00:00"
 }
