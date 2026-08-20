@@ -1,32 +1,32 @@
 {
   "mode": "paper",
-  "balance_quote": 600.9483519604055,
+  "balance_quote": 573.8891484007491,
   "positions": [
     {
       "side": "long",
-      "amount": 921.8846814331556,
-      "entry_price": 0.193136,
-      "stop_loss": 0.19009614169896505,
-      "take_profit": 0.19769578745155242,
-      "opened_at": "2026-08-20T12:00:10.573266+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 154.93087374095742,
-      "entry_price": 1.21213,
-      "stop_loss": 1.1874187185650187,
-      "take_profit": 1.2491969221524717,
-      "opened_at": "2026-08-20T13:52:07.336964+00:00",
+      "amount": 183.0556564791346,
+      "entry_price": 1.22463,
+      "stop_loss": 1.1986606467084182,
+      "take_profit": 1.2635840299373728,
+      "opened_at": "2026-08-20T14:06:56.571797+00:00",
       "symbol": "XRP/USD"
     },
     {
       "side": "long",
-      "amount": 182.01731038296748,
-      "entry_price": 0.8254,
-      "stop_loss": 0.8149518303409954,
-      "take_profit": 0.841072254488507,
-      "opened_at": "2026-08-20T13:52:07.445172+00:00",
+      "amount": 917.01833560142,
+      "entry_price": 0.195569,
+      "stop_loss": 0.19181482627456387,
+      "take_profit": 0.20120026058815418,
+      "opened_at": "2026-08-20T14:06:56.681773+00:00",
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 173.80046892814934,
+      "entry_price": 0.8255,
+      "stop_loss": 0.8155806473065196,
+      "take_profit": 0.8403790290402207,
+      "opened_at": "2026-08-20T14:06:56.792663+00:00",
       "symbol": "DOT/USD"
     }
   ],
@@ -31197,8 +31197,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.6",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 921.8846814331556,
+      "price": 0.195418,
+      "timestamp": "2026-08-20T14:06:44.573805+00:00",
+      "reason": "RSI overbought exit (72.3 > 72)",
+      "pnl_quote": 2.103740843030465,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 154.93087374095742,
+      "price": 1.22326,
+      "timestamp": "2026-08-20T14:06:45.777268+00:00",
+      "reason": "RSI overbought exit (87.6 > 72)",
+      "pnl_quote": 1.7243806247368525,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 182.01731038296748,
+      "price": 0.8255,
+      "timestamp": "2026-08-20T14:06:46.968464+00:00",
+      "reason": "RSI overbought exit (73.8 > 72)",
+      "pnl_quote": 0.018201731038288926,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 183.0556564791346,
+      "price": 1.22463,
+      "timestamp": "2026-08-20T14:06:56.571812+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=87.9",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 917.01833560142,
+      "price": 0.195569,
+      "timestamp": "2026-08-20T14:06:56.681798+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=72.8",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 173.80046892814934,
+      "price": 0.8255,
+      "timestamp": "2026-08-20T14:06:56.792688+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=73.8",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.8254,
-  "last_updated": "2026-08-20T13:52:07.498774+00:00"
+  "last_price": 0.8255,
+  "last_updated": "2026-08-20T14:06:56.849151+00:00"
 }
