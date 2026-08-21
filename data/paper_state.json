@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 653.767096760386,
+  "balance_quote": 624.1704866978139,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 117.71362638365494,
-      "entry_price": 1.41468,
-      "stop_loss": 1.3690533702715537,
-      "take_profit": 1.4831199445926695,
-      "opened_at": "2026-08-21T10:05:02.807539+00:00",
+      "amount": 141.65397727842063,
+      "entry_price": 1.37697,
+      "stop_loss": 1.3299325095796586,
+      "take_profit": 1.4475262356305123,
+      "opened_at": "2026-08-21T11:42:20.160970+00:00",
       "symbol": "XRP/USD"
     },
     {
       "side": "long",
-      "amount": 181.98616433592755,
-      "entry_price": 0.8981,
-      "stop_loss": 0.8810727582649757,
-      "take_profit": 0.9236408626025365,
-      "opened_at": "2026-08-21T10:17:43.245804+00:00",
+      "amount": 176.33927186626,
+      "entry_price": 0.8849,
+      "stop_loss": 0.8676426224290049,
+      "take_profit": 0.9107860663564927,
+      "opened_at": "2026-08-21T11:42:20.250523+00:00",
       "symbol": "DOT/USD"
     }
   ],
@@ -32799,8 +32799,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.5",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 117.71362638365494,
+      "price": 1.3690533702715537,
+      "timestamp": "2026-08-21T11:42:10.566521+00:00",
+      "reason": "Stop-loss geraakt (low=1.364 <= 1.369)",
+      "pnl_quote": -5.370876044999676,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 181.98616433592755,
+      "price": 0.8810727582649757,
+      "timestamp": "2026-08-21T11:42:11.757437+00:00",
+      "reason": "Stop-loss geraakt (low=0.8796 <= 0.8811)",
+      "pnl_quote": -3.0987224125777004,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 141.65397727842063,
+      "price": 1.37697,
+      "timestamp": "2026-08-21T11:42:20.160980+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=55.0",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 176.33927186626,
+      "price": 0.8849,
+      "timestamp": "2026-08-21T11:42:20.250539+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=56.8",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.89,
-  "last_updated": "2026-08-21T11:29:34.423100+00:00"
+  "last_price": 0.8849,
+  "last_updated": "2026-08-21T11:42:20.295605+00:00"
 }
