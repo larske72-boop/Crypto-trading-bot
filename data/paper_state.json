@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 704.3613615641981,
+  "balance_quote": 834.4966668697838,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1.715597556000505,
-      "entry_price": 96.14,
-      "stop_loss": 94.83853292894815,
-      "take_profit": 98.09220060657776,
-      "opened_at": "2026-08-23T01:30:48.173907+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 121.38603433380285,
@@ -22,12 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 0.002283568948386041,
-      "entry_price": 77111.9,
-      "stop_loss": 76813.52803455607,
-      "take_profit": 77559.45794816587,
-      "opened_at": "2026-08-23T02:12:53.889544+00:00",
-      "symbol": "BTC/USD"
+      "amount": 2.2118762374623198,
+      "entry_price": 94.32,
+      "stop_loss": 92.60580250436689,
+      "take_profit": 96.89129624344964,
+      "opened_at": "2026-08-23T02:27:44.049445+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -34887,8 +34878,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=45.2",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.715597556000505,
+      "price": 94.83853292894815,
+      "timestamp": "2026-08-23T02:27:33.249488+00:00",
+      "reason": "Stop-loss geraakt (low=94.12 <= 94.84)",
+      "pnl_quote": -2.2327937263116837,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002283568948386041,
+      "price": 77096.3,
+      "timestamp": "2026-08-23T02:27:35.498017+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.03562367559479185,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.2118762374623198,
+      "price": 94.32,
+      "timestamp": "2026-08-23T02:27:44.049460+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=42.9",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 77111.9,
-  "last_updated": "2026-08-23T02:12:53.950628+00:00"
+  "last_price": 94.32,
+  "last_updated": "2026-08-23T02:27:44.110318+00:00"
 }
