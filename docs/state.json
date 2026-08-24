@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 1039.9669403212624,
+  "balance_quote": 665.5788418056079,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 7.618543905089903,
       "opened_at": "2026-08-24T01:44:14.645131+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 229.09283848909845,
+      "entry_price": 0.9079,
+      "stop_loss": 0.8961887094107873,
+      "take_profit": 0.9254669358838191,
+      "opened_at": "2026-08-24T02:22:43.236514+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 754.0978656693376,
+      "entry_price": 0.220654,
+      "stop_loss": 0.2167621776357722,
+      "take_profit": 0.22649173354634167,
+      "opened_at": "2026-08-24T02:22:43.360804+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -36075,8 +36093,26 @@
       "reason": "Stop-loss geraakt (low=0.8995 <= 0.9019)",
       "pnl_quote": -1.913918836392753,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 229.09283848909845,
+      "price": 0.9079,
+      "timestamp": "2026-08-24T02:22:43.236532+00:00",
+      "reason": "RSI-herstel: laag=21.3 nu=38.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 754.0978656693376,
+      "price": 0.220654,
+      "timestamp": "2026-08-24T02:22:43.360817+00:00",
+      "reason": "RSI-herstel: laag=27.8 nu=40.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 77070.9,
-  "last_updated": "2026-08-24T02:07:59.536904+00:00"
+  "last_price": 0.220654,
+  "last_updated": "2026-08-24T02:22:43.422748+00:00"
 }
