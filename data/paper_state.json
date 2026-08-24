@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 640.8345374572649,
+  "balance_quote": 670.4021254970208,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 133.16274766297528,
-      "entry_price": 1.50388,
-      "stop_loss": 1.480655234848627,
-      "take_profit": 1.5387171477270598,
-      "opened_at": "2026-08-24T11:41:13.043657+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
       "amount": 0.06413399133089524,
       "entry_price": 2498.03,
       "stop_loss": 2472.0664230732555,
       "take_profit": 2536.975365390117,
       "opened_at": "2026-08-24T11:41:13.168315+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 748.751480406787,
+      "entry_price": 0.22384,
+      "stop_loss": 0.2201053055439799,
+      "take_profit": 0.22944204168403018,
+      "opened_at": "2026-08-24T12:29:16.881578+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -36273,8 +36273,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=72.4",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 133.16274766297528,
+      "price": 1.480655234848627,
+      "timestamp": "2026-08-24T12:29:08.382057+00:00",
+      "reason": "Stop-loss geraakt (low=1.48 <= 1.481)",
+      "pnl_quote": -3.0926735413841584,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 748.751480406787,
+      "price": 0.22384,
+      "timestamp": "2026-08-24T12:29:16.881609+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=64.7",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 2484.33,
-  "last_updated": "2026-08-24T12:14:32.063031+00:00"
+  "last_price": 0.22384,
+  "last_updated": "2026-08-24T12:29:16.944536+00:00"
 }
