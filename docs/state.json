@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 678.2031612937695,
+  "balance_quote": 677.1828971604615,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 111.67514594002462,
-      "entry_price": 1.51825,
-      "stop_loss": 1.488843815090933,
-      "take_profit": 1.5623592773636004,
-      "opened_at": "2026-08-25T02:51:57.256501+00:00",
-      "symbol": "XRP/USD"
+      "amount": 0.0021105639859888346,
+      "entry_price": 80213.5,
+      "stop_loss": 79558.7155312037,
+      "take_profit": 81195.67670319443,
+      "opened_at": "2026-08-25T04:44:27.355579+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -36723,8 +36723,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=59.1",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 111.67514594002462,
+      "price": 1.50683,
+      "timestamp": "2026-08-25T04:44:20.049924+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.2753301666350865,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0021105639859888346,
+      "price": 80213.5,
+      "timestamp": "2026-08-25T04:44:27.355591+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=54.2",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 1.50952,
-  "last_updated": "2026-08-25T04:29:40.399472+00:00"
+  "last_price": 80213.5,
+  "last_updated": "2026-08-25T04:44:27.411133+00:00"
 }
