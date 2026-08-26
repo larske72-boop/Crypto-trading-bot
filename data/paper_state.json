@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 608.3261888406288,
+  "balance_quote": 827.5414699659317,
   "positions": [
-    {
-      "side": "long",
-      "amount": 32.185753422168574,
-      "entry_price": 7.383,
-      "stop_loss": 7.338339018568202,
-      "take_profit": 7.449991472147698,
-      "opened_at": "2026-08-26T06:25:44.665356+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 222.1076457678426,
-      "entry_price": 0.8559,
-      "stop_loss": 0.8480934024910728,
-      "take_profit": 0.8676098962633908,
-      "opened_at": "2026-08-26T06:25:44.792856+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 3.0240912151552437,
@@ -28,6 +10,15 @@
       "take_profit": 50.81841697691977,
       "opened_at": "2026-08-26T06:25:44.919292+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.1379081067632835,
+      "entry_price": 96.77,
+      "stop_loss": 96.11412393958375,
+      "take_profit": 97.75381409062436,
+      "opened_at": "2026-08-26T08:57:04.199553+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -37227,8 +37218,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=50.2",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 32.185753422168574,
+      "price": 7.36,
+      "timestamp": "2026-08-26T08:56:53.539424+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.7402723287098638,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 222.1076457678426,
+      "price": 0.8519,
+      "timestamp": "2026-08-26T08:56:54.741575+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.8884305830713686,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.1379081067632835,
+      "price": 96.77,
+      "timestamp": "2026-08-26T08:57:04.199564+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=42.0",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 50.39,
-  "last_updated": "2026-08-26T08:42:19.031781+00:00"
+  "last_price": 96.77,
+  "last_updated": "2026-08-26T08:57:04.263838+00:00"
 }
