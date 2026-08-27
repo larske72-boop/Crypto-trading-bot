@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 832.9189249148797,
+  "balance_quote": 666.3351399319038,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 1.4541343025022024,
       "opened_at": "2026-08-27T10:39:12.350344+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 22.40836494255797,
+      "entry_price": 7.434,
+      "stop_loss": 7.3539310456976414,
+      "take_profit": 7.554103431453538,
+      "opened_at": "2026-08-27T13:21:14.630363+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -38307,8 +38316,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.13474447419704916,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 22.40836494255797,
+      "price": 7.434,
+      "timestamp": "2026-08-27T13:21:14.630376+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=56.7",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 79277.0,
-  "last_updated": "2026-08-27T13:06:31.018279+00:00"
+  "last_price": 7.434,
+  "last_updated": "2026-08-27T13:21:14.679392+00:00"
 }
