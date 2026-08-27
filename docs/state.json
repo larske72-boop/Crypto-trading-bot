@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 657.5272203728344,
+  "balance_quote": 823.5521030640498,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 103.8370147386773,
       "opened_at": "2026-08-27T00:23:45.295944+00:00",
       "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 191.16278951204987,
-      "entry_price": 0.876,
-      "stop_loss": 0.8652339574009585,
-      "take_profit": 0.8921490638985622,
-      "opened_at": "2026-08-27T00:53:24.393714+00:00",
-      "symbol": "DOT/USD"
     },
     {
       "side": "long",
@@ -37947,8 +37938,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=58.5",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 191.16278951204987,
+      "price": 0.8685,
+      "timestamp": "2026-08-27T03:05:12.850610+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.433720921340381,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.209105,
-  "last_updated": "2026-08-27T02:50:35.296412+00:00"
+  "last_price": 78714.7,
+  "last_updated": "2026-08-27T03:05:22.430782+00:00"
 }
