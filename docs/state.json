@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 634.7075576297727,
+  "balance_quote": 832.9189249148797,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 107.28641150437059,
       "opened_at": "2026-08-27T09:40:30.368732+00:00",
       "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0024952680406862345,
-      "entry_price": 79488.9,
-      "stop_loss": 78849.38447719172,
-      "take_profit": 80448.1732842124,
-      "opened_at": "2026-08-27T10:39:12.218203+00:00",
-      "symbol": "BTC/USD"
     },
     {
       "side": "long",
@@ -38307,8 +38298,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=45.2",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0024952680406862345,
+      "price": 79434.9,
+      "timestamp": "2026-08-27T11:37:47.783387+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.13474447419704916,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 1.43019,
-  "last_updated": "2026-08-27T11:23:06.476387+00:00"
+  "last_price": 79435.0,
+  "last_updated": "2026-08-27T11:37:57.346050+00:00"
 }
