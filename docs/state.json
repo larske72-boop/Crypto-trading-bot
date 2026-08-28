@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 657.1977299686636,
+  "balance_quote": 820.1757094317641,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1.5708942392885843,
-      "entry_price": 106.41,
-      "stop_loss": 103.74853722610179,
-      "take_profit": 110.40219416084732,
-      "opened_at": "2026-08-28T15:38:58.108595+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 241.58839032491167,
@@ -39189,8 +39180,17 @@
       "reason": "RSI-herstel: laag=29.5 nu=34.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.5708942392885843,
+      "price": 103.74853722610179,
+      "timestamp": "2026-08-28T18:20:34.017441+00:00",
+      "reason": "Stop-loss geraakt (low=103.6 <= 103.7)",
+      "pnl_quote": -4.180876539597733,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 0.203102,
-  "last_updated": "2026-08-28T18:05:52.291896+00:00"
+  "last_price": 77650.0,
+  "last_updated": "2026-08-28T18:20:44.667228+00:00"
 }
