@@ -1,15 +1,24 @@
 {
   "mode": "paper",
-  "balance_quote": 1050.8692694460622,
+  "balance_quote": 770.4145079900496,
   "positions": [
     {
       "side": "long",
-      "amount": 723.7007775187902,
-      "entry_price": 0.213636,
-      "stop_loss": 0.2112798604592081,
-      "take_profit": 0.21717020931118783,
-      "opened_at": "2026-08-28T02:10:01.745097+00:00",
-      "symbol": "ADA/USD"
+      "amount": 4.866677455971104,
+      "entry_price": 49.47,
+      "stop_loss": 49.012761843487326,
+      "take_profit": 50.155857234769016,
+      "opened_at": "2026-08-28T02:39:42.018890+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 25.8147201444193,
+      "entry_price": 7.461,
+      "stop_loss": 7.404285365018525,
+      "take_profit": 7.5460719524722135,
+      "opened_at": "2026-08-28T02:39:42.155638+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -38829,8 +38838,35 @@
       "reason": "Stop-loss geraakt (low=2492 <= 2494)",
       "pnl_quote": -1.1908375495939936,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 723.7007775187902,
+      "price": 0.2112798604592081,
+      "timestamp": "2026-08-28T02:39:32.434763+00:00",
+      "reason": "Stop-loss geraakt (low=0.2107 <= 0.2113)",
+      "pnl_quote": -1.7051400176138714,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.866677455971104,
+      "price": 49.47,
+      "timestamp": "2026-08-28T02:39:42.018907+00:00",
+      "reason": "RSI-herstel: laag=29.9 nu=33.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 25.8147201444193,
+      "price": 7.461,
+      "timestamp": "2026-08-28T02:39:42.155646+00:00",
+      "reason": "RSI-herstel: laag=30.7 nu=34.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 80066.5,
-  "last_updated": "2026-08-28T02:24:54.249530+00:00"
+  "last_price": 7.461,
+  "last_updated": "2026-08-28T02:39:42.223793+00:00"
 }
