@@ -1,33 +1,33 @@
 {
   "mode": "paper",
-  "balance_quote": 671.2139166224157,
+  "balance_quote": 618.4341572240171,
   "positions": [
     {
       "side": "long",
-      "amount": 21.59603847360535,
-      "entry_price": 7.527,
-      "stop_loss": 7.4813528217108995,
-      "take_profit": 7.5954707674336515,
-      "opened_at": "2026-08-27T21:02:14.575666+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 971.1254123760015,
-      "entry_price": 0.215991,
-      "stop_loss": 0.2137508721732993,
-      "take_profit": 0.21935119174005102,
-      "opened_at": "2026-08-28T01:40:36.090228+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.002073224565294149,
-      "entry_price": 80938.4,
-      "stop_loss": 80429.76839364613,
-      "take_profit": 81701.3474095308,
-      "opened_at": "2026-08-28T01:40:36.226331+00:00",
+      "amount": 0.003003143206395143,
+      "entry_price": 80441.0,
+      "stop_loss": 79912.85639875979,
+      "take_profit": 81233.21540186032,
+      "opened_at": "2026-08-28T02:10:01.474345+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.07701929824947908,
+      "entry_price": 2509.25,
+      "stop_loss": 2493.7884523533744,
+      "take_profit": 2532.442321469938,
+      "opened_at": "2026-08-28T02:10:01.611036+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 723.7007775187902,
+      "entry_price": 0.213636,
+      "stop_loss": 0.2112798604592081,
+      "take_profit": 0.21717020931118783,
+      "opened_at": "2026-08-28T02:10:01.745097+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -38775,8 +38775,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=69.7",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 21.59603847360535,
+      "price": 7.517,
+      "timestamp": "2026-08-28T02:09:49.463821+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.21596038473606427,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 971.1254123760015,
+      "price": 0.2137508721732993,
+      "timestamp": "2026-08-28T02:09:50.581814+00:00",
+      "reason": "Stop-loss geraakt (low=0.2136 <= 0.2138)",
+      "pnl_quote": -2.175445059479671,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002073224565294149,
+      "price": 80429.76839364613,
+      "timestamp": "2026-08-28T02:09:51.781241+00:00",
+      "reason": "Stop-loss geraakt (low=8.033e+04 <= 8.043e+04)",
+      "pnl_quote": -1.054507540977852,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.003003143206395143,
+      "price": 80441.0,
+      "timestamp": "2026-08-28T02:10:01.474360+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=49.2",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07701929824947908,
+      "price": 2509.25,
+      "timestamp": "2026-08-28T02:10:01.611051+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=43.9",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 723.7007775187902,
+      "price": 0.213636,
+      "timestamp": "2026-08-28T02:10:01.745110+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=43.4",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 80644.9,
-  "last_updated": "2026-08-28T01:55:15.540696+00:00"
+  "last_price": 0.213636,
+  "last_updated": "2026-08-28T02:10:01.812236+00:00"
 }
