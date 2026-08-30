@@ -1,15 +1,33 @@
 {
   "mode": "paper",
-  "balance_quote": 989.7753542537608,
+  "balance_quote": 610.7559819017949,
   "positions": [
     {
       "side": "long",
-      "amount": 0.08164691536158225,
-      "entry_price": 2504.4,
-      "stop_loss": 2487.631308527688,
-      "take_profit": 2529.553037208468,
-      "opened_at": "2026-08-30T20:05:25.168420+00:00",
-      "symbol": "ETH/USD"
+      "amount": 4.831440976719089,
+      "entry_price": 49.38,
+      "stop_loss": 49.038538209312996,
+      "take_profit": 49.89219268603051,
+      "opened_at": "2026-08-30T20:49:39.007273+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 946.5539449127193,
+      "entry_price": 0.201638,
+      "stop_loss": 0.1994539845074101,
+      "take_profit": 0.20491402323888488,
+      "opened_at": "2026-08-30T20:49:39.147187+00:00",
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.4544579488993021,
+      "entry_price": 104.98,
+      "stop_loss": 103.94107368759235,
+      "take_profit": 106.5383894686115,
+      "opened_at": "2026-08-30T20:49:39.287549+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -40863,8 +40881,44 @@
       "reason": "Stop-loss geraakt (low=0.8536 <= 0.8541)",
       "pnl_quote": -1.3818015087427966,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08164691536158225,
+      "price": 2487.631308527688,
+      "timestamp": "2026-08-30T20:49:29.314243+00:00",
+      "reason": "Stop-loss geraakt (low=2487 <= 2488)",
+      "pnl_quote": -1.3691119333643371,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.831440976719089,
+      "price": 49.38,
+      "timestamp": "2026-08-30T20:49:39.007284+00:00",
+      "reason": "RSI-herstel: laag=24.7 nu=34.8 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 946.5539449127193,
+      "price": 0.201638,
+      "timestamp": "2026-08-30T20:49:39.147195+00:00",
+      "reason": "RSI-herstel: laag=25.6 nu=36.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.4544579488993021,
+      "price": 104.98,
+      "timestamp": "2026-08-30T20:49:39.287557+00:00",
+      "reason": "RSI-herstel: laag=26.2 nu=34.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 78791.3,
-  "last_updated": "2026-08-30T20:34:57.297229+00:00"
+  "last_price": 104.98,
+  "last_updated": "2026-08-30T20:49:39.361777+00:00"
 }
