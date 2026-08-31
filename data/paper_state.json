@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 605.7355159290968,
+  "balance_quote": 637.1683779609651,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.0024307072282362245,
-      "entry_price": 77857.4,
-      "stop_loss": 77250.91868933373,
-      "take_profit": 78767.12196599938,
-      "opened_at": "2026-08-31T00:20:16.500887+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
       "amount": 20.913393037187433,
       "entry_price": 7.241,
       "stop_loss": 7.198127131761837,
       "take_profit": 7.305309302357243,
       "opened_at": "2026-08-31T07:28:55.157493+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 115.95927355534458,
+      "entry_price": 1.37369,
+      "stop_loss": 1.3613507994496814,
+      "take_profit": 1.3921988008254782,
+      "opened_at": "2026-08-31T08:59:30.360771+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -41061,8 +41061,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=68.0",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0024307072282362245,
+      "price": 78464.8,
+      "timestamp": "2026-08-31T08:59:21.958757+00:00",
+      "reason": "RSI overbought exit (72.1 > 72)",
+      "pnl_quote": 1.476411570430713,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 115.95927355534458,
+      "price": 1.37369,
+      "timestamp": "2026-08-31T08:59:30.360783+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=65.4",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 7.232,
-  "last_updated": "2026-08-31T08:44:46.964104+00:00"
+  "last_price": 1.37369,
+  "last_updated": "2026-08-31T08:59:30.433308+00:00"
 }
