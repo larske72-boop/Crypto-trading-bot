@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 659.8862071870866,
+  "balance_quote": 847.5980189205372,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.002425652096844015,
-      "entry_price": 77806.2,
-      "stop_loss": 77386.12308734635,
-      "take_profit": 78436.31536898046,
-      "opened_at": "2026-09-01T13:22:49.893402+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 3.392738280685714,
@@ -41943,8 +41934,17 @@
       "reason": "RSI-herstel: laag=31.3 nu=37.9 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002425652096844015,
+      "price": 77386.12308734635,
+      "timestamp": "2026-09-01T16:43:52.106335+00:00",
+      "reason": "Stop-loss geraakt (low=7.73e+04 <= 7.739e+04)",
+      "pnl_quote": -1.018960444014084,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 101.43,
-  "last_updated": "2026-09-01T16:29:16.835508+00:00"
+  "last_price": 77437.4,
+  "last_updated": "2026-09-01T16:44:03.020343+00:00"
 }
