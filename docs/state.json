@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 651.0075403788957,
+  "balance_quote": 652.6164638565938,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 1.6444567555291898,
-      "entry_price": 98.97,
-      "stop_loss": 98.15467326049142,
-      "take_profit": 100.19299010926285,
-      "opened_at": "2026-09-02T02:03:38.703863+00:00",
-      "symbol": "SOL/USD"
+      "amount": 824.2854485037864,
+      "entry_price": 0.197934,
+      "stop_loss": 0.19603905988054024,
+      "take_profit": 0.20077641017918962,
+      "opened_at": "2026-09-02T03:17:08.834009+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -42159,8 +42159,26 @@
       "reason": "RSI-herstel: laag=31.8 nu=34.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.6444567555291898,
+      "price": 100.19299010926285,
+      "timestamp": "2026-09-02T03:17:01.773471+00:00",
+      "reason": "Take-profit geraakt (high=100.5 >= 100.2)",
+      "pnl_quote": 2.0111543471226696,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 824.2854485037864,
+      "price": 0.197934,
+      "timestamp": "2026-09-02T03:17:08.834022+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=65.0",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 99.96,
-  "last_updated": "2026-09-02T03:02:20.698828+00:00"
+  "last_price": 0.197934,
+  "last_updated": "2026-09-02T03:17:08.907861+00:00"
 }
