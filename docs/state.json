@@ -1,33 +1,33 @@
 {
   "mode": "paper",
-  "balance_quote": 634.9112924869137,
+  "balance_quote": 606.1156104137568,
   "positions": [
     {
       "side": "long",
-      "amount": 26.0165387212078,
-      "entry_price": 7.244,
-      "stop_loss": 7.186528123550548,
-      "take_profit": 7.330207814674178,
-      "opened_at": "2026-09-03T05:34:40.098943+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 1119.9488676663564,
+      "entry_price": 0.211406,
+      "stop_loss": 0.20920009989308957,
+      "take_profit": 0.21471485016036565,
+      "opened_at": "2026-09-03T14:16:58.515971+00:00",
+      "symbol": "ADA/USD"
     },
     {
       "side": "long",
-      "amount": 142.0286612469563,
-      "entry_price": 1.39697,
-      "stop_loss": 1.3817653182989813,
-      "take_profit": 1.4197770225515283,
-      "opened_at": "2026-09-03T13:47:31.840510+00:00",
+      "amount": 135.46589825227719,
+      "entry_price": 1.39822,
+      "stop_loss": 1.3830971078175014,
+      "take_profit": 1.4209043382737478,
+      "opened_at": "2026-09-03T14:16:58.659821+00:00",
       "symbol": "XRP/USD"
     },
     {
       "side": "long",
-      "amount": 755.4834252180067,
-      "entry_price": 0.210101,
-      "stop_loss": 0.20788994554732138,
-      "take_profit": 0.21341758167901798,
-      "opened_at": "2026-09-03T13:47:31.988334+00:00",
-      "symbol": "ADA/USD"
+      "amount": 0.06211804794001698,
+      "entry_price": 2439.37,
+      "stop_loss": 2421.6855342639337,
+      "take_profit": 2465.896698604099,
+      "opened_at": "2026-09-03T14:16:58.802977+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -43257,8 +43257,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=70.7",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 26.0165387212078,
+      "price": 7.330207814674178,
+      "timestamp": "2026-09-03T14:16:46.509646+00:00",
+      "reason": "Take-profit geraakt (high=7.335 >= 7.33)",
+      "pnl_quote": 2.2428289485414723,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 142.0286612469563,
+      "price": 1.39752,
+      "timestamp": "2026-09-03T14:16:47.710657+00:00",
+      "reason": "RSI overbought exit (73.5 > 72)",
+      "pnl_quote": 0.07811576368584383,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 755.4834252180067,
+      "price": 0.211406,
+      "timestamp": "2026-09-03T14:16:48.913031+00:00",
+      "reason": "RSI overbought exit (76.4 > 72)",
+      "pnl_quote": 0.9859058699095158,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1119.9488676663564,
+      "price": 0.211406,
+      "timestamp": "2026-09-03T14:16:58.515985+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.4",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 135.46589825227719,
+      "price": 1.39822,
+      "timestamp": "2026-09-03T14:16:58.659831+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.0",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.06211804794001698,
+      "price": 2439.37,
+      "timestamp": "2026-09-03T14:16:58.802990+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.9",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 0.209776,
-  "last_updated": "2026-09-03T14:02:07.496117+00:00"
+  "last_price": 2439.37,
+  "last_updated": "2026-09-03T14:16:58.873957+00:00"
 }
