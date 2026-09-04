@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 667.0619036963515,
+  "balance_quote": 687.5685467637547,
   "positions": [
-    {
-      "side": "long",
-      "amount": 3.7814225581435124,
-      "entry_price": 50.21,
-      "stop_loss": 49.64916853508704,
-      "take_profit": 51.051247197369435,
-      "opened_at": "2026-09-04T15:11:36.185150+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 190.74420007646572,
@@ -28,6 +19,15 @@
       "take_profit": 80249.31773795543,
       "opened_at": "2026-09-04T20:27:43.522776+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.3790473106140886,
+      "entry_price": 50.87,
+      "stop_loss": 50.62441173870891,
+      "take_profit": 51.23838239193664,
+      "opened_at": "2026-09-04T21:26:31.382751+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -44319,8 +44319,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=54.9",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.7814225581435124,
+      "price": 50.88,
+      "timestamp": "2026-09-04T21:26:21.778806+00:00",
+      "reason": "RSI overbought exit (72.3 > 72)",
+      "pnl_quote": 2.5335531139561738,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.3790473106140886,
+      "price": 50.87,
+      "timestamp": "2026-09-04T21:26:31.382776+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=71.8",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 79814.6,
-  "last_updated": "2026-09-04T21:11:45.123386+00:00"
+  "last_price": 50.87,
+  "last_updated": "2026-09-04T21:26:31.456053+00:00"
 }
