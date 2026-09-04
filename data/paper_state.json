@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 643.3150027193254,
+  "balance_quote": 636.1469510002865,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 173.91940867539273,
-      "entry_price": 0.8809,
-      "stop_loss": 0.8732129851849028,
-      "take_profit": 0.8924305222226459,
-      "opened_at": "2026-09-04T01:51:53.139051+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
       "amount": 724.3624708587718,
       "entry_price": 0.222028,
       "stop_loss": 0.21894563268080638,
       "take_profit": 0.22665155097879044,
       "opened_at": "2026-09-04T02:06:34.181818+00:00",
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 181.90179314888672,
+      "entry_price": 0.8743,
+      "stop_loss": 0.8682968538314193,
+      "take_profit": 0.8833047192528709,
+      "opened_at": "2026-09-04T05:03:26.740576+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -44049,8 +44049,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=56.2",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 173.91940867539273,
+      "price": 0.8732129851849028,
+      "timestamp": "2026-09-04T05:03:18.323018+00:00",
+      "reason": "Stop-loss geraakt (low=0.8727 <= 0.8732)",
+      "pnl_quote": -1.3369210711207131,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 181.90179314888672,
+      "price": 0.8743,
+      "timestamp": "2026-09-04T05:03:26.740589+00:00",
+      "reason": "RSI-herstel: laag=28.0 nu=33.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.224578,
-  "last_updated": "2026-09-04T04:48:42.366027+00:00"
+  "last_price": 0.8743,
+  "last_updated": "2026-09-04T05:03:26.805691+00:00"
 }
