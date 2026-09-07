@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 676.6021973188712,
+  "balance_quote": 711.6812924541902,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 197.6242514834538,
-      "entry_price": 1.0699,
-      "stop_loss": 1.040294994466716,
-      "take_profit": 1.1143075082999263,
-      "opened_at": "2026-09-07T15:09:01.872788+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
       "amount": 0.002139764826880341,
       "entry_price": 79051.0,
       "stop_loss": 78750.53907119099,
       "take_profit": 79501.69139321352,
       "opened_at": "2026-09-07T15:09:02.034199+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 165.10794646765734,
+      "entry_price": 1.0776,
+      "stop_loss": 1.046515495018633,
+      "take_profit": 1.12422675747205,
+      "opened_at": "2026-09-07T15:23:50.149549+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -46605,8 +46605,26 @@
       "reason": "RSI-herstel: laag=25.9 nu=34.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 197.6242514834538,
+      "price": 1.0778,
+      "timestamp": "2026-09-07T15:23:41.752259+00:00",
+      "reason": "RSI overbought exit (77.0 > 72)",
+      "pnl_quote": 1.5612315867192876,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 165.10794646765734,
+      "price": 1.0776,
+      "timestamp": "2026-09-07T15:23:50.149560+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=77.0",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 79051.0,
-  "last_updated": "2026-09-07T15:09:02.114591+00:00"
+  "last_price": 1.0776,
+  "last_updated": "2026-09-07T15:23:50.240299+00:00"
 }
