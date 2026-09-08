@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 851.4653674990328,
+  "balance_quote": 681.1722939992262,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 103.39254873845725,
       "opened_at": "2026-09-08T13:48:57.624362+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.06925804796601889,
+      "entry_price": 2458.82,
+      "stop_loss": 2440.923262922405,
+      "take_profit": 2485.6651056163932,
+      "opened_at": "2026-09-08T14:07:23.957174+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -47163,8 +47172,17 @@
       "reason": "RSI-herstel: laag=28.4 nu=33.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.06925804796601889,
+      "price": 2458.82,
+      "timestamp": "2026-09-08T14:07:23.957187+00:00",
+      "reason": "RSI-herstel: laag=22.6 nu=37.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 77631.5,
-  "last_updated": "2026-09-08T13:52:34.915677+00:00"
+  "last_price": 2458.82,
+  "last_updated": "2026-09-08T14:07:24.029552+00:00"
 }
