@@ -1,7 +1,17 @@
 {
   "mode": "paper",
-  "balance_quote": 1223.0162690977197,
-  "positions": [],
+  "balance_quote": 978.4130152781757,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 1131.3068771051878,
+      "entry_price": 0.216213,
+      "stop_loss": 0.21391028500727977,
+      "take_profit": 0.21966707248908032,
+      "opened_at": "2026-09-08T06:56:05.252107+00:00",
+      "symbol": "ADA/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -46946,8 +46956,17 @@
       "reason": "Stop-loss geraakt (low=7.833e+04 <= 7.835e+04)",
       "pnl_quote": -0.8693169007484016,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1131.3068771051878,
+      "price": 0.216213,
+      "timestamp": "2026-09-08T06:56:05.252119+00:00",
+      "reason": "RSI-herstel: laag=30.9 nu=34.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 78386.5,
-  "last_updated": "2026-09-08T06:41:21.742443+00:00"
+  "last_price": 0.216213,
+  "last_updated": "2026-09-08T06:56:05.333595+00:00"
 }
