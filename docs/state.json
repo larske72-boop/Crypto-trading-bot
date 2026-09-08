@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 864.2821955778434,
+  "balance_quote": 691.4257564622746,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 1.3295774385637285,
       "opened_at": "2026-09-08T20:16:35.913141+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0022003362960569643,
+      "entry_price": 78559.1,
+      "stop_loss": 78250.35411095411,
+      "take_profit": 79022.21883356886,
+      "opened_at": "2026-09-08T21:16:06.032576+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -47721,8 +47730,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.7",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0022003362960569643,
+      "price": 78559.1,
+      "timestamp": "2026-09-08T21:16:06.032587+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=52.1",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 78481.7,
-  "last_updated": "2026-09-08T21:01:15.952233+00:00"
+  "last_price": 78559.1,
+  "last_updated": "2026-09-08T21:16:06.116695+00:00"
 }
