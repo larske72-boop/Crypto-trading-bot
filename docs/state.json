@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 720.653671893451,
+  "balance_quote": 893.588663014789,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.0022003362960569643,
-      "entry_price": 78559.1,
-      "stop_loss": 78250.35411095411,
-      "take_profit": 79022.21883356886,
-      "opened_at": "2026-09-08T21:16:06.032576+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 0.07239236486150202,
@@ -47793,8 +47784,17 @@
       "reason": "RSI-herstel: laag=30.4 nu=40.5 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0022003362960569643,
+      "price": 78594.8,
+      "timestamp": "2026-09-09T03:17:30.171432+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.07855200576921106,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 1.203,
-  "last_updated": "2026-09-09T03:02:52.026710+00:00"
+  "last_price": 78594.9,
+  "last_updated": "2026-09-09T03:17:41.108242+00:00"
 }
