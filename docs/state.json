@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 729.1906767868564,
+  "balance_quote": 847.8177085062483,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.0020299621988291304,
-      "entry_price": 78615.7,
-      "stop_loss": 77869.5355899072,
-      "take_profit": 79734.94661513918,
-      "opened_at": "2026-09-09T15:40:29.901635+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 124.03676614476237,
-      "entry_price": 1.40347,
-      "stop_loss": 1.390791218764351,
-      "take_profit": 1.4224881718534734,
-      "opened_at": "2026-09-09T20:39:15.223331+00:00",
-      "symbol": "XRP/USD"
-    },
     {
       "side": "long",
       "amount": 163.98099235109663,
@@ -28,6 +10,15 @@
       "take_profit": 1.130171712932981,
       "opened_at": "2026-09-09T22:02:33.141361+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.9863537168809873,
+      "entry_price": 53.17,
+      "stop_loss": 52.512657533466474,
+      "take_profit": 54.1560136998003,
+      "opened_at": "2026-09-09T22:17:22.618815+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -48153,8 +48144,35 @@
       "reason": "RSI-herstel: laag=28.6 nu=36.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0020299621988291304,
+      "price": 77869.5355899072,
+      "timestamp": "2026-09-09T22:17:11.798353+00:00",
+      "reason": "Stop-loss geraakt (low=7.776e+04 <= 7.787e+04)",
+      "pnl_quote": -1.514685546599992,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 124.03676614476237,
+      "price": 1.390791218764351,
+      "timestamp": "2026-09-09T22:17:12.974204+00:00",
+      "reason": "Stop-loss geraakt (low=1.386 <= 1.391)",
+      "pnl_quote": -1.572635023126793,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.9863537168809873,
+      "price": 53.17,
+      "timestamp": "2026-09-09T22:17:22.618828+00:00",
+      "reason": "RSI-herstel: laag=29.2 nu=34.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1.1117,
-  "last_updated": "2026-09-09T22:02:33.187328+00:00"
+  "last_price": 53.17,
+  "last_updated": "2026-09-09T22:17:22.704452+00:00"
 }
