@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 657.5211054764106,
+  "balance_quote": 1030.7110396860264,
   "positions": [
-    {
-      "side": "long",
-      "amount": 3.9863537168809873,
-      "entry_price": 53.17,
-      "stop_loss": 52.512657533466474,
-      "take_profit": 54.1560136998003,
-      "opened_at": "2026-09-09T22:17:22.618815+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 148.567348888477,
@@ -19,15 +10,6 @@
       "take_profit": 1.4000595091037762,
       "opened_at": "2026-09-10T02:08:57.673663+00:00",
       "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 769.9995614087562,
-      "entry_price": 0.213481,
-      "stop_loss": 0.21151386301683514,
-      "take_profit": 0.2164317054747473,
-      "opened_at": "2026-09-10T07:17:50.464014+00:00",
-      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -48261,8 +48243,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=50.8",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.9863537168809873,
+      "price": 52.512657533466474,
+      "timestamp": "2026-09-10T07:32:26.732602+00:00",
+      "reason": "Stop-loss geraakt (low=52.27 <= 52.51)",
+      "pnl_quote": -2.620399584729654,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 769.9995614087562,
+      "price": 0.2128,
+      "timestamp": "2026-09-10T07:32:29.131336+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.5243697013193866,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.213481,
-  "last_updated": "2026-09-10T07:17:50.547572+00:00"
+  "last_price": 77971.1,
+  "last_updated": "2026-09-10T07:32:38.731358+00:00"
 }
