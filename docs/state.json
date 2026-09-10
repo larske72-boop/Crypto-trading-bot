@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 657.4146830912085,
+  "balance_quote": 682.6344400573913,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1174.7701684915012,
-      "entry_price": 0.209629,
-      "stop_loss": 0.20620065299709123,
-      "take_profit": 0.21477152050436316,
-      "opened_at": "2026-09-10T13:07:12.616241+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 121.89872811313141,
-      "entry_price": 1.35767,
-      "stop_loss": 1.3419427164722315,
-      "take_profit": 1.3812609252916526,
-      "opened_at": "2026-09-10T14:18:44.555912+00:00",
-      "symbol": "XRP/USD"
-    },
     {
       "side": "long",
       "amount": 149.53477460904574,
@@ -28,6 +10,24 @@
       "take_profit": 1.1226625466212918,
       "opened_at": "2026-09-10T17:40:38.451936+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08685234777780552,
+      "entry_price": 2456.16,
+      "stop_loss": 2436.7656777763486,
+      "take_profit": 2485.2514833354767,
+      "opened_at": "2026-09-10T18:10:45.522249+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.2768550309974622,
+      "entry_price": 52.08,
+      "stop_loss": 51.55737703360796,
+      "take_profit": 52.86393444958805,
+      "opened_at": "2026-09-10T18:10:45.689809+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -48405,8 +48405,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=63.1",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1174.7701684915012,
+      "price": 0.2082,
+      "timestamp": "2026-09-10T18:10:34.597921+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.678746570774365,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 121.89872811313141,
+      "price": 1.35042,
+      "timestamp": "2026-09-10T18:10:35.897818+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.8837657788201909,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08685234777780552,
+      "price": 2456.16,
+      "timestamp": "2026-09-10T18:10:45.522263+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=58.0",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.2768550309974622,
+      "price": 52.08,
+      "timestamp": "2026-09-10T18:10:45.689821+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=43.9",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1.1056,
-  "last_updated": "2026-09-10T17:55:19.967168+00:00"
+  "last_price": 52.08,
+  "last_updated": "2026-09-10T18:10:45.773358+00:00"
 }
