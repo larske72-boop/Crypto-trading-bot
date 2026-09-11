@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 700.919520309068,
+  "balance_quote": 842.9830487194492,
   "positions": [
-    {
-      "side": "long",
-      "amount": 145.76103239949896,
-      "entry_price": 1.35079,
-      "stop_loss": 1.343739026905991,
-      "take_profit": 1.3613664596410133,
-      "opened_at": "2026-09-11T07:54:14.113122+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0636549952232641,
-      "entry_price": 2477.32,
-      "stop_loss": 2465.54888901428,
-      "take_profit": 2494.97666647858,
-      "opened_at": "2026-09-11T08:38:22.437178+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 156.2877988559285,
@@ -28,6 +10,15 @@
       "take_profit": 1.1487078587958488,
       "opened_at": "2026-09-11T09:22:30.560973+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08551050174467749,
+      "entry_price": 2464.56,
+      "stop_loss": 2453.5716920837,
+      "take_profit": 2481.04246187445,
+      "opened_at": "2026-09-11T09:37:18.399489+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -48783,8 +48774,35 @@
       "reason": "RSI-herstel: laag=30.5 nu=39.2 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 145.76103239949896,
+      "price": 1.343739026905991,
+      "timestamp": "2026-09-11T09:37:07.649043+00:00",
+      "reason": "Stop-loss geraakt (low=1.343 <= 1.344)",
+      "pnl_quote": -1.0277571176038407,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0636549952232641,
+      "price": 2465.54888901428,
+      "timestamp": "2026-09-11T09:37:08.861739+00:00",
+      "reason": "Stop-loss geraakt (low=2465 <= 2466)",
+      "pnl_quote": -0.7492900135685261,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08551050174467749,
+      "price": 2464.56,
+      "timestamp": "2026-09-11T09:37:18.399501+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=46.1",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 1.1212,
-  "last_updated": "2026-09-11T09:22:30.652733+00:00"
+  "last_price": 2464.56,
+  "last_updated": "2026-09-11T09:37:18.483763+00:00"
 }
