@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 698.9480378230468,
+  "balance_quote": 693.872892227701,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 122.86726743828982,
-      "entry_price": 1.36282,
-      "stop_loss": 1.3576810774804609,
-      "take_profit": 1.3705283837793085,
-      "opened_at": "2026-09-12T05:05:27.999204+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
       "amount": 0.06889038201256155,
       "entry_price": 2536.45,
       "stop_loss": 2529.220380048482,
       "take_profit": 2547.294429927276,
       "opened_at": "2026-09-12T09:30:32.727271+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 166.22098798095556,
+      "entry_price": 1.0436,
+      "stop_loss": 1.0369875033455032,
+      "take_profit": 1.0535187449817456,
+      "opened_at": "2026-09-12T12:52:11.825690+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -49449,8 +49449,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=86.7",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 122.86726743828982,
+      "price": 1.3705283837793085,
+      "timestamp": "2026-09-12T12:52:03.431491+00:00",
+      "reason": "Take-profit geraakt (high=1.371 >= 1.371)",
+      "pnl_quote": 0.9471080513292804,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 166.22098798095556,
+      "price": 1.0436,
+      "timestamp": "2026-09-12T12:52:11.825703+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=44.8",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 2531.79,
-  "last_updated": "2026-09-12T09:45:10.988703+00:00"
+  "last_price": 1.0436,
+  "last_updated": "2026-09-12T12:52:11.911436+00:00"
 }
