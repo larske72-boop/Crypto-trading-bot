@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 671.8311303984699,
+  "balance_quote": 671.8341170017444,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 146.5160393386431,
-      "entry_price": 1.43293,
-      "stop_loss": 1.4166633034892364,
-      "take_profit": 1.4573300447661455,
-      "opened_at": "2026-09-14T17:46:46.130469+00:00",
+      "amount": 146.55964814419806,
+      "entry_price": 1.43251,
+      "stop_loss": 1.4157057731431348,
+      "take_profit": 1.4577163402852977,
+      "opened_at": "2026-09-14T18:01:41.035302+00:00",
       "symbol": "XRP/USD"
     },
     {
       "side": "long",
-      "amount": 22.067768046198594,
-      "entry_price": 7.611,
-      "stop_loss": 7.541063084293266,
-      "take_profit": 7.7159053735601,
-      "opened_at": "2026-09-14T17:46:46.260194+00:00",
+      "amount": 22.062068731175106,
+      "entry_price": 7.613,
+      "stop_loss": 7.54755677587805,
+      "take_profit": 7.711164836182926,
+      "opened_at": "2026-09-14T18:01:41.209766+00:00",
       "symbol": "AVAX/USD"
     }
   ],
@@ -50295,8 +50295,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=76.8",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 146.5160393386431,
+      "price": 1.43251,
+      "timestamp": "2026-09-14T18:01:31.312734+00:00",
+      "reason": "RSI overbought exit (78.8 > 72)",
+      "pnl_quote": -0.06153673652224256,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 22.067768046198594,
+      "price": 7.614,
+      "timestamp": "2026-09-14T18:01:32.629655+00:00",
+      "reason": "RSI overbought exit (77.2 > 72)",
+      "pnl_quote": 0.06620330413858255,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 146.55964814419806,
+      "price": 1.43251,
+      "timestamp": "2026-09-14T18:01:41.035317+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=78.8",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 22.062068731175106,
+      "price": 7.613,
+      "timestamp": "2026-09-14T18:01:41.209783+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=77.1",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 7.611,
-  "last_updated": "2026-09-14T17:46:46.323645+00:00"
+  "last_price": 7.613,
+  "last_updated": "2026-09-14T18:01:41.296517+00:00"
 }
