@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 618.0375170761756,
+  "balance_quote": 1011.4097433589773,
   "positions": [
-    {
-      "side": "long",
-      "amount": 171.81270557231383,
-      "entry_price": 1.40514,
-      "stop_loss": 1.3788421325727442,
-      "take_profit": 1.4445868011408838,
-      "opened_at": "2026-09-15T13:49:24.089561+00:00",
-      "symbol": "XRP/USD"
-    },
     {
       "side": "long",
       "amount": 25.724124145751848,
@@ -19,15 +10,6 @@
       "take_profit": 7.616636357969174,
       "opened_at": "2026-09-15T13:49:24.188017+00:00",
       "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.5364894517605798,
-      "entry_price": 100.56,
-      "stop_loss": 99.80982878260498,
-      "take_profit": 101.68525682609253,
-      "opened_at": "2026-09-15T14:04:14.027946+00:00",
-      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -51123,8 +51105,26 @@
       "reason": "RSI-herstel: laag=30.8 nu=43.7 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 171.81270557231383,
+      "price": 1.39696,
+      "timestamp": "2026-09-15T14:33:42.521520+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.405427931581528,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.5364894517605798,
+      "price": 99.80982878260498,
+      "timestamp": "2026-09-15T14:33:44.769186+00:00",
+      "reason": "Stop-loss geraakt (low=99.74 <= 99.81)",
+      "pnl_quote": -1.1526301625418398,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 100.19,
-  "last_updated": "2026-09-15T14:18:57.489567+00:00"
+  "last_price": 76160.9,
+  "last_updated": "2026-09-15T14:33:54.505993+00:00"
 }
