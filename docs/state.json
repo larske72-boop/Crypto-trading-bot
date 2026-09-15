@@ -1,17 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 1043.4739190233547,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 119.71708562094267,
-      "entry_price": 1.40146,
-      "stop_loss": 1.3907625452123193,
-      "take_profit": 1.4175061821815207,
-      "opened_at": "2026-09-15T07:24:49.868168+00:00",
-      "symbol": "XRP/USD"
-    }
-  ],
+  "balance_quote": 1209.9719577269382,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -50907,8 +50897,17 @@
       "reason": "Stop-loss geraakt (low=0.2033 <= 0.2038)",
       "pnl_quote": -1.196679747949105,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 119.71708562094267,
+      "price": 1.3907625452123193,
+      "timestamp": "2026-09-15T08:08:55.121989+00:00",
+      "reason": "Stop-loss geraakt (low=1.386 <= 1.391)",
+      "pnl_quote": -1.280668110742937,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 76889.2,
-  "last_updated": "2026-09-15T07:54:11.742371+00:00"
+  "last_price": 76708.3,
+  "last_updated": "2026-09-15T08:09:05.918797+00:00"
 }
