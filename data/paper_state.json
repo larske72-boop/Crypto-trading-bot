@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 608.8923899649355,
+  "balance_quote": 640.3235973462228,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.0025206906619970955,
-      "entry_price": 75486.8,
-      "stop_loss": 75160.6367854511,
-      "take_profit": 75976.04482182335,
-      "opened_at": "2026-09-16T08:40:54.409331+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
       "amount": 118.83331315963865,
       "entry_price": 1.28098,
       "stop_loss": 1.2695109178786457,
       "take_profit": 1.2981836231820316,
       "opened_at": "2026-09-16T08:55:38.607006+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 167.3086322497447,
+      "entry_price": 0.9568,
+      "stop_loss": 0.9490738828842362,
+      "take_profit": 0.9683891756736457,
+      "opened_at": "2026-09-16T11:11:01.252181+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -51483,8 +51483,26 @@
       "reason": "RSI-herstel: laag=25.1 nu=34.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0025206906619970955,
+      "price": 75976.04482182335,
+      "timestamp": "2026-09-16T11:10:52.857237+00:00",
+      "reason": "Take-profit geraakt (high=7.599e+04 >= 7.598e+04)",
+      "pnl_quote": 1.2332348538005533,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 167.3086322497447,
+      "price": 0.9568,
+      "timestamp": "2026-09-16T11:11:01.252197+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=60.6",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 1.28727,
-  "last_updated": "2026-09-16T10:56:09.084221+00:00"
+  "last_price": 0.9568,
+  "last_updated": "2026-09-16T11:11:01.318159+00:00"
 }
