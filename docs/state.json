@@ -1,32 +1,32 @@
 {
   "mode": "paper",
-  "balance_quote": 659.1623785520899,
+  "balance_quote": 613.0830986912015,
   "positions": [
     {
       "side": "long",
-      "amount": 1061.2546218727346,
-      "entry_price": 0.192135,
-      "stop_loss": 0.1902851834415974,
-      "take_profit": 0.19490972483760388,
-      "opened_at": "2026-09-16T14:22:48.889872+00:00",
+      "amount": 1221.0677997341052,
+      "entry_price": 0.196128,
+      "stop_loss": 0.19274826393841818,
+      "take_profit": 0.20119760409237272,
+      "opened_at": "2026-09-16T18:09:20.966141+00:00",
       "symbol": "ADA/USD"
     },
     {
       "side": "long",
-      "amount": 0.002158601085350002,
-      "entry_price": 75569.0,
-      "stop_loss": 75185.15238566273,
-      "take_profit": 76144.77142150591,
-      "opened_at": "2026-09-16T14:22:49.121229+00:00",
-      "symbol": "BTC/USD"
+      "amount": 3.7412315629955177,
+      "entry_price": 51.21,
+      "stop_loss": 50.617214954308494,
+      "take_profit": 52.09917756853726,
+      "opened_at": "2026-09-16T18:09:21.118711+00:00",
+      "symbol": "LTC/USD"
     },
     {
       "side": "long",
-      "amount": 1.7080285513891218,
-      "entry_price": 96.48,
-      "stop_loss": 95.59792209278858,
-      "take_profit": 97.80311686081713,
-      "opened_at": "2026-09-16T17:54:29.160243+00:00",
+      "amount": 1.5536824599371553,
+      "entry_price": 98.65,
+      "stop_loss": 97.21032988258003,
+      "take_profit": 100.80950517612997,
+      "opened_at": "2026-09-16T18:09:21.271718+00:00",
       "symbol": "SOL/USD"
     }
   ],
@@ -51663,8 +51663,62 @@
       "reason": "RSI-herstel: laag=28.1 nu=37.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1061.2546218727346,
+      "price": 0.19490972483760388,
+      "timestamp": "2026-09-16T18:09:08.955833+00:00",
+      "reason": "Take-profit geraakt (high=0.1968 >= 0.1949)",
+      "pnl_quote": 2.944689558332186,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002158601085350002,
+      "price": 76144.77142150591,
+      "timestamp": "2026-09-16T18:09:10.145318+00:00",
+      "reason": "Take-profit geraakt (high=7.648e+04 >= 7.614e+04)",
+      "pnl_quote": 1.2428608153761616,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.7080285513891218,
+      "price": 97.80311686081713,
+      "timestamp": "2026-09-16T18:09:11.371787+00:00",
+      "reason": "Take-profit geraakt (high=98.84 >= 97.8)",
+      "pnl_quote": 2.2599213750999922,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1221.0677997341052,
+      "price": 0.196128,
+      "timestamp": "2026-09-16T18:09:20.966154+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=71.3",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.7412315629955177,
+      "price": 51.21,
+      "timestamp": "2026-09-16T18:09:21.118731+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=71.3",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.5536824599371553,
+      "price": 98.65,
+      "timestamp": "2026-09-16T18:09:21.271738+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=69.9",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 96.48,
-  "last_updated": "2026-09-16T17:54:29.248739+00:00"
+  "last_price": 98.65,
+  "last_updated": "2026-09-16T18:09:21.347709+00:00"
 }
