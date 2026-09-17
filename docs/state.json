@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 689.4830884137448,
+  "balance_quote": 662.0734101472236,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 862.334724084063,
-      "entry_price": 0.199175,
-      "stop_loss": 0.1973824861574299,
-      "take_profit": 0.20186377076385514,
-      "opened_at": "2026-09-17T08:51:32.373989+00:00",
+      "amount": 1035.8570346407628,
+      "entry_price": 0.199736,
+      "stop_loss": 0.19800717178693927,
+      "take_profit": 0.20232924231959107,
+      "opened_at": "2026-09-17T09:21:19.982155+00:00",
       "symbol": "ADA/USD"
     },
     {
       "side": "long",
-      "amount": 3.264597956504474,
-      "entry_price": 52.8,
-      "stop_loss": 52.47626962965239,
-      "take_profit": 53.285595555521404,
-      "opened_at": "2026-09-17T09:06:32.797469+00:00",
+      "amount": 3.130074745401019,
+      "entry_price": 52.88,
+      "stop_loss": 52.56564266651784,
+      "take_profit": 53.35153600022325,
+      "opened_at": "2026-09-17T09:21:20.167216+00:00",
       "symbol": "LTC/USD"
     }
   ],
@@ -52149,8 +52149,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=71.4",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 862.334724084063,
+      "price": 0.199893,
+      "timestamp": "2026-09-17T09:21:10.380020+00:00",
+      "reason": "RSI overbought exit (75.2 > 72)",
+      "pnl_quote": 0.6191563318923556,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.264597956504474,
+      "price": 52.88,
+      "timestamp": "2026-09-17T09:21:11.496239+00:00",
+      "reason": "RSI overbought exit (74.6 > 72)",
+      "pnl_quote": 0.26116783652037157,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1035.8570346407628,
+      "price": 0.199736,
+      "timestamp": "2026-09-17T09:21:19.982168+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=72.2",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.130074745401019,
+      "price": 52.88,
+      "timestamp": "2026-09-17T09:21:20.167234+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.6",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 52.8,
-  "last_updated": "2026-09-17T09:06:32.860108+00:00"
+  "last_price": 52.88,
+  "last_updated": "2026-09-17T09:21:20.257152+00:00"
 }
