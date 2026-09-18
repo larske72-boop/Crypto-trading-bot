@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 856.2447847288478,
+  "balance_quote": 1018.8207285226985,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.06502049440239112,
-      "entry_price": 2512.41,
-      "stop_loss": 2495.810806621691,
-      "take_profit": 2537.308790067463,
-      "opened_at": "2026-09-18T10:55:26.419755+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 27.032157051740302,
@@ -53427,8 +53418,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.3502079266988005,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.06502049440239112,
+      "price": 2500.38,
+      "timestamp": "2026-09-18T12:23:36.339665+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.7821965476607602,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 77966.0,
-  "last_updated": "2026-09-18T12:08:55.171987+00:00"
+  "last_price": 77941.2,
+  "last_updated": "2026-09-18T12:23:47.122352+00:00"
 }
