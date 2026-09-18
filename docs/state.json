@@ -1,32 +1,32 @@
 {
   "mode": "paper",
-  "balance_quote": 644.645190329669,
+  "balance_quote": 645.4688589011191,
   "positions": [
     {
       "side": "long",
-      "amount": 30.419730305934642,
-      "entry_price": 8.278,
-      "stop_loss": 8.185606282688724,
-      "take_profit": 8.416590575966914,
-      "opened_at": "2026-09-18T19:35:14.743259+00:00",
+      "amount": 30.410839827312703,
+      "entry_price": 8.291,
+      "stop_loss": 8.200745654346479,
+      "take_profit": 8.426381518480284,
+      "opened_at": "2026-09-18T19:47:45.610200+00:00",
       "symbol": "AVAX/USD"
     },
     {
       "side": "long",
-      "amount": 1.7713147100854796,
-      "entry_price": 113.73,
-      "stop_loss": 112.30441216024349,
-      "take_profit": 115.86838175963479,
-      "opened_at": "2026-09-18T19:35:14.865474+00:00",
+      "amount": 1.770464481757217,
+      "entry_price": 113.93,
+      "stop_loss": 112.54317094228605,
+      "take_profit": 116.01024358657095,
+      "opened_at": "2026-09-18T19:47:45.799670+00:00",
       "symbol": "SOL/USD"
     },
     {
       "side": "long",
-      "amount": 0.06125733025037812,
-      "entry_price": 2630.89,
-      "stop_loss": 2604.5025463063994,
-      "take_profit": 2670.4711805404004,
-      "opened_at": "2026-09-18T19:35:14.987592+00:00",
+      "amount": 0.06104417133869745,
+      "entry_price": 2643.45,
+      "stop_loss": 2616.5830916214777,
+      "take_profit": 2683.750362567783,
+      "opened_at": "2026-09-18T19:47:45.985089+00:00",
       "symbol": "ETH/USD"
     }
   ],
@@ -54399,8 +54399,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=77.9",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 30.419730305934642,
+      "price": 8.296,
+      "timestamp": "2026-09-18T19:47:33.627173+00:00",
+      "reason": "RSI overbought exit (77.3 > 72)",
+      "pnl_quote": 0.5475551455068057,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.7713147100854796,
+      "price": 113.93,
+      "timestamp": "2026-09-18T19:47:34.819000+00:00",
+      "reason": "RSI overbought exit (76.8 > 72)",
+      "pnl_quote": 0.35426294201710107,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.06125733025037812,
+      "price": 2642.43,
+      "timestamp": "2026-09-18T19:47:35.942210+00:00",
+      "reason": "RSI overbought exit (86.2 > 72)",
+      "pnl_quote": 0.7069095910893566,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 30.410839827312703,
+      "price": 8.291,
+      "timestamp": "2026-09-18T19:47:45.610212+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.8",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.770464481757217,
+      "price": 113.93,
+      "timestamp": "2026-09-18T19:47:45.799691+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.8",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.06104417133869745,
+      "price": 2643.45,
+      "timestamp": "2026-09-18T19:47:45.985101+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=86.4",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 2630.89,
-  "last_updated": "2026-09-18T19:35:15.047053+00:00"
+  "last_price": 2643.45,
+  "last_updated": "2026-09-18T19:47:46.078744+00:00"
 }
