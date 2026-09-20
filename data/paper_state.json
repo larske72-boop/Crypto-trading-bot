@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 721.8001696413935,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 799.5575640692442,
-      "entry_price": 0.226989,
-      "stop_loss": 0.22413531735615838,
-      "take_profit": 0.23126952396576242,
-      "opened_at": "2026-09-19T21:18:43.919976+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.002225262745234492,
-      "entry_price": 80975.1,
-      "stop_loss": 80698.28878538776,
-      "take_profit": 81390.31682191837,
-      "opened_at": "2026-09-19T22:13:45.805332+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 128.93433061366036,
-      "entry_price": 1.39955,
-      "stop_loss": 1.387894324346698,
-      "take_profit": 1.4170335134799532,
-      "opened_at": "2026-09-20T01:51:31.138404+00:00",
-      "symbol": "XRP/USD"
-    }
-  ],
+  "balance_quote": 1259.5313793190082,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -55677,8 +55649,35 @@
       "reason": "RSI-herstel: laag=31.0 nu=33.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 799.5575640692442,
+      "price": 0.22413531735615838,
+      "timestamp": "2026-09-20T02:50:05.701210+00:00",
+      "reason": "Stop-loss geraakt (low=0.222 <= 0.2241)",
+      "pnl_quote": -2.281683543336669,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002225262745234492,
+      "price": 80698.28878538776,
+      "timestamp": "2026-09-20T02:50:07.002580+00:00",
+      "reason": "Stop-loss geraakt (low=8.04e+04 <= 8.07e+04)",
+      "pnl_quote": -0.6159776833397359,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 128.93433061366036,
+      "price": 1.387894324346698,
+      "timestamp": "2026-09-20T02:50:08.199169+00:00",
+      "reason": "Stop-loss geraakt (low=1.375 <= 1.388)",
+      "pnl_quote": -1.5028167382084519,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 1.39473,
-  "last_updated": "2026-09-20T02:35:29.302350+00:00"
+  "last_price": 80575.9,
+  "last_updated": "2026-09-20T02:50:18.890991+00:00"
 }
