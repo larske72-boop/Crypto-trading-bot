@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 732.7355510563218,
+  "balance_quote": 733.6129039178403,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 117.67071640538329,
-      "entry_price": 1.55675,
-      "stop_loss": 1.52960826393283,
-      "take_profit": 1.5974626041007554,
-      "opened_at": "2026-09-21T22:03:52.618744+00:00",
+      "amount": 117.15612406542492,
+      "entry_price": 1.56546,
+      "stop_loss": 1.5362140375453337,
+      "take_profit": 1.6093289436819997,
+      "opened_at": "2026-09-21T22:18:42.632316+00:00",
       "symbol": "XRP/USD"
     }
   ],
@@ -57513,8 +57513,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=77.1",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 117.67071640538329,
+      "price": 1.56607,
+      "timestamp": "2026-09-21T22:18:35.393452+00:00",
+      "reason": "RSI overbought exit (74.2 > 72)",
+      "pnl_quote": 1.0966910768981677,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 117.15612406542492,
+      "price": 1.56546,
+      "timestamp": "2026-09-21T22:18:42.632328+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=73.7",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 1.55675,
-  "last_updated": "2026-09-21T22:03:52.691753+00:00"
+  "last_price": 1.56546,
+  "last_updated": "2026-09-21T22:18:42.731172+00:00"
 }
