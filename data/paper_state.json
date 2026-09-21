@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 669.7411857639538,
+  "balance_quote": 699.8274082146615,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 18.17653522420592,
-      "entry_price": 11.515,
-      "stop_loss": 11.280646832588571,
-      "take_profit": 11.866529751117143,
-      "opened_at": "2026-09-21T11:09:40.215351+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
       "amount": 139.50616267371143,
       "entry_price": 1.2002,
       "stop_loss": 1.1810471404215774,
       "take_profit": 1.2289292893676336,
       "opened_at": "2026-09-21T11:24:30.127556+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.8918487942754614,
+      "entry_price": 60.5,
+      "stop_loss": 59.7054393546089,
+      "take_profit": 61.691840968086645,
+      "opened_at": "2026-09-21T12:08:35.384040+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -57063,8 +57063,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=71.5",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 18.17653522420592,
+      "price": 11.280646832588571,
+      "timestamp": "2026-09-21T12:08:26.813306+00:00",
+      "reason": "Stop-loss geraakt (low=11.27 <= 11.28)",
+      "pnl_quote": -4.259728602358052,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.8918487942754614,
+      "price": 60.5,
+      "timestamp": "2026-09-21T12:08:35.384052+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=68.2",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1.1929,
-  "last_updated": "2026-09-21T11:53:51.975437+00:00"
+  "last_price": 60.5,
+  "last_updated": "2026-09-21T12:08:35.460608+00:00"
 }
