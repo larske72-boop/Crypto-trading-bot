@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 651.3292054306197,
+  "balance_quote": 643.7618136691756,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 19.4589270264884,
-      "entry_price": 10.46,
-      "stop_loss": 10.102347931022596,
-      "take_profit": 10.996478103466108,
-      "opened_at": "2026-09-23T14:37:06.468243+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 841.2495108351937,
+      "entry_price": 0.239139,
+      "stop_loss": 0.23281545515474383,
+      "take_profit": 0.24862431726788423,
+      "opened_at": "2026-09-23T16:14:30.691264+00:00",
+      "symbol": "ADA/USD"
     },
     {
       "side": "long",
-      "amount": 2.675082985997289,
-      "entry_price": 60.87,
-      "stop_loss": 59.05154272535994,
-      "take_profit": 63.59768591196009,
-      "opened_at": "2026-09-23T14:37:06.646711+00:00",
+      "amount": 2.676541716568999,
+      "entry_price": 60.13,
+      "stop_loss": 58.41311852182866,
+      "take_profit": 62.70532221725702,
+      "opened_at": "2026-09-23T16:14:30.894028+00:00",
       "symbol": "LTC/USD"
     }
   ],
@@ -58413,8 +58413,44 @@
       "reason": "RSI-herstel: laag=25.6 nu=37.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 19.4589270264884,
+      "price": 10.102347931022596,
+      "timestamp": "2026-09-23T16:14:21.081662+00:00",
+      "reason": "Stop-loss geraakt (low=10.08 <= 10.1)",
+      "pnl_quote": -6.959525511103919,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.675082985997289,
+      "price": 59.05154272535994,
+      "timestamp": "2026-09-23T16:14:22.278901+00:00",
+      "reason": "Stop-loss geraakt (low=58.92 <= 59.05)",
+      "pnl_quote": -4.864524116152609,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 841.2495108351937,
+      "price": 0.239139,
+      "timestamp": "2026-09-23T16:14:30.691276+00:00",
+      "reason": "RSI-herstel: laag=24.9 nu=33.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.676541716568999,
+      "price": 60.13,
+      "timestamp": "2026-09-23T16:14:30.894045+00:00",
+      "reason": "RSI-herstel: laag=25.9 nu=37.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 59.46,
-  "last_updated": "2026-09-23T15:59:35.408857+00:00"
+  "last_price": 60.13,
+  "last_updated": "2026-09-23T16:14:30.994389+00:00"
 }
