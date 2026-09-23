@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 707.0522849049314,
+  "balance_quote": 714.1511545236531,
   "positions": [
-    {
-      "side": "long",
-      "amount": 115.53662937115915,
-      "entry_price": 1.58369,
-      "stop_loss": 1.5645933758088233,
-      "take_profit": 1.6123349362867652,
-      "opened_at": "2026-09-23T00:45:57.584962+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.002563662173706311,
-      "entry_price": 86186.8,
-      "stop_loss": 85778.18894724749,
-      "take_profit": 86799.71657912877,
-      "opened_at": "2026-09-23T01:54:50.079942+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 0.06409777359701814,
@@ -28,6 +10,24 @@
       "take_profit": 2783.5917456891248,
       "opened_at": "2026-09-23T02:39:16.825962+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 138.42370601687196,
+      "entry_price": 1.61224,
+      "stop_loss": 1.5862610224966736,
+      "take_profit": 1.6512084662549893,
+      "opened_at": "2026-09-23T03:52:58.408942+00:00",
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 687.2944370995509,
+      "entry_price": 0.259769,
+      "stop_loss": 0.2557608871230834,
+      "take_profit": 0.26578116931537493,
+      "opened_at": "2026-09-23T03:52:58.612147+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -58071,8 +58071,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=51.5",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 115.53662937115915,
+      "price": 1.6123349362867652,
+      "timestamp": "2026-09-23T03:52:47.621323+00:00",
+      "reason": "Take-profit geraakt (high=1.624 >= 1.612)",
+      "pnl_quote": 3.309539387124431,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002563662173706311,
+      "price": 86799.71657912877,
+      "timestamp": "2026-09-23T03:52:48.833723+00:00",
+      "reason": "Take-profit geraakt (high=8.688e+04 >= 8.68e+04)",
+      "pnl_quote": 1.5713110495499052,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 138.42370601687196,
+      "price": 1.61224,
+      "timestamp": "2026-09-23T03:52:58.408961+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=63.3",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 687.2944370995509,
+      "price": 0.259769,
+      "timestamp": "2026-09-23T03:52:58.612156+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=71.8",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 2769.37,
-  "last_updated": "2026-09-23T03:38:06.190026+00:00"
+  "last_price": 0.259769,
+  "last_updated": "2026-09-23T03:52:58.714896+00:00"
 }
