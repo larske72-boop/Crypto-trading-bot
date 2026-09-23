@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 750.2791643515478,
+  "balance_quote": 741.2028159257472,
   "positions": [
-    {
-      "side": "long",
-      "amount": 687.2944370995509,
-      "entry_price": 0.259769,
-      "stop_loss": 0.2557608871230834,
-      "take_profit": 0.26578116931537493,
-      "opened_at": "2026-09-23T03:52:58.612147+00:00",
-      "symbol": "ADA/USD"
-    },
     {
       "side": "long",
       "amount": 2.810106500254754,
@@ -28,6 +19,15 @@
       "take_profit": 1.6572560307128885,
       "opened_at": "2026-09-23T05:35:08.570814+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 16.522577260939528,
+      "entry_price": 11.215,
+      "stop_loss": 11.068252930388361,
+      "take_profit": 11.435120604417458,
+      "opened_at": "2026-09-23T06:04:31.214726+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -58197,8 +58197,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=51.5",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 687.2944370995509,
+      "price": 0.256403,
+      "timestamp": "2026-09-23T06:04:21.628255+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -2.3134330752771177,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 16.522577260939528,
+      "price": 11.215,
+      "timestamp": "2026-09-23T06:04:31.214737+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=52.5",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 1.6115,
-  "last_updated": "2026-09-23T05:49:49.080805+00:00"
+  "last_price": 11.215,
+  "last_updated": "2026-09-23T06:04:31.291180+00:00"
 }
