@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 679.5759636879714,
+  "balance_quote": 680.4724046953661,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 153.50017249909004,
-      "entry_price": 1.1068,
-      "stop_loss": 1.0922112433439386,
-      "take_profit": 1.1286831349840922,
-      "opened_at": "2026-09-24T10:02:43.884020+00:00",
-      "symbol": "DOT/USD"
+      "amount": 2.5791100845033585,
+      "entry_price": 65.96,
+      "stop_loss": 64.74697057655065,
+      "take_profit": 67.779544135174,
+      "opened_at": "2026-09-24T12:30:02.125910+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -58953,8 +58953,26 @@
       "reason": "RSI-herstel: laag=27.2 nu=37.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 153.50017249909004,
+      "price": 1.1141,
+      "timestamp": "2026-09-24T12:29:54.857873+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 1.1205512592433706,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.5791100845033585,
+      "price": 65.96,
+      "timestamp": "2026-09-24T12:30:02.125923+00:00",
+      "reason": "RSI-herstel: laag=28.4 nu=33.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1.1154,
-  "last_updated": "2026-09-24T12:15:07.000109+00:00"
+  "last_price": 65.96,
+  "last_updated": "2026-09-24T12:30:02.205076+00:00"
 }
