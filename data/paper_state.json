@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 1036.9268185321162,
+  "balance_quote": 663.6331638605543,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 1.1561377311515177,
       "opened_at": "2026-09-25T04:01:23.890778+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 20.17956248967824,
+      "entry_price": 10.277,
+      "stop_loss": 10.15387373977457,
+      "take_profit": 10.461689390338142,
+      "opened_at": "2026-09-25T04:45:52.131980+00:00",
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 665.2697273899336,
+      "entry_price": 0.249385,
+      "stop_loss": 0.24657301847551522,
+      "take_profit": 0.2536029722867272,
+      "opened_at": "2026-09-25T04:45:52.293012+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -59763,8 +59781,26 @@
       "reason": "RSI-herstel: laag=27.7 nu=36.5 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 20.17956248967824,
+      "price": 10.277,
+      "timestamp": "2026-09-25T04:45:52.131991+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=57.6",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 665.2697273899336,
+      "price": 0.249385,
+      "timestamp": "2026-09-25T04:45:52.293026+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=56.6",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 84128.3,
-  "last_updated": "2026-09-25T04:31:03.882105+00:00"
+  "last_price": 0.249385,
+  "last_updated": "2026-09-25T04:45:52.373208+00:00"
 }
