@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 717.1888074406971,
+  "balance_quote": 719.6765911347635,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 21.406065169552804,
-      "entry_price": 10.47,
-      "stop_loss": 10.344999718694037,
-      "take_profit": 10.657500421958947,
-      "opened_at": "2026-09-25T09:49:45.834798+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 1.8526973781169256,
+      "entry_price": 121.39,
+      "stop_loss": 119.78766918467824,
+      "take_profit": 123.79349622298265,
+      "opened_at": "2026-09-25T11:18:05.363529+00:00",
+      "symbol": "SOL/USD"
     },
     {
       "side": "long",
-      "amount": 703.5401289392752,
-      "entry_price": 0.25485,
-      "stop_loss": 0.25147500359091174,
-      "take_profit": 0.25991249461363247,
-      "opened_at": "2026-09-25T09:49:46.039184+00:00",
-      "symbol": "ADA/USD"
+      "amount": 113.3363241008963,
+      "entry_price": 1.58748,
+      "stop_loss": 1.5675144139789183,
+      "take_profit": 1.6174283790316226,
+      "opened_at": "2026-09-25T11:18:05.568294+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -59961,8 +59961,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=74.6",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 21.406065169552804,
+      "price": 10.59,
+      "timestamp": "2026-09-25T11:17:55.762953+00:00",
+      "reason": "RSI overbought exit (74.0 > 72)",
+      "pnl_quote": 2.568727820346311,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 703.5401289392752,
+      "price": 0.256724,
+      "timestamp": "2026-09-25T11:17:56.968396+00:00",
+      "reason": "RSI overbought exit (72.9 > 72)",
+      "pnl_quote": 1.3184342016322148,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8526973781169256,
+      "price": 121.39,
+      "timestamp": "2026-09-25T11:18:05.363539+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=84.1",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 113.3363241008963,
+      "price": 1.58748,
+      "timestamp": "2026-09-25T11:18:05.568307+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=80.3",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 0.253113,
-  "last_updated": "2026-09-25T11:03:12.359799+00:00"
+  "last_price": 1.58748,
+  "last_updated": "2026-09-25T11:18:05.669620+00:00"
 }
