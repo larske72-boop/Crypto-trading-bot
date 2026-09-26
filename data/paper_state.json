@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 752.9537647105288,
+  "balance_quote": 900.9465556236682,
   "positions": [
-    {
-      "side": "long",
-      "amount": 728.0125386784831,
-      "entry_price": 0.258733,
-      "stop_loss": 0.2560843801688816,
-      "take_profit": 0.2627059297466776,
-      "opened_at": "2026-09-26T16:21:11.704668+00:00",
-      "symbol": "ADA/USD"
-    },
     {
       "side": "long",
       "amount": 146.92519672114216,
@@ -22,12 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 17.16251287177537,
-      "entry_price": 10.968,
-      "stop_loss": 10.810503067863259,
-      "take_profit": 11.20424539820511,
-      "opened_at": "2026-09-26T17:05:44.321563+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 0.0026794108979790758,
+      "entry_price": 84062.0,
+      "stop_loss": 83934.28444807608,
+      "take_profit": 84253.57332788588,
+      "opened_at": "2026-09-26T17:20:38.420787+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -61077,8 +61068,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=52.8",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 728.0125386784831,
+      "price": 0.2560843801688816,
+      "timestamp": "2026-09-26T17:20:27.600108+00:00",
+      "reason": "Stop-loss geraakt (low=0.2558 <= 0.2561)",
+      "pnl_quote": -1.9282284472466813,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 17.16251287177537,
+      "price": 10.884,
+      "timestamp": "2026-09-26T17:20:30.004093+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.4416510812291392,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0026794108979790758,
+      "price": 84062.0,
+      "timestamp": "2026-09-26T17:20:38.420798+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=49.0",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 10.968,
-  "last_updated": "2026-09-26T17:05:44.413115+00:00"
+  "last_price": 84062.0,
+  "last_updated": "2026-09-26T17:20:38.525804+00:00"
 }
