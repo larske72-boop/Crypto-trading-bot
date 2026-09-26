@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 903.6246916550559,
+  "balance_quote": 722.8997533240447,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 2691.1526117360045,
       "opened_at": "2026-09-26T19:55:14.851317+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 16.877562414177362,
+      "entry_price": 10.708,
+      "stop_loss": 10.594950683767912,
+      "take_profit": 10.877573974348133,
+      "opened_at": "2026-09-26T20:15:36.781114+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -61167,8 +61176,17 @@
       "reason": "RSI-herstel: laag=31.1 nu=38.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 16.877562414177362,
+      "price": 10.708,
+      "timestamp": "2026-09-26T20:15:36.781128+00:00",
+      "reason": "RSI-herstel: laag=31.4 nu=32.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 84004.0,
-  "last_updated": "2026-09-26T20:00:50.179746+00:00"
+  "last_price": 10.708,
+  "last_updated": "2026-09-26T20:15:36.887073+00:00"
 }
