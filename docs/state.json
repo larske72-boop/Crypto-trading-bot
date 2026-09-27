@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 670.0924861835558,
+  "balance_quote": 705.015718011956,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 1.7388018096185434,
-      "entry_price": 120.43,
-      "stop_loss": 119.75012209433767,
-      "take_profit": 121.4498168584935,
-      "opened_at": "2026-09-27T05:12:33.818381+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
       "amount": 2.3250953719068557,
       "entry_price": 72.05,
       "stop_loss": 71.40391776105226,
       "take_profit": 73.01912335842161,
       "opened_at": "2026-09-27T05:12:34.004263+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 16.26709086322003,
+      "entry_price": 10.835,
+      "stop_loss": 10.720532800198567,
+      "take_profit": 11.00670079970215,
+      "opened_at": "2026-09-27T05:42:02.382449+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -61473,8 +61473,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=59.0",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.7388018096185434,
+      "price": 121.4498168584935,
+      "timestamp": "2026-09-27T05:41:53.988090+00:00",
+      "reason": "Take-profit geraakt (high=121.5 >= 121.4)",
+      "pnl_quote": 1.7732593990280066,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 16.26709086322003,
+      "price": 10.835,
+      "timestamp": "2026-09-27T05:42:02.382467+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=60.8",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 71.86,
-  "last_updated": "2026-09-27T05:27:11.566693+00:00"
+  "last_price": 10.835,
+  "last_updated": "2026-09-27T05:42:02.490395+00:00"
 }
