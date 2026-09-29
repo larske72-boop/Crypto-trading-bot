@@ -1,26 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 924.4419654579949,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 16.629634128152425,
-      "entry_price": 10.707,
-      "stop_loss": 10.49788556733617,
-      "take_profit": 11.020671648995748,
-      "opened_at": "2026-09-29T00:55:17.027979+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 763.4590753569826,
-      "entry_price": 0.244846,
-      "stop_loss": 0.24101569718084326,
-      "take_profit": 0.25059145422873513,
-      "opened_at": "2026-09-29T01:10:06.378230+00:00",
-      "symbol": "ADA/USD"
-    }
-  ],
+  "balance_quote": 1283.0235828782124,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -62643,8 +62624,26 @@
       "reason": "Stop-loss geraakt (low=116.7 <= 117.1)",
       "pnl_quote": -1.654737262710313,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 16.629634128152425,
+      "price": 10.49788556733617,
+      "timestamp": "2026-09-29T01:39:39.198921+00:00",
+      "reason": "Stop-loss geraakt (low=10.44 <= 10.5)",
+      "pnl_quote": -3.4774965061156706,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 763.4590753569826,
+      "price": 0.24101569718084326,
+      "timestamp": "2026-09-29T01:39:40.505499+00:00",
+      "reason": "Stop-loss geraakt (low=0.2408 <= 0.241)",
+      "pnl_quote": -2.9242794486506796,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 82983.4,
-  "last_updated": "2026-09-29T01:24:52.982773+00:00"
+  "last_price": 82820.1,
+  "last_updated": "2026-09-29T01:39:51.311111+00:00"
 }
