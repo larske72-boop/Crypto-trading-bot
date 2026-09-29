@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 832.9373761392435,
+  "balance_quote": 666.3499009113948,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 68.85750036765812,
       "opened_at": "2026-09-29T15:46:36.514852+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 679.8489823040235,
+      "entry_price": 0.245036,
+      "stop_loss": 0.24053103123312672,
+      "take_profit": 0.25179345315030993,
+      "opened_at": "2026-09-29T16:01:31.832510+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -63507,8 +63516,17 @@
       "reason": "RSI-herstel: laag=29.2 nu=35.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 679.8489823040235,
+      "price": 0.245036,
+      "timestamp": "2026-09-29T16:01:31.832521+00:00",
+      "reason": "RSI-herstel: laag=25.0 nu=32.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 67.58,
-  "last_updated": "2026-09-29T15:46:36.626983+00:00"
+  "last_price": 0.245036,
+  "last_updated": "2026-09-29T16:01:31.943857+00:00"
 }
