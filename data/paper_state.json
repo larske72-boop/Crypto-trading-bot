@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 824.733597229573,
+  "balance_quote": 659.7868777836584,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 70.52096879374253,
       "opened_at": "2026-10-02T19:01:25.684959+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 111.99837003036109,
+      "entry_price": 1.47276,
+      "stop_loss": 1.453462893240748,
+      "take_profit": 1.5017056601388779,
+      "opened_at": "2026-10-02T20:00:50.269909+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -65883,8 +65892,17 @@
       "reason": "RSI-herstel: laag=25.3 nu=34.9 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 111.99837003036109,
+      "price": 1.47276,
+      "timestamp": "2026-10-02T20:00:50.269920+00:00",
+      "reason": "RSI-herstel: laag=17.4 nu=33.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 84168.3,
-  "last_updated": "2026-10-02T19:45:58.116643+00:00"
+  "last_price": 1.47276,
+  "last_updated": "2026-10-02T20:00:50.382933+00:00"
 }
