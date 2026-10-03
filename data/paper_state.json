@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 741.8880717036186,
+  "balance_quote": 742.5182495536808,
   "positions": [
-    {
-      "side": "long",
-      "amount": 154.90488475480197,
-      "entry_price": 1.2183,
-      "stop_loss": 1.2024136006641233,
-      "take_profit": 1.242129599003815,
-      "opened_at": "2026-10-03T14:49:31.121303+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 125.36590934036433,
@@ -28,6 +19,15 @@
       "take_profit": 70.59502133778416,
       "opened_at": "2026-10-03T15:47:56.870401+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.5528656716448068,
+      "entry_price": 119.54,
+      "stop_loss": 119.14562557661286,
+      "take_profit": 120.13156163508071,
+      "opened_at": "2026-10-03T16:18:10.718467+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -66459,8 +66459,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=56.4",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 154.90488475480197,
+      "price": 1.2024136006641233,
+      "timestamp": "2026-10-03T16:18:01.106906+00:00",
+      "reason": "Stop-loss geraakt (low=1.198 <= 1.202)",
+      "pnl_quote": -2.4608808582927395,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.5528656716448068,
+      "price": 119.54,
+      "timestamp": "2026-10-03T16:18:10.718479+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=52.2",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 69.48,
-  "last_updated": "2026-10-03T16:02:41.869271+00:00"
+  "last_price": 119.54,
+  "last_updated": "2026-10-03T16:18:10.832867+00:00"
 }
