@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 744.5391914497375,
+  "balance_quote": 744.70472257095,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 749.688048970064,
-      "entry_price": 0.248283,
-      "stop_loss": 0.2460304408279309,
-      "take_profit": 0.25166183875810366,
-      "opened_at": "2026-10-04T15:05:46.512018+00:00",
+      "amount": 749.3295847681391,
+      "entry_price": 0.248457,
+      "stop_loss": 0.24619349674212954,
+      "take_profit": 0.25185225488680574,
+      "opened_at": "2026-10-04T15:20:25.441261+00:00",
       "symbol": "ADA/USD"
     }
   ],
@@ -66963,8 +66963,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=77.9",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 749.688048970064,
+      "price": 0.248559,
+      "timestamp": "2026-10-04T15:20:18.371554+00:00",
+      "reason": "RSI overbought exit (76.1 > 72)",
+      "pnl_quote": 0.2069139015157191,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 749.3295847681391,
+      "price": 0.248457,
+      "timestamp": "2026-10-04T15:20:25.441272+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=74.8",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.248283,
-  "last_updated": "2026-10-04T15:05:46.630900+00:00"
+  "last_price": 0.248457,
+  "last_updated": "2026-10-04T15:20:25.505127+00:00"
 }
