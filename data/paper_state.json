@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 902.9187835773507,
+  "balance_quote": 694.9795647675194,
   "positions": [
-    {
-      "side": "long",
-      "amount": 2.591822163505052,
-      "entry_price": 71.04,
-      "stop_loss": 70.60159796011465,
-      "take_profit": 71.69760305982805,
-      "opened_at": "2026-10-05T11:47:39.776404+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 827.306297235239,
@@ -19,6 +10,24 @@
       "take_profit": 0.2785825057530674,
       "opened_at": "2026-10-05T12:32:51.193696+00:00",
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.0766555318012436,
+      "entry_price": 70.59,
+      "stop_loss": 70.11484962204128,
+      "take_profit": 71.30272556693808,
+      "opened_at": "2026-10-05T12:47:41.752925+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 144.72710636558088,
+      "entry_price": 1.2005,
+      "stop_loss": 1.187196454189088,
+      "take_profit": 1.2204553187163676,
+      "opened_at": "2026-10-05T12:47:41.940038+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -67773,8 +67782,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=54.5",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.591822163505052,
+      "price": 70.60159796011465,
+      "timestamp": "2026-10-05T12:47:32.151105+00:00",
+      "reason": "Stop-loss geraakt (low=70.58 <= 70.6)",
+      "pnl_quote": -1.1362601235006764,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.0766555318012436,
+      "price": 70.59,
+      "timestamp": "2026-10-05T12:47:41.752937+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=51.0",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 144.72710636558088,
+      "price": 1.2005,
+      "timestamp": "2026-10-05T12:47:41.940055+00:00",
+      "reason": "RSI-herstel: laag=31.2 nu=32.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 0.272849,
-  "last_updated": "2026-10-05T12:32:51.311026+00:00"
+  "last_price": 1.2005,
+  "last_updated": "2026-10-05T12:47:42.031596+00:00"
 }
