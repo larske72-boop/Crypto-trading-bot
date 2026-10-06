@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 706.1934870868683,
+  "balance_quote": 905.7724928954725,
   "positions": [
-    {
-      "side": "long",
-      "amount": 2.1622510621439806,
-      "entry_price": 121.02,
-      "stop_loss": 120.1115841242259,
-      "take_profit": 122.38262381366114,
-      "opened_at": "2026-10-06T16:16:23.987336+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 14.559019305053054,
-      "entry_price": 11.503,
-      "stop_loss": 11.371464150002735,
-      "take_profit": 11.700303774995897,
-      "opened_at": "2026-10-06T17:46:14.755203+00:00",
-      "symbol": "AVAX/USD"
-    },
     {
       "side": "long",
       "amount": 2.5461259269067935,
@@ -28,6 +10,15 @@
       "take_profit": 70.12853176149763,
       "opened_at": "2026-10-06T19:00:00.918931+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 186.60331538843687,
+      "entry_price": 1.2135,
+      "stop_loss": 1.2004164527752523,
+      "take_profit": 1.2331253208371216,
+      "opened_at": "2026-10-06T19:29:48.106188+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -68565,8 +68556,35 @@
       "reason": "RSI-herstel: laag=22.2 nu=37.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.1622510621439806,
+      "price": 120.46,
+      "timestamp": "2026-10-06T19:29:37.287797+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.2108605948006357,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 14.559019305053054,
+      "price": 11.371464150002735,
+      "timestamp": "2026-10-06T19:29:38.397751+00:00",
+      "reason": "Stop-loss geraakt (low=11.34 <= 11.37)",
+      "pnl_quote": -1.9150329794167362,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 186.60331538843687,
+      "price": 1.2135,
+      "timestamp": "2026-10-06T19:29:48.106201+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=49.4",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 69.62,
-  "last_updated": "2026-10-06T19:14:53.588136+00:00"
+  "last_price": 1.2135,
+  "last_updated": "2026-10-06T19:29:48.226209+00:00"
 }
