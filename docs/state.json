@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 717.2928032678194,
+  "balance_quote": 752.9650537656044,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 20.04059016729491,
-      "entry_price": 11.185,
-      "stop_loss": 11.091322871981307,
-      "take_profit": 11.325515692028041,
-      "opened_at": "2026-10-06T00:42:03.709249+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
       "amount": 1.4838494068428205,
       "entry_price": 120.85,
       "stop_loss": 120.30377117319377,
       "take_profit": 121.66934324020934,
       "opened_at": "2026-10-06T00:42:03.891957+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 16.847871067878017,
+      "entry_price": 11.173,
+      "stop_loss": 11.078470584785997,
+      "take_profit": 11.314794122821004,
+      "opened_at": "2026-10-06T00:56:59.151285+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -68025,8 +68025,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=56.4",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 20.04059016729491,
+      "price": 11.173,
+      "timestamp": "2026-10-06T00:56:50.749064+00:00",
+      "reason": "RSI overbought exit (75.8 > 72)",
+      "pnl_quote": -0.24048708200754731,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 16.847871067878017,
+      "price": 11.173,
+      "timestamp": "2026-10-06T00:56:59.151297+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=75.8",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 120.85,
-  "last_updated": "2026-10-06T00:42:03.981289+00:00"
+  "last_price": 11.173,
+  "last_updated": "2026-10-06T00:56:59.272210+00:00"
 }
