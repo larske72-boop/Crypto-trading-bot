@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 717.6608173513933,
+  "balance_quote": 895.1332979815604,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 19.20769145446304,
-      "entry_price": 11.676,
-      "stop_loss": 11.5626919931754,
-      "take_profit": 11.845962010236901,
-      "opened_at": "2026-10-06T23:11:17.965800+00:00",
+      "amount": 19.358419073995684,
+      "entry_price": 11.56,
+      "stop_loss": 11.439578787074675,
+      "take_profit": 11.740631819387989,
+      "opened_at": "2026-10-07T00:27:32.836970+00:00",
       "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0664958839562989,
-      "entry_price": 2698.14,
-      "stop_loss": 2692.071600831251,
-      "take_profit": 2707.2425987531233,
-      "opened_at": "2026-10-06T23:11:18.121162+00:00",
-      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -68691,8 +68682,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=54.8",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 19.20769145446304,
+      "price": 11.5626919931754,
+      "timestamp": "2026-10-07T00:27:23.227126+00:00",
+      "reason": "Stop-loss geraakt (low=11.56 <= 11.56)",
+      "pnl_quote": -2.1763852344070926,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0664958839562989,
+      "price": 2694.35,
+      "timestamp": "2026-10-07T00:27:24.442066+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.25201940019437075,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 19.358419073995684,
+      "price": 11.56,
+      "timestamp": "2026-10-07T00:27:32.836983+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=48.9",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 2698.02,
-  "last_updated": "2026-10-07T00:12:37.961109+00:00"
+  "last_price": 11.56,
+  "last_updated": "2026-10-07T00:27:32.958098+00:00"
 }
