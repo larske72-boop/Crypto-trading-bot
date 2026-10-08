@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 717.1444451218383,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 147.31501366008712,
-      "entry_price": 1.3976,
-      "stop_loss": 1.3858809002102124,
-      "take_profit": 1.4151786496846812,
-      "opened_at": "2026-10-08T11:32:24.330795+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 739.9288346209624,
-      "entry_price": 0.247282,
-      "stop_loss": 0.24380296880410107,
-      "take_profit": 0.2525005467938484,
-      "opened_at": "2026-10-08T14:00:28.105258+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.5939376891932753,
-      "entry_price": 112.48,
-      "stop_loss": 111.26718456268658,
-      "take_profit": 114.29922315597013,
-      "opened_at": "2026-10-08T14:59:36.385625+00:00",
-      "symbol": "SOL/USD"
-    }
-  ],
+  "balance_quote": 1279.0553144967994,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -69267,8 +69239,35 @@
       "reason": "RSI-herstel: laag=11.3 nu=40.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 147.31501366008712,
+      "price": 1.3858809002102124,
+      "timestamp": "2026-10-08T15:14:23.339515+00:00",
+      "reason": "Stop-loss geraakt (low=1.385 <= 1.386)",
+      "pnl_quote": -1.7263993456164712,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 739.9288346209624,
+      "price": 0.24380296880410107,
+      "timestamp": "2026-10-08T15:14:24.539762+00:00",
+      "reason": "Stop-loss geraakt (low=0.2422 <= 0.2438)",
+      "pnl_quote": -2.574235498391488,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.5939376891932753,
+      "price": 111.26718456268658,
+      "timestamp": "2026-10-08T15:14:25.718185+00:00",
+      "reason": "Stop-loss geraakt (low=111.1 <= 111.3)",
+      "pnl_quote": -1.9331522355692812,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 112.48,
-  "last_updated": "2026-10-08T14:59:36.504728+00:00"
+  "last_price": 82146.0,
+  "last_updated": "2026-10-08T15:14:36.394370+00:00"
 }
