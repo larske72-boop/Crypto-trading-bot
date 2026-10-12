@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 752.1695711782503,
+  "balance_quote": 934.8157534453035,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.0021969696467473033,
-      "entry_price": 83463.1,
-      "stop_loss": 83135.50555305475,
-      "take_profit": 83954.49167041788,
-      "opened_at": "2026-10-12T10:00:32.106162+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 152.6433027458687,
@@ -72597,8 +72588,17 @@
       "reason": "RSI-herstel: laag=27.0 nu=37.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0021969696467473033,
+      "price": 83135.50555305475,
+      "timestamp": "2026-10-12T12:29:20.832057+00:00",
+      "reason": "Stop-loss geraakt (low=8.304e+04 <= 8.314e+04)",
+      "pnl_quote": -0.7197150563816876,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 64.71,
-  "last_updated": "2026-10-12T12:14:32.555337+00:00"
+  "last_price": 83068.1,
+  "last_updated": "2026-10-12T12:29:31.676606+00:00"
 }
