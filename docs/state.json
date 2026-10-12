@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 897.2976067986065,
+  "balance_quote": 697.088490886856,
   "positions": [
-    {
-      "side": "long",
-      "amount": 152.6433027458687,
-      "entry_price": 1.2661,
-      "stop_loss": 1.2512600316722418,
-      "take_profit": 1.2883599524916374,
-      "opened_at": "2026-10-12T10:59:30.944023+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 20.663633170564815,
@@ -19,6 +10,24 @@
       "take_profit": 11.03960777714148,
       "opened_at": "2026-10-12T13:29:45.898775+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08607322912758952,
+      "entry_price": 2530.87,
+      "stop_loss": 2513.8972958096756,
+      "take_profit": 2556.329056285486,
+      "opened_at": "2026-10-12T13:44:42.292609+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 703.5754565966774,
+      "entry_price": 0.247695,
+      "stop_loss": 0.24492048038758735,
+      "take_profit": 0.25185677941861895,
+      "opened_at": "2026-10-12T13:44:42.548176+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -72615,8 +72624,35 @@
       "reason": "RSI-herstel: laag=26.9 nu=33.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 152.6433027458687,
+      "price": 1.2572,
+      "timestamp": "2026-10-12T13:44:32.718597+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.3585253944382316,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08607322912758952,
+      "price": 2530.87,
+      "timestamp": "2026-10-12T13:44:42.292625+00:00",
+      "reason": "RSI-herstel: laag=17.6 nu=34.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 703.5754565966774,
+      "price": 0.247695,
+      "timestamp": "2026-10-12T13:44:42.548198+00:00",
+      "reason": "RSI-herstel: laag=27.1 nu=34.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 10.856,
-  "last_updated": "2026-10-12T13:29:46.024992+00:00"
+  "last_price": 0.247695,
+  "last_updated": "2026-10-12T13:44:42.676111+00:00"
 }
