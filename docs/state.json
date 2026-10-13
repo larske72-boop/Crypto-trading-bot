@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 670.3161756081223,
+  "balance_quote": 877.6649842238392,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 84097.28812941443,
       "opened_at": "2026-10-13T09:10:30.464067+00:00",
       "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 889.4173900828736,
-      "entry_price": 0.235518,
-      "stop_loss": 0.23312879973754128,
-      "take_profit": 0.2391018003936881,
-      "opened_at": "2026-10-13T09:42:04.428144+00:00",
-      "symbol": "ADA/USD"
     },
     {
       "side": "long",
@@ -73173,8 +73164,17 @@
       "reason": "RSI-herstel: laag=29.1 nu=33.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 889.4173900828736,
+      "price": 0.23312879973754128,
+      "timestamp": "2026-10-13T10:41:29.452478+00:00",
+      "reason": "Stop-loss geraakt (low=0.2326 <= 0.2331)",
+      "pnl_quote": -2.124996261821366,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 10.285,
-  "last_updated": "2026-10-13T10:26:35.386154+00:00"
+  "last_price": 83269.0,
+  "last_updated": "2026-10-13T10:41:39.037128+00:00"
 }
