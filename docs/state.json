@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 722.5802768820057,
+  "balance_quote": 725.0913657595632,
   "positions": [
-    {
-      "side": "long",
-      "amount": 156.86570236396312,
-      "entry_price": 1.1915,
-      "stop_loss": 1.1716004680935859,
-      "take_profit": 1.2213492978596214,
-      "opened_at": "2026-10-13T13:35:33.231051+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 951.3483510942591,
@@ -28,6 +19,15 @@
       "take_profit": 109.93473497975987,
       "opened_at": "2026-10-13T14:19:52.186737+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 132.34588953696883,
+      "entry_price": 1.36969,
+      "stop_loss": 1.3558340920725398,
+      "take_profit": 1.3904738618911905,
+      "opened_at": "2026-10-13T15:18:56.010030+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -73281,8 +73281,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=67.5",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 156.86570236396312,
+      "price": 1.1716004680935859,
+      "timestamp": "2026-10-13T15:18:46.410144+00:00",
+      "reason": "Stop-loss geraakt (low=1.169 <= 1.172)",
+      "pnl_quote": -3.121554049213728,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 132.34588953696883,
+      "price": 1.36969,
+      "timestamp": "2026-10-13T15:18:56.010047+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=54.3",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 107.63,
-  "last_updated": "2026-10-13T15:03:58.171959+00:00"
+  "last_price": 1.36969,
+  "last_updated": "2026-10-13T15:18:56.135709+00:00"
 }
