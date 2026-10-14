@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 827.4122186504644,
+  "balance_quote": 693.2757058617551,
   "positions": [
-    {
-      "side": "long",
-      "amount": 229.0143787375929,
-      "entry_price": 1.1367,
-      "stop_loss": 1.1170961105968895,
-      "take_profit": 1.166105834104666,
-      "opened_at": "2026-10-14T12:41:00.856853+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 1.9764289572197222,
@@ -19,6 +10,24 @@
       "take_profit": 107.00230638471632,
       "opened_at": "2026-10-14T14:10:30.574573+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.651587023121498,
+      "entry_price": 59.33,
+      "stop_loss": 58.40576459031919,
+      "take_profit": 60.71635311452121,
+      "opened_at": "2026-10-14T14:54:57.558521+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 155.08135868417932,
+      "entry_price": 1.1176,
+      "stop_loss": 1.096751631196435,
+      "take_profit": 1.1488725532053474,
+      "opened_at": "2026-10-14T14:54:57.719642+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -73875,8 +73884,35 @@
       "reason": "RSI-herstel: laag=25.2 nu=32.9 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 229.0143787375929,
+      "price": 1.1170961105968895,
+      "timestamp": "2026-10-14T14:54:48.011914+00:00",
+      "reason": "Stop-loss geraakt (low=1.113 <= 1.117)",
+      "pnl_quote": -4.489572552493826,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.651587023121498,
+      "price": 59.33,
+      "timestamp": "2026-10-14T14:54:57.558531+00:00",
+      "reason": "RSI-herstel: laag=17.2 nu=33.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 155.08135868417932,
+      "price": 1.1176,
+      "timestamp": "2026-10-14T14:54:57.719654+00:00",
+      "reason": "RSI-herstel: laag=30.4 nu=32.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 81776.3,
-  "last_updated": "2026-10-14T14:40:10.754782+00:00"
+  "last_price": 1.1176,
+  "last_updated": "2026-10-14T14:54:57.798845+00:00"
 }
