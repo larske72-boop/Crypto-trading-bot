@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 1039.404016993867,
+  "balance_quote": 665.2185708760748,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 1.166105834104666,
       "opened_at": "2026-10-14T12:41:00.856853+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.4440159608809378,
+      "entry_price": 60.36,
+      "stop_loss": 59.595565869373175,
+      "take_profit": 61.506651195940236,
+      "opened_at": "2026-10-14T13:40:49.372142+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 16.516500419010697,
+      "entry_price": 10.069,
+      "stop_loss": 9.917271711906897,
+      "take_profit": 10.296592432139656,
+      "opened_at": "2026-10-14T13:40:49.701996+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -73821,8 +73839,26 @@
       "reason": "Stop-loss geraakt (low=2455 <= 2456)",
       "pnl_quote": -1.8785602502205734,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.4440159608809378,
+      "price": 60.36,
+      "timestamp": "2026-10-14T13:40:49.372154+00:00",
+      "reason": "RSI-herstel: laag=22.3 nu=33.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 16.516500419010697,
+      "price": 10.069,
+      "timestamp": "2026-10-14T13:40:49.702013+00:00",
+      "reason": "RSI-herstel: laag=23.2 nu=42.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 82482.0,
-  "last_updated": "2026-10-14T13:25:54.705390+00:00"
+  "last_price": 10.069,
+  "last_updated": "2026-10-14T13:40:49.866233+00:00"
 }
