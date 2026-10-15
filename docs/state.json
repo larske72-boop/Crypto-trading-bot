@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 884.7018689598884,
+  "balance_quote": 1069.255367834219,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.002262649988896374,
-      "entry_price": 81721.5,
-      "stop_loss": 81320.34711483512,
-      "take_profit": 82323.2293277473,
-      "opened_at": "2026-10-15T01:10:55.001420+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 2.119350970103221,
@@ -74091,8 +74082,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=52.1",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002262649988896374,
+      "price": 81565.2,
+      "timestamp": "2026-10-15T02:06:36.713158+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.3536521932645087,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 104.36,
-  "last_updated": "2026-10-15T01:51:51.294595+00:00"
+  "last_price": 81551.5,
+  "last_updated": "2026-10-15T02:06:47.423784+00:00"
 }
