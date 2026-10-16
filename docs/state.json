@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 762.7913968118664,
+  "balance_quote": 727.261079367265,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 17.990889344244565,
-      "entry_price": 10.329,
-      "stop_loss": 10.210851416229858,
-      "take_profit": 10.506222875655213,
-      "opened_at": "2026-10-16T11:02:16.659978+00:00",
-      "symbol": "AVAX/USD"
+      "amount": 195.1310099615955,
+      "entry_price": 1.1647,
+      "stop_loss": 1.1473502684404804,
+      "take_profit": 1.1907245973392795,
+      "opened_at": "2026-10-16T12:16:13.730001+00:00",
+      "symbol": "DOT/USD"
     },
     {
       "side": "long",
-      "amount": 0.07682304685290521,
-      "entry_price": 2482.3,
-      "stop_loss": 2464.4600880895787,
-      "take_profit": 2509.059867865632,
-      "opened_at": "2026-10-16T11:31:53.036654+00:00",
+      "amount": 0.07385730644219515,
+      "entry_price": 2461.71,
+      "stop_loss": 2444.0846282192006,
+      "take_profit": 2488.148057671199,
+      "opened_at": "2026-10-16T12:16:13.992276+00:00",
       "symbol": "ETH/USD"
     }
   ],
@@ -75045,8 +75045,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=75.7",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 17.990889344244565,
+      "price": 10.24,
+      "timestamp": "2026-10-16T12:16:04.132867+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.601189151637783,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.07682304685290521,
+      "price": 2464.4600880895787,
+      "timestamp": "2026-10-16T12:16:05.339659+00:00",
+      "reason": "Stop-loss geraakt (low=2460 <= 2464)",
+      "pnl_quote": -1.370516388546008,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 195.1310099615955,
+      "price": 1.1647,
+      "timestamp": "2026-10-16T12:16:13.730014+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=62.4",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.07385730644219515,
+      "price": 2461.71,
+      "timestamp": "2026-10-16T12:16:13.992298+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=50.5",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 2475.51,
-  "last_updated": "2026-10-16T12:01:14.136054+00:00"
+  "last_price": 2461.71,
+  "last_updated": "2026-10-16T12:16:14.121403+00:00"
 }
