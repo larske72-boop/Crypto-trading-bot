@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 721.5361932463879,
+  "balance_quote": 709.8695504185296,
   "positions": [
-    {
-      "side": "long",
-      "amount": 158.43376570332995,
-      "entry_price": 1.29331,
-      "stop_loss": 1.2856362037266837,
-      "take_profit": 1.3048206944099743,
-      "opened_at": "2026-10-17T16:08:30.879153+00:00",
-      "symbol": "XRP/USD"
-    },
     {
       "side": "long",
       "amount": 807.2169718926281,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 158.55150594321614,
-      "entry_price": 1.1377,
-      "stop_loss": 1.1277582618941637,
-      "take_profit": 1.1526126071587544,
-      "opened_at": "2026-10-17T20:49:46.185648+00:00",
+      "amount": 194.18262824386423,
+      "entry_price": 1.1424,
+      "stop_loss": 1.1322704357006554,
+      "take_profit": 1.1575943464490168,
+      "opened_at": "2026-10-17T21:04:32.831813+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.9881695168316615,
+      "entry_price": 59.39,
+      "stop_loss": 59.117728088106354,
+      "take_profit": 59.79840786784047,
+      "opened_at": "2026-10-17T21:04:32.993325+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -75765,8 +75765,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=72.6",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 158.43376570332995,
+      "price": 1.30342,
+      "timestamp": "2026-10-17T21:04:22.047948+00:00",
+      "reason": "RSI overbought exit (76.7 > 72)",
+      "pnl_quote": 1.601765371260683,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 158.55150594321614,
+      "price": 1.1424,
+      "timestamp": "2026-10-17T21:04:24.426954+00:00",
+      "reason": "RSI overbought exit (77.4 > 72)",
+      "pnl_quote": 0.7451920779331545,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 194.18262824386423,
+      "price": 1.1424,
+      "timestamp": "2026-10-17T21:04:32.831824+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=77.4",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.9881695168316615,
+      "price": 59.39,
+      "timestamp": "2026-10-17T21:04:32.993344+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=68.2",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 1.1377,
-  "last_updated": "2026-10-17T20:49:46.286754+00:00"
+  "last_price": 59.39,
+  "last_updated": "2026-10-17T21:04:33.067431+00:00"
 }
