@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 730.835237468513,
+  "balance_quote": 882.3885774769776,
   "positions": [
-    {
-      "side": "long",
-      "amount": 18.753175277484633,
-      "entry_price": 9.989,
-      "stop_loss": 9.914736478465109,
-      "take_profit": 10.100395282302339,
-      "opened_at": "2026-10-17T05:28:44.710382+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.7853422131671983,
-      "entry_price": 104.8,
-      "stop_loss": 104.3036410574932,
-      "take_profit": 105.5445384137602,
-      "opened_at": "2026-10-17T05:58:14.940642+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 3.0681580078443034,
@@ -28,6 +10,15 @@
       "take_profit": 59.873591931882004,
       "opened_at": "2026-10-17T11:49:12.974820+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.1158367961753735,
+      "entry_price": 104.26,
+      "stop_loss": 103.86727312930583,
+      "take_profit": 104.84909030604128,
+      "opened_at": "2026-10-17T12:18:58.546225+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -75459,8 +75450,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=60.8",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 18.753175277484633,
+      "price": 9.914736478465109,
+      "timestamp": "2026-10-17T12:18:47.833621+00:00",
+      "reason": "Stop-loss geraakt (low=9.908 <= 9.915)",
+      "pnl_quote": -1.3926768360670962,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.7853422131671983,
+      "price": 104.3036410574932,
+      "timestamp": "2026-10-17T12:18:48.949099+00:00",
+      "reason": "Stop-loss geraakt (low=104.2 <= 104.3)",
+      "pnl_quote": -0.886170572940415,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.1158367961753735,
+      "price": 104.26,
+      "timestamp": "2026-10-17T12:18:58.546242+00:00",
+      "reason": "RSI-herstel: laag=29.8 nu=32.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 59.55,
-  "last_updated": "2026-10-17T12:04:01.671664+00:00"
+  "last_price": 104.26,
+  "last_updated": "2026-10-17T12:18:58.675866+00:00"
 }
