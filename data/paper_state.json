@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 752.9835939475829,
+  "balance_quote": 933.5648860709449,
   "positions": [
-    {
-      "side": "long",
-      "amount": 156.57790004626895,
-      "entry_price": 1.149,
-      "stop_loss": 1.1385029382956746,
-      "take_profit": 1.164745592556488,
-      "opened_at": "2026-10-21T00:10:55.590160+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 802.7316543587862,
@@ -77997,8 +77988,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=53.6",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 156.57790004626895,
+      "price": 1.1533,
+      "timestamp": "2026-10-21T03:16:44.476002+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.6732849701989494,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 61.68,
-  "last_updated": "2026-10-21T03:01:57.992092+00:00"
+  "last_price": 82654.0,
+  "last_updated": "2026-10-21T03:16:55.273131+00:00"
 }
