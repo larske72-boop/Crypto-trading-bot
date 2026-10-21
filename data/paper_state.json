@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 1110.564912574718,
+  "balance_quote": 888.4519300597743,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,15 @@
       "take_profit": 106.80040368162959,
       "opened_at": "2026-10-21T05:29:39.626294+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 998.8037652608548,
+      "entry_price": 0.222379,
+      "stop_loss": 0.22106407622304375,
+      "take_profit": 0.2243513856654344,
+      "opened_at": "2026-10-21T06:29:01.096508+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -78051,8 +78060,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.22459738104157623,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 998.8037652608548,
+      "price": 0.222379,
+      "timestamp": "2026-10-21T06:29:01.096519+00:00",
+      "reason": "RSI-herstel: laag=25.2 nu=39.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 82559.8,
-  "last_updated": "2026-10-21T06:14:19.292014+00:00"
+  "last_price": 0.222379,
+  "last_updated": "2026-10-21T06:29:01.172011+00:00"
 }
