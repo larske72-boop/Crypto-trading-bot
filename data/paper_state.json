@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 740.8446813531789,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.07433303143902062,
-      "entry_price": 2431.52,
-      "stop_loss": 2417.84073796971,
-      "take_profit": 2452.0388930454346,
-      "opened_at": "2026-10-22T06:33:06.819999+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 19.856579378784172,
-      "entry_price": 9.354,
-      "stop_loss": 9.265539891946446,
-      "take_profit": 9.486690162080329,
-      "opened_at": "2026-10-22T06:58:59.598783+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 850.0799556548238,
-      "entry_price": 0.217875,
-      "stop_loss": 0.21593487271664513,
-      "take_profit": 0.22078519092503232,
-      "opened_at": "2026-10-22T07:28:44.301923+00:00",
-      "symbol": "ADA/USD"
-    }
-  ],
+  "balance_quote": 1288.1139483182478,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -78771,8 +78743,35 @@
       "reason": "RSI-herstel: laag=21.2 nu=33.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.07433303143902062,
+      "price": 2417.84073796971,
+      "timestamp": "2026-10-22T08:13:05.270621+00:00",
+      "reason": "Stop-loss geraakt (low=2412 <= 2418)",
+      "pnl_quote": -1.0168210145601506,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 19.856579378784172,
+      "price": 9.265539891946446,
+      "timestamp": "2026-10-22T08:13:06.455219+00:00",
+      "reason": "Stop-loss geraakt (low=9.178 <= 9.266)",
+      "pnl_quote": -1.7565151574212052,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 850.0799556548238,
+      "price": 0.21593487271664513,
+      "timestamp": "2026-10-22T08:13:07.643459+00:00",
+      "reason": "Stop-loss geraakt (low=0.2155 <= 0.2159)",
+      "pnl_quote": -1.6492633149990183,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.217116,
-  "last_updated": "2026-10-22T07:58:29.969074+00:00"
+  "last_price": 82070.3,
+  "last_updated": "2026-10-22T08:13:18.461273+00:00"
 }
