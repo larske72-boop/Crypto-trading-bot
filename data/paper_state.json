@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 658.2835598744966,
+  "balance_quote": 717.3994863760815,
   "positions": [
-    {
-      "side": "long",
-      "amount": 222.15292922330482,
-      "entry_price": 1.1575,
-      "stop_loss": 1.1377622803143306,
-      "take_profit": 1.187106579528504,
-      "opened_at": "2026-10-23T02:56:35.636856+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
-      "amount": 953.110318396454,
-      "entry_price": 0.215834,
-      "stop_loss": 0.2139851393221045,
-      "take_profit": 0.21860729101684323,
-      "opened_at": "2026-10-23T02:56:35.912290+00:00",
-      "symbol": "ADA/USD"
-    },
     {
       "side": "long",
       "amount": 17.785679235774797,
@@ -28,6 +10,24 @@
       "take_profit": 9.357297246874575,
       "opened_at": "2026-10-23T02:56:36.184933+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 193.38164365783277,
+      "entry_price": 1.1593,
+      "stop_loss": 1.1401100522789467,
+      "take_profit": 1.18808492158158,
+      "opened_at": "2026-10-23T03:11:33.928838+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 833.4024386112602,
+      "entry_price": 0.215202,
+      "stop_loss": 0.21339646538939316,
+      "take_profit": 0.21791030191591026,
+      "opened_at": "2026-10-23T03:11:34.204405+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -79275,8 +79275,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=82.3",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 222.15292922330482,
+      "price": 1.1593,
+      "timestamp": "2026-10-23T03:11:23.119625+00:00",
+      "reason": "RSI overbought exit (76.8 > 72)",
+      "pnl_quote": 0.3998752726019461,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 953.110318396454,
+      "price": 0.215202,
+      "timestamp": "2026-10-23T03:11:24.364223+00:00",
+      "reason": "RSI overbought exit (72.0 > 72)",
+      "pnl_quote": -0.6023657212265334,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 193.38164365783277,
+      "price": 1.1593,
+      "timestamp": "2026-10-23T03:11:33.928852+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.8",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 833.4024386112602,
+      "price": 0.215202,
+      "timestamp": "2026-10-23T03:11:34.204429+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=72.0",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 9.253,
-  "last_updated": "2026-10-23T02:56:36.320994+00:00"
+  "last_price": 0.215202,
+  "last_updated": "2026-10-23T03:11:34.341031+00:00"
 }
