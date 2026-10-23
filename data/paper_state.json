@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 702.4294906313168,
+  "balance_quote": 703.2764790650866,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 190.8775789759013,
-      "entry_price": 1.15,
-      "stop_loss": 1.1316842559313829,
-      "take_profit": 1.1774736161029253,
-      "opened_at": "2026-10-23T01:56:25.862444+00:00",
+      "amount": 189.9843531360992,
+      "entry_price": 1.1568,
+      "stop_loss": 1.1383158303318952,
+      "take_profit": 1.1845262545021573,
+      "opened_at": "2026-10-23T02:11:19.981011+00:00",
       "symbol": "DOT/USD"
     },
     {
       "side": "long",
-      "amount": 821.0287331994426,
-      "entry_price": 0.213887,
-      "stop_loss": 0.2120643024268028,
-      "take_profit": 0.21662104635979582,
-      "opened_at": "2026-10-23T01:56:26.137552+00:00",
+      "amount": 821.9111318340074,
+      "entry_price": 0.213915,
+      "stop_loss": 0.21209777218447243,
+      "take_profit": 0.21664084172329132,
+      "opened_at": "2026-10-23T02:11:20.199073+00:00",
       "symbol": "ADA/USD"
     }
   ],
@@ -79095,8 +79095,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.1",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 190.8775789759013,
+      "price": 1.1568,
+      "timestamp": "2026-10-23T02:11:10.383340+00:00",
+      "reason": "RSI overbought exit (86.3 > 72)",
+      "pnl_quote": 1.2979675370361576,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 821.0287331994426,
+      "price": 0.213918,
+      "timestamp": "2026-10-23T02:11:11.570112+00:00",
+      "reason": "RSI overbought exit (73.5 > 72)",
+      "pnl_quote": 0.025451890729186744,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 189.9843531360992,
+      "price": 1.1568,
+      "timestamp": "2026-10-23T02:11:19.981022+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=86.3",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 821.9111318340074,
+      "price": 0.213915,
+      "timestamp": "2026-10-23T02:11:20.199091+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=73.5",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.213887,
-  "last_updated": "2026-10-23T01:56:26.273695+00:00"
+  "last_price": 0.213915,
+  "last_updated": "2026-10-23T02:11:20.304998+00:00"
 }
