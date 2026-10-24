@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 867.3177861068236,
+  "balance_quote": 669.8947327416872,
   "positions": [
-    {
-      "side": "long",
-      "amount": 3.1825415450134447,
-      "entry_price": 56.72,
-      "stop_loss": 56.36775868115329,
-      "take_profit": 57.24836197827006,
-      "opened_at": "2026-10-24T07:41:40.637700+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 2.1257788875167245,
@@ -19,6 +10,24 @@
       "take_profit": 102.76285692807346,
       "opened_at": "2026-10-24T08:26:35.988156+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08841617947525954,
+      "entry_price": 2367.69,
+      "stop_loss": 2358.191494690727,
+      "take_profit": 2381.93775796391,
+      "opened_at": "2026-10-24T08:56:20.540313+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.002077164630131208,
+      "entry_price": 80626.1,
+      "stop_loss": 80402.50715879326,
+      "take_profit": 80961.48926181013,
+      "opened_at": "2026-10-24T08:56:20.694048+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -79959,8 +79968,35 @@
       "reason": "RSI-herstel: laag=30.6 nu=42.2 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.1825415450134447,
+      "price": 56.36775868115329,
+      "timestamp": "2026-10-24T08:56:10.938761+00:00",
+      "reason": "Stop-loss geraakt (low=56.31 <= 56.37)",
+      "pnl_quote": -1.1210226310999758,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08841617947525954,
+      "price": 2367.69,
+      "timestamp": "2026-10-24T08:56:20.540323+00:00",
+      "reason": "RSI-herstel: laag=22.6 nu=34.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002077164630131208,
+      "price": 80626.1,
+      "timestamp": "2026-10-24T08:56:20.694059+00:00",
+      "reason": "RSI-herstel: laag=31.5 nu=42.8 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 80563.1,
-  "last_updated": "2026-10-24T08:41:35.799476+00:00"
+  "last_price": 80626.1,
+  "last_updated": "2026-10-24T08:56:20.770169+00:00"
 }
