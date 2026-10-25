@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 914.9368771157942,
+  "balance_quote": 1088.568727805465,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 57.625626306246566,
       "opened_at": "2026-10-25T15:53:55.075112+00:00",
       "symbol": "LTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 19.52931640546515,
-      "entry_price": 8.949,
-      "stop_loss": 8.890830947932258,
-      "take_profit": 9.036253578101611,
-      "opened_at": "2026-10-25T17:07:56.057331+00:00",
-      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -81021,8 +81012,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.03604739188446615,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 19.52931640546515,
+      "price": 8.890830947932258,
+      "timestamp": "2026-10-25T21:47:25.279477+00:00",
+      "reason": "Stop-loss geraakt (low=8.881 <= 8.891)",
+      "pnl_quote": -1.1360018228369029,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 80363.8,
-  "last_updated": "2026-10-25T21:32:40.733813+00:00"
+  "last_price": 80209.4,
+  "last_updated": "2026-10-25T21:47:34.810909+00:00"
 }
