@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 648.7090940317548,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.10785771315187825,
-      "entry_price": 2349.41,
-      "stop_loss": 2341.3920632723894,
-      "take_profit": 2361.4369050914156,
-      "opened_at": "2026-10-25T05:45:09.185765+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.9905890797812589,
-      "entry_price": 101.84,
-      "stop_loss": 101.38982202605365,
-      "take_profit": 102.51526696091953,
-      "opened_at": "2026-10-25T06:00:00.295037+00:00",
-      "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.002013886507527536,
-      "entry_price": 80529.5,
-      "stop_loss": 80333.07216135529,
-      "take_profit": 80824.14175796707,
-      "opened_at": "2026-10-25T06:14:57.854639+00:00",
-      "symbol": "BTC/USD"
-    }
-  ],
+  "balance_quote": 1264.8534502282896,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -80589,8 +80561,35 @@
       "reason": "RSI-herstel: laag=29.0 nu=35.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.10785771315187825,
+      "price": 2341.3920632723894,
+      "timestamp": "2026-10-25T06:59:26.102260+00:00",
+      "reason": "Stop-loss geraakt (low=2334 <= 2341)",
+      "pnl_quote": -0.8647963196365254,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9905890797812589,
+      "price": 101.38982202605365,
+      "timestamp": "2026-10-25T06:59:27.301134+00:00",
+      "reason": "Stop-loss geraakt (low=101.1 <= 101.4)",
+      "pnl_quote": -0.8961193588956746,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002013886507527536,
+      "price": 80333.07216135529,
+      "timestamp": "2026-10-25T06:59:28.461920+00:00",
+      "reason": "Stop-loss geraakt (low=8.032e+04 <= 8.033e+04)",
+      "pnl_quote": -0.3955833739493926,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 80410.3,
-  "last_updated": "2026-10-25T06:44:38.753203+00:00"
+  "last_price": 80380.0,
+  "last_updated": "2026-10-25T06:59:39.302021+00:00"
 }
