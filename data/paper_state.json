@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 641.2232065533905,
+  "balance_quote": 1090.523088224256,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1224.0163757106186,
-      "entry_price": 0.204636,
-      "stop_loss": 0.2021335822528023,
-      "take_profit": 0.20838962662079658,
-      "opened_at": "2026-10-26T16:28:26.828459+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1.9775214847324045,
-      "entry_price": 101.33,
-      "stop_loss": 100.37617332824529,
-      "take_profit": 102.76074000763207,
-      "opened_at": "2026-10-26T16:28:27.111386+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 17.987634833746366,
@@ -81471,8 +81453,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=41.6",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1224.0163757106186,
+      "price": 0.204153,
+      "timestamp": "2026-10-26T16:43:16.015993+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.5911999094682301,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9775214847324045,
+      "price": 100.84,
+      "timestamp": "2026-10-26T16:43:17.358617+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.9689855275188677,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 8.912,
-  "last_updated": "2026-10-26T16:28:27.531008+00:00"
+  "last_price": 79805.0,
+  "last_updated": "2026-10-26T16:43:28.183217+00:00"
 }
