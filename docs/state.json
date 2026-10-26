@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 641.9860361118693,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.0031278123450279942,
-      "entry_price": 80176.1,
-      "stop_loss": 79749.9479560607,
-      "take_profit": 80815.32806590897,
-      "opened_at": "2026-10-25T23:37:27.264051+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.08603422844539327,
-      "entry_price": 2331.87,
-      "stop_loss": 2311.637973706965,
-      "take_profit": 2362.218039439552,
-      "opened_at": "2026-10-25T23:37:27.544278+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 17.986832794796296,
-      "entry_price": 8.923,
-      "stop_loss": 8.844767404375297,
-      "take_profit": 9.040348893437054,
-      "opened_at": "2026-10-25T23:37:27.823576+00:00",
-      "symbol": "AVAX/USD"
-    }
-  ],
+  "balance_quote": 1249.39824976849,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -81183,8 +81155,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=50.5",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0031278123450279942,
+      "price": 79749.9479560607,
+      "timestamp": "2026-10-26T01:47:02.568979+00:00",
+      "reason": "Stop-loss geraakt (low=7.93e+04 <= 7.975e+04)",
+      "pnl_quote": -1.3329236238922704,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08603422844539327,
+      "price": 2311.637973706965,
+      "timestamp": "2026-10-26T01:47:03.766693+00:00",
+      "reason": "Stop-loss geraakt (low=2297 <= 2312)",
+      "pnl_quote": -1.7406467720081764,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 17.986832794796296,
+      "price": 8.844767404375297,
+      "timestamp": "2026-10-26T01:47:04.963185+00:00",
+      "reason": "Stop-loss geraakt (low=8.79 <= 8.845)",
+      "pnl_quote": -1.4071566166044533,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 8.87,
-  "last_updated": "2026-10-26T01:32:26.298123+00:00"
+  "last_price": 79484.3,
+  "last_updated": "2026-10-26T01:47:15.620985+00:00"
 }
