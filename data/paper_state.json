@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 885.5906649420176,
+  "balance_quote": 695.764262903887,
   "positions": [
-    {
-      "side": "long",
-      "amount": 3.4902734463470697,
-      "entry_price": 57.08,
-      "stop_loss": 56.637591964560976,
-      "take_profit": 57.74361205315853,
-      "opened_at": "2026-10-28T13:52:52.412877+00:00",
-      "symbol": "LTC/USD"
-    },
     {
       "side": "long",
       "amount": 160.03599423033697,
@@ -19,6 +10,24 @@
       "take_profit": 1.0179588575062541,
       "opened_at": "2026-10-28T13:52:52.584838+00:00",
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 24.595738931839897,
+      "entry_price": 8.84,
+      "stop_loss": 8.761430891390674,
+      "take_profit": 8.957853662913989,
+      "opened_at": "2026-10-28T14:52:59.703231+00:00",
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.002089501656399,
+      "entry_price": 57.94,
+      "stop_loss": 57.29613408779448,
+      "take_profit": 58.90579886830828,
+      "opened_at": "2026-10-28T14:52:59.985923+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -82695,8 +82704,35 @@
       "reason": "Stop-loss geraakt (low=1.308 <= 1.308)",
       "pnl_quote": -1.4142312392293945,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.4902734463470697,
+      "price": 57.74361205315853,
+      "timestamp": "2026-10-28T14:52:50.121080+00:00",
+      "reason": "Take-profit geraakt (high=58.33 >= 57.74)",
+      "pnl_quote": 2.3161875278150887,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 24.595738931839897,
+      "price": 8.84,
+      "timestamp": "2026-10-28T14:52:59.703249+00:00",
+      "reason": "RSI-herstel: laag=21.9 nu=38.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.002089501656399,
+      "price": 57.94,
+      "timestamp": "2026-10-28T14:52:59.985947+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=68.4",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 80352.3,
-  "last_updated": "2026-10-28T14:37:41.479964+00:00"
+  "last_price": 57.94,
+  "last_updated": "2026-10-28T14:53:00.126191+00:00"
 }
