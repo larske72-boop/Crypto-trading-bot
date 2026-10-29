@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 638.7303770993618,
+  "balance_quote": 673.5285555968053,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 23.14240496736818,
-      "entry_price": 8.625,
-      "stop_loss": 8.52195468677123,
-      "take_profit": 8.779567969843155,
-      "opened_at": "2026-10-29T04:20:29.886475+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
       "amount": 807.252384989841,
       "entry_price": 0.19781,
       "stop_loss": 0.19540542158569307,
       "take_profit": 0.2014168676214604,
       "opened_at": "2026-10-29T04:20:30.171768+00:00",
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.895153694965635,
+      "entry_price": 58.16,
+      "stop_loss": 57.44931983995627,
+      "take_profit": 59.226020240065594,
+      "opened_at": "2026-10-29T05:19:48.680415+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -83073,8 +83073,26 @@
       "reason": "RSI-herstel: laag=21.6 nu=35.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 23.14240496736818,
+      "price": 8.779567969843155,
+      "timestamp": "2026-10-29T05:19:40.267761+00:00",
+      "reason": "Take-profit geraakt (high=8.787 >= 8.78)",
+      "pnl_quote": 3.577074553094235,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.895153694965635,
+      "price": 58.16,
+      "timestamp": "2026-10-29T05:19:48.680425+00:00",
+      "reason": "RSI-herstel: laag=23.9 nu=54.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 0.199521,
-  "last_updated": "2026-10-29T05:05:02.925194+00:00"
+  "last_price": 58.16,
+  "last_updated": "2026-10-29T05:19:48.768705+00:00"
 }
