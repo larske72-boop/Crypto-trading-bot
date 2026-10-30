@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 685.1934790583762,
+  "balance_quote": 685.7486813020861,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 25.143607586395326,
-      "entry_price": 8.516,
-      "stop_loss": 8.443845901118138,
-      "take_profit": 8.624231148322794,
-      "opened_at": "2026-10-30T23:29:01.389842+00:00",
+      "amount": 25.10208069660324,
+      "entry_price": 8.537,
+      "stop_loss": 8.466101311016514,
+      "take_profit": 8.64334803347523,
+      "opened_at": "2026-10-30T23:43:48.355805+00:00",
       "symbol": "AVAX/USD"
     },
     {
       "side": "long",
-      "amount": 1.7867776130655477,
-      "entry_price": 95.87,
-      "stop_loss": 95.22622797830925,
-      "take_profit": 96.83565803253613,
-      "opened_at": "2026-10-30T23:29:01.675519+00:00",
-      "symbol": "SOL/USD"
+      "amount": 3.0685013482284145,
+      "entry_price": 55.87,
+      "stop_loss": 55.37911732781869,
+      "take_profit": 56.60632400827196,
+      "opened_at": "2026-10-30T23:43:48.518248+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -84099,8 +84099,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=76.4",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 25.143607586395326,
+      "price": 8.537,
+      "timestamp": "2026-10-30T23:43:38.950980+00:00",
+      "reason": "RSI overbought exit (75.9 > 72)",
+      "pnl_quote": 0.5280157593143144,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.7867776130655477,
+      "price": 96.06,
+      "timestamp": "2026-10-30T23:43:39.955447+00:00",
+      "reason": "RSI overbought exit (79.7 > 72)",
+      "pnl_quote": 0.3394877464824333,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 25.10208069660324,
+      "price": 8.537,
+      "timestamp": "2026-10-30T23:43:48.355816+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=75.9",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.0685013482284145,
+      "price": 55.87,
+      "timestamp": "2026-10-30T23:43:48.518266+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=69.3",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 95.87,
-  "last_updated": "2026-10-30T23:29:01.816781+00:00"
+  "last_price": 55.87,
+  "last_updated": "2026-10-30T23:43:48.597672+00:00"
 }
