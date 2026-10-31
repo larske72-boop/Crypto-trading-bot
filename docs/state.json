@@ -1,15 +1,24 @@
 {
   "mode": "paper",
-  "balance_quote": 1069.1589493129716,
+  "balance_quote": 796.7107131851656,
   "positions": [
     {
       "side": "long",
-      "amount": 184.15607647229788,
-      "entry_price": 0.9626,
-      "stop_loss": 0.9540903748852393,
-      "take_profit": 0.9753644376721411,
-      "opened_at": "2026-10-31T03:44:11.258607+00:00",
-      "symbol": "DOT/USD"
+      "amount": 4.524297617124554,
+      "entry_price": 55.03,
+      "stop_loss": 54.70542330147443,
+      "take_profit": 55.51686504778836,
+      "opened_at": "2026-10-31T04:59:11.964824+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.084538757679659,
+      "entry_price": 95.55,
+      "stop_loss": 94.89901055387348,
+      "take_profit": 96.52648416918977,
+      "opened_at": "2026-10-31T04:59:12.242028+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -84405,8 +84414,35 @@
       "reason": "Stop-loss geraakt (low=8.545 <= 8.547)",
       "pnl_quote": -1.1968953296125164,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 184.15607647229788,
+      "price": 0.9540903748852393,
+      "timestamp": "2026-10-31T04:59:02.340016+00:00",
+      "reason": "Stop-loss geraakt (low=0.9523 <= 0.9541)",
+      "pnl_quote": -1.567099173384463,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.524297617124554,
+      "price": 55.03,
+      "timestamp": "2026-10-31T04:59:11.964837+00:00",
+      "reason": "RSI-herstel: laag=29.2 nu=33.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.084538757679659,
+      "price": 95.55,
+      "timestamp": "2026-10-31T04:59:12.242038+00:00",
+      "reason": "RSI-herstel: laag=30.7 nu=34.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 77033.5,
-  "last_updated": "2026-10-31T04:44:11.147658+00:00"
+  "last_price": 95.55,
+  "last_updated": "2026-10-31T04:59:12.380212+00:00"
 }
