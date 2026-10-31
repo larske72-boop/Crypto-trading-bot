@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 888.23542228947,
+  "balance_quote": 1069.1589493129716,
   "positions": [
-    {
-      "side": "long",
-      "amount": 21.166948204685514,
-      "entry_price": 8.604,
-      "stop_loss": 8.54745451606729,
-      "take_profit": 8.688818225899062,
-      "opened_at": "2026-10-31T02:01:07.758907+00:00",
-      "symbol": "AVAX/USD"
-    },
     {
       "side": "long",
       "amount": 184.15607647229788,
@@ -84405,8 +84396,17 @@
       "reason": "Stop-loss geraakt (low=95.94 <= 96.14)",
       "pnl_quote": -1.2093390683220946,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 21.166948204685514,
+      "price": 8.54745451606729,
+      "timestamp": "2026-10-31T04:14:07.489603+00:00",
+      "reason": "Stop-loss geraakt (low=8.545 <= 8.547)",
+      "pnl_quote": -1.1968953296125164,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 77018.2,
-  "last_updated": "2026-10-31T03:59:14.138421+00:00"
+  "last_price": 77061.8,
+  "last_updated": "2026-10-31T04:14:18.279733+00:00"
 }
