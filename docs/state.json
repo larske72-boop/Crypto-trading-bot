@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 633.741473963377,
+  "balance_quote": 634.8931561610838,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.08780579327396176,
-      "entry_price": 2255.48,
-      "stop_loss": 2246.3843745153326,
-      "take_profit": 2269.123438227001,
-      "opened_at": "2026-11-01T22:39:57.326049+00:00",
-      "symbol": "ETH/USD"
+      "amount": 22.94750304190824,
+      "entry_price": 8.646,
+      "stop_loss": 8.581183754873278,
+      "take_profit": 8.743224367690084,
+      "opened_at": "2026-11-01T23:24:29.318922+00:00",
+      "symbol": "AVAX/USD"
     },
     {
       "side": "long",
-      "amount": 0.0020398475669026763,
-      "entry_price": 77670.2,
-      "stop_loss": 77473.60670967418,
-      "take_profit": 77965.08993548874,
-      "opened_at": "2026-11-01T22:39:57.610433+00:00",
-      "symbol": "BTC/USD"
+      "amount": 166.77870026297254,
+      "entry_price": 0.9517,
+      "stop_loss": 0.9430699384092551,
+      "take_profit": 0.9646450923861173,
+      "opened_at": "2026-11-01T23:24:29.605415+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -85593,8 +85593,44 @@
       "reason": "RSI-herstel: laag=30.4 nu=41.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08780579327396176,
+      "price": 2269.123438227001,
+      "timestamp": "2026-11-01T23:24:19.726767+00:00",
+      "reason": "Take-profit geraakt (high=2270 >= 2269)",
+      "pnl_quote": 1.1979729165061315,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0020398475669026763,
+      "price": 77965.08993548874,
+      "timestamp": "2026-11-01T23:24:20.778465+00:00",
+      "reason": "Take-profit geraakt (high=7.805e+04 >= 7.797e+04)",
+      "pnl_quote": 0.6015305174107937,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 22.94750304190824,
+      "price": 8.646,
+      "timestamp": "2026-11-01T23:24:29.318933+00:00",
+      "reason": "RSI-herstel: laag=24.4 nu=47.7 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 166.77870026297254,
+      "price": 0.9517,
+      "timestamp": "2026-11-01T23:24:29.605430+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=57.3",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 77936.1,
-  "last_updated": "2026-11-01T23:09:25.698531+00:00"
+  "last_price": 0.9517,
+  "last_updated": "2026-11-01T23:24:29.747883+00:00"
 }
