@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 660.9397894423772,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.002743178497756782,
-      "entry_price": 77877.4,
-      "stop_loss": 77685.18102890524,
-      "take_profit": 78165.72845664213,
-      "opened_at": "2026-11-01T09:32:23.838128+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 164.62517570976536,
-      "entry_price": 1.25463,
-      "stop_loss": 1.2502072405226392,
-      "take_profit": 1.2612641392160409,
-      "opened_at": "2026-11-01T11:01:15.022709+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 2.953260900099988,
-      "entry_price": 55.95,
-      "stop_loss": 55.684846084803105,
-      "take_profit": 56.347730872795346,
-      "opened_at": "2026-11-01T11:01:15.246671+00:00",
-      "symbol": "LTC/USD"
-    }
-  ],
+  "balance_quote": 1244.3115729502085,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -85323,8 +85295,35 @@
       "reason": "RSI-herstel: laag=30.2 nu=45.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002743178497756782,
+      "price": 77685.18102890524,
+      "timestamp": "2026-11-01T12:29:51.910707+00:00",
+      "reason": "Stop-loss geraakt (low=7.763e+04 <= 7.769e+04)",
+      "pnl_quote": -0.5272909483680905,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 164.62517570976536,
+      "price": 1.2502072405226392,
+      "timestamp": "2026-11-01T12:29:53.120082+00:00",
+      "reason": "Stop-loss geraakt (low=1.244 <= 1.25)",
+      "pnl_quote": -0.7280975560825311,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.953260900099988,
+      "price": 55.684846084803105,
+      "timestamp": "2026-11-01T12:29:54.313694+00:00",
+      "reason": "Stop-loss geraakt (low=55.62 <= 55.68)",
+      "pnl_quote": -0.7830686902594266,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 55.96,
-  "last_updated": "2026-11-01T12:15:04.343643+00:00"
+  "last_price": 77711.7,
+  "last_updated": "2026-11-01T12:30:04.982269+00:00"
 }
