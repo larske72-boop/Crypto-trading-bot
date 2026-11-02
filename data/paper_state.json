@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 824.7866461600486,
+  "balance_quote": 988.3292129785706,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 0.1926282286663844,
       "opened_at": "2026-11-02T06:51:29.046718+00:00",
       "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 172.52198588103803,
-      "entry_price": 0.9547,
-      "stop_loss": 0.9479520304808703,
-      "take_profit": 0.9648219542786947,
-      "opened_at": "2026-11-02T09:59:59.723777+00:00",
-      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -85917,8 +85908,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.2928503719664661,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 172.52198588103803,
+      "price": 0.9479520304808703,
+      "timestamp": "2026-11-02T10:44:59.038124+00:00",
+      "reason": "Stop-loss geraakt (low=0.9424 <= 0.948)",
+      "pnl_quote": -1.164173102104968,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 77873.8,
-  "last_updated": "2026-11-02T10:30:09.319273+00:00"
+  "last_price": 77890.2,
+  "last_updated": "2026-11-02T10:45:08.640348+00:00"
 }
