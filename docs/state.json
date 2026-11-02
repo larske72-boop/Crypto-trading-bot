@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 713.1674737985865,
+  "balance_quote": 869.9436460697765,
   "positions": [
-    {
-      "side": "long",
-      "amount": 168.26204945368303,
-      "entry_price": 0.9398,
-      "stop_loss": 0.9317381594971322,
-      "take_profit": 0.9518927607543016,
-      "opened_at": "2026-11-02T12:00:03.924108+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 0.002360540557525038,
@@ -86007,8 +85998,17 @@
       "reason": "RSI-herstel: laag=25.7 nu=35.3 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 168.26204945368303,
+      "price": 0.9317381594971322,
+      "timestamp": "2026-11-02T19:51:42.733234+00:00",
+      "reason": "Stop-loss geraakt (low=0.929 <= 0.9317)",
+      "pnl_quote": -1.3565018053812423,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 1.24435,
-  "last_updated": "2026-11-02T19:36:48.046467+00:00"
+  "last_price": 76702.5,
+  "last_updated": "2026-11-02T19:51:53.518010+00:00"
 }
