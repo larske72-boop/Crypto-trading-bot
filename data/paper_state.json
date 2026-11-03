@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 699.4876109289884,
+  "balance_quote": 702.5006958724636,
   "positions": [
-    {
-      "side": "long",
-      "amount": 1.906695046553432,
-      "entry_price": 93.41,
-      "stop_loss": 92.57936838568868,
-      "take_profit": 94.65594742146696,
-      "opened_at": "2026-11-03T14:35:59.354621+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 0.07665337722180388,
@@ -28,6 +19,15 @@
       "take_profit": 77830.28328551802,
       "opened_at": "2026-11-03T15:33:38.823465+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.8745348913236834,
+      "entry_price": 93.69,
+      "stop_loss": 92.84624153788889,
+      "take_profit": 94.95563769316666,
+      "opened_at": "2026-11-03T15:48:39.277287+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -86583,8 +86583,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=52.5",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.906695046553432,
+      "price": 93.69,
+      "timestamp": "2026-11-03T15:48:29.670438+00:00",
+      "reason": "RSI overbought exit (72.5 > 72)",
+      "pnl_quote": 0.5338746130349534,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8745348913236834,
+      "price": 93.69,
+      "timestamp": "2026-11-03T15:48:39.277297+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=72.5",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 77205.4,
-  "last_updated": "2026-11-03T15:33:38.971678+00:00"
+  "last_price": 93.69,
+  "last_updated": "2026-11-03T15:48:39.440231+00:00"
 }
