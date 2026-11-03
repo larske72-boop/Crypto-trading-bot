@@ -1,15 +1,15 @@
 {
   "mode": "paper",
-  "balance_quote": 1018.3994289499533,
+  "balance_quote": 981.1802521033496,
   "positions": [
     {
       "side": "long",
-      "amount": 1113.6545220098976,
-      "entry_price": 0.18835,
-      "stop_loss": 0.1868406063701904,
-      "take_profit": 0.19061409044471436,
-      "opened_at": "2026-11-03T03:21:17.272871+00:00",
-      "symbol": "ADA/USD"
+      "amount": 0.003211235794621267,
+      "entry_price": 76386.5,
+      "stop_loss": 76024.82661822566,
+      "take_profit": 76929.0100726615,
+      "opened_at": "2026-11-03T06:20:05.876995+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -86151,8 +86151,26 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.5363497137578292,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1113.6545220098976,
+      "price": 0.1868406063701904,
+      "timestamp": "2026-11-03T06:19:56.299967+00:00",
+      "reason": "Stop-loss geraakt (low=0.1868 <= 0.1868)",
+      "pnl_quote": -1.68094304133038,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.003211235794621267,
+      "price": 76386.5,
+      "timestamp": "2026-11-03T06:20:05.877005+00:00",
+      "reason": "RSI-herstel: laag=29.7 nu=34.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 76478.0,
-  "last_updated": "2026-11-03T06:05:09.452357+00:00"
+  "last_price": 76386.5,
+  "last_updated": "2026-11-03T06:20:05.992310+00:00"
 }
