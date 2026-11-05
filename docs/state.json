@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 850.3921729221269,
+  "balance_quote": 680.3137383377015,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 76381.76957790961,
       "opened_at": "2026-11-05T23:18:18.176747+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 140.5119170076712,
+      "entry_price": 1.21042,
+      "stop_loss": 1.1937434665010804,
+      "take_profit": 1.2354348002483795,
+      "opened_at": "2026-11-05T23:33:19.903731+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -87897,8 +87906,17 @@
       "reason": "RSI-herstel: laag=26.8 nu=32.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 140.5119170076712,
+      "price": 1.21042,
+      "timestamp": "2026-11-05T23:33:19.903742+00:00",
+      "reason": "RSI-herstel: laag=17.9 nu=33.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 75403.4,
-  "last_updated": "2026-11-05T23:18:18.321526+00:00"
+  "last_price": 1.21042,
+  "last_updated": "2026-11-05T23:33:20.052677+00:00"
 }
