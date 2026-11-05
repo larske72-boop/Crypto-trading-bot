@@ -1,7 +1,17 @@
 {
   "mode": "paper",
-  "balance_quote": 1221.7509425304147,
-  "positions": [],
+  "balance_quote": 977.4007540243317,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 269.34544588413024,
+      "entry_price": 0.9072,
+      "stop_loss": 0.8849865303613534,
+      "take_profit": 0.9405202044579699,
+      "opened_at": "2026-11-05T16:12:46.894704+00:00",
+      "symbol": "DOT/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -87770,8 +87780,17 @@
       "reason": "Stop-loss geraakt (low=0.9084 <= 0.927)",
       "pnl_quote": -3.148425063797987,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 269.34544588413024,
+      "price": 0.9072,
+      "timestamp": "2026-11-05T16:12:46.894723+00:00",
+      "reason": "RSI-herstel: laag=12.1 nu=32.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 75836.7,
-  "last_updated": "2026-11-05T15:57:40.820378+00:00"
+  "last_price": 0.9072,
+  "last_updated": "2026-11-05T16:12:47.013874+00:00"
 }
