@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 704.7905103274394,
+  "balance_quote": 698.0423942210698,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 141.08120496577115,
-      "entry_price": 1.18624,
-      "stop_loss": 1.1738338547897507,
-      "take_profit": 1.204849217815374,
-      "opened_at": "2026-11-06T08:07:11.524517+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
       "amount": 3.3364443776152215,
       "entry_price": 52.81,
       "stop_loss": 52.350867006009366,
       "take_profit": 53.49869949098596,
       "opened_at": "2026-11-06T09:21:36.701918+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 20.86199624091661,
+      "entry_price": 8.365,
+      "stop_loss": 8.303691305596605,
+      "take_profit": 8.456963041605094,
+      "opened_at": "2026-11-06T11:20:47.539981+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -88077,8 +88077,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=69.1",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 141.08120496577115,
+      "price": 1.18912,
+      "timestamp": "2026-11-06T11:20:39.102119+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.4063138703014033,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 20.86199624091661,
+      "price": 8.365,
+      "timestamp": "2026-11-06T11:20:47.540001+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=65.6",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 52.84,
-  "last_updated": "2026-11-06T11:05:45.473611+00:00"
+  "last_price": 8.365,
+  "last_updated": "2026-11-06T11:20:47.687179+00:00"
 }
