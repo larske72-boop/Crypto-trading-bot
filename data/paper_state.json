@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 693.5769629532458,
+  "balance_quote": 654.767603547855,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.002176194942960095,
-      "entry_price": 75789.0,
-      "stop_loss": 75680.77657274785,
-      "take_profit": 75951.33514087822,
-      "opened_at": "2026-11-08T10:56:10.322845+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 182.7894771933226,
-      "entry_price": 0.9034,
-      "stop_loss": 0.8983695815922482,
-      "take_profit": 0.9109456276116277,
-      "opened_at": "2026-11-08T12:25:39.907728+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 1.9380154324165808,
@@ -28,6 +10,24 @@
       "take_profit": 90.02890339688228,
       "opened_at": "2026-11-08T12:55:21.154440+00:00",
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 24.98960382373042,
+      "entry_price": 8.188,
+      "stop_loss": 8.145331004550295,
+      "take_profit": 8.252003493174557,
+      "opened_at": "2026-11-08T13:25:03.299030+00:00",
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 140.43935661261335,
+      "entry_price": 1.16557,
+      "stop_loss": 1.1602744966518876,
+      "take_profit": 1.1735132550221685,
+      "opened_at": "2026-11-08T13:25:03.581374+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -89265,8 +89265,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=60.3",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002176194942960095,
+      "price": 75951.33514087822,
+      "timestamp": "2026-11-08T13:24:52.486228+00:00",
+      "reason": "Take-profit geraakt (high=7.61e+04 >= 7.595e+04)",
+      "pnl_quote": 0.35327291264388805,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 182.7894771933226,
+      "price": 0.8983695815922482,
+      "timestamp": "2026-11-08T13:24:53.691856+00:00",
+      "reason": "Stop-loss geraakt (low=0.8971 <= 0.8984)",
+      "pnl_quote": -0.9195075508166326,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 24.98960382373042,
+      "price": 8.188,
+      "timestamp": "2026-11-08T13:25:03.299044+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=57.5",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 140.43935661261335,
+      "price": 1.16557,
+      "timestamp": "2026-11-08T13:25:03.581393+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=61.7",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 89.55,
-  "last_updated": "2026-11-08T13:10:00.849411+00:00"
+  "last_price": 1.16557,
+  "last_updated": "2026-11-08T13:25:03.714050+00:00"
 }
