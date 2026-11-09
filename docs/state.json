@@ -1,33 +1,33 @@
 {
   "mode": "paper",
-  "balance_quote": 620.3448300694246,
+  "balance_quote": 620.4936108530004,
   "positions": [
     {
       "side": "long",
-      "amount": 26.987660011790737,
-      "entry_price": 8.979,
-      "stop_loss": 8.688608623311666,
-      "take_profit": 9.4145870650325,
-      "opened_at": "2026-11-09T15:40:48.923495+00:00",
+      "amount": 27.027243168984533,
+      "entry_price": 8.968,
+      "stop_loss": 8.691447760976267,
+      "take_profit": 9.3828283585356,
+      "opened_at": "2026-11-09T15:55:56.180160+00:00",
       "symbol": "AVAX/USD"
     },
     {
       "side": "long",
-      "amount": 1066.570711587359,
-      "entry_price": 0.181758,
-      "stop_loss": 0.17958259447214342,
-      "take_profit": 0.18502110829178486,
-      "opened_at": "2026-11-09T15:40:49.230334+00:00",
+      "amount": 1062.9899755038684,
+      "entry_price": 0.182414,
+      "stop_loss": 0.18015641502491073,
+      "take_profit": 0.1858003774626339,
+      "opened_at": "2026-11-09T15:55:56.473611+00:00",
       "symbol": "ADA/USD"
     },
     {
       "side": "long",
-      "amount": 2.975560389818806,
-      "entry_price": 52.12,
-      "stop_loss": 51.629667720632696,
-      "take_profit": 52.85549841905095,
-      "opened_at": "2026-11-09T15:40:49.535344+00:00",
-      "symbol": "LTC/USD"
+      "amount": 139.21027605715656,
+      "entry_price": 1.11431,
+      "stop_loss": 1.098239286492501,
+      "take_profit": 1.138416070261248,
+      "opened_at": "2026-11-09T15:55:56.768960+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -90327,8 +90327,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=79.0",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 26.987660011790737,
+      "price": 8.965,
+      "timestamp": "2026-11-09T15:55:44.276526+00:00",
+      "reason": "RSI overbought exit (74.9 > 72)",
+      "pnl_quote": -0.37782724016503266,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1066.570711587359,
+      "price": 0.182301,
+      "timestamp": "2026-11-09T15:55:45.477876+00:00",
+      "reason": "RSI overbought exit (83.3 > 72)",
+      "pnl_quote": 0.5791478963919303,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.975560389818806,
+      "price": 52.15,
+      "timestamp": "2026-11-09T15:55:46.677083+00:00",
+      "reason": "RSI overbought exit (79.6 > 72)",
+      "pnl_quote": 0.08926681169458561,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 27.027243168984533,
+      "price": 8.968,
+      "timestamp": "2026-11-09T15:55:56.180177+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=75.0",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1062.9899755038684,
+      "price": 0.182414,
+      "timestamp": "2026-11-09T15:55:56.473631+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=83.7",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 139.21027605715656,
+      "price": 1.11431,
+      "timestamp": "2026-11-09T15:55:56.768981+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=70.1",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 52.12,
-  "last_updated": "2026-11-09T15:40:49.688672+00:00"
+  "last_price": 1.11431,
+  "last_updated": "2026-11-09T15:55:56.917177+00:00"
 }
