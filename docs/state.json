@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 787.5211798671098,
+  "balance_quote": 633.7606265106685,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.002741528207130766,
-      "entry_price": 74464.2,
-      "stop_loss": 73947.73416100765,
-      "take_profit": 75238.8987584885,
-      "opened_at": "2026-11-09T05:52:19.199254+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 179.67629018186398,
@@ -19,6 +10,24 @@
       "take_profit": 1.1157220826044698,
       "opened_at": "2026-11-09T06:07:20.344151+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.09371430805482503,
+      "entry_price": 2113.34,
+      "stop_loss": 2093.2428925067616,
+      "take_profit": 2143.485661239858,
+      "opened_at": "2026-11-09T06:52:18.485128+00:00",
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1.8376264976532959,
+      "entry_price": 86.22,
+      "stop_loss": 85.29413083614781,
+      "take_profit": 87.60880374577829,
+      "opened_at": "2026-11-09T06:52:18.770674+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -89715,8 +89724,35 @@
       "reason": "RSI-herstel: laag=26.5 nu=32.2 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002741528207130766,
+      "price": 73947.73416100765,
+      "timestamp": "2026-11-09T06:52:08.730522+00:00",
+      "reason": "Stop-loss geraakt (low=7.39e+04 <= 7.395e+04)",
+      "pnl_quote": -1.4159056656169753,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.09371430805482503,
+      "price": 2113.34,
+      "timestamp": "2026-11-09T06:52:18.485139+00:00",
+      "reason": "RSI-herstel: laag=23.2 nu=33.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.8376264976532959,
+      "price": 86.22,
+      "timestamp": "2026-11-09T06:52:18.770692+00:00",
+      "reason": "RSI-herstel: laag=24.5 nu=33.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 74164.6,
-  "last_updated": "2026-11-09T06:37:14.528379+00:00"
+  "last_price": 86.22,
+  "last_updated": "2026-11-09T06:52:18.891921+00:00"
 }
