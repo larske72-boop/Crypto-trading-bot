@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 667.9308991338343,
+  "balance_quote": 692.3534977203542,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.002647199191229861,
-      "entry_price": 74461.9,
-      "stop_loss": 74104.32520291107,
-      "take_profit": 74998.26219563338,
-      "opened_at": "2026-11-10T03:57:31.241451+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 1.8400511687975614,
@@ -28,6 +19,15 @@
       "take_profit": 2130.6117239218133,
       "opened_at": "2026-11-10T04:12:21.061197+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 969.5089643878329,
+      "entry_price": 0.178532,
+      "stop_loss": 0.1770877557577196,
+      "take_profit": 0.1806983663634206,
+      "opened_at": "2026-11-10T06:11:36.024836+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -90669,8 +90669,26 @@
       "reason": "RSI-herstel: laag=26.7 nu=36.8 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.002647199191229861,
+      "price": 74611.3,
+      "timestamp": "2026-11-10T06:11:26.422995+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.39549155916975565,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 969.5089643878329,
+      "price": 0.178532,
+      "timestamp": "2026-11-10T06:11:36.024848+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=58.0",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 2124.57,
-  "last_updated": "2026-11-10T05:56:47.919445+00:00"
+  "last_price": 0.178532,
+  "last_updated": "2026-11-10T06:11:36.109602+00:00"
 }
