@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 658.1254380779274,
+  "balance_quote": 645.0731918001729,
   "positions": [
-    {
-      "side": "long",
-      "amount": 2.2732398506088907,
-      "entry_price": 81.53,
-      "stop_loss": 80.43151890829746,
-      "take_profit": 83.17772163755382,
-      "opened_at": "2026-11-12T14:38:24.401533+00:00",
-      "symbol": "SOL/USD"
-    },
     {
       "side": "long",
       "amount": 17.72290174708514,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.08236822820385471,
-      "entry_price": 1997.51,
-      "stop_loss": 1970.3893708401654,
-      "take_profit": 2038.1909437397517,
-      "opened_at": "2026-11-12T14:53:23.946938+00:00",
-      "symbol": "ETH/USD"
+      "amount": 0.0028134066942941205,
+      "entry_price": 71651.7,
+      "stop_loss": 70935.48227818838,
+      "take_profit": 72726.02658271742,
+      "opened_at": "2026-11-12T16:38:46.808950+00:00",
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 3.276479031898481,
+      "entry_price": 49.22,
+      "stop_loss": 48.68704211105894,
+      "take_profit": 50.01943683341158,
+      "opened_at": "2026-11-12T16:38:47.141114+00:00",
+      "symbol": "LTC/USD"
     }
   ],
   "trade_log": [
@@ -91515,8 +91515,44 @@
       "reason": "RSI-herstel: laag=22.5 nu=33.6 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.2732398506088907,
+      "price": 81.27,
+      "timestamp": "2026-11-12T16:38:36.023285+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.5910423611583155,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08236822820385471,
+      "price": 2003.87,
+      "timestamp": "2026-11-12T16:38:38.421196+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.5238619313765014,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0028134066942941205,
+      "price": 71651.7,
+      "timestamp": "2026-11-12T16:38:46.808960+00:00",
+      "reason": "RSI-herstel: laag=16.0 nu=36.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.276479031898481,
+      "price": 49.22,
+      "timestamp": "2026-11-12T16:38:47.141132+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=59.5",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 2015.05,
-  "last_updated": "2026-11-12T16:23:08.862900+00:00"
+  "last_price": 49.22,
+  "last_updated": "2026-11-12T16:38:47.262781+00:00"
 }
