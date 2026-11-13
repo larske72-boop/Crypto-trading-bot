@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 656.5530382833036,
+  "balance_quote": 986.3768289260081,
   "positions": [
-    {
-      "side": "long",
-      "amount": 180.39721073337816,
-      "entry_price": 1.02466,
-      "stop_loss": 1.0152037569514105,
-      "take_profit": 1.038844364572884,
-      "opened_at": "2026-11-13T02:30:10.858768+00:00",
-      "symbol": "XRP/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.07401863259639238,
-      "entry_price": 1997.83,
-      "stop_loss": 1981.715406206692,
-      "take_profit": 2022.001890689962,
-      "opened_at": "2026-11-13T02:30:11.102220+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 3.3226368334175285,
@@ -91839,8 +91821,26 @@
       "reason": "RSI-herstel: laag=27.8 nu=32.4 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 180.39721073337816,
+      "price": 1.0152037569514105,
+      "timestamp": "2026-11-13T03:14:51.041523+00:00",
+      "reason": "Stop-loss geraakt (low=1.014 <= 1.015)",
+      "pnl_quote": -1.7058798699824251,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.07401863259639238,
+      "price": 1981.715406206692,
+      "timestamp": "2026-11-13T03:14:52.360841+00:00",
+      "reason": "Stop-loss geraakt (low=1976 <= 1982)",
+      "pnl_quote": -1.1927801974269698,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 49.4,
-  "last_updated": "2026-11-13T03:00:13.652470+00:00"
+  "last_price": 69711.2,
+  "last_updated": "2026-11-13T03:15:03.040022+00:00"
 }
