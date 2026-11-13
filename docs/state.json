@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 925.0378625776207,
+  "balance_quote": 592.0242320496773,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 1962.5475775874252,
       "opened_at": "2026-11-13T15:48:50.731585+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.002707920599926584,
+      "entry_price": 68320.9,
+      "stop_loss": 67830.69914446314,
+      "take_profit": 69056.20128330527,
+      "opened_at": "2026-11-13T21:57:20.361739+00:00",
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 146.1412950871078,
+      "entry_price": 1.01276,
+      "stop_loss": 1.002213005673024,
+      "take_profit": 1.0285804914904644,
+      "opened_at": "2026-11-13T21:57:20.610672+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -92271,8 +92289,26 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -1.0997289878373522,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002707920599926584,
+      "price": 68320.9,
+      "timestamp": "2026-11-13T21:57:20.361748+00:00",
+      "reason": "RSI-herstel: laag=21.3 nu=35.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 146.1412950871078,
+      "price": 1.01276,
+      "timestamp": "2026-11-13T21:57:20.610688+00:00",
+      "reason": "RSI-herstel: laag=24.8 nu=38.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 68131.0,
-  "last_updated": "2026-11-13T21:42:26.475507+00:00"
+  "last_price": 1.01276,
+  "last_updated": "2026-11-13T21:57:20.736017+00:00"
 }
