@@ -1,17 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 910.6921927382249,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.0033910346365050225,
-      "entry_price": 67139.7,
-      "stop_loss": 66579.54954667919,
-      "take_profit": 67979.92567998121,
-      "opened_at": "2026-11-14T07:29:07.072843+00:00",
-      "symbol": "BTC/USD"
-    }
-  ],
+  "balance_quote": 1137.895921729089,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -92451,8 +92441,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=44.6",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0033910346365050225,
+      "price": 67001.3,
+      "timestamp": "2026-11-14T07:43:55.777743+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.4693191936922858,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 67139.7,
-  "last_updated": "2026-11-14T07:29:07.201266+00:00"
+  "last_price": 67011.6,
+  "last_updated": "2026-11-14T07:44:06.570576+00:00"
 }
