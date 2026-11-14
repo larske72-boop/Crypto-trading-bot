@@ -1,26 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 716.6096472699166,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 4.951237274290499,
-      "entry_price": 45.37,
-      "stop_loss": 44.70027107598741,
-      "take_profit": 46.37459338601888,
-      "opened_at": "2026-11-14T19:30:04.433891+00:00",
-      "symbol": "LTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 2.482183813641546,
-      "entry_price": 72.4,
-      "stop_loss": 71.28362177193264,
-      "take_profit": 74.07456734210105,
-      "opened_at": "2026-11-14T19:45:54.217726+00:00",
-      "symbol": "SOL/USD"
-    }
-  ],
+  "balance_quote": 1114.8703477322722,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -92685,8 +92666,26 @@
       "reason": "Stop-loss geraakt (low=0.9402 <= 0.9405)",
       "pnl_quote": -2.2307851606751967,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 4.951237274290499,
+      "price": 44.70027107598741,
+      "timestamp": "2026-11-14T21:00:43.937229+00:00",
+      "reason": "Stop-loss geraakt (low=44.47 <= 44.7)",
+      "pnl_quote": -3.31598681224159,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.482183813641546,
+      "price": 71.28362177193264,
+      "timestamp": "2026-11-14T21:00:44.982904+00:00",
+      "reason": "Stop-loss geraakt (low=70.48 <= 71.28)",
+      "pnl_quote": -2.7710559676106357,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 65435.5,
-  "last_updated": "2026-11-14T20:45:54.061528+00:00"
+  "last_price": 64827.9,
+  "last_updated": "2026-11-14T21:00:55.928625+00:00"
 }
