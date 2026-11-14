@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 613.6225682068095,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.12015738458491722,
-      "entry_price": 1924.06,
-      "stop_loss": 1898.4016149417164,
-      "take_profit": 1962.5475775874252,
-      "opened_at": "2026-11-13T15:48:50.731585+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 191.15435672015565,
-      "entry_price": 0.8116,
-      "stop_loss": 0.8020674308342236,
-      "take_profit": 0.8258988537486646,
-      "opened_at": "2026-11-13T23:11:40.807201+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
-      "amount": 918.6461668694865,
-      "entry_price": 0.166991,
-      "stop_loss": 0.16488362932184938,
-      "take_profit": 0.17015205601722594,
-      "opened_at": "2026-11-13T23:26:28.973142+00:00",
-      "symbol": "ADA/USD"
-    }
-  ],
+  "balance_quote": 1146.5179389933394,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -92343,8 +92315,35 @@
       "reason": "RSI-herstel: laag=21.3 nu=32.5 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.12015738458491722,
+      "price": 1898.4016149417164,
+      "timestamp": "2026-11-14T02:31:09.352025+00:00",
+      "reason": "Stop-loss geraakt (low=1884 <= 1898)",
+      "pnl_quote": -3.0830444412760585,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 191.15435672015565,
+      "price": 0.8020674308342236,
+      "timestamp": "2026-11-14T02:31:10.705450+00:00",
+      "reason": "Stop-loss geraakt (low=0.7872 <= 0.8021)",
+      "pnl_quote": -1.8221921267743824,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 918.6461668694865,
+      "price": 0.16488362932184938,
+      "timestamp": "2026-11-14T02:31:11.753165+00:00",
+      "reason": "Stop-loss geraakt (low=0.1629 <= 0.1649)",
+      "pnl_quote": -1.9359279956562148,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 0.166344,
-  "last_updated": "2026-11-14T02:16:12.088986+00:00"
+  "last_price": 66945.8,
+  "last_updated": "2026-11-14T02:31:22.689250+00:00"
 }
