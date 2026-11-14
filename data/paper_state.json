@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 648.581885169009,
+  "balance_quote": 809.7103047349232,
   "positions": [
     {
       "side": "long",
@@ -19,15 +19,6 @@
       "take_profit": 76.66406810490408,
       "opened_at": "2026-11-14T11:10:56.265402+00:00",
       "symbol": "SOL/USD"
-    },
-    {
-      "side": "long",
-      "amount": 163.25067838491813,
-      "entry_price": 0.99323,
-      "stop_loss": 0.9855613476739962,
-      "take_profit": 1.0047329784890056,
-      "opened_at": "2026-11-14T12:25:30.701556+00:00",
-      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -92541,8 +92532,17 @@
       "reason": "Trend omhoog: EMA5>13, RSI=58.8",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 163.25067838491813,
+      "price": 0.987,
+      "timestamp": "2026-11-14T13:25:10.615478+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -1.0170517263380532,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 0.98913,
-  "last_updated": "2026-11-14T13:10:13.224909+00:00"
+  "last_price": 66500.1,
+  "last_updated": "2026-11-14T13:25:19.008884+00:00"
 }
