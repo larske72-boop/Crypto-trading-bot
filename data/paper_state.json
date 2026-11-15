@@ -1,17 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 952.7497992391905,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 221.41637338577664,
-      "entry_price": 0.736,
-      "stop_loss": 0.727510369534179,
-      "take_profit": 0.7487344456987315,
-      "opened_at": "2026-11-15T14:14:24.224146+00:00",
-      "symbol": "DOT/USD"
-    }
-  ],
+  "balance_quote": 1113.8325068619945,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -92991,8 +92981,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -1.0731613201683103,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 221.41637338577664,
+      "price": 0.727510369534179,
+      "timestamp": "2026-11-15T14:44:28.867433+00:00",
+      "reason": "Stop-loss geraakt (low=0.7253 <= 0.7275)",
+      "pnl_quote": -1.8797431891274812,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 64845.6,
-  "last_updated": "2026-11-15T14:29:29.727173+00:00"
+  "last_price": 64602.6,
+  "last_updated": "2026-11-15T14:44:39.501900+00:00"
 }
