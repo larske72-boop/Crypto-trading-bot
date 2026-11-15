@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 570.2822435133412,
+  "balance_quote": 598.3182402860882,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.003438624920078522,
-      "entry_price": 64783.6,
-      "stop_loss": 64135.69408106266,
-      "take_profit": 65755.458878406,
-      "opened_at": "2026-11-15T14:59:33.786479+00:00",
-      "symbol": "BTC/USD"
-    },
     {
       "side": "long",
       "amount": 0.09851748312441976,
@@ -22,12 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 1.9973460476090685,
-      "entry_price": 71.38,
-      "stop_loss": 70.31282457721403,
-      "take_profit": 72.98076313417893,
-      "opened_at": "2026-11-15T14:59:34.279595+00:00",
-      "symbol": "SOL/USD"
+      "amount": 4.1448559097628594,
+      "entry_price": 45.11,
+      "stop_loss": 44.69175279391081,
+      "take_profit": 45.737370809133786,
+      "opened_at": "2026-11-15T20:15:58.563744+00:00",
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 156.6688243744667,
+      "entry_price": 0.95475,
+      "stop_loss": 0.9456727191185286,
+      "take_profit": 0.9683659213222072,
+      "opened_at": "2026-11-15T20:15:58.876841+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -93045,8 +93045,44 @@
       "reason": "RSI-herstel: laag=31.2 nu=35.3 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.003438624920078522,
+      "price": 64670.9,
+      "timestamp": "2026-11-15T20:15:47.772964+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.38753302849283955,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9973460476090685,
+      "price": 71.2,
+      "timestamp": "2026-11-15T20:15:50.073550+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.35952228856962165,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.1448559097628594,
+      "price": 45.11,
+      "timestamp": "2026-11-15T20:15:58.563762+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=51.9",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 156.6688243744667,
+      "price": 0.95475,
+      "timestamp": "2026-11-15T20:15:58.876857+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=48.7",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 71.57,
-  "last_updated": "2026-11-15T20:00:55.263833+00:00"
+  "last_price": 0.95475,
+  "last_updated": "2026-11-15T20:15:59.032757+00:00"
 }
