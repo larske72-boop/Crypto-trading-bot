@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 598.3182402860882,
+  "balance_quote": 621.7926138100025,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.09851748312441976,
-      "entry_price": 1808.95,
-      "stop_loss": 1784.6982892871038,
-      "take_profit": 1845.3275660693446,
-      "opened_at": "2026-11-15T14:59:34.034766+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 4.1448559097628594,
@@ -28,6 +19,15 @@
       "take_profit": 0.9683659213222072,
       "opened_at": "2026-11-15T20:15:58.876841+00:00",
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "long",
+      "amount": 21.47073942714097,
+      "entry_price": 7.24,
+      "stop_loss": 7.15754104995917,
+      "take_profit": 7.363688425061245,
+      "opened_at": "2026-11-15T21:30:33.316427+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -93081,8 +93081,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=48.7",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.09851748312441976,
+      "price": 1816.15,
+      "timestamp": "2026-11-15T21:30:23.804114+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.7093258784958323,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 21.47073942714097,
+      "price": 7.24,
+      "timestamp": "2026-11-15T21:30:33.316444+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=52.2",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 0.96041,
-  "last_updated": "2026-11-15T21:15:31.185081+00:00"
+  "last_price": 7.24,
+  "last_updated": "2026-11-15T21:30:33.472642+00:00"
 }
