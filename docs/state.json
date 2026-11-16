@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 635.0480075125336,
+  "balance_quote": 763.3113257470546,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 22.67785787834378,
-      "entry_price": 7.187,
-      "stop_loss": 7.087493223457131,
-      "take_profit": 7.336260164814304,
-      "opened_at": "2026-11-16T18:24:45.797068+00:00",
-      "symbol": "AVAX/USD"
-    },
-    {
-      "side": "long",
-      "amount": 2.2223124563008594,
-      "entry_price": 71.44,
-      "stop_loss": 70.71253568592425,
-      "take_profit": 72.53119647111362,
-      "opened_at": "2026-11-16T21:19:45.464995+00:00",
-      "symbol": "SOL/USD"
+      "amount": 0.0029358127913348257,
+      "entry_price": 65000.0,
+      "stop_loss": 64581.788410726556,
+      "take_profit": 65627.31738391017,
+      "opened_at": "2026-11-16T23:33:35.115776+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -93783,8 +93774,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=55.9",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 22.67785787834378,
+      "price": 7.087493223457131,
+      "timestamp": "2026-11-16T23:33:25.516506+00:00",
+      "reason": "Stop-loss geraakt (low=7.064 <= 7.087)",
+      "pnl_quote": -2.2566005363712804,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.2223124563008594,
+      "price": 71.26,
+      "timestamp": "2026-11-16T23:33:26.716287+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.4000162421341429,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0029358127913348257,
+      "price": 65000.0,
+      "timestamp": "2026-11-16T23:33:35.115784+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=45.3",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 71.72,
-  "last_updated": "2026-11-16T23:18:30.249120+00:00"
+  "last_price": 65000.0,
+  "last_updated": "2026-11-16T23:33:35.249423+00:00"
 }
