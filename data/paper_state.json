@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 610.6490605976437,
+  "balance_quote": 640.199280880907,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 0.0029358127913348257,
-      "entry_price": 65000.0,
-      "stop_loss": 64581.788410726556,
-      "take_profit": 65627.31738391017,
-      "opened_at": "2026-11-16T23:33:35.115776+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
       "amount": 21.55637745684989,
       "entry_price": 7.082,
       "stop_loss": 7.010097835225312,
       "take_profit": 7.189853247162032,
       "opened_at": "2026-11-16T23:48:38.247739+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 219.0362942660829,
+      "entry_price": 0.7307,
+      "stop_loss": 0.7235082980357518,
+      "take_profit": 0.7414875529463725,
+      "opened_at": "2026-11-17T00:18:45.597363+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -93819,8 +93819,26 @@
       "reason": "RSI-herstel: laag=30.3 nu=36.0 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0029358127913348257,
+      "price": 64581.788410726556,
+      "timestamp": "2026-11-17T00:18:37.187390+00:00",
+      "reason": "Stop-loss geraakt (low=6.452e+04 <= 6.458e+04)",
+      "pnl_quote": -1.2277909332734396,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 219.0362942660829,
+      "price": 0.7307,
+      "timestamp": "2026-11-17T00:18:45.597374+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=50.9",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 7.094,
-  "last_updated": "2026-11-17T00:03:39.462874+00:00"
+  "last_price": 0.7307,
+  "last_updated": "2026-11-17T00:18:45.757888+00:00"
 }
