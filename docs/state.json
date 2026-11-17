@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 610.2466507799722,
+  "balance_quote": 760.9840635522684,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,12 @@
     },
     {
       "side": "long",
-      "amount": 0.10406718637959353,
-      "entry_price": 1832.49,
-      "stop_loss": 1819.274123361813,
-      "take_profit": 1852.3138149572806,
-      "opened_at": "2026-11-17T06:09:13.621614+00:00",
-      "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 2.104589083942517,
-      "entry_price": 72.49,
-      "stop_loss": 71.808676736427,
-      "take_profit": 73.51198489535948,
-      "opened_at": "2026-11-17T06:09:13.933677+00:00",
-      "symbol": "SOL/USD"
+      "amount": 26.633909546138472,
+      "entry_price": 7.143,
+      "stop_loss": 7.075641877396983,
+      "take_profit": 7.244037183904526,
+      "opened_at": "2026-11-17T06:39:03.766007+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -93909,8 +93900,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=52.7",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.10406718637959353,
+      "price": 1819.274123361813,
+      "timestamp": "2026-11-17T06:38:54.164276+00:00",
+      "reason": "Stop-loss geraakt (low=1815 <= 1819)",
+      "pnl_quote": -1.375339097275912,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 2.104589083942517,
+      "price": 72.06,
+      "timestamp": "2026-11-17T06:38:55.364787+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.9049733060952576,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 26.633909546138472,
+      "price": 7.143,
+      "timestamp": "2026-11-17T06:39:03.766019+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=44.7",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 72.49,
-  "last_updated": "2026-11-17T06:23:59.159989+00:00"
+  "last_price": 7.143,
+  "last_updated": "2026-11-17T06:39:03.927175+00:00"
 }
