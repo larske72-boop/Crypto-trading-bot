@@ -1,15 +1,24 @@
 {
   "mode": "paper",
-  "balance_quote": 926.7387679391112,
+  "balance_quote": 705.5323140571174,
   "positions": [
     {
       "side": "long",
-      "amount": 244.28015718427457,
-      "entry_price": 0.7245,
-      "stop_loss": 0.7190738486492286,
-      "take_profit": 0.7326392270261571,
-      "opened_at": "2026-11-18T11:26:21.069609+00:00",
-      "symbol": "DOT/USD"
+      "amount": 31.313570251789404,
+      "entry_price": 7.041,
+      "stop_loss": 6.969112124204746,
+      "take_profit": 7.1488318136928815,
+      "opened_at": "2026-11-18T14:55:16.702521+00:00",
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.386134720160706,
+      "entry_price": 73.92,
+      "stop_loss": 73.01529059667727,
+      "take_profit": 75.27706410498409,
+      "opened_at": "2026-11-18T14:55:17.029575+00:00",
+      "symbol": "SOL/USD"
     }
   ],
   "trade_log": [
@@ -94575,8 +94584,35 @@
       "reason": "Stop-loss geraakt (low=6.312e+04 <= 6.383e+04)",
       "pnl_quote": -0.7440862952010434,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 244.28015718427457,
+      "price": 0.7190738486492286,
+      "timestamp": "2026-11-18T14:55:07.108270+00:00",
+      "reason": "Stop-loss geraakt (low=0.7179 <= 0.7191)",
+      "pnl_quote": -1.325501104872103,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 31.313570251789404,
+      "price": 7.041,
+      "timestamp": "2026-11-18T14:55:16.702539+00:00",
+      "reason": "RSI-herstel: laag=28.5 nu=34.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.386134720160706,
+      "price": 73.92,
+      "timestamp": "2026-11-18T14:55:17.029595+00:00",
+      "reason": "RSI-herstel: laag=30.8 nu=39.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 63337.3,
-  "last_updated": "2026-11-18T14:40:09.343629+00:00"
+  "last_price": 73.92,
+  "last_updated": "2026-11-18T14:55:17.190343+00:00"
 }
