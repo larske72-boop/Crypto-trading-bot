@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 942.8975128095619,
+  "balance_quote": 603.4544081981196,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 42.21873795631191,
       "opened_at": "2026-11-20T04:57:17.107854+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.6493327137104856,
+      "entry_price": 71.18,
+      "stop_loss": 70.34476186601917,
+      "take_profit": 72.43285720097127,
+      "opened_at": "2026-11-20T12:29:39.952170+00:00",
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1027.1564394861612,
+      "entry_price": 0.146875,
+      "stop_loss": 0.14508161645596893,
+      "take_profit": 0.14956507531604663,
+      "opened_at": "2026-11-20T12:29:40.234671+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -95511,8 +95529,26 @@
       "reason": "Stop-loss geraakt (low=1726 <= 1734)",
       "pnl_quote": -1.4865052011362536,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.6493327137104856,
+      "price": 71.18,
+      "timestamp": "2026-11-20T12:29:39.952183+00:00",
+      "reason": "RSI-herstel: laag=26.7 nu=32.9 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1027.1564394861612,
+      "price": 0.146875,
+      "timestamp": "2026-11-20T12:29:40.234693+00:00",
+      "reason": "RSI-herstel: laag=27.3 nu=36.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 61322.9,
-  "last_updated": "2026-11-20T12:14:36.248369+00:00"
+  "last_price": 0.146875,
+  "last_updated": "2026-11-20T12:29:40.374771+00:00"
 }
