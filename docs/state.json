@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 785.5761561328053,
+  "balance_quote": 942.8975128095619,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 42.21873795631191,
       "opened_at": "2026-11-20T04:57:17.107854+00:00",
       "symbol": "LTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0907411273957745,
-      "entry_price": 1750.12,
-      "stop_loss": 1733.738175751192,
-      "take_profit": 1774.6927363732118,
-      "opened_at": "2026-11-20T08:55:47.979922+00:00",
-      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -95511,8 +95502,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -1.0027371085794812,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0907411273957745,
+      "price": 1733.738175751192,
+      "timestamp": "2026-11-20T12:14:26.640112+00:00",
+      "reason": "Stop-loss geraakt (low=1726 <= 1734)",
+      "pnl_quote": -1.4865052011362536,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 61765.0,
-  "last_updated": "2026-11-20T11:59:31.227672+00:00"
+  "last_price": 61322.9,
+  "last_updated": "2026-11-20T12:14:36.248369+00:00"
 }
