@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 549.0825605535641,
+  "balance_quote": 613.2274053618899,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.1315728083867092,
-      "entry_price": 1636.65,
-      "stop_loss": 1596.1196012016508,
-      "take_profit": 1697.445598197524,
-      "opened_at": "2026-11-21T06:58:19.881784+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 2.527078032519966,
@@ -28,6 +19,15 @@
       "take_profit": 59179.13868007457,
       "opened_at": "2026-11-21T08:47:10.877579+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 23.809108765409608,
+      "entry_price": 6.439,
+      "stop_loss": 6.349799773003248,
+      "take_profit": 6.572800340495128,
+      "opened_at": "2026-11-21T11:47:05.346398+00:00",
+      "symbol": "AVAX/USD"
     }
   ],
   "trade_log": [
@@ -95853,8 +95853,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=59.1",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.1315728083867092,
+      "price": 1652.71,
+      "timestamp": "2026-11-21T11:46:55.748876+00:00",
+      "reason": "RSI overbought exit (73.1 > 72)",
+      "pnl_quote": 2.113059302690516,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 23.809108765409608,
+      "price": 6.439,
+      "timestamp": "2026-11-21T11:47:05.346408+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=69.8",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 57962.6,
-  "last_updated": "2026-11-21T11:31:52.025228+00:00"
+  "last_price": 6.439,
+  "last_updated": "2026-11-21T11:47:05.480454+00:00"
 }
