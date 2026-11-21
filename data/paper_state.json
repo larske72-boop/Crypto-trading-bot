@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 551.2669103260354,
+  "balance_quote": 549.0825605535641,
   "positions": [
     {
       "side": "long",
@@ -22,12 +22,12 @@
     },
     {
       "side": "long",
-      "amount": 983.9413389509863,
-      "entry_price": 0.140066,
-      "stop_loss": 0.1366298074853414,
-      "take_profit": 0.1452202887719879,
-      "opened_at": "2026-11-21T06:58:20.277109+00:00",
-      "symbol": "ADA/USD"
+      "amount": 0.002375717845896485,
+      "entry_price": 57780.7,
+      "stop_loss": 56848.40754661695,
+      "take_profit": 59179.13868007457,
+      "opened_at": "2026-11-21T08:47:10.877579+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -95835,8 +95835,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=64.1",
       "pnl_quote": null,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 983.9413389509863,
+      "price": 0.137291,
+      "timestamp": "2026-11-21T08:47:03.676457+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -2.730437215588978,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.002375717845896485,
+      "price": 57780.7,
+      "timestamp": "2026-11-21T08:47:10.877588+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=59.1",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 0.137503,
-  "last_updated": "2026-11-21T08:32:12.373534+00:00"
+  "last_price": 57780.7,
+  "last_updated": "2026-11-21T08:47:11.011234+00:00"
 }
