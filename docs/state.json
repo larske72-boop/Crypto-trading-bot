@@ -1,33 +1,33 @@
 {
   "mode": "paper",
-  "balance_quote": 564.7907048738809,
+  "balance_quote": 561.7119313509171,
   "positions": [
     {
       "side": "long",
-      "amount": 331.3147146273914,
-      "entry_price": 0.6638,
-      "stop_loss": 0.6569855930747461,
-      "take_profit": 0.6740216103878806,
-      "opened_at": "2026-11-22T11:19:53.485295+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0028779296709337005,
-      "entry_price": 61327.8,
-      "stop_loss": 60700.92572599478,
-      "take_profit": 62268.11141100785,
-      "opened_at": "2026-11-22T12:20:00.018547+00:00",
+      "amount": 0.003623581378031675,
+      "entry_price": 60553.0,
+      "stop_loss": 59804.72515352045,
+      "take_profit": 61675.41226971932,
+      "opened_at": "2026-11-22T12:35:05.412693+00:00",
       "symbol": "BTC/USD"
     },
     {
       "side": "long",
-      "amount": 20.936784729903657,
-      "entry_price": 6.744,
-      "stop_loss": 6.6839738463830844,
-      "take_profit": 6.834039230425372,
-      "opened_at": "2026-11-22T12:20:00.349484+00:00",
+      "amount": 26.384334668143936,
+      "entry_price": 6.653,
+      "stop_loss": 6.58273646176453,
+      "take_profit": 6.7583953073532035,
+      "opened_at": "2026-11-22T12:35:05.636723+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.08255758939765502,
+      "entry_price": 1700.97,
+      "stop_loss": 1681.028690601204,
+      "take_profit": 1730.8819640981937,
+      "opened_at": "2026-11-22T12:35:05.856404+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -97167,8 +97167,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=82.2",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 331.3147146273914,
+      "price": 0.6569855930747461,
+      "timestamp": "2026-11-22T12:34:53.418445+00:00",
+      "reason": "Stop-loss geraakt (low=0.6564 <= 0.657)",
+      "pnl_quote": -2.2577132857953757,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0028779296709337005,
+      "price": 60700.92572599478,
+      "timestamp": "2026-11-22T12:34:54.594968+00:00",
+      "reason": "Stop-loss geraakt (low=6.053e+04 <= 6.07e+04)",
+      "pnl_quote": -1.8041000731046495,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 20.936784729903657,
+      "price": 6.6839738463830844,
+      "timestamp": "2026-11-22T12:34:55.776391+00:00",
+      "reason": "Stop-loss geraakt (low=6.655 <= 6.684)",
+      "pnl_quote": -1.256754656441501,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.003623581378031675,
+      "price": 60553.0,
+      "timestamp": "2026-11-22T12:35:05.412704+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=54.0",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 26.384334668143936,
+      "price": 6.653,
+      "timestamp": "2026-11-22T12:35:05.636739+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=53.2",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08255758939765502,
+      "price": 1700.97,
+      "timestamp": "2026-11-22T12:35:05.856421+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=56.3",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 6.744,
-  "last_updated": "2026-11-22T12:20:00.513177+00:00"
+  "last_price": 1700.97,
+  "last_updated": "2026-11-22T12:35:05.966411+00:00"
 }
