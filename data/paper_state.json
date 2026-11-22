@@ -1,35 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 558.3595652240531,
-  "positions": [
-    {
-      "side": "long",
-      "amount": 0.00367009887757339,
-      "entry_price": 59428.7,
-      "stop_loss": 58995.998114848146,
-      "take_profit": 60077.75282772777,
-      "opened_at": "2026-11-22T04:03:52.278063+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 1226.7713127932095,
-      "entry_price": 0.142233,
-      "stop_loss": 0.1410495872841131,
-      "take_profit": 0.14400811907383035,
-      "opened_at": "2026-11-22T04:03:52.508433+00:00",
-      "symbol": "ADA/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0838634604629726,
-      "entry_price": 1664.49,
-      "stop_loss": 1651.492503338654,
-      "take_profit": 1683.9862449920192,
-      "opened_at": "2026-11-22T04:03:52.735229+00:00",
-      "symbol": "ETH/USD"
-    }
-  ],
+  "balance_quote": 1086.4161753067879,
+  "positions": [],
   "trade_log": [
     {
       "side": "buy",
@@ -96555,8 +96527,35 @@
       "reason": "RSI-herstel: laag=14.8 nu=38.6 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.00367009887757339,
+      "price": 58995.998114848146,
+      "timestamp": "2026-11-22T05:18:28.739778+00:00",
+      "reason": "Stop-loss geraakt (low=5.873e+04 <= 5.9e+04)",
+      "pnl_quote": -1.5880587030196978,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1226.7713127932095,
+      "price": 0.1410495872841131,
+      "timestamp": "2026-11-22T05:18:29.946837+00:00",
+      "reason": "Stop-loss geraakt (low=0.1409 <= 0.141)",
+      "pnl_quote": -1.4517767710447629,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0838634604629726,
+      "price": 1651.492503338654,
+      "timestamp": "2026-11-22T05:18:31.057025+00:00",
+      "reason": "Stop-loss geraakt (low=1649 <= 1651)",
+      "pnl_quote": -1.0900150473764256,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 1656.3,
-  "last_updated": "2026-11-22T05:03:33.230924+00:00"
+  "last_price": 58705.8,
+  "last_updated": "2026-11-22T05:18:41.854359+00:00"
 }
