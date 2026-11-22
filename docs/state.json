@@ -1,25 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 647.42908654908,
+  "balance_quote": 749.1027649868311,
   "positions": [
-    {
-      "side": "long",
-      "amount": 213.38226704324637,
-      "entry_price": 0.6577,
-      "stop_loss": 0.6510058254919859,
-      "take_profit": 0.6677412617620209,
-      "opened_at": "2026-11-22T13:49:33.951996+00:00",
-      "symbol": "DOT/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.08653436447631538,
-      "entry_price": 1701.87,
-      "stop_loss": 1686.1805630825522,
-      "take_profit": 1725.4041553761715,
-      "opened_at": "2026-11-22T14:34:30.666500+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 4.041380065849439,
@@ -28,6 +10,15 @@
       "take_profit": 40.49311219489229,
       "opened_at": "2026-11-22T17:53:36.471801+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 202.02775814657033,
+      "entry_price": 0.92698,
+      "stop_loss": 0.9204259710746557,
+      "take_profit": 0.9368110433880165,
+      "opened_at": "2026-11-22T18:08:45.123105+00:00",
+      "symbol": "XRP/USD"
     }
   ],
   "trade_log": [
@@ -97293,8 +97284,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=61.8",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 213.38226704324637,
+      "price": 0.6607,
+      "timestamp": "2026-11-22T18:08:34.317980+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.6401468011297311,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.08653436447631538,
+      "price": 1709.93,
+      "timestamp": "2026-11-22T18:08:35.514381+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.6974669776791131,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 202.02775814657033,
+      "price": 0.92698,
+      "timestamp": "2026-11-22T18:08:45.123116+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=55.3",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 40.05,
-  "last_updated": "2026-11-22T17:53:36.641153+00:00"
+  "last_price": 0.92698,
+  "last_updated": "2026-11-22T18:08:45.292737+00:00"
 }
