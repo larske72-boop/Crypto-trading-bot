@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 563.2741991552905,
+  "balance_quote": 564.7907048738809,
   "positions": [
     {
       "side": "long",
@@ -13,20 +13,20 @@
     },
     {
       "side": "long",
-      "amount": 0.0028833099188525333,
-      "entry_price": 61049.0,
-      "stop_loss": 60471.40858455465,
-      "take_profit": 61915.387123168024,
-      "opened_at": "2026-11-22T12:04:51.846320+00:00",
+      "amount": 0.0028779296709337005,
+      "entry_price": 61327.8,
+      "stop_loss": 60700.92572599478,
+      "take_profit": 62268.11141100785,
+      "opened_at": "2026-11-22T12:20:00.018547+00:00",
       "symbol": "BTC/USD"
     },
     {
       "side": "long",
-      "amount": 21.049110581288883,
-      "entry_price": 6.69,
-      "stop_loss": 6.640704273792778,
-      "take_profit": 6.763943589310833,
-      "opened_at": "2026-11-22T12:04:52.176934+00:00",
+      "amount": 20.936784729903657,
+      "entry_price": 6.744,
+      "stop_loss": 6.6839738463830844,
+      "take_profit": 6.834039230425372,
+      "opened_at": "2026-11-22T12:20:00.349484+00:00",
       "symbol": "AVAX/USD"
     }
   ],
@@ -97131,8 +97131,44 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.5",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0028833099188525333,
+      "price": 61331.0,
+      "timestamp": "2026-11-22T12:19:50.325723+00:00",
+      "reason": "RSI overbought exit (81.4 > 72)",
+      "pnl_quote": 0.8130933971164325,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 21.049110581288883,
+      "price": 6.763943589310833,
+      "timestamp": "2026-11-22T12:19:51.615115+00:00",
+      "reason": "Take-profit geraakt (high=6.767 >= 6.764)",
+      "pnl_quote": 1.5564467881811481,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0028779296709337005,
+      "price": 61327.8,
+      "timestamp": "2026-11-22T12:20:00.018560+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=81.4",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 20.936784729903657,
+      "price": 6.744,
+      "timestamp": "2026-11-22T12:20:00.349506+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=82.2",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
     }
   ],
-  "last_price": 6.69,
-  "last_updated": "2026-11-22T12:04:52.349283+00:00"
+  "last_price": 6.744,
+  "last_updated": "2026-11-22T12:20:00.513177+00:00"
 }
