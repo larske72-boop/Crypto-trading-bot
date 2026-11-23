@@ -1,32 +1,32 @@
 {
   "mode": "paper",
-  "balance_quote": 565.2476765816998,
+  "balance_quote": 565.9058410656331,
   "positions": [
     {
       "side": "long",
-      "amount": 330.73677900648073,
-      "entry_price": 0.6676,
-      "stop_loss": 0.6611775302863969,
-      "take_profit": 0.6772337045704045,
-      "opened_at": "2026-11-23T05:27:19.288571+00:00",
+      "amount": 330.2808444139593,
+      "entry_price": 0.6693,
+      "stop_loss": 0.6626257772847076,
+      "take_profit": 0.6793113340729385,
+      "opened_at": "2026-11-23T05:42:31.287634+00:00",
       "symbol": "DOT/USD"
     },
     {
       "side": "long",
-      "amount": 4.349665080812145,
-      "entry_price": 40.61,
-      "stop_loss": 40.2547694251169,
-      "take_profit": 41.14284586232465,
-      "opened_at": "2026-11-23T05:27:19.514765+00:00",
+      "amount": 4.346167985574105,
+      "entry_price": 40.69,
+      "stop_loss": 40.32469248403034,
+      "take_profit": 41.2379612739545,
+      "opened_at": "2026-11-23T05:42:31.620254+00:00",
       "symbol": "LTC/USD"
     },
     {
       "side": "long",
-      "amount": 1.9750093521373164,
-      "entry_price": 71.55,
-      "stop_loss": 70.85283547601118,
-      "take_profit": 72.59574678598322,
-      "opened_at": "2026-11-23T05:27:19.737196+00:00",
+      "amount": 1.971522578963326,
+      "entry_price": 71.76,
+      "stop_loss": 71.03215193006096,
+      "take_profit": 72.85177210490858,
+      "opened_at": "2026-11-23T05:42:31.949503+00:00",
       "symbol": "SOL/USD"
     }
   ],
@@ -97617,8 +97617,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=72.8",
       "pnl_quote": null,
       "symbol": "SOL/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 330.73677900648073,
+      "price": 0.6693,
+      "timestamp": "2026-11-23T05:42:19.283966+00:00",
+      "reason": "RSI overbought exit (78.8 > 72)",
+      "pnl_quote": 0.5622525243110204,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 4.349665080812145,
+      "price": 40.69,
+      "timestamp": "2026-11-23T05:42:20.493576+00:00",
+      "reason": "RSI overbought exit (78.2 > 72)",
+      "pnl_quote": 0.3479732064649568,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 1.9750093521373164,
+      "price": 71.74,
+      "timestamp": "2026-11-23T05:42:21.579345+00:00",
+      "reason": "RSI overbought exit (76.2 > 72)",
+      "pnl_quote": 0.375251776906083,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 330.2808444139593,
+      "price": 0.6693,
+      "timestamp": "2026-11-23T05:42:31.287667+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=78.8",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.346167985574105,
+      "price": 40.69,
+      "timestamp": "2026-11-23T05:42:31.620272+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=78.2",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1.971522578963326,
+      "price": 71.76,
+      "timestamp": "2026-11-23T05:42:31.949523+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=76.5",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
     }
   ],
-  "last_price": 71.55,
-  "last_updated": "2026-11-23T05:27:19.847550+00:00"
+  "last_price": 71.76,
+  "last_updated": "2026-11-23T05:42:32.113066+00:00"
 }
