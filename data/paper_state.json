@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 616.821932942807,
+  "balance_quote": 796.2399346062291,
   "positions": [
-    {
-      "side": "long",
-      "amount": 268.19439126692214,
-      "entry_price": 0.6801,
-      "stop_loss": 0.6689849135765674,
-      "take_profit": 0.696772629635149,
-      "opened_at": "2026-11-23T19:47:55.181562+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 983.5680446524736,
@@ -98283,8 +98274,17 @@
       "reason": "RSI-herstel: laag=30.7 nu=37.5 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 268.19439126692214,
+      "price": 0.6689849135765674,
+      "timestamp": "2026-11-23T22:46:22.089370+00:00",
+      "reason": "Stop-loss geraakt (low=0.6688 <= 0.669)",
+      "pnl_quote": -2.9810038372117447,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 41.13,
-  "last_updated": "2026-11-23T22:31:31.683429+00:00"
+  "last_price": 61022.2,
+  "last_updated": "2026-11-23T22:46:32.883985+00:00"
 }
