@@ -1,7 +1,35 @@
 {
   "mode": "paper",
-  "balance_quote": 1094.4565522835321,
-  "positions": [],
+  "balance_quote": 560.3617547691686,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 33.045185757353025,
+      "entry_price": 6.624,
+      "stop_loss": 6.57418002657618,
+      "take_profit": 6.698729960135729,
+      "opened_at": "2026-11-23T03:12:28.620661+00:00",
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 1223.1981584616174,
+      "entry_price": 0.14316,
+      "stop_loss": 0.14201052850171006,
+      "take_profit": 0.14488420724743495,
+      "opened_at": "2026-11-23T03:12:28.815916+00:00",
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "long",
+      "amount": 213.81324586735676,
+      "entry_price": 0.6552,
+      "stop_loss": 0.6494227322159225,
+      "take_profit": 0.6638659016761163,
+      "opened_at": "2026-11-23T03:12:29.005470+00:00",
+      "symbol": "DOT/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -97436,8 +97464,35 @@
       "reason": "Stop-loss geraakt (low=6.568 <= 6.582)",
       "pnl_quote": -1.4570024877534706,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 33.045185757353025,
+      "price": 6.624,
+      "timestamp": "2026-11-23T03:12:28.620674+00:00",
+      "reason": "RSI-herstel: laag=20.4 nu=49.8 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1223.1981584616174,
+      "price": 0.14316,
+      "timestamp": "2026-11-23T03:12:28.815937+00:00",
+      "reason": "RSI-herstel: laag=22.3 nu=48.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 213.81324586735676,
+      "price": 0.6552,
+      "timestamp": "2026-11-23T03:12:29.005491+00:00",
+      "reason": "RSI-herstel: laag=23.9 nu=50.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 60467.8,
-  "last_updated": "2026-11-23T02:57:40.518535+00:00"
+  "last_price": 0.6552,
+  "last_updated": "2026-11-23T03:12:29.100367+00:00"
 }
