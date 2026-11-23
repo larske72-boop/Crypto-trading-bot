@@ -1,32 +1,32 @@
 {
   "mode": "paper",
-  "balance_quote": 566.2349433939672,
+  "balance_quote": 566.3519791095375,
   "positions": [
     {
       "side": "long",
-      "amount": 330.22622389260744,
-      "entry_price": 0.6698,
-      "stop_loss": 0.6631751995449487,
-      "take_profit": 0.6797372006825768,
-      "opened_at": "2026-11-23T05:57:25.072996+00:00",
+      "amount": 330.4918461901152,
+      "entry_price": 0.6694,
+      "stop_loss": 0.6628976796008954,
+      "take_profit": 0.6791534805986569,
+      "opened_at": "2026-11-23T06:12:19.061581+00:00",
       "symbol": "DOT/USD"
     },
     {
       "side": "long",
-      "amount": 4.343358365503554,
-      "entry_price": 40.74,
-      "stop_loss": 40.381423234681925,
-      "take_profit": 41.27786514797712,
-      "opened_at": "2026-11-23T05:57:25.263802+00:00",
+      "amount": 4.341059442524662,
+      "entry_price": 40.77,
+      "stop_loss": 40.41548091210267,
+      "take_profit": 41.301778631846,
+      "opened_at": "2026-11-23T06:12:19.258348+00:00",
       "symbol": "LTC/USD"
     },
     {
       "side": "long",
-      "amount": 150.57197422563854,
-      "entry_price": 0.94014,
-      "stop_loss": 0.9310266384505419,
-      "take_profit": 0.9538100423241871,
-      "opened_at": "2026-11-23T05:57:25.448681+00:00",
+      "amount": 150.31210961971252,
+      "entry_price": 0.94196,
+      "stop_loss": 0.9331439746146453,
+      "take_profit": 0.9551840380780322,
+      "opened_at": "2026-11-23T06:12:19.456302+00:00",
       "symbol": "XRP/USD"
     }
   ],
@@ -97725,8 +97725,62 @@
       "reason": "Trend omhoog: EMA5>13, RSI=77.0",
       "pnl_quote": null,
       "symbol": "XRP/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 330.22622389260744,
+      "price": 0.6694,
+      "timestamp": "2026-11-23T06:12:07.055524+00:00",
+      "reason": "RSI overbought exit (75.2 > 72)",
+      "pnl_quote": -0.1320904895570152,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 4.343358365503554,
+      "price": 40.77,
+      "timestamp": "2026-11-23T06:12:08.249893+00:00",
+      "reason": "RSI overbought exit (78.6 > 72)",
+      "pnl_quote": 0.13030075096509108,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 150.57197422563854,
+      "price": 0.94167,
+      "timestamp": "2026-11-23T06:12:09.464772+00:00",
+      "reason": "RSI overbought exit (78.7 > 72)",
+      "pnl_quote": 0.2303751205652418,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 330.4918461901152,
+      "price": 0.6694,
+      "timestamp": "2026-11-23T06:12:19.061591+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=75.2",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 4.341059442524662,
+      "price": 40.77,
+      "timestamp": "2026-11-23T06:12:19.258368+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=78.6",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 150.31210961971252,
+      "price": 0.94196,
+      "timestamp": "2026-11-23T06:12:19.456319+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=79.0",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 0.94014,
-  "last_updated": "2026-11-23T05:57:25.541457+00:00"
+  "last_price": 0.94196,
+  "last_updated": "2026-11-23T06:12:19.555655+00:00"
 }
