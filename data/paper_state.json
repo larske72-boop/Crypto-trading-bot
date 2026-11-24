@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 636.9919476849833,
+  "balance_quote": 608.8499837042108,
   "positions": [
     {
       "side": "long",
@@ -13,21 +13,21 @@
     },
     {
       "side": "long",
-      "amount": 3.7292740806699336,
-      "entry_price": 41.35,
-      "stop_loss": 40.79161855956305,
-      "take_profit": 42.187572160655435,
-      "opened_at": "2026-11-23T21:03:05.280110+00:00",
-      "symbol": "LTC/USD"
+      "amount": 201.60595486894402,
+      "entry_price": 0.94375,
+      "stop_loss": 0.9341572554190065,
+      "take_profit": 0.9581391168714901,
+      "opened_at": "2026-11-24T02:30:51.181335+00:00",
+      "symbol": "XRP/USD"
     },
     {
       "side": "long",
-      "amount": 236.79998055203842,
-      "entry_price": 0.6725,
-      "stop_loss": 0.6644328895492366,
-      "take_profit": 0.6846006656761451,
-      "opened_at": "2026-11-23T23:01:39.206251+00:00",
-      "symbol": "DOT/USD"
+      "amount": 0.08972782980585287,
+      "entry_price": 1696.38,
+      "stop_loss": 1677.3293076024122,
+      "take_profit": 1724.9560385963819,
+      "opened_at": "2026-11-24T02:30:51.520080+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -98301,8 +98301,44 @@
       "reason": "RSI-herstel: laag=22.2 nu=34.7 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "DOT/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.7292740806699336,
+      "price": 41.32,
+      "timestamp": "2026-11-24T02:30:41.541596+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.1118782224201027,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 236.79998055203842,
+      "price": 0.6767,
+      "timestamp": "2026-11-24T02:30:42.760814+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": 0.994559918318572,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 201.60595486894402,
+      "price": 0.94375,
+      "timestamp": "2026-11-24T02:30:51.181348+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=48.0",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.08972782980585287,
+      "price": 1696.38,
+      "timestamp": "2026-11-24T02:30:51.520100+00:00",
+      "reason": "RSI-herstel: laag=31.4 nu=32.3 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 0.6787,
-  "last_updated": "2026-11-24T02:15:40.092321+00:00"
+  "last_price": 1696.38,
+  "last_updated": "2026-11-24T02:30:51.695028+00:00"
 }
