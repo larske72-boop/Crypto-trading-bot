@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 748.9885400910391,
+  "balance_quote": 599.1908320728313,
   "positions": [
     {
       "side": "long",
@@ -19,6 +19,15 @@
       "take_profit": 6.804351210033908,
       "opened_at": "2026-11-24T08:24:18.899836+00:00",
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0024917114896305928,
+      "entry_price": 60118.4,
+      "stop_loss": 59664.547981838914,
+      "take_profit": 60799.17802724163,
+      "opened_at": "2026-11-24T08:39:23.580271+00:00",
+      "symbol": "BTC/USD"
     }
   ],
   "trade_log": [
@@ -98463,8 +98472,17 @@
       "reason": "RSI-herstel: laag=30.9 nu=38.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0024917114896305928,
+      "price": 60118.4,
+      "timestamp": "2026-11-24T08:39:23.580280+00:00",
+      "reason": "RSI-herstel: laag=31.1 nu=36.4 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
     }
   ],
-  "last_price": 6.721,
-  "last_updated": "2026-11-24T08:24:19.073322+00:00"
+  "last_price": 60118.4,
+  "last_updated": "2026-11-24T08:39:23.694860+00:00"
 }
