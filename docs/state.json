@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 608.8499837042108,
+  "balance_quote": 754.7160754303065,
   "positions": [
-    {
-      "side": "long",
-      "amount": 983.5680446524736,
-      "entry_price": 0.148357,
-      "stop_loss": 0.14597209983677678,
-      "take_profit": 0.1519343502448348,
-      "opened_at": "2026-11-23T19:47:55.441247+00:00",
-      "symbol": "ADA/USD"
-    },
     {
       "side": "long",
       "amount": 201.60595486894402,
@@ -98337,8 +98328,17 @@
       "reason": "RSI-herstel: laag=31.4 nu=32.3 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 983.5680446524736,
+      "price": 0.148303,
+      "timestamp": "2026-11-24T02:45:50.845503+00:00",
+      "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
+      "pnl_quote": -0.05311267441123846,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 1696.38,
-  "last_updated": "2026-11-24T02:30:51.695028+00:00"
+  "last_price": 60277.8,
+  "last_updated": "2026-11-24T02:46:01.766423+00:00"
 }
