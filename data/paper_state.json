@@ -1,23 +1,14 @@
 {
   "mode": "paper",
-  "balance_quote": 716.34521479766,
+  "balance_quote": 851.3723049940511,
   "positions": [
     {
       "side": "long",
-      "amount": 0.003641616512220541,
-      "entry_price": 58799.8,
-      "stop_loss": 58284.63409139436,
-      "take_profit": 59572.54886290847,
-      "opened_at": "2026-11-25T08:10:55.918237+00:00",
-      "symbol": "BTC/USD"
-    },
-    {
-      "side": "long",
-      "amount": 0.0831871495714224,
-      "entry_price": 1647.38,
-      "stop_loss": 1630.2984442628372,
-      "take_profit": 1673.0023336057445,
-      "opened_at": "2026-11-25T08:40:54.862951+00:00",
+      "amount": 0.12985996281223705,
+      "entry_price": 1639.02,
+      "stop_loss": 1619.668501416474,
+      "take_profit": 1668.0472478752888,
+      "opened_at": "2026-11-25T13:34:49.899624+00:00",
       "symbol": "ETH/USD"
     }
   ],
@@ -98913,8 +98904,35 @@
       "reason": "Stop-loss geraakt (low=0.1389 <= 0.1391)",
       "pnl_quote": -1.2281617510103047,
       "symbol": "ADA/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.003641616512220541,
+      "price": 58284.63409139436,
+      "timestamp": "2026-11-25T13:34:38.993103+00:00",
+      "reason": "Stop-loss geraakt (low=5.821e+04 <= 5.828e+04)",
+      "pnl_quote": -1.8760366793114258,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.0831871495714224,
+      "price": 1630.2984442628372,
+      "timestamp": "2026-11-25T13:34:40.291366+00:00",
+      "reason": "Stop-loss geraakt (low=1625 <= 1630)",
+      "pnl_quote": -1.420965932019982,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.12985996281223705,
+      "price": 1639.02,
+      "timestamp": "2026-11-25T13:34:49.899638+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=42.9",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 58585.9,
-  "last_updated": "2026-11-25T13:19:42.953375+00:00"
+  "last_price": 1639.02,
+  "last_updated": "2026-11-25T13:34:50.043896+00:00"
 }
