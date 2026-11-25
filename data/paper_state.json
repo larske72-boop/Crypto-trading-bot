@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 856.5052903810614,
+  "balance_quote": 548.1633858438793,
   "positions": [
     {
       "side": "long",
@@ -10,6 +10,24 @@
       "take_profit": 59572.54886290847,
       "opened_at": "2026-11-25T08:10:55.918237+00:00",
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 2.52024507983246,
+      "entry_price": 67.97,
+      "stop_loss": 67.21964941443431,
+      "take_profit": 69.09552587834852,
+      "opened_at": "2026-11-25T08:40:54.664017+00:00",
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0831871495714224,
+      "entry_price": 1647.38,
+      "stop_loss": 1630.2984442628372,
+      "take_profit": 1673.0023336057445,
+      "opened_at": "2026-11-25T08:40:54.862951+00:00",
+      "symbol": "ETH/USD"
     }
   ],
   "trade_log": [
@@ -98859,8 +98877,26 @@
       "reason": "RSI-herstel: laag=31.0 nu=39.1 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 2.52024507983246,
+      "price": 67.97,
+      "timestamp": "2026-11-25T08:40:54.664028+00:00",
+      "reason": "RSI-herstel: laag=23.9 nu=34.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "SOL/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0831871495714224,
+      "price": 1647.38,
+      "timestamp": "2026-11-25T08:40:54.862962+00:00",
+      "reason": "RSI-herstel: laag=26.2 nu=43.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ETH/USD"
     }
   ],
-  "last_price": 58890.6,
-  "last_updated": "2026-11-25T08:26:04.258011+00:00"
+  "last_price": 1647.38,
+  "last_updated": "2026-11-25T08:40:54.961280+00:00"
 }
