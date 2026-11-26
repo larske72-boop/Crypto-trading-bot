@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 685.6976091747426,
+  "balance_quote": 577.4375611985424,
   "positions": [
-    {
-      "side": "long",
-      "amount": 319.6785064405596,
-      "entry_price": 0.6703,
-      "stop_loss": 0.6655700869046497,
-      "take_profit": 0.6773948696430255,
-      "opened_at": "2026-11-26T11:10:49.222679+00:00",
-      "symbol": "DOT/USD"
-    },
     {
       "side": "long",
       "amount": 0.10094238876347612,
@@ -19,6 +10,24 @@
       "take_profit": 1713.2858044963739,
       "opened_at": "2026-11-26T11:26:03.112990+00:00",
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "long",
+      "amount": 267.5303749066635,
+      "entry_price": 0.6745,
+      "stop_loss": 0.6693475600192428,
+      "take_profit": 0.6822286599711358,
+      "opened_at": "2026-11-26T12:11:08.200777+00:00",
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "long",
+      "amount": 967.9065499553163,
+      "entry_price": 0.149146,
+      "stop_loss": 0.14798901003474316,
+      "take_profit": 0.15088148494788528,
+      "opened_at": "2026-11-26T12:11:08.509272+00:00",
+      "symbol": "ADA/USD"
     }
   ],
   "trade_log": [
@@ -99705,8 +99714,35 @@
       "reason": "Trend omhoog: EMA5>13, RSI=55.6",
       "pnl_quote": null,
       "symbol": "ETH/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 319.6785064405596,
+      "price": 0.6773948696430255,
+      "timestamp": "2026-11-26T12:10:58.512364+00:00",
+      "reason": "Take-profit geraakt (high=0.6784 >= 0.6774)",
+      "pnl_quote": 2.268077330872842,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 267.5303749066635,
+      "price": 0.6745,
+      "timestamp": "2026-11-26T12:11:08.200789+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=62.0",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 967.9065499553163,
+      "price": 0.149146,
+      "timestamp": "2026-11-26T12:11:08.509293+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=64.0",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 60628.7,
-  "last_updated": "2026-11-26T11:56:01.391465+00:00"
+  "last_price": 0.149146,
+  "last_updated": "2026-11-26T12:11:08.659133+00:00"
 }
