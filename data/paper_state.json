@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 617.9486673201818,
+  "balance_quote": 618.8883030397205,
   "positions": [
     {
       "side": "long",
@@ -22,11 +22,11 @@
     },
     {
       "side": "long",
-      "amount": 3.454543086539478,
-      "entry_price": 44.72,
-      "stop_loss": 44.36262200907016,
-      "take_profit": 45.25606698639476,
-      "opened_at": "2026-11-27T23:41:06.636213+00:00",
+      "amount": 3.4336900967583253,
+      "entry_price": 45.06,
+      "stop_loss": 44.65615980808319,
+      "take_profit": 45.66576028787522,
+      "opened_at": "2026-11-27T23:56:18.155314+00:00",
       "symbol": "LTC/USD"
     }
   ],
@@ -100875,8 +100875,26 @@
       "reason": "Trend omhoog: EMA5>13, RSI=73.0",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 3.454543086539478,
+      "price": 45.06,
+      "timestamp": "2026-11-27T23:56:10.811470+00:00",
+      "reason": "RSI overbought exit (79.8 > 72)",
+      "pnl_quote": 1.1745446494234386,
+      "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 3.4336900967583253,
+      "price": 45.06,
+      "timestamp": "2026-11-27T23:56:18.155328+00:00",
+      "reason": "Trend omhoog: EMA5>13, RSI=79.8",
+      "pnl_quote": null,
+      "symbol": "LTC/USD"
     }
   ],
-  "last_price": 44.72,
-  "last_updated": "2026-11-27T23:41:06.732609+00:00"
+  "last_price": 45.06,
+  "last_updated": "2026-11-27T23:56:18.319455+00:00"
 }
