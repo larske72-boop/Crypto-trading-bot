@@ -1,7 +1,35 @@
 {
   "mode": "paper",
-  "balance_quote": 1070.6776795371857,
-  "positions": [],
+  "balance_quote": 548.186971923039,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 33.17359192988957,
+      "entry_price": 6.455,
+      "stop_loss": 6.420040413673451,
+      "take_profit": 6.507439379489822,
+      "opened_at": "2026-11-28T14:07:20.176389+00:00",
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "long",
+      "amount": 0.0028998120839185946,
+      "entry_price": 59075.7,
+      "stop_loss": 58773.454657878865,
+      "take_profit": 59529.06801318169,
+      "opened_at": "2026-11-28T14:07:20.371019+00:00",
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 146.53487621572813,
+      "entry_price": 0.93525,
+      "stop_loss": 0.9299815684585211,
+      "take_profit": 0.9431526473122184,
+      "opened_at": "2026-11-28T14:07:20.573530+00:00",
+      "symbol": "XRP/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -101270,8 +101298,35 @@
       "reason": "Stop-loss geraakt (low=5.889e+04 <= 5.89e+04)",
       "pnl_quote": -0.6821628139441032,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 33.17359192988957,
+      "price": 6.455,
+      "timestamp": "2026-11-28T14:07:20.176402+00:00",
+      "reason": "RSI-herstel: laag=19.2 nu=32.2 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "AVAX/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 0.0028998120839185946,
+      "price": 59075.7,
+      "timestamp": "2026-11-28T14:07:20.371029+00:00",
+      "reason": "RSI-herstel: laag=24.5 nu=34.6 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "BTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 146.53487621572813,
+      "price": 0.93525,
+      "timestamp": "2026-11-28T14:07:20.573540+00:00",
+      "reason": "RSI-herstel: laag=24.9 nu=35.5 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "XRP/USD"
     }
   ],
-  "last_price": 59004.0,
-  "last_updated": "2026-11-28T13:52:29.134688+00:00"
+  "last_price": 0.93525,
+  "last_updated": "2026-11-28T14:07:20.670411+00:00"
 }
