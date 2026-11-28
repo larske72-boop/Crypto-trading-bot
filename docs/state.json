@@ -1,16 +1,7 @@
 {
   "mode": "paper",
-  "balance_quote": 552.2070066232974,
+  "balance_quote": 613.417099309963,
   "positions": [
-    {
-      "side": "long",
-      "amount": 0.13026738932538517,
-      "entry_price": 1655.87,
-      "stop_loss": 1647.1072969629565,
-      "take_profit": 1669.0140545555648,
-      "opened_at": "2026-11-28T05:53:55.219290+00:00",
-      "symbol": "ETH/USD"
-    },
     {
       "side": "long",
       "amount": 2.4219605553653394,
@@ -28,6 +19,15 @@
       "take_profit": 44.83127616090216,
       "opened_at": "2026-11-28T05:53:55.588961+00:00",
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "long",
+      "amount": 234.5942708084607,
+      "entry_price": 0.6537,
+      "stop_loss": 0.6487133628969642,
+      "take_profit": 0.6611799556545536,
+      "opened_at": "2026-11-28T07:08:29.583779+00:00",
+      "symbol": "DOT/USD"
     }
   ],
   "trade_log": [
@@ -101163,8 +101163,26 @@
       "reason": "RSI-herstel: laag=30.8 nu=32.2 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 0.13026738932538517,
+      "price": 1647.1072969629565,
+      "timestamp": "2026-11-28T07:08:19.976435+00:00",
+      "reason": "Stop-loss geraakt (low=1643 <= 1647)",
+      "pnl_quote": -1.1414944480692668,
+      "symbol": "ETH/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 234.5942708084607,
+      "price": 0.6537,
+      "timestamp": "2026-11-28T07:08:29.583791+00:00",
+      "reason": "RSI-herstel: laag=14.1 nu=35.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 44.27,
-  "last_updated": "2026-11-28T06:53:39.241612+00:00"
+  "last_price": 0.6537,
+  "last_updated": "2026-11-28T07:08:29.677624+00:00"
 }
