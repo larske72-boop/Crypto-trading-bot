@@ -1,7 +1,17 @@
 {
   "mode": "paper",
-  "balance_quote": 1083.7861011047594,
-  "positions": [],
+  "balance_quote": 867.0288808838075,
+  "positions": [
+    {
+      "side": "long",
+      "amount": 1468.0574891868682,
+      "entry_price": 0.147649,
+      "stop_loss": 0.1468411995537228,
+      "take_profit": 0.14886070066941579,
+      "opened_at": "2026-11-28T03:39:24.866364+00:00",
+      "symbol": "ADA/USD"
+    }
+  ],
   "trade_log": [
     {
       "side": "buy",
@@ -101000,8 +101010,17 @@
       "reason": "EMA5 kruist onder EMA13 (trendomkeer)",
       "pnl_quote": -0.06908741844557653,
       "symbol": "LTC/USD"
+    },
+    {
+      "side": "buy",
+      "amount": 1468.0574891868682,
+      "price": 0.147649,
+      "timestamp": "2026-11-28T03:39:24.866378+00:00",
+      "reason": "RSI-herstel: laag=29.6 nu=40.0 (oververkoop voorbij)",
+      "pnl_quote": null,
+      "symbol": "ADA/USD"
     }
   ],
-  "last_price": 59871.2,
-  "last_updated": "2026-11-28T03:24:32.429261+00:00"
+  "last_price": 0.147649,
+  "last_updated": "2026-11-28T03:39:25.005949+00:00"
 }
