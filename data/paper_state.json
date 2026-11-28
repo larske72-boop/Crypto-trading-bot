@@ -1,6 +1,6 @@
 {
   "mode": "paper",
-  "balance_quote": 620.4216742909878,
+  "balance_quote": 767.1633361377977,
   "positions": [
     {
       "side": "long",
@@ -10,15 +10,6 @@
       "take_profit": 1660.1978549770633,
       "opened_at": "2026-11-28T10:37:37.846090+00:00",
       "symbol": "ETH/USD"
-    },
-    {
-      "side": "long",
-      "amount": 227.50921300025166,
-      "entry_price": 0.649,
-      "stop_loss": 0.6449921737747283,
-      "take_profit": 0.6550117393379076,
-      "opened_at": "2026-11-28T11:37:31.844076+00:00",
-      "symbol": "DOT/USD"
     },
     {
       "side": "long",
@@ -101271,8 +101262,17 @@
       "reason": "RSI-herstel: laag=30.6 nu=32.2 (oververkoop voorbij)",
       "pnl_quote": null,
       "symbol": "BTC/USD"
+    },
+    {
+      "side": "sell",
+      "amount": 227.50921300025166,
+      "price": 0.6449921737747283,
+      "timestamp": "2026-11-28T13:37:08.320104+00:00",
+      "reason": "Stop-loss geraakt (low=0.6445 <= 0.645)",
+      "pnl_quote": -0.9118173903533489,
+      "symbol": "DOT/USD"
     }
   ],
-  "last_price": 59117.0,
-  "last_updated": "2026-11-28T13:22:07.300164+00:00"
+  "last_price": 59123.4,
+  "last_updated": "2026-11-28T13:37:18.000634+00:00"
 }
